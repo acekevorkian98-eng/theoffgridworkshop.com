@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn how to convert wood waste into usable energy through gasification technology">
+    <title>Wood Gasification: Alternative Energy from Biomass - The OffGrid Workshop</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+Pro:wght@400;600&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="../index.html" class="logo">
+                <div class="logo__icon">🌲</div>
+                <span>The OffGrid Workshop</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="../index.html" class="nav__link">Home</a></li>
+                    <li><a href="../articles.html" class="nav__link active">Articles</a></li>
+                    <li><a href="../about.html" class="nav__link">About</a></li>
+                    <li><a href="../contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Article Hero -->
+        <section class="hero hero--page">
+            <div class="hero__content">
+                <div
+                    style="color: var(--color-accent-light); font-family: var(--font-heading); font-weight: 500; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: var(--spacing-sm);">
+                    🔥 Renewable Energy
+                </div>
+                <h1 class="hero__title">Wood Gasification: Alternative Energy from Biomass</h1>
+                <div style="color: var(--color-cream); opacity: 0.9; font-size: 0.95rem; margin-top: 1rem;">
+                    📅 Published December 28, 2025 · ⏱️ 10 min read
+                </div>
+            </div>
+        </section>
+
+        <!-- Article Content -->
+        <article class="section section--white">
+            <div class="container container--narrow">
+                <div
+                    style="font-family: var(--font-serif); font-size: 1.125rem; line-height: 1.8; color: var(--color-charcoal);">
+
+                    <p><strong>Wood gasification</strong> sounds like science fiction, but it's actually a proven
+                        technology that's been used since the 1800s. During World War II, over a million vehicles ran on
+                        wood gas when petroleum was scarce. Today, it's experiencing a renaissance among off-gridders
+                        looking for reliable backup power from renewable biomass.</p>
+
+                    <h2>What Is Wood Gasification?</h2>
+
+                    <p>Wood gasification is the process of converting solid biomass (wood, charcoal, agricultural waste)
+                        into combustible gas through partial combustion under controlled oxygen conditions. The
+                        resulting "syngas" (synthetic gas) is primarily composed of:</p>
+
+                    <ul>
+                        <li>Carbon monoxide (CO): 18-22%</li>
+                        <li>Hydrogen (H₂): 18-20%</li>
+                        <li>Nitrogen (N₂): 50-54%</li>
+                        <li>Carbon dioxide (CO₂): 8-10%</li>
+                        <li>Methane (CH₄): 2-3%</li>
+                    </ul>
+
+                    <p>This gas can power internal combustion engines, generators, and even some appliances originally
+                        designed for natural gas.</p>
+
+                    <h2>How It Works: The Zones</h2>
+
+                    <p>A gasifier operates with four distinct thermal zones, each serving a specific purpose:</p>
+
+                    <h3>1. Drying Zone (212-300°F)</h3>
+                    <p>Fresh fuel enters at the top and moisture evaporates from the heat below.</p>
+
+                    <h3>2. Pyrolysis Zone (400-1100°F)</h3>
+                    <p>Heat breaks down complex organic molecules into simpler gases, tars, and char without combustion.
+                    </p>
+
+                    <h3>3. Combustion Zone (1800-2200°F)</h3>
+                    <p>Partial combustion occurs with limited oxygen, generating intense heat that drives the reactions
+                        below.</p>
+
+                    <h3>4. Reduction Zone (1400-1800°F)</h3>
+                    <p>Hot charcoal reacts with CO₂ and water vapor, producing carbon monoxide and hydrogen—the
+                        combustible components of syngas.</p>
+
+                    <h2>Advantages of Wood Gasification</h2>
+
+                    <ul>
+                        <li><strong>Renewable Fuel Source:</strong> Uses waste wood, tree trimmings, sawdust, and
+                            agricultural residues</li>
+                        <li><strong>Energy Independence:</strong> Produces fuel on-demand from locally available
+                            materials</li>
+                        <li><strong>Carbon Neutral:</strong> CO₂ released was recently captured by plants</li>
+                        <li><strong>Backup Power:</strong> Excellent complement to solar/wind during extended cloudy
+                            periods</li>
+                        <li><strong>Byproducts:</strong> Creates biochar (excellent soil amendment) and wood tar</li>
+                    </ul>
+
+                    <h2>Challenges and Limitations</h2>
+
+                    <p>Gasification isn't a miracle solution. Here's what we've learned running our system:</p>
+
+                    <ul>
+                        <li><strong>Maintenance Intensive:</strong> Requires cleaning every 4-6 hours of operation</li>
+                        <li><strong>Tar Production:</strong> Improper operation creates sticky tars that can foul
+                            engines</li>
+                        <li><strong>Fuel Preparation:</strong> Wood must be properly sized (1-3" pieces) and dried (\
+                            <20% moisture)</li>
+                        <li><strong>Power Reduction:</strong> Engines lose 30-40% power compared to gasoline</li>
+                        <li><strong>Startup Time:</strong> Takes 10-20 minutes to reach operating temperature</li>
+                        <li><strong>Safety Concerns:</strong> Produces carbon monoxide—requires outdoor operation only
+                        </li>
+                    </ul>
+
+                    <h2>Building a Simple Gasifier</h2>
+
+                    <p>We built our first gasifier using the FEMA (Federal Emergency Management Agency) design—plans
+                        developed for disaster scenarios. Here's a simplified overview:</p>
+
+                    <h3>Basic Components</h3>
+
+                    <ul>
+                        <li><strong>Reactor Vessel:</strong> Metal drum or pipe where gasification occurs</li>
+                        <li><strong>Air Inlet:</strong> Controlled air supply (critical for proper operation)</li>
+                        <li><strong>Gas Exit:</strong> Where syngas leaves the reactor</li>
+                        <li><strong>Grate:</strong> Supports burning fuel and allows ash to drop</li>
+                        <li><strong>Hopper:</strong> Stores fuel above the reactor</li>
+                        <li><strong>Cooling/Filtering System:</strong> Cools gas and removes particulates and tar</li>
+                    </ul>
+
+                    <h3>Materials Needed</h3>
+
+                    <ul>
+                        <li>55-gallon steel drum or 12" steel pipe</li>
+                        <li>Smaller drum for cooling/filtering</li>
+                        <li>Metal grate or perforated plate</li>
+                        <li>Pipe fittings and flanges</li>
+                        <li>Wood chips or sawdust for filtration</li>
+                        <li>Basic welding equipment</li>
+                    </ul>
+
+                    <p><strong>Safety Warning:</strong> Gasifier construction requires metalworking skills and produces
+                        flammable, toxic gas. Improper construction or operation can result in explosions, fires, or
+                        carbon monoxide poisoning. Only attempt if you have appropriate skills and safety equipment.</p>
+
+                    <h2>Our Real-World Experience</h2>
+
+                    <p>We've operated a wood gasifier for backup power for three years. Here's what actually happens:
+                    </p>
+
+                    <h3>Fuel Consumption</h3>
+                    <p>Our 5kW generator consumes approximately 15-20 pounds of dry wood per hour at full load. We
+                        primarily use scraps from our woodworking projects and dead branches.</p>
+
+                    <h3>Operational Routine</h3>
+
+                    <ol>
+                        <li><strong>Pre-check:</strong> Ensure gasifier is clean and ash grate is clear (5 minutes)</li>
+                        <li><strong>Fuel loading:</strong> Fill hopper with properly sized wood chunks (10 minutes)</li>
+                        <li><strong>Startup:</strong> Light kindling at bottom, open air intake (15 minutes to
+                            temperature)</li>
+                        <li><strong>Engine start:</strong> Once gas quality is good, start generator (2 minutes)</li>
+                        <li><strong>Monitoring:</strong> Check every 30 minutes, add fuel as needed</li>
+                        <li><strong>Shutdown:</strong> Close air intake, let system cool (30-45 minutes)</li>
+                        <li><strong>Cleaning:</strong> Remove ash and char, inspect for tar buildup (20 minutes)</li>
+                    </ol>
+
+                    <h3>When We Use It</h3>
+
+                    <p>Our gasifier serves as backup during:</p>
+                    <ul>
+                        <li>Extended cloudy periods when solar isn't performing</li>
+                        <li>Winter when we need extra power for heating and shorter daylight</li>
+                        <li>High-demand activities (running power tools, well pump, etc.)</li>
+                    </ul>
+
+                    <p>We typically operate it 10-20 hours per month in winter, almost never in summer.</p>
+
+                    <h2>Gas Quality and Engine Performance</h2>
+
+                    <p>Quality syngas should:</p>
+                    <ul>
+                        <li>Be nearly transparent (slight blue tint acceptable)</li>
+                        <li>Burn with a blue flame when lit</li>
+                        <li>Have minimal smell (sweet smell indicates excessive tar)</li>
+                        <li>Not condensate moisture when cooled</li>
+                    </ul>
+
+                    <p>Poor gas quality results in:</p>
+                    <ul>
+                        <li>Rough engine operation</li>
+                        <li>Black smoke from exhaust</li>
+                        <li>Tar deposits in carburator and valves</li>
+                        <li>Power loss beyond the expected 30-40%</li>
+                    </ul>
+
+                    <h2>Costs</h2>
+
+                    <p>Our DIY gasifier build breakdown:</p>
+
+                    <ul>
+                        <li>Steel drums and piping: $180</li>
+                        <li>Welding supplies and consumables: $120</li>
+                        <li>Fittings, valves, gauges: $95</li>
+                        <li>Filter media (wood chips): $15</li>
+                        <li>Grates and hardware: $60</li>
+                        <li><strong>Total: $470</strong></li>
+                    </ul>
+
+                    <p>Commercial gasifiers range from $2,000-$15,000 depending on size and sophistication.</p>
+
+                    <h2>Is Gasification Right for You?</h2>
+
+                    <p>Wood gasification makes sense if you:</p>
+
+                    <ul>
+                        <li>Have abundant wood waste or access to affordable biomass</li>
+                        <li>Need backup power but want to avoid fossil fuels</li>
+                        <li>Have mechanical aptitude and don't mind maintenance</li>
+                        <li>Understand and respect the safety requirements</li>
+                        <li>Can operate the system outdoors away from buildings</li>
+                    </ul>
+
+                    <p>It's <strong>not</strong> a good fit if you:</p>
+
+                    <ul>
+                        <li>Want set-and-forget power generation</li>
+                        <li>Live in a highly regulated urban area</li>
+                        <li>Can't consistently source dry fuel</li>
+                        <li>Need primary (vs. backup) power generation</li>
+                        <li>Aren't comfortable with mechanical systems</li>
+                    </ul>
+
+                    <h2>Final Thoughts</h2>
+
+                    <p>Wood gasification is a fascinating technology that provides genuine energy independence. It's not
+                        as convenient as flipping a switch or pulling a generator cord, but when your solar batteries
+                        are low and you need power, being able to convert a pile of branches into electricity feels like
+                        magic.</p>
+
+                    <p>Our gasifier has paid for itself several times over in avoided generator fuel costs. More
+                        importantly, it's insurance—knowing we can generate power from renewable resources even during
+                        extended grid outages or fuel shortages provides real peace of mind.</p>
+
+                    <p>If you're considering gasification, start small. Build a simple design, experiment with different
+                        fuels, and learn the quirks of your system before relying on it for critical power needs.</p>
+
+                    <p>Questions? <a href="../contact.html">Reach out</a>—we're always happy to discuss gasification
+                        with fellow experimenters!</p>
+
+                </div>
+
+                <!-- Article Footer -->
+                <div style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid var(--color-cream-dark);">
+                    <div style="text-align: center;">
+                        <p style="color: var(--color-gray); margin-bottom: 1rem;">Found this guide helpful? Share it
+                            with others!</p>
+                        <a href="../articles.html" class="btn btn--outline">← Back to All Articles</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Newsletter Section -->
+        <section class="section newsletter">
+            <div class="container">
+                <h2>Get More Guides Like This</h2>
+                <p>Weekly tutorials on alternative energy, sustainable living, and off-grid systems.</p>
+                <form class="newsletter__form" id="newsletterForm">
+                    <input type="email" class="newsletter__input" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn--primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <div class="logo__icon">🌲</div>
+                        <span>The OffGrid Workshop</span>
+                    </div>
+                    <p>Empowering sustainable living through practical knowledge and hands-on education.</p>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../articles.html">Articles</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Categories</h4>
+                    <ul class="footer__links">
+                        <li><a href="../articles.html?category=energy">Renewable Energy</a></li>
+                        <li><a href="../articles.html?category=water">Water Systems</a></li>
+                        <li><a href="../articles.html?category=food">Food Production</a></li>
+                        <li><a href="../articles.html?category=shelter">Shelter & Building</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Resources</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Getting Started Guide</a></li>
+                        <li><a href="#">Tools & Materials</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Newsletter Archive</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+                <p>&copy; 2026 The OffGrid Workshop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>
