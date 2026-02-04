@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="The OffGrid Workshop - Master sustainable living, renewable energy, and self-sufficiency skills">
+  <title>The OffGrid Workshop - Sustainable Living & Self-Sufficiency</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+Pro:wght@400;600&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- Reading Progress Bar -->
+  <div class="reading-progress" id="readingProgress"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="index.html" class="logo">
+        <div class="logo__icon">🌲</div>
+        <span>The OffGrid Workshop</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="index.html" class="nav__link active">Home</a></li>
+          <li><a href="articles.html" class="nav__link">Articles</a></li>
+          <li><a href="about.html" class="nav__link">About</a></li>
+          <li><a href="contact.html" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__content">
+        <p class="hero__tagline">Build Your Future</p>
+        <h1 class="hero__title">Master Sustainable Living</h1>
+        <p class="hero__subtitle">Learn practical skills for renewable energy, water systems, food production, and
+          complete self-sufficiency.</p>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="articles.html" class="btn btn--primary">Explore Guides</a>
+          <a href="about.html" class="btn btn--secondary">Our Story</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="section section--white">
+      <div class="container">
+        <h2 class="text-center">Workshop Categories</h2>
+        <p class="text-center text-muted" style="max-width: 600px; margin: 0 auto 3rem;">Explore our comprehensive
+          guides organized by key areas of sustainable living</p>
+
+        <div class="grid grid--4">
+          <a href="articles.html?category=energy" class="category-card">
+            <div class="category-card__icon">⚡</div>
+            <h3 class="category-card__title">Renewable Energy</h3>
+            <p class="category-card__count">12 Articles</p>
+          </a>
+
+          <a href="articles.html?category=water" class="category-card">
+            <div class="category-card__icon">💧</div>
+            <h3 class="category-card__title">Water Systems</h3>
+            <p class="category-card__count">8 Articles</p>
+          </a>
+
+          <a href="articles.html?category=food" class="category-card">
+            <div class="category-card__icon">🌱</div>
+            <h3 class="category-card__title">Food Production</h3>
+            <p class="category-card__count">15 Articles</p>
+          </a>
+
+          <a href="articles.html?category=shelter" class="category-card">
+            <div class="category-card__icon">🏡</div>
+            <h3 class="category-card__title">Shelter & Building</h3>
+            <p class="category-card__count">10 Articles</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section class="section section--cream">
+      <div class="container">
+        <h2 class="text-center">Featured Guides</h2>
+        <p class="text-center text-muted" style="max-width: 600px; margin: 0 auto 3rem;">Start your journey with our
+          most popular step-by-step tutorials</p>
+
+        <div class="grid grid--3">
+          <!-- Article Card 1 -->
+          <article class="card">
+            <div class="card__image">
+              <img src="images/solar_panels_system_1770217024445.png"
+                alt="Solar panel installation on off-grid homestead"
+                style="width: 100%; height: 100%; object-fit: cover;">
+              <span class="card__category">Energy</span>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">
+                <a href="articles/solar-power-basics.html">Complete Guide to DIY Solar Power Systems</a>
+              </h3>
+              <p class="card__excerpt">Learn how to design, size, and install your own off-grid solar power system from
+                scratch. This comprehensive guide covers everything from panel selection to battery storage.</p>
+              <div class="card__meta">
+                <span>📅 Jan 15, 2026</span>
+                <span>⏱️ 12 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article Card 2 -->
+          <article class="card">
+            <div class="card__image">
+              <img src="images/rainwater_harvesting_system_1770217043866.png"
+                alt="Rainwater harvesting and storage system" style="width: 100%; height: 100%; object-fit: cover;">
+              <span class="card__category">Water</span>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">
+                <a href="articles/rainwater-harvesting.html">Rainwater Harvesting: From Roof to Tank</a>
+              </h3>
+              <p class="card__excerpt">Discover how to capture, filter, and store rainwater for all your household
+                needs. Includes calculations for sizing your collection system and tank capacity.</p>
+              <div class="card__meta">
+                <span>📅 Jan 10, 2026</span>
+                <span>⏱️ 8 min read</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article Card 3 -->
+          <article class="card">
+            <div class="card__image">
+              <img src="images/greenhouse_interior_1770217060914.png"
+                alt="Year-round greenhouse with growing vegetables"
+                style="width: 100%; height: 100%; object-fit: cover;">
+              <span class="card__category">Food</span>
+            </div>
+            <div class="card__content">
+              <h3 class="card__title">
+                <a href="articles/year-round-greenhouse.html">Building a Year-Round Greenhouse</a>
+              </h3>
+              <p class="card__excerpt">Extend your growing season indefinitely with a properly designed greenhouse.
+                Learn about materials, thermal mass, ventilation, and climate control systems.</p>
+              <div class="card__meta">
+                <span>📅 Jan 5, 2026</span>
+                <span>⏱️ 15 min read</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+          <a href="articles.html" class="btn btn--outline">View All Articles</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="section section--white">
+      <div class="container">
+        <div class="about-preview">
+          <div class="about-preview__image">
+            <img src="images/about_workshop_founders_1770217078336.png" alt="Off-grid workshop founders"
+              style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--border-radius-lg);">
+          </div>
+          <div>
+            <h2>Our Workshop Story</h2>
+            <p>What started as a personal journey to disconnect from the grid became a passion for teaching others. The
+              OffGrid Workshop was founded in 2018 after we successfully built our own sustainable homestead in the
+              mountains of Colorado.</p>
+            <p>We've spent years learning through trial and error, and now we're sharing that knowledge with you. Our
+              mission is to empower individuals and families to live more sustainably, independently, and in harmony
+              with nature.</p>
+            <a href="about.html" class="btn btn--primary">Learn More About Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="section newsletter">
+      <div class="container">
+        <h2>Join Our Community</h2>
+        <p>Get weekly tips, new guides, and exclusive content delivered to your inbox.</p>
+        <form class="newsletter__form" id="newsletterForm">
+          <input type="email" class="newsletter__input" placeholder="Your email address" required>
+          <button type="submit" class="btn btn--primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <div class="logo__icon">🌲</div>
+            <span>The OffGrid Workshop</span>
+          </div>
+          <p>Empowering sustainable living through practical knowledge and hands-on education.</p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="articles.html">Articles</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Categories</h4>
+          <ul class="footer__links">
+            <li><a href="articles.html?category=energy">Renewable Energy</a></li>
+            <li><a href="articles.html?category=water">Water Systems</a></li>
+            <li><a href="articles.html?category=food">Food Production</a></li>
+            <li><a href="articles.html?category=shelter">Shelter & Building</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Resources</h4>
+          <ul class="footer__links">
+            <li><a href="#">Getting Started Guide</a></li>
+            <li><a href="#">Tools & Materials</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Newsletter Archive</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div
+        style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+        <p>&copy; 2026 The OffGrid Workshop. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

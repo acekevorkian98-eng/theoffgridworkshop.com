@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn how to design and build a complete rainwater harvesting system for your homestead">
+    <title>Rainwater Harvesting: From Roof to Tank - The OffGrid Workshop</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+Pro:wght@400;600&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="../index.html" class="logo">
+                <div class="logo__icon">🌲</div>
+                <span>The OffGrid Workshop</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="../index.html" class="nav__link">Home</a></li>
+                    <li><a href="../articles.html" class="nav__link active">Articles</a></li>
+                    <li><a href="../about.html" class="nav__link">About</a></li>
+                    <li><a href="../contact.html" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Article Hero -->
+        <section class="hero hero--page">
+            <div class="hero__content">
+                <div
+                    style="color: var(--color-accent-light); font-family: var(--font-heading); font-weight: 500; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: var(--spacing-sm);">
+                    💧 Water Systems
+                </div>
+                <h1 class="hero__title">Rainwater Harvesting: From Roof to Tank</h1>
+                <div style="color: var(--color-cream); opacity: 0.9; font-size: 0.95rem; margin-top: 1rem;">
+                    📅 Published January 10, 2026 · ⏱️ 8 min read
+                </div>
+            </div>
+        </section>
+
+        <!-- Article Content -->
+        <article class="section section--white">
+            <div class="container container--narrow">
+                <div
+                    style="font-family: var(--font-serif); font-size: 1.125rem; line-height: 1.8; color: var(--color-charcoal);">
+
+                    <p><strong>Water is life</strong>, and for off-grid homesteaders, securing a reliable water source
+                        is absolutely critical. Rainwater harvesting has provided us with clean, abundant water for
+                        drinking, washing, and irrigation for over 7 years. This guide will show you how to design and
+                        build your own system based on real-world experience.</p>
+
+                    <h2>Why Rainwater Harvesting?</h2>
+
+                    <p>Before we had our rainwater system, we hauled water in 275-gallon IBC totes—a time-consuming and
+                        physically demanding task. Rainwater harvesting transformed our homestead by:</p>
+
+                    <ul>
+                        <li>Providing 8,000+ gallons of free water annually</li>
+                        <li>Eliminating the need for water hauling</li>
+                        <li>Reducing dependence on groundwater</li>
+                        <li>Capturing soft water (no minerals) that's gentler on appliances</li>
+                        <li>Creating resilience during drought conditions</li>
+                    </ul>
+
+                    <h2>System Components</h2>
+
+                    <p>A complete rainwater harvesting system consists of five main parts:</p>
+
+                    <ol>
+                        <li><strong>Collection Surface:</strong> Your roof (metal is best)</li>
+                        <li><strong>Gutters and Downspouts:</strong> Channel water from roof to storage</li>
+                        <li><strong>First Flush Diverter:</strong> Removes initial dirty water</li>
+                        <li><strong>Storage Tank:</strong> Holds the harvested water</li>
+                        <li><strong>Filtration System:</strong> Makes water safe for intended use</li>
+                    </ol>
+
+                    <h2>Calculating Your Collection Potential</h2>
+
+                    <p>The first step is determining how much water your roof can capture. The formula is surprisingly
+                        simple:</p>
+
+                    <p
+                        style="background-color: var(--color-cream); padding: 1.5rem; border-left: 4px solid var(--color-forest); margin: 2rem 0; font-family: monospace;">
+                        Gallons = Roof Area (sq ft) × Rainfall (inches) × 0.623
+                    </p>
+
+                    <p>Our metal roof is 1,600 square feet. In our location, we receive about 18 inches of precipitation
+                        annually:</p>
+
+                    <p
+                        style="background-color: var(--color-cream); padding: 1.5rem; margin: 2rem 0; font-family: monospace;">
+                        1,600 sq ft × 18 inches × 0.623 = 17,940 gallons per year
+                    </p>
+
+                    <p>That's theoretical maximum. In practice, we capture about 40-50% of this (8,000-9,000 gallons)
+                        due to evaporation, overflow, and periods when tanks are full.</p>
+
+                    <h2>Choosing and Installing Gutters</h2>
+
+                    <h3>Material Selection</h3>
+
+                    <p>We use 6-inch aluminum gutters with leaf guards. Key considerations:</p>
+
+                    <ul>
+                        <li><strong>Size:</strong> 6-inch gutters handle heavy downpours better than 5-inch</li>
+                        <li><strong>Material:</strong> Aluminum won't rust; vinyl becomes brittle in freezing
+                            temperatures</li>
+                        <li><strong>Slope:</strong> 1/4 inch drop per 10 feet toward downspouts</li>
+                        <li><strong>Leaf Guards:</strong> Essential for keeping debris out of your system</li>
+                    </ul>
+
+                    <h3>Installation Tips</h3>
+
+                    <p>Proper gutter installation is crucial. We learned these lessons the hard way:</p>
+
+                    <ul>
+                        <li>Support brackets every 2-3 feet to prevent sagging</li>
+                        <li>Seal all seams with quality gutter sealant</li>
+                        <li>Use large downspouts (3-4 inches) to handle peak flow</li>
+                        <li>Position downspouts to minimize horizontal pipe runs</li>
+                    </ul>
+
+                    <h2>The First Flush Diverter</h2>
+
+                    <p>This is the component many beginners skip—and regret it. The first flush diverter captures and
+                        diverts the initial dirty water from each rain event (bird droppings, dust, debris) before clean
+                        water enters your tank.</p>
+
+                    <h3>DIY First Flush System</h3>
+
+                    <p>We built ours from 4-inch PVC pipe:</p>
+
+                    <ol>
+                        <li>Cut a 4-foot length of 4-inch PVC</li>
+                        <li>Cap the bottom with a glued cap that has a small weep hole</li>
+                        <li>Install a ball valve at the bottom for periodic draining</li>
+                        <li>T-junction at the top diverts clean water to tank after pipe fills</li>
+                    </ol>
+
+                    <p>Size your diverter at 10 gallons per 1,000 sq ft of roof. Our 1,600 sq ft roof needs about 16
+                        gallons of first flush capacity.</p>
+
+                    <h2>Water Storage Options</h2>
+
+                    <h3>Tank Types</h3>
+
+                    <p>We've used both IBC totes and purpose-built water tanks:</p>
+
+                    <ul>
+                        <li><strong>IBC Totes (275 gal):</strong> Cheap ($50-150 used), stackable, but degrade in UV
+                            light. Good for starting out.</li>
+                        <li><strong>Poly Water Tanks:</strong> More expensive ($400-1,200), UV-resistant, professional
+                            appearance, longer lifespan</li>
+                        <li><strong>Concrete Cisterns:</strong> Extremely durable, huge capacity, expensive, permanent
+                            installation</li>
+                    </ul>
+
+                    <p>We currently use three 1,500-gallon poly tanks (4,500 gallons total storage) positioned near our
+                        house.</p>
+
+                    <h3>Tank Placement</h3>
+
+                    <p>Location is critical for both gravity-fed pressure and system efficiency:</p>
+
+                    <ul>
+                        <li>Elevate tanks 6-10 feet above fixtures for gravity pressure (0.43 PSI per foot of elevation)
+                        </li>
+                        <li>Place on level, compacted gravel pads</li>
+                        <li>North-facing or shaded location to minimize algae growth</li>
+                        <li>Close to the house to minimize pipe runs</li>
+                        <li>Protected from freezing if possible (or install drain valves)</li>
+                    </ul>
+
+                    <h2>Filtration and Treatment</h2>
+
+                    <p>How you filter depends on how you'll use the water:</p>
+
+                    <h3>For Non-Potable Use (Irrigation, Toilet Flushing)</h3>
+
+                    <ul>
+                        <li>Mesh screen filter (120 micron) to remove sediment</li>
+                        <li>That's it! Simple and maintenance-free</li>
+                    </ul>
+
+                    <h3>For Potable Use (Drinking, Cooking)</h3>
+
+                    <ul>
+                        <li>Sediment filter (5 micron)</li>
+                        <li>Carbon filter (removes taste, odors, some chemicals)</li>
+                        <li>UV sterilizer OR ceramic filter (kills bacteria and pathogens)</li>
+                    </ul>
+
+                    <p>We use a three-stage system: sediment, carbon, and UV sterilization. Total cost was about $400,
+                        and we change filters annually.</p>
+
+                    <h2>Maintenance Requirements</h2>
+
+                    <p>Rainwater systems are low-maintenance but not no-maintenance:</p>
+
+                    <ul>
+                        <li><strong>Monthly:</strong> Drain first flush diverters, check for leaks</li>
+                        <li><strong>Quarterly:</strong> Clean gutters and leaf guards</li>
+                        <li><strong>Annually:</strong> Inspect and clean tanks, replace filters</li>
+                        <li><strong>As needed:</strong> Test water quality if used for drinking</li>
+                    </ul>
+
+                    <h2>Real Costs</h2>
+
+                    <p>Our complete system breakdown:</p>
+
+                    <ul>
+                        <li>Gutters, leaf guards, downspouts: $800</li>
+                        <li>Three 1,500-gal poly tanks: $3,200</li>
+                        <li>First flush diverters (3×): $150</li>
+                        <li>PVC piping and fittings: $300</li>
+                        <li>Filtration system: $400</li>
+                        <li>Gravel pads and labor: $400</li>
+                        <li><strong>Total: $5,250</strong></li>
+                    </ul>
+
+                    <p>You could start much smaller—a single IBC tote system costs $200-400 and still provides valuable
+                        backup water.</p>
+
+                    <h2>Final Thoughts</h2>
+
+                    <p>Rainwater harvesting is one of the most satisfying systems we've built. Every time it rains, we
+                        watch our tanks fill up with free, clean water. It's resilience, independence, and environmental
+                        stewardship all in one package.</p>
+
+                    <p>Start small if needed, but start. Even a simple system is better than hauling water or running
+                        dry during droughts. Questions? <a href="../contact.html">Reach out</a>—we're always happy to
+                        help!</p>
+
+                </div>
+
+                <!-- Article Footer -->
+                <div style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid var(--color-cream-dark);">
+                    <div style="text-align: center;">
+                        <p style="color: var(--color-gray); margin-bottom: 1rem;">Found this guide helpful? Share it
+                            with others!</p>
+                        <a href="../articles.html" class="btn btn--outline">← Back to All Articles</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- Newsletter Section -->
+        <section class="section newsletter">
+            <div class="container">
+                <h2>Get More Guides Like This</h2>
+                <p>Weekly tutorials on water systems, energy, and sustainable living delivered to your inbox.</p>
+                <form class="newsletter__form" id="newsletterForm">
+                    <input type="email" class="newsletter__input" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn--primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <div class="logo__icon">🌲</div>
+                        <span>The OffGrid Workshop</span>
+                    </div>
+                    <p>Empowering sustainable living through practical knowledge and hands-on education.</p>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="../articles.html">Articles</a></li>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="../contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Categories</h4>
+                    <ul class="footer__links">
+                        <li><a href="../articles.html?category=energy">Renewable Energy</a></li>
+                        <li><a href="../articles.html?category=water">Water Systems</a></li>
+                        <li><a href="../articles.html?category=food">Food Production</a></li>
+                        <li><a href="../articles.html?category=shelter">Shelter & Building</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Resources</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Getting Started Guide</a></li>
+                        <li><a href="#">Tools & Materials</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Newsletter Archive</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+                <p>&copy; 2026 The OffGrid Workshop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Get in touch with The OffGrid Workshop team. Questions, collaborations, or feedback welcome">
+    <title>Contact - The OffGrid Workshop</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+Pro:wght@400;600&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="readingProgress"></div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header__inner">
+            <a href="index.html" class="logo">
+                <div class="logo__icon">🌲</div>
+                <span>The OffGrid Workshop</span>
+            </a>
+
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav" id="nav">
+                <ul class="nav__list">
+                    <li><a href="index.html" class="nav__link">Home</a></li>
+                    <li><a href="articles.html" class="nav__link">Articles</a></li>
+                    <li><a href="about.html" class="nav__link">About</a></li>
+                    <li><a href="contact.html" class="nav__link active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Hero -->
+        <section class="hero hero--page">
+            <div class="hero__content">
+                <h1 class="hero__title">Get In Touch</h1>
+                <p class="hero__subtitle">Questions, collaborations, or just want to say hello?</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section section--white">
+            <div class="container">
+                <div class="about-preview">
+                    <!-- Contact Info -->
+                    <div>
+                        <h2>Let's Connect</h2>
+                        <p>We love hearing from fellow homesteaders, sustainability enthusiasts, and anyone curious
+                            about off-grid living. Whether you have questions about our guides, want to share your own
+                            experience, or are interested in collaboration, we're here to help.</p>
+
+                        <div style="margin-top: 2rem;">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">Response Time</h3>
+                            <p>We typically respond to all inquiries within 24-48 hours. During busy periods, it may
+                                take up to 72 hours.</p>
+                        </div>
+
+                        <div style="margin-top: 2rem;">
+                            <h3 style="font-size: 1.1rem; margin-bottom: 1rem;">What We Can Help With</h3>
+                            <ul style="color: var(--color-gray); line-height: 1.8;">
+                                <li>Technical questions about our guides</li>
+                                <li>System design consultations</li>
+                                <li>Guest post opportunities</li>
+                                <li>Partnership inquiries</li>
+                                <li>Media and interview requests</li>
+                                <li>General homesteading questions</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div
+                        style="background-color: var(--color-cream); padding: 2rem; border-radius: var(--border-radius-lg);">
+                        <h3 style="margin-bottom: 1.5rem;">Send Us a Message</h3>
+                        <form id="contactForm">
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="name"
+                                    style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--color-charcoal);">Name
+                                    *</label>
+                                <input type="text" id="name" name="name" required
+                                    style="width: 100%; padding: 0.875rem; border: 1px solid var(--color-cream-dark); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem;">
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="email"
+                                    style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--color-charcoal);">Email
+                                    *</label>
+                                <input type="email" id="email" name="email" required
+                                    style="width: 100%; padding: 0.875rem; border: 1px solid var(--color-cream-dark); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem;">
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="subject"
+                                    style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--color-charcoal);">Subject
+                                    *</label>
+                                <input type="text" id="subject" name="subject" required
+                                    style="width: 100%; padding: 0.875rem; border: 1px solid var(--color-cream-dark); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem;">
+                            </div>
+
+                            <div style="margin-bottom: 1.5rem;">
+                                <label for="message"
+                                    style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--color-charcoal);">Message
+                                    *</label>
+                                <textarea id="message" name="message" rows="6" required
+                                    style="width: 100%; padding: 0.875rem; border: 1px solid var(--color-cream-dark); border-radius: var(--border-radius); font-family: var(--font-body); font-size: 1rem; resize: vertical;"></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn--primary" style="width: 100%;">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section section--cream">
+            <div class="container container--narrow">
+                <h2 class="text-center">Frequently Asked Questions</h2>
+                <p class="text-center text-muted" style="max-width: 600px; margin: 0 auto 3rem;">Quick answers to common
+                    questions</p>
+
+                <div
+                    style="background-color: var(--color-white); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 1.5rem;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Do you offer one-on-one consultations?</h3>
+                    <p style="color: var(--color-gray); margin-bottom: 0;">Yes! We offer limited consulting slots each
+                        month for system design, troubleshooting, and planning. Contact us for availability and rates.
+                    </p>
+                </div>
+
+                <div
+                    style="background-color: var(--color-white); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 1.5rem;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Can I visit your homestead?</h3>
+                    <p style="color: var(--color-gray); margin-bottom: 0;">We occasionally host small group workshops
+                        and tours. Sign up for our newsletter to get notified about upcoming events.</p>
+                </div>
+
+                <div
+                    style="background-color: var(--color-white); padding: 2rem; border-radius: var(--border-radius-lg); margin-bottom: 1.5rem;">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">Do you accept guest posts?</h3>
+                    <p style="color: var(--color-gray); margin-bottom: 0;">We're always interested in high-quality guest
+                        contributions from experienced homesteaders. Please include writing samples and proposed topics
+                        in your inquiry.</p>
+                </div>
+
+                <div
+                    style="background-color: var(--color-white); padding: 2rem; border-radius: var(--border-radius-lg);">
+                    <h3 style="font-size: 1.1rem; margin-bottom: 0.5rem;">How do I support your work?</h3>
+                    <p style="color: var(--color-gray); margin-bottom: 0;">The best way to support us is by sharing our
+                        content, joining our newsletter, and engaging with our community. We don't currently accept
+                        donations but appreciate every share and recommendation!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <div class="logo__icon">🌲</div>
+                        <span>The OffGrid Workshop</span>
+                    </div>
+                    <p>Empowering sustainable living through practical knowledge and hands-on education.</p>
+                </div>
+
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Categories</h4>
+                    <ul class="footer__links">
+                        <li><a href="articles.html?category=energy">Renewable Energy</a></li>
+                        <li><a href="articles.html?category=water">Water Systems</a></li>
+                        <li><a href="articles.html?category=food">Food Production</a></li>
+                        <li><a href="articles.html?category=shelter">Shelter & Building</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>Resources</h4>
+                    <ul class="footer__links">
+                        <li><a href="#">Getting Started Guide</a></li>
+                        <li><a href="#">Tools & Materials</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Newsletter Archive</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+                <p>&copy; 2026 The OffGrid Workshop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
