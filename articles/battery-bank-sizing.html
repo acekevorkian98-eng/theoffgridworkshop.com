@@ -1,29 +1,50 @@
 ﻿<!DOCTYPE html>
-<html lange="en">
+<html lang="en">
+
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-ND72R9X3');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Google Adsense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9986267429592601"
+     crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Learn about battery bank sizing guide for off-grid living and sustainability">
+  <meta name="description"
+    content="Complete guide to sizing and selecting battery banks for off-grid solar, wind, and hydro power systems">
+  <meta name="author" content="The OffGrid Workshop">
   <title>Battery Bank Sizing Guide - The OffGrid Workshop</title>
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+Pro:wght@400;600&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+Pro:wght@400;600&family=Merriweather:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ND72R9X3"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="reading-progress" id="readingProgress"></div>
-  <header class="header" id="header">
+  <header class="header" id="header" role="banner">
     <div class="header__inner">
       <a href="../index.html" class="logo">
-        <div class="logo__icon">ðŸŒ²</div>
+        <div class="logo__icon">🌲</div>
         <span>The OffGrid Workshop</span>
       </a>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
         <ul class="nav__list">
           <li><a href="../index.html" class="nav__link">Home</a></li>
           <li><a href="../articles.html" class="nav__link active">Articles</a></li>
@@ -33,44 +54,450 @@
       </nav>
     </div>
   </header>
-  <main id="main-content" role="main"  <section class="hero hero--page">
+  <main id="main-content" role="main">
+    <section class="hero hero--page">
       <div class="hero__content">
-        <div style="color: var(--color-accent-light); font-family: var(--font-heading); font-weight: 500; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: var(--spacing-sm);">âš¡ Renewable Energy</div>
+        <div
+          style="color: var(--color-accent-light); font-family: var(--font-heading); font-weight: 500; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 2px; margin-bottom: var(--spacing-sm);">
+          ⚡ Renewable Energy</div>
         <h1 class="hero__title">Battery Bank Sizing Guide</h1>
-        <div style="color: var(--color-cream); opacity: 0.9; font-size: 0.95rem; margin-top: 1rem;">ðŸ“… Coming Soon Â· â±ï¸ 8 min read</div>
+        <div style="color: var(--color-cream); opacity: 0.9; font-size: 0.95rem; margin-top: 1rem;">📅 Published
+          November 28, 2025 · ⏱️ 11 min read</div>
       </div>
     </section>
     <article class="section section--white">
       <div class="container container--narrow">
-        <div style="font-family: var(--font-serif); font-size: 1.125rem; line-height: 1.8; color: var(--color-charcoal);">
-          <p><strong>This comprehensive guide</strong> will cover everything you need to know about battery bank sizing guide for your off-grid homestead.</p>
-          <h2>What You'll Learn</h2>
+        <div
+          style="font-family: var(--font-serif); font-size: 1.125rem; line-height: 1.8; color: var(--color-charcoal);">
+
+          <p><strong>Sizing a battery bank</strong> is one of the most critical—and most misunderstood—aspects of
+            off-grid power systems. Too small, and you'll experience frequent low-battery cutoffs. Too large, and you've
+            wasted thousands of dollars. This guide covers the calculations, chemistry comparisons, and real-world
+            considerations from our experience building and upgrading multiple battery banks.</p>
+
+          <h2>Why Proper Sizing Matters</h2>
+
+          <p>Your battery bank serves three essential functions:</p>
+
           <ul>
-            <li>Energy storage calculations</li>
-            <li>Battery chemistry comparison</li>
-            <li>Wiring configurations</li>
-            <li>Maintenance schedules</li>
+            <li><strong>Energy storage:</strong> Stores power from solar/wind/hydro for use at night or during low
+              production</li>
+            <li><strong>Load buffering:</strong> Handles surge loads (pump starting, power tools) that exceed generation
+              capacity</li>
+            <li><strong>System stability:</strong> Provides stable voltage for inverters and electronics</li>
           </ul>
-          <p style="background-color: var(--color-cream); padding: 1.5rem; border-left: 4px solid var(--color-forest); margin: 2rem 0;">
-            <strong>Note:</strong> This article is currently being developed. Check back soon for the complete guide, or <a href="../contact.html">contact us</a> if you have specific questions.
+
+          <p>Under-sizing leads to daily deep discharges, which dramatically shorten battery life. Over-sizing wastes
+            money and can actually harm batteries that need regular cycling.</p>
+
+          <h2>Basic Sizing Formula</h2>
+
+          <p>Start with your daily energy consumption in watt-hours (Wh):</p>
+
+          <p
+            style="background-color: var(--color-cream); padding: 1.5rem; border-left: 4px solid var(--color-forest); margin: 2rem 0; font-family: monospace;">
+            Battery Capacity = (Daily Wh × Days Autonomy) / (Depth of Discharge × Efficiency)
           </p>
-          <h2>Related Articles</h2>
+
+          <p><strong>Example Calculation:</strong></p>
           <ul>
-            <li><a href="solar-power-basics.html">Complete Guide to DIY Solar Power Systems</a></li>
-            <li><a href="rainwater-harvesting.html">Rainwater Harvesting: From Roof to Tank</a></li>
+            <li>Daily consumption: 6,000 Wh</li>
+            <li>Days autonomy desired: 3 days</li>
+            <li>Depth of discharge (lithium): 80%</li>
+            <li>System efficiency: 90%</li>
           </ul>
+
+          <p><strong>Calculation:</strong></p>
+          <p style="background-color: var(--color-cream); padding: 1.5rem; margin: 2rem 0; font-family: monospace;">
+            (6,000 × 3) / (0.80 × 0.90) = 25,000 Wh = 25 kWh battery</p>
+
+          <h2>Understanding Key Terms</h2>
+
+          <h3>Days of Autonomy</h3>
+
+          <p>How many days can your battery sustain loads without charging? Typical values:</p>
+
+          <ul>
+            <li><strong>1-2 days:</strong> Grid-tie with battery backup systems</li>
+            <li><strong>2-3 days:</strong> Off-grid with reliable solar or wind</li>
+            <li><strong>3-5 days:</strong> Off-grid with backup generator</li>
+            <li><strong>5-7 days:</strong> Remote locations, harsh winters</li>
+          </ul>
+
+          <p>We designed for 3 days in summer, effectively 4-5 days in winter due to larger array and reduced
+            consumption.</p>
+
+          <h3>Depth of Discharge (DOD)</h3>
+
+          <p>How much of battery capacity you actually use:</p>
+
+          <ul>
+            <li><strong>Flooded Lead-Acid:</strong> 50% max (discharging deeper significantly shortens life)</li>
+            <li><strong>AGM Lead-Acid:</strong> 50-60% max</li>
+            <li><strong>Lithium LiFePO4:</strong> 80-90% usable (some systems allow 100%)</li>
+          </ul>
+
+          <p><strong>Critical:</strong> If you need 10kWh usable with lead-acid batteries, you must install 20kWh total
+            capacity!</p>
+
+          <h3>Voltage Selection</h3>
+
+          <p>Common system voltages:</p>
+
+          <ul>
+            <li><strong>12V:</strong> Small systems \<1kW, RVs, boats. Efficient for low power.</li>
+            <li><strong>24V:</strong> Mid-sized 1-3kW systems. Good balance of availability and efficiency.</li>
+            <li><strong>48V:</strong> Systems \>3kW. Most efficient, reduced wire gauge requirements.</li>
+            <li><strong>Higher:</strong> Some lithium systems run 300-400V DC</li>
+          </ul>
+
+          <p>We started with 24V lead-acid, upgraded to 48V lithium. The higher voltage dramatically reduced wire
+            losses.</p>
+
+          <h2>Battery Chemistry Comparison</h2>
+
+          <h3>Flooded Lead-Acid (FLA)</h3>
+
+          <p><strong>Advantages:</strong></p>
+          <ul>
+            <li>Lowest upfront cost ($150-300/kWh)</li>
+            <li>Well-understood, proven technology</li>
+            <li>Tolerates overcharging fairly well</li>
+            <li>Readily available, DIY-friendly</li>
+          </ul>
+
+          <p><strong>Disadvantages:</strong></p>
+          <ul>
+            <li>Requires monthly watering and equalization</li>
+            <li>Off-gasses hydrogen (ventilation required)</li>
+            <li>Only 50% usable capacity</li>
+            <li>Heavy (65 lbs per kwh)</li>
+            <li>Shorter lifespan (5-8 years)</li>
+            <li>Must stay above freezing when discharged</li>
+          </ul>
+
+          <p><strong>Best for:</strong> Budget-constrained initial systems, those comfortable with maintenance</p>
+
+          <h3>AGM (Absorbed Glass Mat) Lead-Acid</h3>
+
+          <p><strong>Advantages:</strong></p>
+          <ul>
+            <li>No maintenance, sealed design</li>
+            <li>Can install in living space</li>
+            <li>Better cycle life than flooded</li>
+            <li>Lower self-discharge</li>
+          </ul>
+
+          <p><strong>Disadvantages:</strong></p>
+          <ul>
+            <li>Higher cost than flooded ($250-400/kWh)</li>
+            <li>Intolerant of overcharging</li>
+            <li>Still only 50% usable</li>
+            <li>Shorter lifespan than lithium (7-10 years)</li>
+          </ul>
+
+          <p><strong>Best for:</strong> Those wanting sealed batteries but not ready for lithium cost</p>
+
+          <h3>Lithium LiFePO4 (Lithium Iron Phosphate)</h3>
+
+          <p><strong>Advantages:</strong></p>
+          <ul>
+            <li>80-90% usable capacity</li>
+            <li>10-15 year lifespan (3000-5000 cycles)</li>
+            <li>Lightweight (20 lbs per kWh)</li>
+            <li>Fast charging capability</li>
+            <li>Excellent low-temperature performance</li>
+            <li>No maintenance</li>
+            <li>Built-in battery management system (BMS)</li>
+          </ul>
+
+          <p><strong>Disadvantages:</strong></p>
+          <ul>
+            <li>Higher upfront cost ($400-700/kWh)</li>
+            <li>Requires compatible charge controller</li>
+            <li>Cannot charge below freezing (needs heating)</li>
+            <li>More complex BMS can fail</li>
+          </ul>
+
+          <p><strong>Best for:</strong> Long-term installations, those who can afford initial investment</p>
+
+          <h3>Total Cost of Ownership</h3>
+
+          <p>The real story emerges over time. For a 20kWh usable capacity system:</p>
+
+          <p><strong>Flooded Lead-Acid:</strong></p>
+          <ul>
+            <li>Need 40kWh total (50% DOD) = $8,000 initial</li>
+            <li>Replacement every 7 years = $8,000 again</li>
+            <li>15-year total: $16,000 + maintenance time</li>
+            <li><strong>Cost per kWh-cycle: $0.53</strong></li>
+          </ul>
+
+          <p><strong>Lithium LiFePO4:</strong></p>
+          <ul>
+            <li>Need 25kWh total (80% DOD) = $12,500 initial</li>
+            <li>Likely no replacement in 15 years</li>
+            <li>15-year total: $12,500</li>
+            <li><strong>Cost per kWh-cycle: $0.17</strong></li>
+          </ul>
+
+          <p>Lithium is significantly cheaper over lifespan and requires zero maintenance!</p>
+
+          <h2>Detailed Sizing Worksheet</h2>
+
+          <h3>Step 1: Calculate Daily Consumption</h3>
+
+          <p>List all loads and hours of daily use:</p>
+
+          <p style="background-color: var(--color-cream); padding: 1.5rem; margin: 2rem 0; font-family: monospace;">
+            Refrigerator: 150W × 8 hrs = 1,200 Wh<br>
+            Lights: 60W × 5 hrs = 300 Wh<br>
+            Laptop: 65W × 6 hrs = 390 Wh<br>
+            TV: 100W × 3 hrs = 300 Wh<br>
+            Water pump: 750W × 0.5 hrs = 375 Wh<br>
+            Misc: 500 Wh<br>
+            <br>
+            <strong>Total: 3,065 Wh/day</strong><br>
+            Add 20% for inverter losses: 3,678 Wh/day
+          </p>
+
+          <h3>Step 2: Choose Days of Autonomy</h3>
+
+          <p>Consider your climate and backup options. We'll use 3 days for this example.</p>
+
+          <h3>Step 3: Select Battery Chemistry</h3>
+
+          <p>This determines usable capacity. Let's compare both:</p>
+
+          <p><strong>Lead-Acid (50% DOD):</strong></p>
+          <p style="background-color: var(--color-cream); padding: 1.5rem; margin: 2rem 0; font-family: monospace;">
+            (3,678 Wh × 3 days) / 0.50 = 22,068 Wh = 22 kWh battery bank
+          </p>
+
+          <p><strong>Lithium (80% DOD):</strong></p>
+          <p style="background-color: var(--color-cream); padding: 1.5rem; margin: 2rem 0; font-family: monospace;">
+            (3,678 Wh × 3 days) / 0.80 = 13,793 Wh = 14 kWh battery bank
+          </p>
+
+          <h3>Step 4: Convert to Amp-Hours</h3>
+
+          <p>Batteries are rated in Ah. Convert based on system voltage:</p>
+
+          <p
+            style="background-color: var(--color-cream); padding: 1.5rem; border-left: 4px solid var(--color-forest); margin: 2rem 0; font-family: monospace;">
+            Amp-Hours = Watt-Hours / System Voltage
+          </p>
+
+          <p>For 14kWh lithium at 48V:</p>
+          <p style="background-color: var(--color-cream); padding: 1.5rem; margin: 2rem 0; font-family: monospace;">
+            14,000 Wh / 48V = 292 Ah @ 48V
+          </p>
+
+          <h2>Wiring Configurations</h2>
+
+          <h3>Series vs Parallel</h3>
+
+          <p><strong>Series:</strong> Adds voltage, keeps Ah same</p>
+          <ul>
+            <li>Two 12V 200Ah batteries in series = 24V 200Ah</li>
+            <li>Four 12V 200Ah in series = 48V 200Ah</li>
+          </ul>
+
+          <p><strong>Parallel:</strong> Adds Ah, keeps voltage same</p>
+          <ul>
+            <li>Two 12V 200Ah batteries in parallel = 12V 400Ah</li>
+          </ul>
+
+          <p><strong>Series-Parallel:</strong> Increases both</p>
+          <ul>
+            <li>Four 12V 200Ah: two parallel strings of two series = 24V 400Ah</li>
+          </ul>
+
+          <h3>Our 48V Lithium Bank</h3>
+
+          <p>Configuration:</p>
+          <ul>
+            <li>Sixteen 3.2V 100Ah LiFePO4 cells</li>
+            <li>Wired in series: 16 × 3.2V = 51.2V nominal</li>
+            <li>Capacity: 100Ah @ 51.2V = 5.12 kWh per string</li>
+            <li>Three strings in parallel = 15.36 kWh total</li>
+          </ul>
+
+          <p>This provides ~12kWh usable at 80% DOD—perfect for our 3-day needs.</p>
+
+          <h2>Critical Installation Considerations</h2>
+
+          <h3>Cable Sizing</h3>
+
+          <p>Undersized cables cause voltage drop and heat. For battery connections:</p>
+
+          <ul>
+            <li><strong>12V systems:</strong> Use 2/0 AWG or larger for main battery cables</li>
+            <li><strong>24V systems:</strong> Use 2 AWG minimum</li>
+            <li><strong>48V systems:</strong> Can use 4 AWG for most applications</li>
+          </ul>
+
+          <p><strong>Rule:</strong> Battery cables should be as short as possible. Each foot adds resistance.</p>
+
+          <h3>Location and Ventilation</h3>
+
+          <p><strong>Temperature:</strong> Batteries perform best at 70-80°F</p>
+          <ul>
+            <li>Cold reduces capacity (50% loss at 0°F for lead-acid)</li>
+            <li>Heat accelerates aging</li>
+            <li>Install in temper-controlled space if possible</li>
+          </ul>
+
+          <p><strong>For Lead-Acid:</strong></p>
+          <ul>
+            <li>Must ventilate to outside (hydrogen gas)</li>
+            <li>Keep away from ignition sources</li>
+            <li>Install in non-living space</li>
+            <li>Acid-resistant flooring recommended</li>
+          </ul>
+
+          <p><strong>For Lithium:</strong></p>
+          <ul>
+            <li>Can install in living areas</li>
+            <li>Still want ventilation for heat management</li>
+            <li>Some heating required if charging below 32°F</li>
+          </ul>
+
+          <h3>Fusing and Protection</h3>
+
+          <p>Every positive connection must be fused near the battery:</p>
+
+          <ul>
+            <li><strong>Battery-to-inverter:</strong> 1.25× max inverter current</li>
+            <li><strong>Charge controller to battery:</strong> 1.25× max charge current</li>
+            <li><strong>Between parallel batteries:</strong> Individual fuses on each</li>
+          </ul>
+
+          <p>We use ANL fuses (automotive-style) for main connections, easier to replace than breakers.</p>
+
+          <h2>Monitoring and Management</h2>
+
+          <h3>Essential Monitoring</h3>
+
+          <p>At minimum, monitor:</p>
+          <ul>
+            <li><strong>State of Charge (SOC):</strong> Percentage of capacity remaining</li>
+            <li><strong>Voltage:</strong> Real-time battery voltage</li>
+            <li><strong>Current:</strong> Charging and discharge rates</li>
+            <li><strong>Temperature:</strong> Battery temperature</li>
+          </ul>
+
+          <p>We use a Victron BMV-712 battery monitor ($235). Worth every penny for peace of mind.</p>
+
+          <h3>Battery Management Systems (BMS)</h3>
+
+          <p>Lithium batteries REQUIRE a BMS to prevent:</p>
+          <ul>
+            <li>Overcharging (causes fire risk)</li>
+            <li>Over-discharging (permanent damage)</li>
+            <li>Cell imbalance (capacity loss)</li>
+            <li>Thermal runaway</li>
+          </ul>
+
+          <p>Quality lithium batteries have BMS built-in. DIY lithium builds need external BMS ($200-800).</p>
+
+          <h2>Maintenance</h2>
+
+          <h3>Flooded Lead-Acid</h3>
+          <ul>
+            <li><strong>Monthly:</strong> Check water levels, add distilled water</li>
+            <li><strong>Quarterly:</strong> Check specific gravity with hydrometer</li>
+            <li><strong>Biannually:</strong> Equalization charge (controlled overcharge)</li>
+            <li><strong>Annually:</strong> Clean terminals, check connections</li>
+          </ul>
+
+          <h3>Lithium</h3>
+          <ul>
+            <li><strong>Quarterly:</strong> Verify BMS operation</li>
+            <li><strong>Annually:</strong> Clean terminals, check connections</li>
+            <li><strong>That's it!</strong> No watering, no equalization</li>
+          </ul>
+
+          <h2>Common Sizing Mistakes</h2>
+
+          <p><strong>1. Ignoring inverter efficiency:</strong></p>
+          <p>Don't forget 10-15% losses converting DC to AC. Always add 20% to consumption calculations.</p>
+
+          <p><strong>2. Using nameplate capacity:</strong></p>
+          <p>A "10kWh" lead-acid battery is NOT 10kWh usable. Remember the 50% DOD!</p>
+
+          <p><strong>3. Mismatched batteries:</strong></p>
+          <p>Never mix old and new batteries. The old weak ones drag down the whole bank.</p>
+
+          <p><strong>4. Inadequate charge rate:</strong></p>
+          <p>Your solar/wind must be able to fully recharge batteries. Minimum 10% of bank Ah rating.</p>
+
+          <p><strong>5. Forgetting temperature derating:</strong></p>
+          <p>Batteries lose capacity in cold. Size 20-30% larger if installing in unheated space.</p>
+
+          <h2>Our Upgrade Journey</h2>
+
+          <p><strong>Original System (2018):</strong></p>
+          <ul>
+            <li>Eight 6V FLA golf cart batteries</li>
+            <li>Wired for 24V, 900Ah (21.6 kWh total, 10.8 kWh usable)</li>
+            <li>Cost: $1,600</li>
+            <li>Lifespan: 6.5 years</li>
+          </ul>
+
+          <p><strong>Current System (2024):</strong></p>
+          <ul>
+            <li>Three 48V 100Ah lithium modules</li>
+            <li>15.4 kWh total, 12.3 kWh usable</li>
+            <li>Cost: $8,900</li>
+            <li>Expected lifespan: 12-15 years</li>
+          </ul>
+
+          <p>The lithium upgrade was transformative:</p>
+          <ul>
+            <li>More usable capacity despite smaller total size</li>
+            <li>Zero maintenance (no more watering)</li>
+            <li>Faster charging (accepts higher current)</li>
+            <li>Better voltage stability</li>
+            <li>600 lbs lighter!</li>
+          </ul>
+
+          <h2>Final Thoughts</h2>
+
+          <p>Battery bank sizing is part science, part art. The formulas provide a starting point, but your actual needs
+            depend on:</p>
+
+          <ul>
+            <li>Climate and seasonal variation</li>
+            <li>Backup power availability</li>
+            <li>Load flexibility</li>
+            <li>Budget constraints</li>
+            <li>Future expansion plans</li>
+          </ul>
+
+          <p>Start conservatively—it's easier to add capacity later than to deal with premature battery failure from
+            under-sizing. And seriously consider lithium if you can swing the upfront cost. The long-term economics and
+            reduced hassle make it a no-brainer for permanent installations.</p>
+
+          <p>Questions about battery sizing? <a href="../contact.html">Get in touch</a>—we love helping people avoid the
+            mistakes we made!</p>
+
         </div>
+
         <div style="margin-top: 4rem; padding-top: 2rem; border-top: 2px solid var(--color-cream-dark);">
           <div style="text-align: center;">
-            <a href="../articles.html" class="btn btn--outline">â† Back to All Articles</a>
+            <p style="color: var(--color-gray); margin-bottom: 1rem;">Found this guide helpful? Share it with others!
+            </p>
+            <a href="../articles.html" class="btn btn--outline">← Back to All Articles</a>
           </div>
         </div>
       </div>
     </article>
+
     <section class="section newsletter">
       <div class="container">
-        <h2>Get Notified When This Guide Is Published</h2>
-        <p>Subscribe to get the latest articles delivered to your inbox.</p>
+        <h2>Get More Guides Like This</h2>
+        <p>Weekly tutorials on renewable energy systems and off-grid power design.</p>
         <form class="newsletter__form" id="newsletterForm">
           <input type="email" class="newsletter__input" placeholder="Your email address" required>
           <button type="submit" class="btn btn--primary">Subscribe</button>
@@ -78,40 +505,52 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
+
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
           <div class="footer__logo">
-            <div class="logo__icon">ðŸŒ²</div>
+            <div class="logo__icon">🌲</div>
             <span>The OffGrid Workshop</span>
           </div>
           <p>Empowering sustainable living through practical knowledge and hands-on education.</p>
         </div>
-        <div><h4>Quick Links</h4><ul class="footer__links">
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
             <li><a href="../index.html">Home</a></li>
             <li><a href="../articles.html">Articles</a></li>
             <li><a href="../about.html">About</a></li>
             <li><a href="../contact.html">Contact</a></li>
-          </ul></div>
-        <div><h4>Categories</h4><ul class="footer__links">
+          </ul>
+        </div>
+        <div>
+          <h4>Categories</h4>
+          <ul class="footer__links">
             <li><a href="../articles.html?category=energy">Renewable Energy</a></li>
             <li><a href="../articles.html?category=water">Water Systems</a></li>
             <li><a href="../articles.html?category=food">Food Production</a></li>
             <li><a href="../articles.html?category=shelter">Shelter & Building</a></li>
-          </ul></div>
-        <div><h4>Resources</h4><ul class="footer__links">
+          </ul>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <ul class="footer__links">
             <li><a href="#">Getting Started Guide</a></li>
             <li><a href="#">Tools & Materials</a></li>
             <li><a href="#">FAQ</a></li>
             <li><a href="#">Newsletter Archive</a></li>
-          </ul></div>
+          </ul>
+        </div>
       </div>
-      <div style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+      <div
+        style="text-align: center; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
         <p>&copy; 2026 The OffGrid Workshop. All rights reserved.</p>
       </div>
     </div>
   </footer>
   <script src="../assets/js/main.js"></script>
 </body>
+
 </html>

@@ -43,7 +43,7 @@ if (readingProgress) {
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
     const scrollTop = window.scrollY;
-    
+
     const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
     readingProgress.style.width = scrollPercent + '%';
   });
@@ -58,14 +58,14 @@ let lastScroll = 0;
 if (header) {
   window.addEventListener('scroll', () => {
     const currentScroll = window.scrollY;
-    
+
     // Add scrolled class when scrolling down
     if (currentScroll > 50) {
       header.classList.add('header--scrolled');
     } else {
       header.classList.remove('header--scrolled');
     }
-    
+
     lastScroll = currentScroll;
   });
 }
@@ -78,14 +78,14 @@ const navLinks = document.querySelectorAll('.nav__link');
 
 navLinks.forEach(link => {
   const href = link.getAttribute('href');
-  
+
   // Remove existing active class
   link.classList.remove('active');
-  
+
   // Add active class to current page
-  if (href === currentPage || 
-      (currentPage === '' && href === 'index.html') ||
-      (currentPage === 'index.html' && href === 'index.html')) {
+  if (href === currentPage ||
+    (currentPage === '' && href === 'index.html') ||
+    (currentPage === 'index.html' && href === 'index.html')) {
     link.classList.add('active');
   }
 });
@@ -98,10 +98,10 @@ const newsletterForm = document.getElementById('newsletterForm');
 if (newsletterForm) {
   newsletterForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    
+
     const emailInput = newsletterForm.querySelector('input[type="email"]');
     const email = emailInput.value;
-    
+
     // Simple validation
     if (email && email.includes('@')) {
       // In a real application, you would send this to a server
@@ -121,12 +121,12 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
   contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
-    
+
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
     const subject = document.getElementById('subject').value;
     const message = document.getElementById('message').value;
-    
+
     // Basic validation
     if (name && email && subject && message) {
       // In a real application, you would send this to a server
@@ -144,13 +144,13 @@ if (contactForm) {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     const href = this.getAttribute('href');
-    
+
     // Skip if href is just "#"
     if (href === '#') {
       e.preventDefault();
       return;
     }
-    
+
     const target = document.querySelector(href);
     if (target) {
       e.preventDefault();
@@ -172,8 +172,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 const cards = document.querySelectorAll('.card');
 
 cards.forEach(card => {
-  card.addEventListener('mouseenter', function() {
+  card.addEventListener('mouseenter', function () {
     this.style.transition = 'transform 0.3s ease, box-shadow 0.3s ease';
+  });
+});
+
+// =============================================================================
+// Back to Top Button
+// =============================================================================
+const backToTopButton = document.createElement('button');
+backToTopButton.className = 'back-to-top';
+backToTopButton.innerHTML = '↑';
+backToTopButton.setAttribute('aria-label', 'Back to top');
+document.body.appendChild(backToTopButton);
+
+// Show/hide button based on scroll position
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 500) {
+    backToTopButton.classList.add('visible');
+  } else {
+    backToTopButton.classList.remove('visible');
+  }
+});
+
+// Scroll to top when clicked
+backToTopButton.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
   });
 });
 
@@ -182,7 +208,7 @@ cards.forEach(card => {
 // =============================================================================
 document.addEventListener('DOMContentLoaded', () => {
   console.log('The OffGrid Workshop website loaded successfully! 🌲');
-  
+
   // Add fade-in animation to hero on page load
   const hero = document.querySelector('.hero');
   if (hero) {

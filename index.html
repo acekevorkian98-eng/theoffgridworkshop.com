@@ -2,19 +2,21 @@
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VWFLR2S806"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-ND72R9X3');</script>
+  <!-- End Google Tag Manager -->
 
-  gtag('config', 'G-VWFLR2S806');
-</script>
   <!-- Google Adsense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9986267429592601"
-     crossorigin="anonymous"></script>
-  
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9986267429592601"
+    crossorigin="anonymous"></script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
@@ -52,6 +54,11 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-ND72R9X3" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
   <!-- Skip Navigation for Accessibility -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
@@ -59,7 +66,7 @@
   <div class="reading-progress" id="readingProgress"></div>
 
   <!-- Header -->
-  <header class="header" id="header">
+  <header class="header" id="header" role="banner">
     <div class="header__inner">
       <a href="index.html" class="logo">
         <div class="logo__icon">🌲</div>
@@ -72,7 +79,7 @@
         <span></span>
       </button>
 
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" role="navigation" aria-label="Main navigation">
         <ul class="nav__list">
           <li><a href="index.html" class="nav__link active">Home</a></li>
           <li><a href="articles.html" class="nav__link">Articles</a></li>
@@ -144,7 +151,8 @@
         <!-- Article Card 1 -->
         <article class="card">
           <div class="card__image">
-            <img src="images/solar_panels_system_1770217024445.png" alt="Solar panel installation on off-grid homestead"
+            <img src="images/solar_panels_system_1770217024445.png"
+              alt="Solar panel installation on off-grid homestead with blue sky background" loading="lazy"
               style="width: 100%; height: 100%; object-fit: cover;">
             <span class="card__category">Energy</span>
           </div>
@@ -165,7 +173,8 @@
         <article class="card">
           <div class="card__image">
             <img src="images/rainwater_harvesting_system_1770217043866.png"
-              alt="Rainwater harvesting and storage system" style="width: 100%; height: 100%; object-fit: cover;">
+              alt="Large white water storage tanks for rainwater collection at off-grid homestead" loading="lazy"
+              style="width: 100%; height: 100%; object-fit: cover;">
             <span class="card__category">Water</span>
           </div>
           <div class="card__content">
@@ -184,8 +193,9 @@
         <!-- Article Card 3 -->
         <article class="card">
           <div class="card__image">
-            <img src="images/greenhouse_interior_1770217060914.png" alt="Year-round greenhouse with growing vegetables"
-              style="width: 100%; height: 100%; object-fit: cover;">
+            <img src="images/greenhouse_interior_1770217060914.png"
+              alt="Interior of productive greenhouse with lush green vegetables and tomatoes growing in raised beds"
+              loading="lazy" style="width: 100%; height: 100%; object-fit: cover;">
             <span class="card__category">Food</span>
           </div>
           <div class="card__content">
@@ -213,7 +223,8 @@
     <div class="container">
       <div class="about-preview">
         <div class="about-preview__image">
-          <img src="images/about_workshop_founders_1770217078336.png" alt="Off-grid workshop founders"
+          <img src="images/about_workshop_founders_1770217078336.png"
+            alt="Off-grid homestead founders at their sustainable Colorado property" loading="lazy"
             style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--border-radius-lg);">
         </div>
         <div>
@@ -244,7 +255,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
@@ -297,6 +308,4 @@
   <script src="assets/js/main.js"></script>
 </body>
 
-
 </html>
-
