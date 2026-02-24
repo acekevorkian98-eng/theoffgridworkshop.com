@@ -1,0 +1,7 @@
+# Planning and content documents
+*.odt
+Content/
+
+# OS files
+.DS_Store
+Thumbs.db

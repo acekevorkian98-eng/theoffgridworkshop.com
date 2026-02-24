@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Do a Power Audit Before Buying Solar | The Off-Grid Workshop</title>
+    <meta name="description" content="Before you buy a single solar panel, do a power audit. List every appliance, find its wattage, multiply by hours per day, and get your true daily Wh total.">
+    <link rel="canonical" href="https://theoffgridworkshop.com/guides/power-audit">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9986267429592601"
+         crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="../" class="site-logo">The Off-Grid<span>Workshop</span></a>
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="../pages/solar">Solar</a></li>
+                        <li><a href="../pages/water">Water</a></li>
+                        <li><a href="../pages/food">Food</a></li>
+                        <li><a href="../reviews/">Reviews</a></li>
+                        <li><a href="index.html" class="active">Guides</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="../">Home</a>
+            <span class="separator">/</span>
+            <a href="index.html">Guides</a>
+            <span class="separator">/</span>
+            <span class="current">Power Audit</span>
+        </nav>
+
+        <div class="main-content">
+
+            <article class="article">
+                <header class="article-header">
+                    <span class="last-updated">Updated February 2026</span>
+                    <h1>How to Do a Power Audit Before Buying Solar</h1>
+                    <p class="article-meta">Difficulty: Beginner &middot; Reading time: ~7 min</p>
+                </header>
+
+                <div class="article-content">
+
+                    <div class="toc-container">
+                        <h3>In This Guide</h3>
+                        <div id="table-of-contents"></div>
+                    </div>
+
+                    <section>
+                        <h2>Why a Power Audit Comes First</h2>
+                        <p>Buying solar before knowing your load is one of the single most common and expensive mistakes in off-grid setups. Without a power audit, you&rsquo;re guessing &mdash; and the consequences of guessing wrong in either direction are painful. Undersize and you&rsquo;ll be rationing power within weeks. Oversize and you&rsquo;ve spent thousands of dollars on capacity you&rsquo;ll never use.</p>
+                        <p>A power audit takes about an hour with a pen and paper (or a spreadsheet). It gives you the single most important number in off-grid solar design: your <strong>daily watt-hour (Wh) consumption</strong>. Everything downstream &mdash; panel array size, battery bank, inverter &mdash; is calculated from that one figure.</p>
+                    </section>
+
+                    <section>
+                        <h2>Step 1: List Every Electrical Load</h2>
+                        <p>Go through your home or cabin &mdash; physically room by room &mdash; and write down every device that uses electricity. Include things you might overlook:</p>
+                        <ul>
+                            <li>All lighting (count each bulb separately)</li>
+                            <li>Refrigerator and freezer</li>
+                            <li>Phone and laptop chargers</li>
+                            <li>Water pump</li>
+                            <li>Fans and ventilation</li>
+                            <li>Router and networking equipment</li>
+                            <li>Power tools (even if used occasionally)</li>
+                            <li>Entertainment (TV, radio, speakers)</li>
+                            <li>Small kitchen appliances (blender, coffee maker, etc.)</li>
+                        </ul>
+                        <p>Do not leave anything off the list. You can deprioritize high-draw items later, but you need to see the full picture first.</p>
+                    </section>
+
+                    <section>
+                        <h2>Step 2: Find the Wattage of Each Device</h2>
+                        <p>The wattage of any device is either printed on a label (look on the back or bottom of the unit) or available in the product manual. You can also look it up by model number online. Common label formats include &ldquo;120V 60Hz 1.5A&rdquo; &mdash; in that case, multiply volts &times; amps (120 &times; 1.5 = 180W).</p>
+                        <p>For the most accurate reading, use a <strong>plug-in power meter</strong> (also called a Kill-A-Watt meter). These cost $15&ndash;$30 and give you real-time wattage readings for any appliance you plug in. They&rsquo;re especially useful for refrigerators, which cycle on and off &mdash; running them for 24 hours gives you an actual average consumption figure that beats any label estimate.</p>
+
+                        <div class="info-box neutral">
+                            <p class="info-box-title">Continuous Watts vs. Startup Surge Watts</p>
+                            <p>Every motor-driven appliance (refrigerators, pumps, fans, power tools) draws significantly more power at startup than while running. This is called the <strong>startup surge</strong> or inrush current. A refrigerator that runs at 150W may surge to 600&ndash;900W for a fraction of a second each time the compressor kicks on.</p>
+                            <p>For the purposes of calculating daily Wh consumption, use the <em>running</em> (continuous) wattage. But when sizing your inverter, you must account for surge &mdash; your inverter needs a surge rating high enough to handle the momentary spike without shutting down. Most quality inverters specify both a continuous and a surge (peak) wattage rating.</p>
+                        </div>
+                    </section>
+
+                    <div class="ad-placeholder banner"><!-- Ad --></div>
+
+                    <section>
+                        <h2>Step 3: Estimate Daily Hours of Use</h2>
+                        <p>For each device, honestly estimate how many hours per day it runs. Be realistic rather than optimistic. If your lights are on for 4 hours in the evening, write 4 hours &mdash; not 2. If your refrigerator runs roughly half the time (typical for most units), write 12 hours or use a Kill-A-Watt reading.</p>
+                        <p>Some devices are easy: a laptop running 6 hours a day at 45W is straightforward. Others are trickier. A water pump might only run for a few minutes per day total, but when it runs it draws 500W &mdash; that still contributes to your daily Wh total.</p>
+                    </section>
+
+                    <section>
+                        <h2>Step 4: Calculate Wh/Day for Each Device</h2>
+                        <p>The formula could not be simpler:</p>
+                        <p><strong>Wh/day = Watts &times; Hours per day</strong></p>
+                        <p>Calculate this for every device on your list, then sum the column. That total is your daily watt-hour consumption.</p>
+                    </section>
+
+                    <section>
+                        <h2>Common Appliance Wattage Reference</h2>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Appliance</th>
+                                    <th>Typical Running Watts</th>
+                                    <th>Startup Surge</th>
+                                    <th>Typical Wh/Day</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>LED bulb (per bulb)</td>
+                                    <td>7&ndash;12W</td>
+                                    <td>None</td>
+                                    <td>30&ndash;50 Wh (4 hrs)</td>
+                                </tr>
+                                <tr>
+                                    <td>12V energy-efficient fridge</td>
+                                    <td>40&ndash;60W</td>
+                                    <td>100&ndash;150W</td>
+                                    <td>300&ndash;600 Wh</td>
+                                </tr>
+                                <tr>
+                                    <td>Standard 120V refrigerator</td>
+                                    <td>100&ndash;200W</td>
+                                    <td>400&ndash;900W</td>
+                                    <td>800&ndash;1,500 Wh</td>
+                                </tr>
+                                <tr>
+                                    <td>Laptop computer</td>
+                                    <td>30&ndash;60W</td>
+                                    <td>None significant</td>
+                                    <td>150&ndash;360 Wh (6 hrs)</td>
+                                </tr>
+                                <tr>
+                                    <td>Smartphone charging</td>
+                                    <td>5&ndash;20W</td>
+                                    <td>None</td>
+                                    <td>15&ndash;40 Wh</td>
+                                </tr>
+                                <tr>
+                                    <td>Router / networking</td>
+                                    <td>5&ndash;20W</td>
+                                    <td>None</td>
+                                    <td>120&ndash;480 Wh (24 hrs)</td>
+                                </tr>
+                                <tr>
+                                    <td>Box fan</td>
+                                    <td>25&ndash;75W</td>
+                                    <td>50&ndash;100W</td>
+                                    <td>200&ndash;600 Wh (8 hrs)</td>
+                                </tr>
+                                <tr>
+                                    <td>Water pump (1/2 HP)</td>
+                                    <td>375W</td>
+                                    <td>750&ndash;1,500W</td>
+                                    <td>50&ndash;150 Wh (short cycles)</td>
+                                </tr>
+                                <tr>
+                                    <td>32&rdquo; LED TV</td>
+                                    <td>30&ndash;55W</td>
+                                    <td>None significant</td>
+                                    <td>120&ndash;220 Wh (4 hrs)</td>
+                                </tr>
+                                <tr>
+                                    <td>Coffee maker</td>
+                                    <td>800&ndash;1,200W</td>
+                                    <td>None significant</td>
+                                    <td>100&ndash;200 Wh (brew cycle)</td>
+                                </tr>
+                                <tr>
+                                    <td>Blender</td>
+                                    <td>300&ndash;600W</td>
+                                    <td>600&ndash;1,000W</td>
+                                    <td>10&ndash;30 Wh (short use)</td>
+                                </tr>
+                                <tr>
+                                    <td>Electric toaster</td>
+                                    <td>800&ndash;1,500W</td>
+                                    <td>None</td>
+                                    <td>25&ndash;50 Wh (short use)</td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td><strong>Electric water heater</strong></td>
+                                    <td><strong>3,000&ndash;5,500W</strong></td>
+                                    <td>None</td>
+                                    <td><strong>3,000&ndash;8,000 Wh</strong></td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td><strong>Electric range / oven</strong></td>
+                                    <td><strong>1,000&ndash;5,000W</strong></td>
+                                    <td>None</td>
+                                    <td><strong>1,000&ndash;3,000 Wh</strong></td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td><strong>Central air conditioning</strong></td>
+                                    <td><strong>2,000&ndash;5,000W</strong></td>
+                                    <td>4,000&ndash;10,000W</td>
+                                    <td><strong>10,000&ndash;40,000 Wh</strong></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="info-box warning">
+                            <p class="info-box-title">The Big Three to Avoid Off-Grid</p>
+                            <p>Electric water heaters, electric ranges, and central air conditioning are the three appliances that make off-grid solar prohibitively expensive. A single electric water heater can consume more energy in a day than all of a cabin&rsquo;s other loads combined. Most successful off-grid homes replace these with propane cooking, wood-fired or propane water heating, and passive cooling design or a small propane/mini-split AC unit.</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Step 5: Total It Up and Interpret the Result</h2>
+                        <p>Add up all your daily Wh figures. This is your baseline daily load. Common ranges:</p>
+                        <ul>
+                            <li><strong>Under 500 Wh/day:</strong> Very efficient small cabin or van. A modest solar system ($800&ndash;$1,500) handles this easily.</li>
+                            <li><strong>500&ndash;1,500 Wh/day:</strong> Typical small off-grid cabin. A well-designed system in the $2,000&ndash;$6,000 range works well.</li>
+                            <li><strong>1,500&ndash;3,000 Wh/day:</strong> Small family or homestead. Expect to invest $5,000&ndash;$15,000 for a robust system.</li>
+                            <li><strong>Over 3,000 Wh/day:</strong> Full-home load. Make sure you&rsquo;ve eliminated every unnecessary high-draw appliance before sizing. A system in this range costs $15,000&ndash;$40,000+.</li>
+                        </ul>
+                        <p>If your total surprises you on the high side, look for opportunities to reduce load before buying hardware. Switching from a standard 120V fridge to an energy-efficient 12V unit alone can save 500&ndash;1,000 Wh/day. Replacing incandescent or CFL bulbs with LEDs cuts lighting load by 75%.</p>
+                    </section>
+
+                    <section>
+                        <h2>Where to Go Next</h2>
+                        <p>Once you have your daily Wh number, you&rsquo;re ready to size your system:</p>
+                        <ol>
+                            <li><a href="solar-sizing"><strong>How to Size Your Solar System</strong></a> &mdash; Use your Wh number to calculate panels, batteries, and inverter</li>
+                            <li><a href="lifepo4-battery-guide"><strong>LiFePO4 vs Lead-Acid</strong></a> &mdash; Choose the right battery chemistry for your budget</li>
+                        </ol>
+                    </section>
+
+                    <div class="engagement-prompt">
+                        <p>Was this guide helpful?</p>
+                        <div class="engagement-buttons">
+                            <button class="engagement-btn" onclick="this.classList.add('selected')">Yes, very helpful</button>
+                            <button class="engagement-btn" onclick="this.classList.add('selected')">Needs more detail</button>
+                            <button class="engagement-btn" onclick="this.classList.add('selected')">Something&rsquo;s missing</button>
+                        </div>
+                    </div>
+
+                    <div class="share-section">
+                        <span>Share this guide:</span>
+                        <div class="share-buttons">
+                            <button class="share-btn share-twitter" onclick="shareOnTwitter()">Twitter</button>
+                            <button class="share-btn share-reddit" onclick="shareOnReddit()">Reddit</button>
+                            <button class="share-btn share-copy" onclick="copyToClipboard()">Copy Link</button>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <aside class="sidebar">
+                <div class="ad-placeholder sidebar"><!-- Ad --></div>
+
+                <div class="sidebar-widget">
+                    <h3>In This Article</h3>
+                    <ul></ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Related Guides</h3>
+                    <ul>
+                        <li><a href="solar-sizing">Solar Sizing Guide</a></li>
+                        <li><a href="lifepo4-battery-guide">LiFePO4 vs Lead-Acid</a></li>
+                        <li><a href="getting-started-off-grid">Beginner&rsquo;s Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Useful Tools</h3>
+                    <ul>
+                        <li><a href="../reviews/jackery-1000-pro">Jackery 1000 Pro Review</a></li>
+                        <li><a href="../reviews/renogy-200w-solar-kit">Renogy 200W Kit Review</a></li>
+                        <li><a href="../reviews/">All Reviews</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <nav class="footer-nav">
+                    <a href="../">Home</a>
+                    <a href="../pages/solar">Solar</a>
+                    <a href="../pages/water">Water</a>
+                    <a href="../pages/food">Food</a>
+                    <a href="../reviews/">Reviews</a>
+                    <a href="index.html">Guides</a>
+                    <a href="../blog/index.html">Blog</a>
+                    <span class="footer-separator">|</span>
+                    <a href="../pages/about">About</a>
+                    <a href="../pages/privacy">Privacy</a>
+                    <a href="../pages/disclaimer">Disclaimer</a>
+                    <a href="../pages/contact">Contact</a>
+                </nav>
+                <p class="footer-disclaimer">
+                    <strong>Affiliate Disclosure:</strong> Some links are affiliate links. See our <a href="../pages/disclaimer">full disclaimer</a>.
+                </p>
+                <p class="text-small" style="margin-top: 1rem; color: rgba(122, 148, 112, 0.7);">
+                    &copy; 2026 The Off-Grid Workshop.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

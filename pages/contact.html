@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - The Off-Grid Workshop</title>
+    <meta name="description" content="Contact The Off-Grid Workshop with questions, corrections, or suggestions.">
+    <link rel="canonical" href="https://theoffgridworkshop.com/pages/contact">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9986267429592601"
+         crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="../" class="site-logo">The Off-Grid<span>Workshop</span></a>
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="solar">Solar</a></li>
+                        <li><a href="water">Water</a></li>
+                        <li><a href="food">Food</a></li>
+                        <li><a href="../reviews/">Reviews</a></li>
+                        <li><a href="../guides/">Guides</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container" style="max-width: 640px;">
+        <section style="padding: 3rem 0;">
+            <h1>Contact</h1>
+            <p>Questions, corrections, product suggestions, or general feedback — use the form below. We read everything, though response times vary.</p>
+
+            <div class="info-box neutral" style="margin-bottom: 2rem;">
+                <p class="info-box-title">Before You Write</p>
+                <ul>
+                    <li>For product questions, check the relevant review first — most common questions are answered there.</li>
+                    <li>For press/media inquiries, note that we don&rsquo;t accept sponsored content.</li>
+                    <li>For affiliate partnerships, we only work with brands whose products we&rsquo;ve tested.</li>
+                </ul>
+            </div>
+
+            <form style="display: flex; flex-direction: column; gap: 1.25rem;" onsubmit="handleContactSubmit(event)">
+                <div style="display: flex; flex-direction: column; gap: 0.375rem;">
+                    <label style="font-family: 'Syne', sans-serif; font-weight: 600; font-size: 0.875rem; color: var(--text);" for="contact-name">Name</label>
+                    <input type="text" id="contact-name" name="name" required
+                        style="padding: 0.875rem 1rem; border: 1px solid var(--border); border-radius: var(--radius-md); font-size: 0.9375rem; font-family: 'Outfit', sans-serif; background: var(--bg-pure); color: var(--text); transition: border-color 0.15s;"
+                        placeholder="Your name">
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.375rem;">
+                    <label style="font-family: 'Syne', sans-serif; font-weight: 600; font-size: 0.875rem; color: var(--text);" for="contact-email">Email</label>
+                    <input type="email" id="contact-email" name="email" required
+                        style="padding: 0.875rem 1rem; border: 1px solid var(--border); border-radius: var(--radius-md); font-size: 0.9375rem; font-family: 'Outfit', sans-serif; background: var(--bg-pure); color: var(--text); transition: border-color 0.15s;"
+                        placeholder="your@email.com">
+                </div>
+                <div style="display: flex; flex-direction: column; gap: 0.375rem;">
+                    <label style="font-family: 'Syne', sans-serif; font-weight: 600; font-size: 0.875rem; color: var(--text);" for="contact-message">Message</label>
+                    <textarea id="contact-message" name="message" rows="6" required
+                        style="padding: 0.875rem 1rem; border: 1px solid var(--border); border-radius: var(--radius-md); font-size: 0.9375rem; font-family: 'Outfit', sans-serif; background: var(--bg-pure); color: var(--text); resize: vertical; transition: border-color 0.15s;"
+                        placeholder="What&apos;s on your mind?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="align-self: flex-start;">Send Message</button>
+                <p id="contact-message-status" style="font-size: 0.875rem;"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <nav class="footer-nav">
+                    <a href="../">Home</a>
+                    <a href="../reviews/">Reviews</a>
+                    <a href="../guides/">Guides</a>
+                    <a href="../blog/index.html">Blog</a>
+                    <span class="footer-separator">|</span>
+                    <a href="about">About</a>
+                    <a href="privacy">Privacy</a>
+                    <a href="disclaimer">Disclaimer</a>
+                    <a href="contact">Contact</a>
+                </nav>
+                <p class="text-small" style="margin-top: 1rem; color: rgba(122, 148, 112, 0.7);">&copy; 2026 The Off-Grid Workshop.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+    <script>
+    function handleContactSubmit(e) {
+        e.preventDefault();
+        const btn = e.target.querySelector('button[type="submit"]');
+        const status = document.getElementById('contact-message-status');
+        btn.disabled = true;
+        btn.textContent = 'Sending...';
+        // Replace with your actual form endpoint (Formspree, Netlify Forms, etc.)
+        status.textContent = 'Thanks for your message! We\'ll get back to you when we can.';
+        status.style.color = 'var(--success)';
+        e.target.reset();
+        btn.disabled = false;
+        btn.textContent = 'Send Message';
+    }
+    </script>
+</body>
+</html>

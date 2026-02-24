@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Size Your Off-Grid Solar System | The Off-Grid Workshop</title>
+    <meta name="description" content="A step-by-step method for sizing an off-grid solar system: calculate daily Wh, peak sun hours, panel array size, battery bank, and inverter. Includes worked example.">
+    <link rel="canonical" href="https://theoffgridworkshop.com/guides/solar-sizing">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9986267429592601"
+         crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="../" class="site-logo">The Off-Grid<span>Workshop</span></a>
+                <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="../pages/solar">Solar</a></li>
+                        <li><a href="../pages/water">Water</a></li>
+                        <li><a href="../pages/food">Food</a></li>
+                        <li><a href="../reviews/">Reviews</a></li>
+                        <li><a href="index.html" class="active">Guides</a></li>
+                        <li><a href="../blog/index.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+            <a href="../">Home</a>
+            <span class="separator">/</span>
+            <a href="index.html">Guides</a>
+            <span class="separator">/</span>
+            <span class="current">Solar Sizing</span>
+        </nav>
+
+        <div class="main-content">
+
+            <article class="article">
+                <header class="article-header">
+                    <span class="last-updated">Updated February 2026</span>
+                    <h1>How to Size Your Off-Grid Solar System</h1>
+                    <p class="article-meta">Difficulty: Intermediate &middot; Reading time: ~8 min</p>
+                </header>
+
+                <div class="article-content">
+
+                    <div class="toc-container">
+                        <h3>In This Guide</h3>
+                        <div id="table-of-contents"></div>
+                    </div>
+
+                    <section>
+                        <h2>Why Getting the Size Right Matters</h2>
+                        <p>Undersizing your solar system means you run out of power by evening. Oversizing means you spent thousands of dollars on panels and batteries you&rsquo;ll never use. The sweet spot is a system sized to meet your actual load with a reasonable safety margin — and that requires math, not guesswork.</p>
+                        <p>The good news: the math is straightforward. You need four numbers: your daily energy consumption in watt-hours, your location&rsquo;s peak sun hours, a panel array size, and a battery bank capacity. This guide walks you through each step.</p>
+
+                        <div class="info-box neutral">
+                            <p class="info-box-title">Before You Begin</p>
+                            <p>This guide assumes you&rsquo;ve already completed a <a href="power-audit">power audit</a> and know your estimated daily watt-hour consumption. If you haven&rsquo;t done that yet, start there. The number you get from your power audit is the foundation of everything in this guide.</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Step 1: Establish Your Daily Wh Consumption</h2>
+                        <p>Your power audit gives you a total daily watt-hour (Wh) figure. For the worked example throughout this guide, we&rsquo;ll use <strong>1,500 Wh/day</strong> — a reasonable load for a small off-grid cabin running LED lighting, a 12V refrigerator, phone and laptop charging, a water pump, and a few small appliances.</p>
+                        <p>Add a 20% efficiency buffer to account for real-world losses (wiring resistance, charge controller efficiency, inverter conversion losses, temperature derating of panels). This is not optional padding &mdash; it reflects genuine system losses.</p>
+                        <p><strong>Adjusted daily consumption:</strong> 1,500 Wh &times; 1.20 = <strong>1,800 Wh/day</strong></p>
+                    </section>
+
+                    <section>
+                        <h2>Step 2: Find Your Peak Sun Hours</h2>
+                        <p>Peak sun hours (PSH) are not the same as hours of daylight. A peak sun hour is one hour of sunlight at an irradiance of 1,000 W/m&sup2;. In practice, this is the daily average solar energy your location receives expressed as equivalent full-power hours.</p>
+                        <p>Typical values across the US:</p>
+                        <ul>
+                            <li><strong>Southwest (AZ, NV, NM):</strong> 5.5&ndash;7 PSH</li>
+                            <li><strong>Southeast / Mid-Atlantic:</strong> 4.5&ndash;5.5 PSH</li>
+                            <li><strong>Pacific Northwest / Northeast:</strong> 3.5&ndash;4.5 PSH</li>
+                            <li><strong>Northern Midwest / Mountain (winter):</strong> 3.0&ndash;4.0 PSH</li>
+                        </ul>
+                        <p>Always size to your <em>worst-month</em> PSH, not the annual average. If you live in a location that gets 6 PSH in July but only 3.5 PSH in December, size to 3.5 PSH. Otherwise you&rsquo;ll be short on power for months every year.</p>
+                        <p>For our example, we&rsquo;ll use <strong>5 PSH</strong> (a common mid-latitude figure).</p>
+                    </section>
+
+                    <div class="ad-placeholder banner"><!-- Ad --></div>
+
+                    <section>
+                        <h2>Step 3: Calculate Your Panel Array Size</h2>
+                        <p>The formula is simple:</p>
+                        <p><strong>Panel array (W) = Adjusted daily Wh &divide; Peak sun hours</strong></p>
+                        <p>Using our example: 1,800 Wh &divide; 5 PSH = <strong>360W minimum</strong></p>
+                        <p>This is your mathematical minimum. In practice, add another 15&ndash;25% safety margin to account for panel degradation over time, partial shading, and non-ideal panel orientation. A practical recommendation is to round up to the next common array size.</p>
+
+                        <div class="info-box neutral">
+                            <p class="info-box-title">Worked Example</p>
+                            <ul>
+                                <li>Daily load: 1,500 Wh</li>
+                                <li>Efficiency buffer (20%): &times; 1.20 = 1,800 Wh adjusted</li>
+                                <li>Peak sun hours: 5 PSH</li>
+                                <li>Minimum array: 1,800 &divide; 5 = <strong>360W</strong></li>
+                                <li>Recommended with safety margin: <strong>400&ndash;600W</strong></li>
+                                <li>Practical choice: <strong>2&times; 200W panels or 3&times; 200W panels</strong></li>
+                            </ul>
+                        </div>
+
+                        <p>The 400&ndash;600W recommended range gives you headroom to add a load later, covers a run of cloudy days better, and keeps your batteries more consistently topped up, which extends battery life.</p>
+                    </section>
+
+                    <section>
+                        <h2>Step 4: Size Your Battery Bank</h2>
+                        <p>Your battery bank stores energy for nighttime use and cloudy days. Most off-grid designers size for 1.5&ndash;3 days of autonomy — meaning the system can run your load without any solar input for that many days. Two days is a practical starting point for most setups.</p>
+                        <p><strong>Required bank capacity (Wh) = Daily Wh &times; Days of autonomy &divide; Depth of discharge (DoD)</strong></p>
+                        <p>DoD depends on battery chemistry:</p>
+                        <ul>
+                            <li><strong>LiFePO4:</strong> 80&ndash;90% DoD usable</li>
+                            <li><strong>Flooded Lead-Acid (FLA):</strong> 50% DoD (to protect cycle life)</li>
+                            <li><strong>AGM:</strong> 50&ndash;60% DoD</li>
+                        </ul>
+                        <p>For our 1,500 Wh/day example with 2 days autonomy and LiFePO4 batteries at 85% DoD:</p>
+                        <p>1,500 &times; 2 &divide; 0.85 = <strong>~3,530 Wh of battery capacity needed</strong></p>
+                        <p>A 100Ah 48V LiFePO4 battery holds 4,800 Wh — one bank comfortably covers this load. With lead-acid at 50% DoD you&rsquo;d need 6,000 Wh nominal capacity (3 &times; 100Ah 12V batteries in series, or equivalent).</p>
+
+                        <div class="info-box tip">
+                            <p class="info-box-title">Tip: Match Battery Voltage to Your Inverter</p>
+                            <p>Small systems (under ~2,000W continuous) often run 12V or 24V. Larger systems benefit from 48V because higher voltage means lower current, which reduces wire size and heat. Most quality inverter-chargers are available in 12V, 24V, and 48V configurations.</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Step 5: Choose Your Inverter Size</h2>
+                        <p>Your inverter must handle your peak simultaneous AC load, not just your daily average. Add up the wattage of every AC appliance that might run at the same time. Don&rsquo;t forget startup surge &mdash; motor-driven loads (pumps, refrigerators, power tools) can draw 2&ndash;7&times; their running watts at startup for a fraction of a second. Your inverter must handle this surge without shutting down.</p>
+                        <p>As a rule of thumb: size your inverter to 1.25&ndash;1.5&times; your continuous AC peak load. If your peak simultaneous load is 1,000W running, choose a 1,500W or 2,000W inverter.</p>
+                        <p>For the worked example above (1,500 Wh/day, mostly 12V loads with moderate AC use), a <strong>1,500&ndash;2,000W pure sine wave inverter</strong> is appropriate.</p>
+                    </section>
+
+                    <section>
+                        <h2>System Size Reference Table</h2>
+                        <p>Here is a quick reference for three common off-grid build scales:</p>
+
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>System Scale</th>
+                                    <th>Daily Load</th>
+                                    <th>Panel Array</th>
+                                    <th>Battery Bank</th>
+                                    <th>Inverter</th>
+                                    <th>Typical Use Case</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Small</strong></td>
+                                    <td>300&ndash;800 Wh</td>
+                                    <td>200&ndash;400W</td>
+                                    <td>100&ndash;200Ah @ 12V</td>
+                                    <td>500&ndash;1,000W</td>
+                                    <td>Van, tiny cabin, shed</td>
+                                </tr>
+                                <tr class="highlight-row">
+                                    <td><strong>Medium</strong></td>
+                                    <td>800&ndash;2,500 Wh</td>
+                                    <td>400&ndash;1,200W</td>
+                                    <td>200&ndash;400Ah @ 24V</td>
+                                    <td>1,500&ndash;3,000W</td>
+                                    <td>Small cabin, couple off-grid</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Large</strong></td>
+                                    <td>2,500&ndash;6,000+ Wh</td>
+                                    <td>2,000&ndash;6,000W</td>
+                                    <td>400&ndash;800Ah @ 48V</td>
+                                    <td>3,000&ndash;6,000W</td>
+                                    <td>Family home, small farm</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="info-box warning">
+                            <p class="info-box-title">Don&rsquo;t Skip the Power Audit</p>
+                            <p>These reference figures are guidelines only. Your actual system size must be driven by your real daily watt-hour number. Using a reference table as a substitute for a proper audit is one of the most common causes of an undersized &mdash; and deeply frustrating &mdash; off-grid solar system.</p>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2>Where to Go Next</h2>
+                        <p>With your system sized, the next decisions are battery chemistry and specific equipment. These guides will help:</p>
+                        <ol>
+                            <li><a href="power-audit"><strong>How to Do a Power Audit</strong></a> &mdash; Get your daily Wh number right</li>
+                            <li><a href="lifepo4-battery-guide"><strong>LiFePO4 vs Lead-Acid</strong></a> &mdash; Choose the right battery for your budget</li>
+                            <li><a href="../reviews/"><strong>Solar Gear Reviews</strong></a> &mdash; Specific equipment recommendations</li>
+                        </ol>
+                    </section>
+
+                    <div class="engagement-prompt">
+                        <p>Was this guide helpful?</p>
+                        <div class="engagement-buttons">
+                            <button class="engagement-btn" onclick="this.classList.add('selected')">Yes, very helpful</button>
+                            <button class="engagement-btn" onclick="this.classList.add('selected')">Needs more detail</button>
+                            <button class="engagement-btn" onclick="this.classList.add('selected')">Something&rsquo;s missing</button>
+                        </div>
+                    </div>
+
+                    <div class="share-section">
+                        <span>Share this guide:</span>
+                        <div class="share-buttons">
+                            <button class="share-btn share-twitter" onclick="shareOnTwitter()">Twitter</button>
+                            <button class="share-btn share-reddit" onclick="shareOnReddit()">Reddit</button>
+                            <button class="share-btn share-copy" onclick="copyToClipboard()">Copy Link</button>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+
+            <aside class="sidebar">
+                <div class="ad-placeholder sidebar"><!-- Ad --></div>
+
+                <div class="sidebar-widget">
+                    <h3>In This Article</h3>
+                    <ul></ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Related Guides</h3>
+                    <ul>
+                        <li><a href="power-audit">Power Audit Guide</a></li>
+                        <li><a href="lifepo4-battery-guide">LiFePO4 vs Lead-Acid</a></li>
+                        <li><a href="getting-started-off-grid">Beginner&rsquo;s Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3>Solar Reviews</h3>
+                    <ul>
+                        <li><a href="../reviews/renogy-200w-solar-kit">Renogy 200W Solar Kit</a></li>
+                        <li><a href="../reviews/jackery-1000-pro">Jackery 1000 Pro</a></li>
+                        <li><a href="../reviews/">All Solar Reviews</a></li>
+                    </ul>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-inner">
+                <nav class="footer-nav">
+                    <a href="../">Home</a>
+                    <a href="../pages/solar">Solar</a>
+                    <a href="../pages/water">Water</a>
+                    <a href="../pages/food">Food</a>
+                    <a href="../reviews/">Reviews</a>
+                    <a href="index.html">Guides</a>
+                    <a href="../blog/index.html">Blog</a>
+                    <span class="footer-separator">|</span>
+                    <a href="../pages/about">About</a>
+                    <a href="../pages/privacy">Privacy</a>
+                    <a href="../pages/disclaimer">Disclaimer</a>
+                    <a href="../pages/contact">Contact</a>
+                </nav>
+                <p class="footer-disclaimer">
+                    <strong>Affiliate Disclosure:</strong> Some links are affiliate links. See our <a href="../pages/disclaimer">full disclaimer</a>.
+                </p>
+                <p class="text-small" style="margin-top: 1rem; color: rgba(122, 148, 112, 0.7);">
+                    &copy; 2026 The Off-Grid Workshop.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
