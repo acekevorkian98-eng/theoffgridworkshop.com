@@ -1,6 +1,5 @@
 # Planning and content documents
-*.odt
-Content/
+_admin/
 
 # OS files
 .DS_Store
