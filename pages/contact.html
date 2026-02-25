@@ -57,7 +57,7 @@
                 </ul>
             </div>
 
-            <form style="display: flex; flex-direction: column; gap: 1.25rem;" onsubmit="handleContactSubmit(event)">
+            <form style="display: flex; flex-direction: column; gap: 1.25rem;" action="https://formspree.io/f/mrearowy" method="POST" onsubmit="handleContactSubmit(event)">
                 <div style="display: flex; flex-direction: column; gap: 0.375rem;">
                     <label style="font-family: 'Syne', sans-serif; font-weight: 600; font-size: 0.875rem; color: var(--text);" for="contact-name">Name</label>
                     <input type="text" id="contact-name" name="name" required
@@ -103,16 +103,32 @@
 
     <script src="../assets/js/main.js"></script>
     <script>
-    function handleContactSubmit(e) {
+    async function handleContactSubmit(e) {
         e.preventDefault();
-        const btn = e.target.querySelector('button[type="submit"]');
+        const form = e.target;
+        const btn = form.querySelector('button[type="submit"]');
         const status = document.getElementById('contact-message-status');
         btn.disabled = true;
         btn.textContent = 'Sending...';
-        // Replace with your actual form endpoint (Formspree, Netlify Forms, etc.)
-        status.textContent = 'Thanks for your message! We\'ll get back to you when we can.';
-        status.style.color = 'var(--success)';
-        e.target.reset();
+        try {
+            const res = await fetch('https://formspree.io/f/mrearowy', {
+                method: 'POST',
+                body: new FormData(form),
+                headers: { 'Accept': 'application/json' }
+            });
+            if (res.ok) {
+                status.textContent = 'Thanks for your message! We\'ll get back to you when we can.';
+                status.style.color = 'var(--success)';
+                form.reset();
+            } else {
+                const data = await res.json();
+                status.textContent = data.errors ? data.errors.map(err => err.message).join(', ') : 'Something went wrong. Please try again.';
+                status.style.color = 'var(--danger, #c0392b)';
+            }
+        } catch (err) {
+            status.textContent = 'Network error. Please try again.';
+            status.style.color = 'var(--danger, #c0392b)';
+        }
         btn.disabled = false;
         btn.textContent = 'Send Message';
     }
