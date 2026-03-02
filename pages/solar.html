@@ -12,13 +12,25 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Off-Grid Solar Power - The Off-Grid Workshop</title>
-    <meta name="description" content="Everything about off-grid solar power: system sizing, panel selection, battery types, charge controllers, inverters, and honest product reviews.">
+    <title>Off-Grid Solar Power Systems: Complete Guide | The Off-Grid Workshop</title>
+    <meta name="description" content="How off-grid solar actually works: panels, charge controllers, batteries, inverters — sized and wired correctly. System sizing by use case, common mistakes, and honest gear reviews.">
     <link rel="canonical" href="https://theoffgridworkshop.com/pages/solar">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Off-Grid Solar Power Systems",
+        "description": "How off-grid solar actually works: panels, charge controllers, batteries, inverters — sized and wired correctly.",
+        "url": "https://theoffgridworkshop.com/pages/solar",
+        "author": { "@type": "Person", "name": "Jake Mercer", "url": "https://theoffgridworkshop.com/pages/about" },
+        "publisher": { "@type": "Organization", "name": "The Off-Grid Workshop", "url": "https://theoffgridworkshop.com" }
+    }
+    </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9986267429592601"
          crossorigin="anonymous"></script>
 </head>
@@ -47,11 +59,50 @@
         <section class="hero">
             <div class="hero-badge">Off-Grid Power</div>
             <h1>Solar Power for Off-Grid Living</h1>
-            <p>Build a power system sized for your real needs. From a 200W van setup to a full whole-home system — we cover every component, every trade-off, and every mistake worth avoiding.</p>
+            <p>Build a power system sized for your real needs. From a 200W van setup to a full whole-home system &mdash; we cover every component, every trade-off, and every mistake worth avoiding.</p>
             <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
                 <a href="../guides/power-audit" class="btn btn-primary">Start With a Power Audit</a>
                 <a href="../guides/solar-sizing" class="btn btn-secondary">Size Your System</a>
             </div>
+        </section>
+
+        <section>
+            <h2>How an Off-Grid Solar System Works</h2>
+            <p>An off-grid solar system has four core components that work in sequence. Understanding what each one does &mdash; and where the money actually goes &mdash; is the prerequisite to buying anything.</p>
+            <ol>
+                <li><strong>Solar panels</strong> convert sunlight into DC electricity. Panel output is rated in watts under ideal test conditions (STC), but real-world output is typically 75&ndash;85% of the nameplate rating due to heat, angle, and atmospheric conditions. Two 100W panels will not produce 200W continuously &mdash; budget for 140&ndash;170W of effective output on a good day.</li>
+                <li><strong>The charge controller</strong> sits between the panels and the battery bank. Its job is to regulate the voltage and current going into the batteries so they charge correctly without being damaged. There are two types: PWM (cheap, less efficient, fine for small systems under 200W) and MPPT (15&ndash;30% more efficient, required for any serious system). Never pair lithium batteries with a PWM controller &mdash; it doesn&rsquo;t understand lithium&rsquo;s charge profile.</li>
+                <li><strong>The battery bank</strong> stores the energy your panels generate. Battery capacity is measured in amp-hours (Ah) or kilowatt-hours (kWh). The two main chemistries are lead-acid (flooded, AGM, gel) and LiFePO4 lithium. Lead-acid is cheaper upfront; LiFePO4 costs 2&ndash;3x more but lasts 3&ndash;5x longer and can be discharged to 20% without damage versus 50% for lead-acid. Over 10 years, LiFePO4 is almost always cheaper.</li>
+                <li><strong>The inverter</strong> converts DC power from the batteries to 120V AC so you can run standard household appliances. Inverter size is determined by your peak load (not your average load) &mdash; if you run a 1,500W kettle, your inverter must be rated above 1,500W. Pure sine wave inverters are required for sensitive electronics, motors, and CPAP machines. Modified sine wave inverters work for basic resistive loads but cause problems with most modern devices.</li>
+            </ol>
+            <p>The single most common mistake beginners make: buying panels first, batteries second, and figuring out the rest later. The correct order is power audit &rarr; system sizing &rarr; battery selection &rarr; panel selection &rarr; charge controller &rarr; inverter. Everything upstream is sized off the battery bank, not the other way around.</p>
+        </section>
+
+        <section>
+            <h2>What System Size Do You Actually Need?</h2>
+            <p>These are practical ranges based on real-world homestead and off-grid cabin use, not marketing estimates. The &ldquo;basic&rdquo; column assumes LED lighting, a phone/laptop, and occasional small appliances. &ldquo;Comfortable&rdquo; adds refrigeration. &ldquo;Full home&rdquo; includes a full kitchen and power tools.</p>
+            <table>
+                <thead>
+                    <tr><th>Use Case</th><th>Daily Usage</th><th>Panel Array</th><th>Battery Bank</th><th>Approximate Cost</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Van / mobile</td><td>200&ndash;400 Wh</td><td>200&ndash;400W</td><td>100&ndash;200Ah LiFePO4</td><td>$800&ndash;$2,000</td></tr>
+                    <tr class="highlight-row"><td>Off-grid cabin (basic)</td><td>500&ndash;1,000 Wh</td><td>400&ndash;800W</td><td>200&ndash;400Ah LiFePO4</td><td>$2,000&ndash;$5,000</td></tr>
+                    <tr><td>Off-grid cabin (comfortable)</td><td>1,000&ndash;2,000 Wh</td><td>800W&ndash;1.5kW</td><td>400&ndash;600Ah LiFePO4</td><td>$4,000&ndash;$9,000</td></tr>
+                    <tr><td>Full off-grid home</td><td>3,000&ndash;6,000 Wh</td><td>2&ndash;4kW</td><td>800Ah+ LiFePO4</td><td>$10,000&ndash;$25,000</td></tr>
+                </tbody>
+            </table>
+            <p>These are DIY costs for components only. Professional installation typically adds 50&ndash;100%. The <a href="../guides/solar-sizing">solar sizing guide</a> walks through the exact math for your specific situation.</p>
+        </section>
+
+        <section>
+            <h2>The Four Mistakes That Ruin Off-Grid Solar Systems</h2>
+            <ol>
+                <li><strong>Undersized battery bank.</strong> Panels are easy to add later; battery bank expansions are expensive and complicated. Size batteries for 3&ndash;5 days of autonomy (without sun) from the start. Most beginners size for 1 day and regret it the first cloudy week.</li>
+                <li><strong>PWM controller with lithium batteries.</strong> PWM controllers cannot correctly charge LiFePO4 cells. The battery will charge partially and the controller will report it as full. Always use MPPT with lithium.</li>
+                <li><strong>Undersized wire gauge.</strong> Voltage drop in undersized cable wastes power and creates heat. Use the correct AWG for your amperage and run length. A 10% voltage drop means 10% wasted solar output, every day, forever.</li>
+                <li><strong>No fusing between battery and inverter.</strong> A short circuit between a fully-charged battery bank and an unfused inverter cable is a fire. Every connection from the battery must be fused as close to the positive terminal as possible.</li>
+            </ol>
         </section>
 
         <section>
@@ -72,7 +123,7 @@
                 <div class="funnel-step">
                     <span class="step-number">3</span>
                     <h3>Choose Your Battery</h3>
-                    <p>LiFePO4 vs lead-acid — a full cost-per-cycle analysis.</p>
+                    <p>LiFePO4 vs lead-acid &mdash; a full cost-per-cycle analysis.</p>
                     <a href="../guides/lifepo4-battery-guide">Battery Guide &rarr;</a>
                 </div>
                 <div class="funnel-step">
@@ -99,12 +150,12 @@
                 </article>
                 <article class="method-card">
                     <h3>LiFePO4 vs Lead-Acid Batteries</h3>
-                    <p>10-year cost-per-cycle analysis. Lithium wins in most cases — here&rsquo;s when and why.</p>
+                    <p>10-year cost-per-cycle analysis. Lithium wins in most cases &mdash; here&rsquo;s when and why.</p>
                     <a href="../guides/lifepo4-battery-guide">Read Guide &rarr;</a>
                 </article>
                 <article class="method-card">
                     <h3>Best Solar Panels 2026</h3>
-                    <p>12 panels tested in real-world conditions. The honest ranking by performance, value, and build quality.</p>
+                    <p>5 panels tested in real-world conditions. The honest ranking by performance, value, and build quality.</p>
                     <a href="../blog/best-solar-panels-2026">Read Article &rarr;</a>
                 </article>
             </div>
@@ -124,15 +175,42 @@
                 </article>
                 <article class="review-card">
                     <div class="review-card-header">
+                        <h3><a href="../reviews/eco-worthy-400w">ECO-WORTHY 400W Solar Kit</a></h3>
+                        <span class="rating-badge decent">Budget Pick</span>
+                    </div>
+                    <p class="review-card-summary">The lowest-cost 400W kit on the market. Panels perform adequately; controller is the weak point. Acceptable for low-demand setups.</p>
+                    <div class="review-card-meta"><span>Score: 6.5/10</span></div>
+                    <a href="../reviews/eco-worthy-400w" class="review-card-link">Read Review &rarr;</a>
+                </article>
+                <article class="review-card">
+                    <div class="review-card-header">
+                        <h3><a href="../reviews/jackery-1000-pro">Jackery Explorer 1000 Pro</a></h3>
+                        <span class="rating-badge recommended">Recommended</span>
+                    </div>
+                    <p class="review-card-summary">Best portable power station for off-grid use. Fast charging, 1kWh usable capacity, handles most cabin loads for 1&ndash;2 days.</p>
+                    <div class="review-card-meta"><span>Score: 8/10</span></div>
+                    <a href="../reviews/jackery-1000-pro" class="review-card-link">Read Review &rarr;</a>
+                </article>
+                <article class="review-card">
+                    <div class="review-card-header">
+                        <h3><a href="../reviews/bluetti-ac200p">Bluetti AC200P</a></h3>
+                        <span class="rating-badge recommended">Recommended</span>
+                    </div>
+                    <p class="review-card-summary">2kWh capacity, 2,000W inverter, tested across 3 days of off-grid cabin use. Best value in the large portable station category.</p>
+                    <div class="review-card-meta"><span>Score: 8/10</span></div>
+                    <a href="../reviews/bluetti-ac200p" class="review-card-link">Read Review &rarr;</a>
+                </article>
+                <article class="review-card">
+                    <div class="review-card-header">
                         <h3><a href="../reviews/victron-energy-kit">Victron Energy System</a></h3>
                         <span class="rating-badge recommended">Best Overall</span>
                     </div>
                     <p class="review-card-summary">Professional-grade components for permanent off-grid homes. Most reliable and feature-rich in the industry.</p>
-                    <div class="review-card-meta"><span>Score: 9.5/10</span></div>
+                    <div class="review-card-meta"><span>Score: 9/10</span></div>
                     <a href="../reviews/victron-energy-kit" class="review-card-link">Read Review &rarr;</a>
                 </article>
             </div>
-            <p style="text-align: center; margin-top: 1rem;"><a href="../reviews/">View All Solar Reviews &rarr;</a></p>
+            <p style="text-align: center; margin-top: 1rem;"><a href="../reviews/">View All Reviews &rarr;</a></p>
         </section>
     </main>
 
