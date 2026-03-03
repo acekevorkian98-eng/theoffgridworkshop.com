@@ -217,6 +217,12 @@
 
   <!-- Blog posts -->
   <url>
+    <loc>https://theoffgridworkshop.com/blog/diy-rain-gauge-weather-tracking</loc>
+    <lastmod>2026-03-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://theoffgridworkshop.com/blog/lifepo4-vs-agm-batteries-off-grid</loc>
     <lastmod>2026-03-02</lastmod>
     <changefreq>monthly</changefreq>
