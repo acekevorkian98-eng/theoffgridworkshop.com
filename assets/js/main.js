@@ -398,14 +398,12 @@ function initNativeShare() {
 // ============================================
 function initCategoryFilter() {
     var categoryLinks = document.querySelectorAll('.category-tags a[data-category]');
-    if (!categoryLinks.length) return;
-
-    var cards = document.querySelectorAll('.guide-card[data-category]');
-    if (!cards.length) return;
-
     var postCount = document.querySelector('.post-count');
-
-    loadArticlesFromJSON();
+    
+    // Only load from JSON if we have category links AND a post count (blog index page)
+    if (categoryLinks.length && postCount) {
+        loadArticlesFromJSON();
+    }
 }
 
 function loadArticlesFromJSON() {
