@@ -455,11 +455,22 @@ function loadArticlesFromJSON() {
                 postCount.textContent = allCards + ' article' + (allCards !== 1 ? 's' : '');
             }
             
-            initCategoryFilter();
+            // Now set up category filtering after cards are loaded
+            setupCategoryFilter();
         })
         .catch(function(err) {
-            console.log('Using static articles:', err);
+            console.log('Error loading articles:', err);
         });
+}
+
+function setupCategoryFilter() {
+    var categoryLinks = document.querySelectorAll('.category-tags a[data-category]');
+    if (!categoryLinks.length) return;
+
+    var cards = document.querySelectorAll('.guide-card[data-category]');
+    if (!cards.length) return;
+
+    var postCount = document.querySelector('.post-count');
 
     categoryLinks.forEach(function(link) {
         link.addEventListener('click', function(e) {
