@@ -400,9 +400,13 @@ function initCategoryFilter() {
     var categoryLinks = document.querySelectorAll('.category-tags a[data-category]');
     var postCount = document.querySelector('.post-count');
     
+    console.log('initCategoryFilter:', categoryLinks.length, 'links,', postCount ? 'postCount found' : 'no postCount');
+    
     // Only load from JSON if we have category links AND a post count (blog index page)
     if (categoryLinks.length && postCount) {
         loadArticlesFromJSON();
+    } else {
+        console.log('Skipping - not blog index page');
     }
 }
 
