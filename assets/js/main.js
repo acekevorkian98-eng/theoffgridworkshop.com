@@ -416,7 +416,10 @@ function loadArticlesFromJSON() {
     if (guideList.dataset.loaded === 'true') return;
     
     fetch('articles.json')
-        .then(function(response) { return response.json(); })
+        .then(function(response) { 
+            console.log('Fetch response:', response.status);
+            return response.json(); 
+        })
         .then(function(data) {
             var container = document.querySelector('.guide-list');
             if (!container) return;
@@ -443,7 +446,7 @@ function loadArticlesFromJSON() {
                     '<p>' + article.description + '</p>' +
                     '<div class="guide-card-footer">' +
                     '<span class="difficulty-badge ' + article.difficulty + '">' + 
-                    (article.difficulty.charAt(0).toUpperCase() + article.difficulty.slice(1) + 
+                    (article.difficulty.charAt(0).toUpperCase() + article.difficulty.slice(1)) + 
                     '</span>' +
                     '<a href="' + article.slug + '">Read Article →</a>' +
                     '</div>';
