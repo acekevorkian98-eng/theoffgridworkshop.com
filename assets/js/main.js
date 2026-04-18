@@ -405,6 +405,64 @@ function initCategoryFilter() {
 
     var postCount = document.querySelector('.post-count');
 
+    loadArticlesFromJSON();
+}
+
+function loadArticlesFromJSON() {
+    var guideList = document.querySelector('.guide-list');
+    if (!guideList) return;
+    if (guideList.dataset.loaded === 'true') return;
+    
+    fetch('articles.json')
+        .then(function(response) { return response.json(); })
+        .then(function(data) {
+            var container = document.querySelector('.guide-list');
+            if (!container) return;
+            
+            data.articles.forEach(function(article) {
+                var card = document.createElement('article');
+                card.className = 'guide-card';
+                card.setAttribute('data-category', article.category.toLowerCase().replace(/&/g, 'and').replace(/\s+/g, '-'));
+                
+                var categoryLabel = article.category;
+                if (categoryLabel === 'Food & Farming') categoryLabel = 'Food & Farming';
+                if (categoryLabel === 'Skills & Tools') categoryLabel = 'Skills & Tools';
+                
+                var date = new Date(article.date);
+                var dateStr = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+                if (date.getFullYear() === 2026) {
+                    dateStr = date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+                }
+                
+                card.innerHTML = 
+                    '<span class="guide-card-category">' + categoryLabel + '</span>' +
+                    '<time class="guide-card-date" datetime="' + article.date + '">' + dateStr + '</time>' +
+                    '<h3><a href="' + article.slug + '">' + article.title + '</a></h3>' +
+                    '<p>' + article.description + '</p>' +
+                    '<div class="guide-card-footer">' +
+                    '<span class="difficulty-badge ' + article.difficulty + '">' + 
+                    (article.difficulty.charAt(0).toUpperCase() + article.difficulty.slice(1) + 
+                    '</span>' +
+                    '<a href="' + article.slug + '">Read Article →</a>' +
+                    '</div>';
+                
+                container.appendChild(card);
+            });
+            
+            guideList.dataset.loaded = 'true';
+            
+            var postCount = document.querySelector('.post-count');
+            if (postCount) {
+                var allCards = document.querySelectorAll('.guide-card').length;
+                postCount.textContent = allCards + ' article' + (allCards !== 1 ? 's' : '');
+            }
+            
+            initCategoryFilter();
+        })
+        .catch(function(err) {
+            console.log('Using static articles:', err);
+        });
+
     categoryLinks.forEach(function(link) {
         link.addEventListener('click', function(e) {
             e.preventDefault();

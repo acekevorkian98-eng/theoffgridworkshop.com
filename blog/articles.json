@@ -1,0 +1,212 @@
+{
+  "articles": [
+    {
+      "slug": "gardening-cold-weather",
+      "title": "Gardening in Cold Weather: Our Year-Round Growing Strategy",
+      "category": "Food & Farming",
+      "date": "2026-04-18",
+      "description": "We grow food 10 months of the year in zone 6b. Here is our cold-weather gardening system, the crops that work, and the temperature data from three years of trial and error.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "good-websites-weather-information",
+      "title": "The Best Websites for Weather Information",
+      "category": "tools",
+      "date": "2026-04-18",
+      "description": "We tested 12 weather websites over 18 months. These are the ones we actually use for planning off-grid operations, storm tracking, and long-term forecasting.",
+      "difficulty": "beginner"
+    },
+    {
+      "slug": "composting-earthworms",
+      "title": "Composting with Earthworms: The Vermicomposting System That Works",
+      "category": "Food & Farming",
+      "date": "2026-04-18",
+      "description": "We process 5 pounds of kitchen scraps per week into rich compost using earthworms. Here is our working worm bin setup and the lessons from three years.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "cleaning-solar-panels-once-year",
+      "title": "Cleaning Solar Panels Once a Year",
+      "category": "Solar",
+      "date": "2026-04-18",
+      "description": "We clean our solar panels once per year. Here is the system that works, the tools, the technique, and the data on power loss from dirty panels.",
+      "difficulty": "beginner"
+    },
+    {
+      "slug": "best-aromatic-flowers-to-plant",
+      "title": "The Best Aromatic Flowers to Plant",
+      "category": "Food & Farming",
+      "date": "2026-04-18",
+      "description": "We planted 15 varieties of aromatic flowers over three years. These are the ones that actually produced scent, survived our winters, and fit an off-grid lifestyle.",
+      "difficulty": "beginner"
+    },
+    {
+      "slug": "cold-frames-growing-season",
+      "title": "Cold Frames: Extend Your Growing Season by Weeks",
+      "category": "Food & Farming",
+      "date": "2026-04-14",
+      "description": "We harvested lettuce from our cold frames on March 15 this year — six weeks before the last frost. We picked kale through December 28. Here is how cold frames work, three build designs, and the temperature data.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "diy-solar-water-pump",
+      "title": "DIY Solar Water Pumping: Stream to Tank Without Electricity",
+      "category": "Water",
+      "date": "2026-04-14",
+      "description": "300 gallons per day pumped from our stream to a 1,000-gallon storage tank using a Shurflo 9300 diaphragm pump and a 160W solar panel. Full component list ($754 total), sizing math, and two years of operating data.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "simple-root-cellar",
+      "title": "Building a Simple Root Cellar: Modern Budget Construction",
+      "category": "Food & Farming",
+      "date": "2026-04-14",
+      "description": "An 8x10 concrete block root cellar built into a north-facing slope, $1,211 all in, holding 400 pounds of produce at 33–42°F through winter. Complete materials list, ventilation system, and 12 months of temperature data.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "best-water-filters-off-grid-living-2026",
+      "title": "Best Water Filters for Off-Grid Living in 2026",
+      "category": "Water",
+      "date": "2026-04-14",
+      "description": "We tested eight water filters over 18 months. From $20 bucket filters to $1,200 whole-house systems — these are the ones that actually work in off-grid conditions.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "best-wood-stoves-off-grid-living-2026",
+      "title": "Best Wood Stoves for Off-Grid Living in 2026",
+      "category": "Building",
+      "date": "2026-04-14",
+      "description": "We tested eight wood stoves over four winters. From rocket mass heaters to catalytic converters — these are the ones that actually heat a cabin efficiently.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "best-solar-generators-off-grid-2026",
+      "title": "Best Solar Generators for Off-Grid Living in 2026",
+      "category": "Solar",
+      "date": "2026-04-17",
+      "description": "We tested five solar generators over six months. From portable units to whole-home systems — these are the ones that actually perform in real off-grid conditions.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "best-water-filters-2026",
+      "title": "Best Water Filters in 2026",
+      "category": "Water",
+      "date": "2026-04-17",
+      "description": "We tested seven water filters including Berkey, Lifestraw, and Alexapure. These are the ones that actually remove pathogens and heavy metals.",
+      "difficulty": "beginner"
+    },
+    {
+      "slug": "best-solar-panels-2026",
+      "title": "Best Solar Panels for Off-Grid Living in 2026",
+      "category": "Solar",
+      "date": "2026-02-01",
+      "description": "Five panels tested in real-world conditions: Renogy, ECO-WORTHY, Newpowa, Rich Solar, and SunPower. Ranked by real output, cost per watt, and build quality.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "building-a-diy-greenhouse-on-a-budget",
+      "title": "Building a DIY Greenhouse on a Budget",
+      "category": "Building",
+      "date": "2026-02-01",
+      "description": "Four greenhouse designs from $200 to $600 using common materials. Siting, passive heating, ventilation, and which design works best in cold climates.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "root-cellar-guide",
+      "title": "Building a Root Cellar: Complete DIY Guide",
+      "category": "Food & Farming",
+      "date": "2026-02-01",
+      "description": "Five root cellar designs from $200 to $2,000. Site selection, temperature and humidity targets, ventilation, and what to store and when. The original no-electricity food storage system.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "gravity-fed-water-system",
+      "title": "How We Built Our Gravity-Fed Water System for $400",
+      "category": "Water",
+      "date": "2026-02-01",
+      "description": "No pump, no electricity, no pressure tank. A 500-gallon hilltop tank feeds water to the cabin by gravity alone. Full build log with materials list, costs, and what we'd do differently.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "diy-outdoor-shower",
+      "title": "Building a DIY Outdoor Shower",
+      "category": "Building",
+      "date": "2026-02-01",
+      "description": "A simple outdoor shower for rinsing off after work or play. Solar-powered with a 5-gallon bag, drain field, and privacy. $85 in materials, 2 hours to build.",
+      "difficulty": "beginner"
+    },
+    {
+      "slug": "making-biochar-property",
+      "title": "Making Biochar on Your Property",
+      "category": "Food & Farming",
+      "date": "2026-02-01",
+      "description": "Three years of making biochar from our own wood waste. A $28 TLUD drum build, three production methods compared, charging protocols, and application rates that move the needle in garden beds.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "off-grid-food-storage-no-refrigeration",
+      "title": "Off-Grid Food Storage Without Refrigeration",
+      "category": "Food & Farming",
+      "date": "2026-02-01",
+      "description": "Canning, dehydrating, root cellaring, and fermenting. How we store a year's worth of food without electricity, including costs per quart and shelf life data.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "lifepo4-vs-agm-batteries-off-grid",
+      "title": "LiFePO4 vs AGM Batteries for Off-Grid",
+      "category": "Solar",
+      "date": "2026-02-01",
+      "description": "We compared LiFePO4 and AGM batteries over 18 months. Cycle life, efficiency, depth of discharge, and real-world costs per kilowatt-hour.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "cob-oven-guide",
+      "title": "Building a Cob Oven: Complete Guide",
+      "category": "Building",
+      "date": "2026-02-01",
+      "description": "A wood-fired cob oven for baking and cooking. Materials list, build process, and thermal mass data from five years of use.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "rainwater-harvesting",
+      "title": "Rainwater Harvesting: Complete System Guide",
+      "category": "Water",
+      "date": "2026-02-01",
+      "description": "From gutters to cisterns — how we harvest and store rainwater. Sizing calculations, filtration options, and 12 months of collection data.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "solar-sizing",
+      "title": "Solar System Sizing: The Math",
+      "category": "Solar",
+      "date": "2026-02-01",
+      "description": "How to calculate exactly what solar system you need. Daily usage, panel output, battery capacity, and inverter sizing – with actual examples from our 2.4kW system.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "tiny-cabin-guide",
+      "title": "Building a Tiny Cabin: Complete Guide",
+      "category": "Building",
+      "date": "2026-02-01",
+      "description": "Our 200sqft cabin build. Foundation, framing, insulation, and utilities – with costs, timelines, and lessons learned from building it ourselves.",
+      "difficulty": "advanced"
+    },
+    {
+      "slug": "power-audit",
+      "title": "How to Conduct a Power Audit",
+      "category": "Solar",
+      "date": "2026-02-01",
+      "description": "How to determine exactly how much power you use – and what you need to generate. A step-by-step process with worksheets.",
+      "difficulty": "beginner"
+    },
+    {
+      "slug": "water-filtration",
+      "title": "Water Filtration Guide for Off-Grid",
+      "category": "Water",
+      "date": "2026-02-01",
+      "description": "What you need to filter, what each filter removes, and how to build a complete system for under $500.",
+      "difficulty": "intermediate"
+    }
+  ]
+}
