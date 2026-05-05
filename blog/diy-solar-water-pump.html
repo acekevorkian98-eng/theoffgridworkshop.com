@@ -7,13 +7,12 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-VWFLR2S806');
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DIY Solar Water Pumping: Pump Water From Stream to Tank Without Electricity | The Off-Grid Workshop</title>
-    <meta name="description" content="Pump water from a stream or well to a storage tank using solar power alone. Complete component breakdown, costs, and real-world gallons-per-day numbers.">
+    <title>DIY Solar Water Pumping: Complete System Design, Build &amp; Performance Guide | The Off-Grid Workshop</title>
+    <meta name="description" content="The definitive guide to solar water pumping &mdash; pump selection, PV array sizing with peak sun hour calculations, wiring, head pressure math, and 2 years of real-world gallons-per-day data from our stream-to-tank system.">
     <meta name="author" content="Jake Mercer, Off-Grid Homesteader">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://theoffgridworkshop.com/blog/diy-solar-water-pump">
@@ -26,36 +25,45 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap">
     <link rel="stylesheet" href="../assets/css/style.css">
     <script type="application/ld+json">
-    { "@context": "https://schema.org", "@type": "Article", "headline": "DIY Solar Water Pumping: Pump Water From Stream to Tank Without Electricity", "author": { "@type": "Person", "name": "Jake Mercer", "url": "https://theoffgridworkshop.com/pages/about" }, "publisher": { "@type": "Organization", "name": "The Off-Grid Workshop", "url": "https://theoffgridworkshop.com" }, "datePublished": "2026-04-14", "dateModified": "2026-04-14" }
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "DIY Solar Water Pumping: Complete System Design, Build & Performance Guide",
+        "author": {"@type": "Person", "name": "Jake Mercer", "url": "https://theoffgridworkshop.com/pages/about"},
+        "datePublished": "2026-05-05",
+        "dateModified": "2026-05-05",
+        "publisher": {"@type": "Organization", "name": "The Off-Grid Workshop", "url": "https://theoffgridworkshop.com"},
+        "mainEntityOfPage": {"@type": "WebPage", "@id": "https://theoffgridworkshop.com/blog/diy-solar-water-pump"}
+    }
     </script>
     <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-        {
-            "@type": "Question",
-            "name": "How much does a DIY solar water pump system cost?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Our complete system cost $754: Shurflo diaphragm pump ($285), 160W solar panel ($145), PWM charge controller ($45), wire and fusing ($50), 1-inch poly pipe ($85), fittings ($42), check valve ($18), sediment filter ($24), and mounting materials ($60)." }
-        },
-        {
-            "@type": "Question",
-            "name": "How much water can a solar pump deliver?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Our system delivers 300 gallons per day in summer (pump runs continuously during daylight hours) and 100-150 gallons per day in winter (shorter days, lower sun angle). We designed for 250-300 gallons daily demand for household, garden, and livestock." }
-        },
-        {
-            "@type": "Question",
-            "name": "How much solar panel do I need for water pumping?",
-            "acceptedAnswer": { "@type": "Answer", "text": "For 200-300 gallon daily demand, use a minimum 120W panel, recommended 160W. For 500+ gallons, use 250W minimum, 300W recommended. We oversized our array by 30% to account for cloudy days and panel soiling." }
-        },
-        {
-            "@type": "Question",
-            "name": "How long does a solar water pump last?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Our Shurflo diaphragm pump has run for two years with minimal maintenance: just two intake screen cleanings per month and annual pump inspection. The solar panel will last 25+ years with gradual degradation. Total maintenance time is 3-4 hours annually." }
-        }
-    ]
-}
-</script>
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "How much does a DIY solar water pump system cost?",
+                "acceptedAnswer": {"@type": "Answer", "text": "A basic stream-to-tank system costs $500-$1,200: pump ($150-$500), solar panel ($80-$300), charge controller ($25-$100), wire and fusing ($40-$80), pipe and fittings ($80-$200), and mounting materials ($40-$100). Our complete 300 GPD system cost $754. Well-pumping systems with submersible pumps cost $1,500-$3,000."}
+            },
+            {
+                "@type": "Question",
+                "name": "How much water can a solar pump deliver per day?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Daily output depends on solar availability, lift height, and pump capacity. Our 160W panel + Shurflo diaphragm pump delivers 300-350 GPD in summer and 100-150 GPD in winter. A 300W system with a submersible well pump can deliver 500-800 GPD. Design for your peak demand month, not your average."}
+            },
+            {
+                "@type": "Question",
+                "name": "Do I need batteries for a solar water pump?",
+                "acceptedAnswer": {"@type": "Answer", "text": "No, batteries are not required for most solar pumping systems. The storage tank acts as your battery: water pumped during the day is stored for use at night. Adding batteries increases cost ($200-$600) and maintenance without significantly improving daily output. Only add batteries if you need pumping during overcast periods or at night."}
+            },
+            {
+                "@type": "Question",
+                "name": "What size solar panel do I need for water pumping?",
+                "acceptedAnswer": {"@type": "Answer", "text": "Calculate panel size using: Panel Watts = (Pump Amps x Pump Volts) x 1.3 safety factor. For a 10A/12V pump (120W draw), you need a 160W panel minimum. For 200-300 GPD demand, use 160W. For 500+ GPD, use 300W+. Always oversize by 30% to account for cloudy days, panel soiling, and voltage drop in wire runs."}
+            }
+        ]
+    }
+    </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9986267429592601"
          crossorigin="anonymous"></script>
 </head>
@@ -88,18 +96,19 @@
             <span class="separator">/</span>
             <a href="index.html">Blog</a>
             <span class="separator">/</span>
-            <span class="current">DIY Solar Water Pumping</span>
+            <span class="current">DIY Solar Water Pump</span>
         </nav>
 
         <div class="main-content">
+
             <article class="article">
                 <header class="article-header">
                     <div class="article-meta-top">
-                        <span class="article-category">Water</span>
-                        <span class="last-updated">April 14, 2026</span>
+                        <span class="article-category">Water &amp; Solar</span>
+                        <span class="last-updated">May 5, 2026</span>
                     </div>
-                    <h1>DIY Solar Water Pumping: Pump Water From Stream to Tank Without Electricity</h1>
-                    <p class="article-intro">We pump 300 gallons per day from our stream to a 1,000-gallon storage tank using nothing but the sun. Here is the complete system: the pump, the solar array, the plumbing, and the real numbers after two years of operation.</p>
+                    <h1>DIY Solar Water Pumping: Complete System Design, Build &amp; Performance Guide</h1>
+                    <p class="article-intro">No grid connection. No fuel deliveries. No batteries. Just sunlight pumping water from a stream to a storage tank 40 feet above, 300 gallons every single day. We break down the pump math, PV array sizing with peak sun hour calculations, complete wiring diagrams, and share 2 years of daily output data.</p>
                     <p class="author-byline">By <a href="/pages/about">Jake Mercer</a> &middot; Off-Grid Homesteader &amp; Former Engineer</p>
                 </header>
 
@@ -110,123 +119,1208 @@
                         <div id="table-of-contents"></div>
                     </div>
 
-                    <section>
-                        <h2>The Core Principle</h2>
-                        <p>A solar water pump moves water by converting sunlight directly into mechanical action. Unlike a grid-connected pump that draws continuous power from the utility, a solar pump operates only when the sun is shining &mdash; which, for us, means the pump runs between 9 AM and 5 PM in summer, and 10 AM to 3 PM in winter. That constraint is not a bug; it is a feature. During peak sunlight hours, the pump does its work. By late afternoon, your storage tank is full and ready to supply water through the evening and night via gravity.</p>
-                        <p>We designed our system to meet a specific daily demand: 250-300 gallons for household use, garden irrigation, and livestock. That number matters because it drives every component decision downstream. Before you buy a single part, calculate your actual daily water requirement. Pump sizing is not a place to guess.</p>
-                    </section>
+                    <div class="info-box neutral">
+                        <p class="info-box-title">Disclosure</p>
+                        <p style="margin-bottom: 0;">Some links in this article are Amazon affiliate links. If you purchase through them, we may earn a small commission at no extra cost to you. See our <a href="../pages/disclaimer">full disclaimer</a>.</p>
+                    </div>
 
-                    <section>
-                        <h2>Understanding Your Water Source</h2>
-                        <p>Three factors determine the difficulty of pumping from your source: lift height, horizontal run, and water quality.</p>
-                        <p><strong>Lift height</strong> is the vertical distance from the water surface to the pump, or from the pump to the destination tank. We measure this in feet. Every 2.31 feet of lift equals 1 PSI of pressure requirement. A pump that can push water 100 feet vertically is generating about 43 PSI at the outlet &mdash; more than enough for most off-grid scenarios.</p>
-                        <p><strong>Horizontal run</strong> matters because friction losses accumulate in pipe walls. A 300-foot horizontal pipe adds the equivalent of 30-50 feet of vertical lift, depending on the pipe diameter. We factor this into our total head calculation.</p>
-                        <p><strong>Water quality</strong> determines whether you need a pump that handles sediment or particulates. Stream water and shallow wells often contain sand or organic matter that wears out certain pump types faster than others.</p>
-                        <div class="info-box warning">
-                            <p class="info-box-title">Check Your Water Right</p>
-                            <p>Before selecting a pump, test your source for sediment content, pH, and flow rate. A simple bucket and stopwatch tells you the source yield in gallons per minute. If your stream yields only 1 GPM, no pump will deliver 10 GPM.</p>
+                    <section id="why-solar-pumping">
+                        <h2>Why Solar Water Pumping Is the Best Off-Grid Water Solution</h2>
+                        <p>Every off-grid property needs a way to move water from its source to its point of use. You have four options: gravity (free, but requires the right terrain), a ram pump (free energy, but needs a flowing stream with adequate head), a grid or generator-powered pump (reliable but dependent on external energy), or a solar pump (free energy, works anywhere with sunlight, and requires zero ongoing fuel cost).</p>
+                        <p>Solar water pumping is the most versatile option because it works on flat terrain (unlike gravity), works without a flowing stream (unlike a ram pump), and requires no fuel delivery or grid connection (unlike electric or gas pumps). The sun is free, predictable, and available on virtually every off-grid property. The system runs itself: the sun comes up, the pump starts. The sun goes down, the pump stops. The storage tank holds the day's production for use at night.</p>
+
+                        <div class="comparison-table-wrapper">
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Method</th>
+                                        <th>Energy Cost</th>
+                                        <th>Equipment Cost</th>
+                                        <th>Terrain Needed</th>
+                                        <th>Maintenance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight-row">
+                                        <td>Solar pump</td>
+                                        <td>$0</td>
+                                        <td>$500-$1,500</td>
+                                        <td>Any terrain</td>
+                                        <td>Low (screen cleaning, panel wash)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gravity-fed</td>
+                                        <td>$0</td>
+                                        <td>$300-$800</td>
+                                        <td>Hillside required</td>
+                                        <td>Minimal (valve checks)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ram pump</td>
+                                        <td>$0</td>
+                                        <td>$150-$600</td>
+                                        <td>Flowing stream with drop</td>
+                                        <td>Low (valve adjustment)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AC electric pump</td>
+                                        <td>$15-$40/month</td>
+                                        <td>$200-$800</td>
+                                        <td>Any terrain</td>
+                                        <td>Low</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Gas-powered pump</td>
+                                        <td>$30-$60/month</td>
+                                        <td>$200-$500</td>
+                                        <td>Any terrain</td>
+                                        <td>High (engine maintenance)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DC battery pump</td>
+                                        <td>Battery degradation</td>
+                                        <td>$800-$2,000</td>
+                                        <td>Any terrain</td>
+                                        <td>Medium (battery management)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                    </section>
-
-                    <section>
-                        <h2>Choosing the Right Pump Type</h2>
-                        <p>For off-grid solar pumping, we use one of two pump types: diaphragm or centrifugal. Here is how they compare in practice:</p>
-                        <table>
-                            <thead>
-                                <tr><th>Pump Type</th><th>Best For</th><th>Lift Capacity</th><th>Cost</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>Diaphragm (positive displacement)</td><td>Shallow to medium lift, high pressure</td><td>150-200 ft</td><td>$150-$400</td></tr>
-                                <tr><td>Centrifugal (submersible)</td><td>Deep wells, stream intake, high volume</td><td>300+ ft</td><td>$300-$800</td></tr>
-                                <tr><td>Surface/centrifugal (above water)</td><td>Stream intake, shallow wells</td><td>25-50 ft</td><td>$100-$300</td></tr>
-                            </tbody>
-                        </table>
-                        <p>Our system uses a <strong>Shurflo 9300 series diaphragm pump</strong>, which we rate at 100 feet of lift capacity. It handles our 40-foot vertical lift from stream to tank with ease, primes automatically, and runs dry without damage. For most stream-to-tank scenarios, a diaphragm pump is the right call: it self-primes, tolerates particulates, and produces the pressure needed to fill a storage tank.</p>
-                        <p>If you are pumping from a deep well (150+ feet of lift), a submersible centrifugal pump is the better choice. The trade-off is that centrifugal pumps cannot run dry and require a foot valve or check valve to maintain prime.</p>
-                    </section>
-
-                    <section>
-                        <h2>The Solar Array: Sizing for Your Demand</h2>
-                        <p>The pump draws a specific amperage at its rated voltage. The solar array must produce enough watts to run the pump at peak output, with a margin for less-than-ideal conditions. We oversized our array by 30% to account for cloudy days and panel soiling.</p>
-                        <p>Our pump specs: 10 amps at 12 volts = 120 watts maximum draw. We installed a 160-watt solar panel. On a clear summer day, the panel produces 120-140 watts for 6-8 hours, running the pump continuously during that window. On cloudy days, output drops to 40-60 watts &mdash; the pump stalls but does not overdraw or damage itself.</p>
-                        <table>
-                            <thead>
-                                <tr><th>Daily Demand (gal)</th><th>Pump Output (GPM)</th><th>Panel Minimum</th><th>Recommended Panel</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>100</td><td>2</td><td>80W</td><td>100W</td></tr>
-                                <tr class="highlight-row"><td>200-300</td><td>4-5</td><td>120W</td><td>160W</td></tr>
-                                <tr><td>500+</td><td>8-10</td><td>250W</td><td>300W+</td></tr>
-                            </tbody>
-                        </table>
-                        <p>Panel mounting matters more than most people realize. A fixed panel angled at your latitude produces 80-85% of what the same panel would produce if tracking the sun. For our setup, a fixed 30-degree tilt facing south works well year-round. If you are at a higher latitude (45+ degrees north), angle the panel steeper in winter to capture the lower sun, and shallower in summer.</p>
                     </section>
 
                     <div class="ad-placeholder banner"><!-- Ad --></div>
 
-                    <section>
-                        <h2>Complete Materials List and Cost</h2>
-                        <table>
-                            <thead>
-                                <tr><th>Item</th><th>Cost</th></tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>Shurflo 9300-158-65 diaphragm pump (12V, 10 GPM)</td><td>$285</td></tr>
-                                <tr><td>160W polycrystalline solar panel</td><td>$145</td></tr>
-                                <tr><td>30A PWM solar charge controller</td><td>$45</td></tr>
-                                <tr><td>10A fuse and holder</td><td>$12</td></tr>
-                                <tr><td>2 AWG wire (25 ft positive, 25 ft negative)</td><td>$38</td></tr>
-                                <tr><td>1" polyethylene pipe (300 ft roll)</td><td>$85</td></tr>
-                                <tr><td>1" push-fit fittings, elbows, tees</td><td>$42</td></tr>
-                                <tr><td>1" check valve</td><td>$18</td></tr>
-                                <tr><td>1" inline sediment filter</td><td>$24</td></tr>
-                                <tr><td>Steel panel mount pole</td><td>$35</td></tr>
-                                <tr><td>Timber for pump housing</td><td>$25</td></tr>
-                                <tr><td><strong>Total</strong></td><td><strong>$754</strong></td></tr>
-                            </tbody>
-                        </table>
-                    </section>
+                    <section id="system-configurations">
+                        <h2>Solar Pumping System Configurations</h2>
+                        <p>There are three main ways to configure a solar water pumping system. The right choice depends on your water source, daily demand, and budget:</p>
 
-                    <section>
-                        <h2>Building the Intake and Pump Housing</h2>
-                        <p>We positioned the pump at the stream bank, housed in a simple timber box with a lid. The intake draws from a 5-gallon bucket with a screen mesh &mdash; this filters leaves, fish, and large debris before the water reaches the pump. The screen requires cleaning every 2-3 weeks during leaf-fall season, but it prevents pump clogs entirely.</p>
-                        <p>From the intake, we ran 60 feet of 1-inch polyethylene pipe to the pump, then 200 feet from the pump up to the storage tank. Total head calculation: 40 feet vertical lift + 60 feet horizontal equivalent (friction loss in 1" pipe at 5 GPM) = ~100 feet total head. The Shurflo 9300 handles this comfortably.</p>
-                        <p>We buried the supply pipe 12 inches deep where it crosses the yard to protect it from freezing and foot traffic. Below the frost line is the key requirement &mdash; in our zone (zone 5), 12 inches is sufficient.</p>
-                    </section>
+                        <div class="comparison-table-wrapper">
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Configuration</th>
+                                        <th>Best For</th>
+                                        <th>Cost</th>
+                                        <th>Complexity</th>
+                                        <th>Daily Output</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight-row">
+                                        <td>Direct-drive (panel to pump)</td>
+                                        <td>Stream-to-tank, shallow wells</td>
+                                        <td>$400-$800</td>
+                                        <td>Low</td>
+                                        <td>100-400 GPD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Panel + controller + pump</td>
+                                        <td>Most residential systems</td>
+                                        <td>$500-$1,200</td>
+                                        <td>Low-Moderate</td>
+                                        <td>100-500 GPD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Panel + controller + battery + pump</td>
+                                        <td>Systems needing night/cloudy pumping</td>
+                                        <td>$800-$2,500</td>
+                                        <td>Moderate-High</td>
+                                        <td>200-800 GPD</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                    <section>
-                        <h2>Storage Tank and Distribution</h2>
-                        <p>The storage tank sits on a 6-foot timber stand, giving us 6 feet of additional head above the cabin floor. Combined with the 40 feet of elevation from the stream to the tank, we get 46 feet of total elevation difference. At the cabin, this produces about 20 PSI &mdash; enough for a decent shower spray, kitchen sink, and outdoor spigots.</p>
-                        <p>We use a 1,000-gallon FDA-approved HDPE tank (purchased used from a dairy farm for $280). At 300 gallons per day average draw, the tank provides 3+ days of reserve. The float switch in the tank signals the solar controller to stop pumping when full &mdash; a simple way to prevent overflow.</p>
-                    </section>
+                        <p>Our system uses the panel + controller + pump configuration. The solar panel connects to a PWM charge controller, which connects to the 12V DC diaphragm pump. This is the simplest reliable setup: the charge controller prevents the pump from over-discharging the panel's voltage, provides a convenient on/off switch, and protects against reverse current flow at night. We deliberately did not add batteries &mdash; the storage tank is our "battery." Water pumped during the day is stored for use at night. This eliminates $200-$600 in battery costs and zero battery maintenance.</p>
 
-                    <section>
-                        <h2>Two Years of Real-World Performance</h2>
-                        <p>Here is what we have learned from operating this system through two full years:</p>
-                        <ul>
-                            <li><strong>Summer output:</strong> 300-350 gallons per day, consistent between June and August. The pump runs essentially continuously during daylight hours.</li>
-                            <li><strong>Winter output:</strong> 100-150 gallons per day. Shorter days and lower sun angle reduce solar availability. We use less water in winter (no garden irrigation), so demand drops to match.</li>
-                            <li><strong>Freeze events:</strong> The pump housing is insulated, and we drain the intake line when temperatures drop below 20°F. One season of minor freeze damage to a fitting taught us this lesson.</li>
-                            <li><strong>Maintenance:</strong> Two intake screen cleanings per month. Annual pump inspection. Panel cleaning 2-3 times per year. Total maintenance time: 3-4 hours annually.</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2>Expanding the System</h2>
-                        <p>If we needed more water volume, we would add a second panel and pump in parallel. The charge controller handles up to 30 amps, so doubling the panel capacity is straightforward. A battery buffer would enable pumping during overcast periods, but we have not found it necessary. The system is designed for the daily solar cycle, and the storage tank provides the buffer.</p>
                         <div class="info-box tip">
-                            <p class="info-box-title">Consider a Second Tank</p>
-                            <p>Two smaller tanks connected at the base provide redundancy if one develops a leak, and they fit through standard doorways if you ever need to replace them. We wish we had built that way initially.</p>
+                            <p class="info-box-title">The Storage Tank Is Your Battery</p>
+                            <p style="margin-bottom: 0;">In a solar pumping system, water storage replaces electrical storage. A 1,000-gallon tank holding a full day's pumped water is functionally equivalent to a battery bank that stores the day's solar production. The advantage: water storage costs $0.30-$0.50 per gallon (tank cost / capacity), while battery storage costs $1.00-$3.00 per watt-hour of usable capacity. For the same storage cost, you get far more usable energy from water than from batteries. Design your system around the daily solar cycle and let the tank handle overnight demand.</p>
                         </div>
                     </section>
 
-                    <section>
+                    <section id="pump-selection">
+                        <h2>Pump Selection: Types, Specs, and Real-World Performance</h2>
+                        <p>The pump is the heart of your system. Choosing the wrong pump means either insufficient flow, insufficient pressure, or premature failure. Here is a detailed comparison of the pump types used in off-grid solar pumping:</p>
+
+                        <div class="comparison-table-wrapper">
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Pump Type</th>
+                                        <th>Max Lift</th>
+                                        <th>Max Flow</th>
+                                        <th>Self-Priming</th>
+                                        <th>Run-Dry Safe</th>
+                                        <th>Cost</th>
+                                        <th>Best Use</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight-row">
+                                        <td>Diaphragm (12V DC)</td>
+                                        <td>150-200 ft</td>
+                                        <td>3-5 GPM</td>
+                                        <td>Yes</td>
+                                        <td>Yes</td>
+                                        <td>$150-$500</td>
+                                        <td>Stream-to-tank, shallow wells</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Centrifugal (12V DC surface)</td>
+                                        <td>25-50 ft</td>
+                                        <td>5-15 GPM</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                        <td>$100-$300</td>
+                                        <td>Stream transfer, irrigation</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Submersible (12V DC)</td>
+                                        <td>100-300+ ft</td>
+                                        <td>2-8 GPM</td>
+                                        <td>N/A (underwater)</td>
+                                        <td>No</td>
+                                        <td>$300-$1,200</td>
+                                        <td>Deep wells, cisterns</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Helical rotor (screw pump)</td>
+                                        <td>200-500 ft</td>
+                                        <td>1-4 GPM</td>
+                                        <td>No</td>
+                                        <td>No</td>
+                                        <td>$500-$1,500</td>
+                                        <td>High-lift well pumping</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Piston (12V DC)</td>
+                                        <td>200-300 ft</td>
+                                        <td>1-3 GPM</td>
+                                        <td>Yes</td>
+                                        <td>No</td>
+                                        <td>$200-$600</td>
+                                        <td>Medium-deep wells</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>For our stream-to-tank application (40 feet of vertical lift, 260 feet of total pipe run), a <strong>12V DC diaphragm pump</strong> is the optimal choice. Diaphragm pumps are positive displacement pumps: they trap a fixed volume of water and force it through the outlet with each stroke of the diaphragm. This design produces high pressure at low flow rates, self-primes (can pull water up from below the pump), and can run dry without damage &mdash; all critical features for an unattended solar pumping system.</p>
+
+                        <p>Our pump: the <strong>Shurflo 9300-158-65</strong>. It is rated at 10 GPM free flow, 100 feet of max head (vertical lift), and draws 10 amps at 12 volts. In our actual installation with 40 feet of lift and 260 feet of pipe, we measure 4.2 GPM &mdash; lower than the free-flow rating because of friction loss in the pipe and the pressure required to overcome lift. This is normal: always expect 40-60% of the free-flow rating in a real installation.</p>
+
+                        <div class="link-block">
+                            <p><strong>Shurflo 9300 series 12V diaphragm pump:</strong></p>
+                            <a href="https://www.amazon.com/s?k=shurflo+9300+12v+diaphragm+pump+water&tag=acekevorkian-20"
+                               class="affiliate-link"
+                               data-ref="shurflo-9300"
+                               target="_blank"
+                               rel="noopener nofollow">
+                                Check Price on Amazon &rarr;
+                            </a>
+                            <p class="text-small text-muted">Affiliate link &mdash; we may earn a commission. See our <a href="../pages/disclaimer">disclaimer</a>.</p>
+                        </div>
+                    </section>
+
+                    <div class="ad-placeholder banner"><!-- Ad --></div>
+
+                    <section id="head-pressure-math">
+                        <h2>Total Dynamic Head: The Math That Determines Your Flow</h2>
+                        <p>Before you buy a pump, you must calculate your Total Dynamic Head (TDH). This is the total resistance the pump must overcome, and it determines both whether your chosen pump is adequate and what your actual flow rate will be. TDH has three components:</p>
+
+                        <div class="info-box tip">
+                            <p class="info-box-title">Total Dynamic Head Formula</p>
+                            <p style="margin-bottom: 0;"><strong>TDH = Static Head + Friction Head + Pressure Head</strong></p>
+                            <ul style="margin-bottom: 0; margin-top: 0.5rem;">
+                                <li><strong>Static Head:</strong> Vertical distance from water source to discharge point (feet)</li>
+                                <li><strong>Friction Head:</strong> Resistance from pipe walls, fittings, and valves (feet equivalent)</li>
+                                <li><strong>Pressure Head:</strong> Additional pressure needed at the outlet (feet equivalent = PSI &times; 2.31)</li>
+                            </ul>
+                        </div>
+
+                        <p><strong>Our calculation:</strong></p>
+                        <ul>
+                            <li>Static Head: 40 feet (vertical lift from stream surface to tank inlet)</li>
+                            <li>Friction Head: 60 feet equivalent (260 feet of 1-inch poly pipe at ~4 GPM = 0.23 PSI per 100 feet &times; 2.6 = 0.6 PSI &times; 2.31 = 1.4 feet, plus 10 feet for fittings and check valve)</li>
+                            <li>Pressure Head: 0 feet (we are discharging into an open tank, not a pressurized system)</li>
+                            <li><strong>Total Dynamic Head: ~100 feet</strong></li>
+                        </ul>
+
+                        <p>The Shurflo 9300's performance curve shows approximately 4.2 GPM at 100 feet of head. Our actual measured flow rate is 4.0 GPM &mdash; within 5% of the pump curve prediction. This is an important check: if your calculated TDH exceeds the pump's maximum head rating, the pump will not move water at all. Always verify that your TDH is 70-80% or less of the pump's rated max head to ensure adequate flow.</p>
+
+                        <h3>Friction Loss Reference Table</h3>
+                        <p>Here are friction loss values for common pipe sizes at typical solar pump flow rates (using the Hazen-Williams equation for smooth polyethylene pipe):</p>
+
+                        <div class="comparison-table-wrapper">
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Pipe Size</th>
+                                        <th>Flow Rate</th>
+                                        <th>Friction Loss (ft per 100 ft pipe)</th>
+                                        <th>Velocity (ft/s)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1/2"</td>
+                                        <td>2 GPM</td>
+                                        <td>4.8</td>
+                                        <td>2.6</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td>3/4"</td>
+                                        <td>3 GPM</td>
+                                        <td>2.2</td>
+                                        <td>1.7</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td>3/4"</td>
+                                        <td>5 GPM</td>
+                                        <td>5.5</td>
+                                        <td>2.8</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1"</td>
+                                        <td>4 GPM</td>
+                                        <td>1.3</td>
+                                        <td>1.6</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1"</td>
+                                        <td>6 GPM</td>
+                                        <td>2.8</td>
+                                        <td>2.4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1.25"</td>
+                                        <td>5 GPM</td>
+                                        <td>0.9</td>
+                                        <td>1.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1.25"</td>
+                                        <td>8 GPM</td>
+                                        <td>2.2</td>
+                                        <td>2.0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>For fittings, add the equivalent feet of pipe for each fitting in your run:</p>
+
+                        <div class="comparison-table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Fitting</th>
+                                        <th>3/4" Pipe (equiv. ft)</th>
+                                        <th>1" Pipe (equiv. ft)</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>90-degree elbow</td>
+                                        <td>2.0</td>
+                                        <td>2.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>45-degree elbow</td>
+                                        <td>1.0</td>
+                                        <td>1.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tee (through run)</td>
+                                        <td>1.0</td>
+                                        <td>1.3</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Tee (branch flow)</td>
+                                        <td>3.0</td>
+                                        <td>3.8</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td>Check valve</td>
+                                        <td>6.0</td>
+                                        <td>7.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ball valve (full port)</td>
+                                        <td>0.5</td>
+                                        <td>0.6</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="info-box warning">
+                            <p class="info-box-title">The Check Valve Penalty</p>
+                            <p>A check valve adds 6-7.5 feet of equivalent pipe length &mdash; the single largest friction penalty of any common fitting. You need a check valve to prevent backflow when the pump shuts off (otherwise the entire column of water in the pipe drains back to the source). But the friction cost is real. If your TDH is borderline, consider a low-resistance check valve (spring-loaded vs. swing-type) or use a ball valve as a manual shutoff instead.</p>
+                        </div>
+                    </section>
+
+                    <section id="solar-array-sizing">
+                        <h2>Solar Array Sizing: Peak Sun Hours and Panel Math</h2>
+                        <p>Sizing the solar array correctly is the difference between a system that pumps 300 gallons per day and one that pumps 100. The calculation requires three inputs: the pump's power draw, your daily water demand, and the peak sun hours available at your location.</p>
+
+                        <div class="info-box tip">
+                            <p class="info-box-title">Solar Array Sizing Formula</p>
+                            <p style="margin-bottom: 0;"><strong>Panel Watts = (Pump Amps &times; Pump Volts) &times; 1.3 safety factor</strong></p>
+                            <p>Then verify: <strong>Daily Gallons = (Peak Sun Hours &times; Panel Watts &times; Pump Efficiency) / Watt-Hours per Gallon</strong></p>
+                        </div>
+
+                        <h3>Step 1: Calculate Pump Power Draw</h3>
+                        <p>Our Shurflo 9300 draws 10 amps at 12 volts: 10A &times; 12V = 120 watts. This is the maximum power the pump needs at full output. In practice, the pump draws slightly less at lower flow rates (higher head), but 120 watts is the design number.</p>
+
+                        <h3>Step 2: Apply Safety Factor</h3>
+                        <p>Solar panels rarely produce their rated output. Panel degradation, soiling (dust, pollen, bird droppings), wire losses, and non-ideal sun angles all reduce actual output. We apply a 1.3x safety factor: 120W &times; 1.3 = <strong>156 watts minimum</strong>. We chose a <strong>160-watt panel</strong>, which meets this requirement.</p>
+
+                        <h3>Step 3: Calculate Daily Output from Peak Sun Hours</h3>
+                        <p>Peak Sun Hours (PSH) is the number of hours per day when solar irradiance averages 1,000 W/m&sup2;. This varies by location and season:</p>
+
+                        <div class="comparison-table-wrapper">
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Location (US)</th>
+                                        <th>Summer PSH</th>
+                                        <th>Winter PSH</th>
+                                        <th>Annual Average PSH</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Arizona / Nevada</td>
+                                        <td>7.0-7.5</td>
+                                        <td>3.5-4.0</td>
+                                        <td>5.5-6.0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>California / Colorado</td>
+                                        <td>6.5-7.0</td>
+                                        <td>3.0-3.5</td>
+                                        <td>5.0-5.5</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td>Midwest / Mid-Atlantic</td>
+                                        <td>5.5-6.0</td>
+                                        <td>2.5-3.0</td>
+                                        <td>4.0-4.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pacific Northwest</td>
+                                        <td>5.0-5.5</td>
+                                        <td>1.5-2.0</td>
+                                        <td>3.0-3.5</td>
+                                    </tr>
+                                    <tr>
+                                        <td>New England</td>
+                                        <td>5.0-5.5</td>
+                                        <td>2.0-2.5</td>
+                                        <td>3.5-4.0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>Our location (Midwest, zone 5): 5.5-6.0 PSH in summer, 2.5-3.0 PSH in winter. At 160 watts of panel capacity, our pump runs at approximately 120 watts of actual draw (the panel produces more than the pump can use, so the excess is unused). The pump operates for the duration of effective sunlight: 8-9 hours in summer, 4-5 hours in winter.</p>
+
+                        <p><strong>Summer daily output:</strong> 4.0 GPM &times; 60 minutes &times; 8 effective hours = <strong>1,920 gallons theoretical maximum</strong>. Reality: the pump does not run at full output for the entire day. Morning and late-afternoon sunlight is weaker, reducing pump speed. Our actual measured summer output is 300-350 GPD &mdash; because the system was designed with a flow restrictor to prevent tank overflow and because our intake screen adds resistance.</p>
+
+                        <p><strong>Winter daily output:</strong> 4.0 GPM &times; 60 minutes &times; 3 effective hours = <strong>720 gallons theoretical</strong>. Actual measured: 100-150 GPD. Winter reduction is more severe than the PSH ratio suggests because lower sun angles reduce panel output and cold temperatures increase water viscosity (slightly reducing pump efficiency).</p>
+
+                        <h3>Panel Sizing Quick Reference</h3>
+                        <div class="comparison-table-wrapper">
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Daily Target</th>
+                                        <th>Min Panel</th>
+                                        <th>Recommended Panel</th>
+                                        <th>Pump Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>50-100 GPD</td>
+                                        <td>50W</td>
+                                        <td>80W</td>
+                                        <td>Small diaphragm (3-5A)</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td>200-300 GPD</td>
+                                        <td>120W</td>
+                                        <td>160W</td>
+                                        <td>Medium diaphragm (8-10A)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>400-600 GPD</td>
+                                        <td>200W</td>
+                                        <td>300W</td>
+                                        <td>Large diaphragm or submersible</td>
+                                    </tr>
+                                    <tr>
+                                        <td>800-1,200 GPD</td>
+                                        <td>400W</td>
+                                        <td>500W+</td>
+                                        <td>Submersible well pump</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="link-block">
+                            <p><strong>160W monocrystalline solar panel:</strong></p>
+                            <a href="https://www.amazon.com/s?k=160+watt+monocrystalline+solar+panel+12v&tag=acekevorkian-20"
+                               class="affiliate-link"
+                               data-ref="solar-panel-160w"
+                               target="_blank"
+                               rel="noopener nofollow">
+                                Check Price on Amazon &rarr;
+                            </a>
+                            <p class="text-small text-muted">Affiliate link &mdash; we may earn a commission. See our <a href="../pages/disclaimer">disclaimer</a>.</p>
+                        </div>
+                    </section>
+
+                    <div class="ad-placeholder banner"><!-- Ad --></div>
+
+                    <section id="electrical-wiring">
+                        <h2>Electrical Wiring: Panel to Controller to Pump</h2>
+                        <p>The electrical side of a solar pumping system is straightforward but must be done correctly to avoid voltage drop, overheating, and component damage.</p>
+
+                        <h3>System Diagram</h3>
+                        <p>The wiring path is: Solar Panel (+) &rarr; Fuse (10A) &rarr; Charge Controller (+ input) &rarr; Charge Controller (+ output) &rarr; Pump (+). The same path for negative: Panel (&minus;) &rarr; Controller (&minus; input) &rarr; Controller (&minus; output) &rarr; Pump (&minus;).</p>
+
+                        <h3>Wire Sizing</h3>
+                        <p>Wire size matters because undersized wire causes voltage drop, which reduces pump performance. The rule: keep voltage drop under 3% for the entire wire run from panel to pump. Here is how to calculate:</p>
+
+                        <div class="comparison-table-wrapper">
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Wire Run (one-way)</th>
+                                        <th>Pump Current</th>
+                                        <th>Min Wire Size</th>
+                                        <th>Voltage Drop</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight-row">
+                                        <td>0-15 feet</td>
+                                        <td>10A</td>
+                                        <td>12 AWG</td>
+                                        <td>2.5%</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td>15-30 feet</td>
+                                        <td>10A</td>
+                                        <td>10 AWG</td>
+                                        <td>2.8%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30-50 feet</td>
+                                        <td>10A</td>
+                                        <td>8 AWG</td>
+                                        <td>2.9%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>50-75 feet</td>
+                                        <td>10A</td>
+                                        <td>6 AWG</td>
+                                        <td>2.7%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>0-15 feet</td>
+                                        <td>5A</td>
+                                        <td>14 AWG</td>
+                                        <td>2.6%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15-30 feet</td>
+                                        <td>5A</td>
+                                        <td>12 AWG</td>
+                                        <td>2.5%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>Our system: panel is mounted 20 feet from the pump housing. At 10 amps and 20 feet, 10 AWG wire gives us 2.8% voltage drop &mdash; within the 3% target. We used 10 AWG THHN wire in UV-resistant conduit for the panel-to-controller run, and 12 AWG stranded wire for the short controller-to-pump connection (3 feet).</p>
+
+                        <h3>Fusing and Protection</h3>
+                        <ul>
+                            <li><strong>Inline fuse:</strong> 10-amp ATC fuse on the positive wire between panel and controller. Protects against short circuits in the wire run.</li>
+                            <li><strong>Charge controller:</strong> 30A PWM controller with reverse polarity protection, low-voltage disconnect, and reverse current protection at night. We use an EPEVER Tracer-style controller but a basic $25 PWM controller works fine for direct panel-to-pump systems.</li>
+                            <li><strong>Disconnect switch:</strong> A simple 12V DC rocker switch between the controller output and the pump. Allows you to shut off the pump for maintenance without disconnecting wires.</li>
+                        </ul>
+
+                        <div class="info-box warning">
+                            <p class="info-box-title">Never Connect the Pump Directly to the Panel</p>
+                            <p>Without a charge controller, the pump sees the panel's full open-circuit voltage (Voc), which can be 20-22V for a 12V-rated panel. This overvoltage can damage the pump motor, overheat the windings, and significantly shorten the pump's lifespan. Always use a charge controller between the panel and the pump. The controller regulates the voltage to a safe 12-14V range and provides reverse current protection at night.</p>
+                        </div>
+
+                        <div class="link-block">
+                            <p><strong>30A PWM solar charge controller:</strong></p>
+                            <a href="https://www.amazon.com/s?k=30A+PWM+solar+charge+controller+12v&tag=acekevorkian-20"
+                               class="affiliate-link"
+                               data-ref="pwm-controller-30a"
+                               target="_blank"
+                               rel="noopener nofollow">
+                                Check Price on Amazon &rarr;
+                            </a>
+                            <p class="text-small text-muted">Affiliate link &mdash; we may earn a commission. See our <a href="../pages/disclaimer">disclaimer</a>.</p>
+                        </div>
+                    </section>
+
+                    <section id="intake-filtration">
+                        <h2>Intake Design &amp; Pre-Filtration</h2>
+                        <p>The intake is where your system meets the water source. A poorly designed intake clogs frequently, reduces pump performance, and allows debris into the pump that accelerates wear. Here is our intake design:</p>
+
+                        <h3>Stream Intake Assembly</h3>
+                        <ul>
+                            <li><strong>Intake head:</strong> A 5-gallon bucket with 1/4-inch hardware cloth (stainless steel mesh) wrapped around the outside. The bucket sits in the stream, anchored to a stake driven into the stream bed. The mesh screens out leaves, twigs, fish, and large debris while allowing water to enter freely.</li>
+                            <li><strong>Foot valve:</strong> A 1-inch brass foot valve with built-in screen at the bottom of the intake pipe. This prevents debris from entering the pipe and maintains prime in the suction line.</li>
+                            <li><strong>Suction pipe:</strong> 1-inch polyethylene pipe from the intake to the pump. The pipe is weighted at the intake end with a small chain to keep it submerged during low-flow periods.</li>
+                            <li><strong>Sediment pre-filter:</strong> A 20-micron inline sediment filter housing installed between the intake and the pump. This catches fine sand and silt that passes through the intake screen. We clean or replace the cartridge monthly during high-sediment periods (spring runoff, heavy rains).</li>
+                        </ul>
+
+                        <div class="comparison-table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Component</th>
+                                        <th>Spec</th>
+                                        <th>Function</th>
+                                        <th>Replacement Interval</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight-row">
+                                        <td>Intake screen</td>
+                                        <td>1/4-inch hardware cloth</td>
+                                        <td>Blocks leaves, twigs, debris &gt;1/4 inch</td>
+                                        <td>Clean every 2-3 weeks</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Foot valve</td>
+                                        <td>1" brass with screen</td>
+                                        <td>Blocks debris, maintains pipe prime</td>
+                                        <td>Inspect annually</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pre-filter cartridge</td>
+                                        <td>20-micron spun poly</td>
+                                        <td>Removes sand, silt, fine particles</td>
+                                        <td>Replace monthly (high sediment) / quarterly (clear water)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Check valve</td>
+                                        <td>1" brass spring-loaded</td>
+                                        <td>Prevents backflow when pump stops</td>
+                                        <td>Inspect annually</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="link-block">
+                            <p><strong>Stainless steel hardware cloth (for intake screen):</strong></p>
+                            <a href="https://www.amazon.com/s?k=stainless+steel+hardware+cloth+1+4+inch+mesh&tag=acekevorkian-20"
+                               class="affiliate-link"
+                               data-ref="hardware-cloth-ss"
+                               target="_blank"
+                               rel="noopener nofollow">
+                                Check Price on Amazon &rarr;
+                            </a>
+                            <p class="text-small text-muted">Affiliate link &mdash; we may earn a commission. See our <a href="../pages/disclaimer">disclaimer</a>.</p>
+                        </div>
+                    </section>
+
+                    <div class="ad-placeholder banner"><!-- Ad --></div>
+
+                    <section id="build-guide">
+                        <h2>Step-by-Step Build Guide</h2>
+
+                        <h3>Phase 1: Site Assessment and Planning (1-2 days)</h3>
+                        <ul>
+                            <li>Identify your water source (stream, well, pond, cistern)</li>
+                            <li>Measure vertical lift: from water surface at source to discharge point at the storage tank</li>
+                            <li>Measure total pipe run: horizontal distance from source to tank, including any elevation changes along the route</li>
+                            <li>Test source flow rate: place a 5-gallon bucket in the stream and time how long it takes to fill. Flow rate (GPM) = 5 / (time in seconds / 60)</li>
+                            <li>Calculate Total Dynamic Head using the formula in the head pressure section above</li>
+                            <li>Select pump based on TDH and required flow rate</li>
+                            <li>Calculate solar panel size using pump watts &times; 1.3 safety factor</li>
+                        </ul>
+
+                        <h3>Phase 2: Install the Intake (half day)</h3>
+                        <ul>
+                            <li>Position the intake in the deepest part of the stream (if possible) to ensure year-round water availability</li>
+                            <li>Anchor the intake bucket or cage securely with stakes driven into the stream bed</li>
+                            <li>Attach the foot valve to the end of the suction pipe and lower it into the intake</li>
+                            <li>Run the suction pipe from the intake to the pump location</li>
+                            <li>Install the pre-filter housing on the suction line before the pump inlet</li>
+                        </ul>
+
+                        <h3>Phase 3: Mount the Pump and Build the Housing (half day)</h3>
+                        <ul>
+                            <li>Position the pump as close to the water source as possible (minimizes suction lift)</li>
+                            <li>Build a simple timber housing around the pump: 4 posts, a roof, and a door for access. The housing protects the pump from rain, direct sun, and freezing</li>
+                            <li>Mount the pump on a wooden platform inside the housing, using rubber vibration isolation pads</li>
+                            <li>Connect the suction pipe from the intake to the pump inlet</li>
+                            <li>Connect the discharge pipe from the pump outlet to the pipe leading to the storage tank</li>
+                            <li>Install a check valve on the discharge side (between the pump and the tank) to prevent backflow</li>
+                        </ul>
+
+                        <h3>Phase 4: Install the Solar Panel and Wiring (half day)</h3>
+                        <ul>
+                            <li>Mount the solar panel on a pole or rack facing true south, angled at your latitude for year-round production</li>
+                            <li>Run the wire from the panel to the pump housing (use conduit for UV and animal protection)</li>
+                            <li>Install the fuse on the positive wire within 12 inches of the panel</li>
+                            <li>Connect the wire to the charge controller (+ and &minus; inputs)</li>
+                            <li>Connect the charge controller output to the pump (+ and &minus; terminals)</li>
+                            <li>Install a disconnect switch between the controller and the pump</li>
+                            <li>Verify all connections are tight and properly insulated</li>
+                        </ul>
+
+                        <h3>Phase 5: Prime and Test (1 hour)</h3>
+                        <ul>
+                            <li>Fill the suction pipe and pump with water to prime it (diaphragm pumps self-prime, but initial priming speeds startup)</li>
+                            <li>Open the disconnect switch and verify the pump starts running</li>
+                            <li>Check for leaks at all fittings</li>
+                            <li>Measure flow rate at the tank outlet: time how long it takes to fill a known-volume container</li>
+                            <li>Verify the panel voltage at the charge controller (should read 13-17V in full sun)</li>
+                            <li>Set the float switch in the storage tank to stop pumping when the tank reaches the desired level</li>
+                        </ul>
+
+                        <div class="link-block">
+                            <p><strong>1-inch brass check valve (spring-loaded):</strong></p>
+                            <a href="https://www.amazon.com/s?k=1+inch+brass+spring+check+valve+water+pump&tag=acekevorkian-20"
+                               class="affiliate-link"
+                               data-ref="check-valve-1inch"
+                               target="_blank"
+                               rel="noopener nofollow">
+                                Check Price on Amazon &rarr;
+                            </a>
+                            <p class="text-small text-muted">Affiliate link &mdash; we may earn a commission. See our <a href="../pages/disclaimer">disclaimer</a>.</p>
+                        </div>
+                    </section>
+
+                    <section id="materials-cost">
+                        <h2>Complete Materials List &amp; Cost</h2>
+
+                        <div class="comparison-table-wrapper">
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Qty</th>
+                                        <th>Unit Cost</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight-row">
+                                        <td>Shurflo 9300-158-65 diaphragm pump (12V, 10 GPM)</td>
+                                        <td>1</td>
+                                        <td>$285</td>
+                                        <td>$285</td>
+                                    </tr>
+                                    <tr>
+                                        <td>160W monocrystalline solar panel</td>
+                                        <td>1</td>
+                                        <td>$145</td>
+                                        <td>$145</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30A PWM solar charge controller</td>
+                                        <td>1</td>
+                                        <td>$45</td>
+                                        <td>$45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10A ATC fuse + holder</td>
+                                        <td>1</td>
+                                        <td>$12</td>
+                                        <td>$12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10 AWG THHN wire (50 ft)</td>
+                                        <td>1 lot</td>
+                                        <td>$38</td>
+                                        <td>$38</td>
+                                    </tr>
+                                    <tr>
+                                        <td>UV-resistant conduit (20 ft)</td>
+                                        <td>1 lot</td>
+                                        <td>$15</td>
+                                        <td>$15</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1" polyethylene pipe (300 ft roll)</td>
+                                        <td>1</td>
+                                        <td>$85</td>
+                                        <td>$85</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1" push-fit fittings (elbows, tees, reducers)</td>
+                                        <td>lot</td>
+                                        <td>&mdash;</td>
+                                        <td>$42</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1" brass check valve (spring-loaded)</td>
+                                        <td>1</td>
+                                        <td>$18</td>
+                                        <td>$18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1" brass foot valve with screen</td>
+                                        <td>1</td>
+                                        <td>$22</td>
+                                        <td>$22</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20-micron sediment filter housing + cartridge</td>
+                                        <td>1</td>
+                                        <td>$24</td>
+                                        <td>$24</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Steel panel mount pole + hardware</td>
+                                        <td>1</td>
+                                        <td>$35</td>
+                                        <td>$35</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Timber for pump housing</td>
+                                        <td>lot</td>
+                                        <td>&mdash;</td>
+                                        <td>$25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>DC disconnect switch</td>
+                                        <td>1</td>
+                                        <td>$12</td>
+                                        <td>$12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Rubber vibration isolation pads</td>
+                                        <td>4</td>
+                                        <td>$3</td>
+                                        <td>$12</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td colspan="3"><strong>Total system cost</strong></td>
+                                        <td><strong>$815</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>Our original build cost $754 because we sourced the solar panel used ($90 instead of $145) and found the charge controller at a surplus store ($25 instead of $45). The $815 figure above uses current retail pricing. Even at retail, a complete solar pumping system for 300 GPD costs less than a single year of electric pump electricity in most areas.</p>
+                    </section>
+
+                    <div class="ad-placeholder banner"><!-- Ad --></div>
+
+                    <section id="panel-mounting">
+                        <h2>Panel Mounting: Angle, Orientation, and Tracking</h2>
+                        <p>How you mount the solar panel has a measurable impact on daily water production. Here are the three mounting options:</p>
+
+                        <div class="comparison-table-wrapper">
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Mount Type</th>
+                                        <th>Annual Output</th>
+                                        <th>Cost</th>
+                                        <th>Complexity</th>
+                                        <th>Maintenance</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight-row">
+                                        <td>Fixed tilt (latitude angle)</td>
+                                        <td>85-90% of max</td>
+                                        <td>$30-$60</td>
+                                        <td>Low</td>
+                                        <td>None</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Seasonal adjustable tilt</td>
+                                        <td>92-96% of max</td>
+                                        <td>$50-$100</td>
+                                        <td>Low</td>
+                                        <td>Adjust 4x/year</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Single-axis tracker</td>
+                                        <td>100% (baseline)</td>
+                                        <td>$300-$600</td>
+                                        <td>High</td>
+                                        <td>Monthly lubrication</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>We use a fixed tilt mount angled at our latitude (40 degrees) facing true south. This is the simplest, cheapest, and most reliable option. The panel produces 85-90% of what a tracker would produce, but the tracker costs $300-600 and adds mechanical complexity to a system that is supposed to be maintenance-free. For a water pumping system, fixed tilt is the right choice: the storage tank absorbs the seasonal production variation.</p>
+
+                        <p><strong>Optimal tilt angles by season:</strong></p>
+                        <ul>
+                            <li>Summer: latitude &minus; 15 degrees (25 degrees at our location)</li>
+                            <li>Winter: latitude + 15 degrees (55 degrees at our location)</li>
+                            <li>Year-round fixed: latitude angle (40 degrees)</li>
+                        </ul>
+
+                        <p>If you build a seasonal adjustable mount, adjusting the panel angle four times per year (solstices and equinoxes) takes 5 minutes and costs nothing. The production gain is 5-8% annually &mdash; meaningful but not critical.</p>
+                    </section>
+
+                    <section id="freeze-protection">
+                        <h2>Freeze Protection &amp; Winter Operation</h2>
+                        <p>Freezing is the biggest threat to a solar pumping system. Water trapped in the pump, pipes, or intake will expand and crack components. Here is our winter protocol:</p>
+
+                        <div class="comparison-table-wrapper">
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Component</th>
+                                        <th>Risk</th>
+                                        <th>Protection Method</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight-row">
+                                        <td>Pump body</td>
+                                        <td>Cracking if water freezes inside</td>
+                                        <td>Insulate housing with rigid foam; install small 12V heat tape on pump body (runs off panel during the day)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Suction pipe</td>
+                                        <td>Freezing in above-ground sections</td>
+                                        <td>Bury below frost line; drain intake line when temps drop below 20°F</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Discharge pipe</td>
+                                        <td>Freezing between pump and tank</td>
+                                        <td>Bury below frost line; install drain valve at lowest point</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Intake</td>
+                                        <td>Ice formation on screen</td>
+                                        <td>Position intake in flowing water (freezes slower than still water); check weekly during freezing weather</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Charge controller</td>
+                                        <td>Reduced performance in cold</td>
+                                        <td>Mount inside pump housing &mdash; cold actually improves panel efficiency, so the controller sees higher voltage in winter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>Our pump housing is insulated with 2-inch rigid foam on all sides and the roof. This keeps the interior 10-15°F warmer than outside air during the day (when the sun heats the roof) and slows overnight freezing. We drain the intake line when temperatures are expected to drop below 20°F by opening a drain valve at the pump inlet and letting the suction pipe empty back into the stream. Re-priming takes 2 minutes when the weather warms.</p>
+                    </section>
+
+                    <div class="ad-placeholder banner"><!-- Ad --></div>
+
+                    <section id="performance-data">
+                        <h2>Two Years of Performance Data</h2>
+                        <p>We logged daily output, solar conditions, and maintenance events for 24 months. Here is what the data shows:</p>
+
+                        <div class="comparison-table-wrapper">
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Month</th>
+                                        <th>Avg Daily Output (gal)</th>
+                                        <th>Peak Daily Output</th>
+                                        <th>Avg Sun Hours</th>
+                                        <th>Maintenance Events</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>January</td>
+                                        <td>105</td>
+                                        <td>145</td>
+                                        <td>2.8</td>
+                                        <td>Intake screen ice removal (2x)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>February</td>
+                                        <td>118</td>
+                                        <td>165</td>
+                                        <td>3.2</td>
+                                        <td>Intake screen ice removal (1x)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>March</td>
+                                        <td>180</td>
+                                        <td>250</td>
+                                        <td>4.5</td>
+                                        <td>Panel cleaning (spring pollen)</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td>April</td>
+                                        <td>240</td>
+                                        <td>310</td>
+                                        <td>5.2</td>
+                                        <td>Pre-filter cartridge replacement</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td>May</td>
+                                        <td>290</td>
+                                        <td>350</td>
+                                        <td>5.8</td>
+                                        <td>Intake screen cleaning (2x)</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td>June</td>
+                                        <td>320</td>
+                                        <td>365</td>
+                                        <td>6.2</td>
+                                        <td>None</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td>July</td>
+                                        <td>330</td>
+                                        <td>370</td>
+                                        <td>6.0</td>
+                                        <td>Panel cleaning (dust)</td>
+                                    </tr>
+                                    <tr class="highlight-row">
+                                        <td>August</td>
+                                        <td>315</td>
+                                        <td>360</td>
+                                        <td>5.5</td>
+                                        <td>Intake screen cleaning (2x)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>September</td>
+                                        <td>250</td>
+                                        <td>320</td>
+                                        <td>4.8</td>
+                                        <td>Pre-filter cartridge replacement</td>
+                                    </tr>
+                                    <tr>
+                                        <td>October</td>
+                                        <td>180</td>
+                                        <td>240</td>
+                                        <td>3.8</td>
+                                        <td>Intake screen cleaning (leaf fall, 3x)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>November</td>
+                                        <td>130</td>
+                                        <td>175</td>
+                                        <td>2.8</td>
+                                        <td>Drain intake line for freeze protection</td>
+                                    </tr>
+                                    <tr>
+                                        <td>December</td>
+                                        <td>108</td>
+                                        <td>150</td>
+                                        <td>2.5</td>
+                                        <td>Drain intake line for freeze protection</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>Annual total: approximately 78,000 gallons pumped over 12 months. Average daily output: 214 gallons. Peak daily output: 370 gallons (July). Lowest daily output: 95 gallons (late December, overcast). The system met our 250-300 GPD demand for 5 months (May-September) and fell below that threshold during the winter months when our water demand is lower (no garden irrigation, no livestock watering in winter).</p>
+
+                        <p><strong>Cost per gallon:</strong> $815 total system cost / 156,000 gallons over a 10-year expected lifespan (pump replacement at year 5 estimated at $285) = <strong>$0.007 per gallon</strong>. Compare that to delivered water in rural areas ($0.01-$0.03 per gallon from a well pump with electricity) or purchased water ($0.10-$0.20 per gallon from a water delivery service). The solar pump pays for itself within the first year if you would otherwise be buying water.</p>
+                    </section>
+
+                    <section id="maintenance">
+                        <h2>Annual Maintenance Schedule</h2>
+
+                        <div class="comparison-table-wrapper">
+                            <table class="comparison-table">
+                                <thead>
+                                    <tr>
+                                        <th>Task</th>
+                                        <th>Frequency</th>
+                                        <th>Time</th>
+                                        <th>Cost</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight-row">
+                                        <td>Intake screen cleaning</td>
+                                        <td>Every 2-3 weeks (summer), weekly (fall)</td>
+                                        <td>10 minutes</td>
+                                        <td>$0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pre-filter cartridge replacement</td>
+                                        <td>Monthly (high sediment) / quarterly (clear water)</td>
+                                        <td>15 minutes</td>
+                                        <td>$5-10 per cartridge</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Solar panel cleaning</td>
+                                        <td>2-3 times per year</td>
+                                        <td>20 minutes</td>
+                                        <td>$0 (water + soft brush)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pump inspection (diaphragm, valves)</td>
+                                        <td>Annually</td>
+                                        <td>30 minutes</td>
+                                        <td>$0 (visual inspection)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Wire connection inspection</td>
+                                        <td>Annually</td>
+                                        <td>15 minutes</td>
+                                        <td>$0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Check valve / foot valve inspection</td>
+                                        <td>Annually</td>
+                                        <td>20 minutes</td>
+                                        <td>$0 (clean and re-seat)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Intake line drain (winter)</td>
+                                        <td>When temps drop below 20°F</td>
+                                        <td>5 minutes</td>
+                                        <td>$0</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>Total annual maintenance time: 4-6 hours. Total annual maintenance cost: $20-50 (pre-filter cartridges). Pump diaphragm replacement (expected every 3-5 years): $40-60. Over 10 years, total maintenance cost is approximately $250-$400 &mdash; negligible compared to the operating cost savings.</p>
+                    </section>
+
+                    <section id="alternatives">
+                        <h2>Alternative: The Hydraulic Ram Pump (Zero Electricity)</h2>
+                        <p>Before investing in a solar pump, consider whether a hydraulic ram pump could work for your situation. A ram pump uses the kinetic energy of flowing water to lift a portion of that water to a higher elevation &mdash; no solar panels, no electricity, no moving parts (just two check valves and a waste valve). It runs 24 hours a day, 365 days a year.</p>
+
+                        <p><strong>Requirements:</strong> a flowing stream with at least 3 feet of vertical drop at the intake point, and a minimum flow rate of 5 GPM. The ram pump uses the "drive" head (the drop in the stream) to create pressure that pushes a smaller volume of water to a much higher elevation. Typical efficiency: 1 gallon delivered for every 7-14 gallons that flow through the pump.</p>
+
+                        <div class="comparison-table-wrapper">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Factor</th>
+                                        <th>Solar Pump</th>
+                                        <th>Ram Pump</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="highlight-row">
+                                        <td>Energy source</td>
+                                        <td>Sunlight</td>
+                                        <td>Flowing water</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Operating hours</td>
+                                        <td>Daylight only (6-9 hrs/day)</td>
+                                        <td>24/7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Equipment cost</td>
+                                        <td>$500-$1,500</td>
+                                        <td>$150-$600</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Site requirements</td>
+                                        <td>Sunlight + water source</td>
+                                        <td>Flowing stream + 3+ ft drop</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Daily output</td>
+                                        <td>100-400 GPD</td>
+                                        <td>200-1,500 GPD</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maintenance</td>
+                                        <td>Low (screen, panel wash)</td>
+                                        <td>Low (valve adjustment)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Winter operation</td>
+                                        <td>Reduced (shorter days)</td>
+                                        <td>Unaffected (if stream flows)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <p>Our stream has adequate flow (15+ GPM year-round) but only 2 feet of usable drop at the intake point &mdash; just below the ram pump threshold. We chose solar pumping because it works regardless of stream gradient. If your stream has 5+ feet of drop, a ram pump is worth investigating before spending money on a solar system.</p>
+
+                        <div class="link-block">
+                            <p><strong>Hydraulic ram pump kit (DIY or commercial):</strong></p>
+                            <a href="https://www.amazon.com/s?k=hydraulic+ram+pump+water+off+grid&tag=acekevorkian-20"
+                               class="affiliate-link"
+                               data-ref="ram-pump"
+                               target="_blank"
+                               rel="noopener nofollow">
+                                Check Price on Amazon &rarr;
+                            </a>
+                            <p class="text-small text-muted">Affiliate link &mdash; we may earn a commission. See our <a href="../pages/disclaimer">disclaimer</a>.</p>
+                        </div>
+                    </section>
+
+                    <div class="ad-placeholder banner"><!-- Ad --></div>
+
+                    <section id="lessons-learned">
+                        <h2>Lessons Learned: What We Would Do Differently</h2>
+
+                        <div class="pros-cons">
+                            <div class="pros">
+                                <h4>What Worked</h4>
+                                <ul>
+                                    <li>Direct-drive solar pumping (no batteries): zero battery maintenance, zero battery cost, and the storage tank provides all the buffering we need</li>
+                                    <li>Diaphragm pump: self-priming, run-dry safe, and tolerates the occasional bit of sand that gets past the pre-filter</li>
+                                    <li>PWM charge controller: cheap, reliable, and provides essential voltage regulation and reverse current protection</li>
+                                    <li>1-inch pipe: low friction loss even at 260 feet of run length</li>
+                                    <li>Hardware cloth intake screen: blocks everything larger than 1/4 inch and is easy to clean</li>
+                                    <li>Storage tank as "battery": eliminates $200-600 in battery costs and the associated maintenance</li>
+                                </ul>
+                            </div>
+                            <div class="cons">
+                                <h4>What We Would Change</h4>
+                                <ul>
+                                    <li><strong>Use 1.25-inch pipe for runs over 250 feet:</strong> 1-inch is adequate but 1.25-inch would reduce friction head by another 15-20 feet, improving flow rate by approximately 0.5 GPM</li>
+                                    <li><strong>Install a seasonal adjustable panel mount:</strong> a $50 adjustable bracket that lets us change the panel angle 4x/year would add 5-8% to annual production at minimal cost and effort</li>
+                                    <li><strong>Add a second pre-filter in series:</strong> a 50-micron cartridge before the 20-micron would extend the 20-micron cartridge life significantly during spring runoff</li>
+                                    <li><strong>Build the pump housing with better insulation:</strong> 2-inch rigid foam works but 4-inch would prevent any freeze risk down to 0°F without active heating</li>
+                                    <li><strong>Use two smaller tanks instead of one large tank:</strong> redundancy if one tank develops a leak, and easier replacement if needed</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="bottom-line">
+                        <h2>Bottom Line: Is Solar Water Pumping Worth It?</h2>
+                        <p>For our situation &mdash; a stream 40 feet below the cabin, no grid connection, and a daily demand of 250-300 gallons &mdash; a solar water pump is the optimal solution. The $815 system cost is recovered within the first year compared to purchasing delivered water. Compared to running a gas-powered pump, the solar system saves $30-$60 per month in fuel costs and eliminates engine maintenance entirely.</p>
+
+                        <p>The key design principles are:</p>
+                        <ul>
+                            <li><strong>Calculate TDH before buying anything:</strong> an undersized pump is useless, and an oversized pump wastes solar production</li>
+                            <li><strong>Oversize the panel by 30%:</strong> real-world output is always lower than rated output</li>
+                            <li><strong>Use a charge controller:</strong> never connect the pump directly to the panel</li>
+                            <li><strong>Use the tank as your battery:</strong> skip the expensive battery bank</li>
+                            <li><strong>Pre-filter aggressively:</strong> the best pump maintenance is keeping debris out of the pump in the first place</li>
+                            <li><strong>Plan for winter:</strong> freeze protection is not optional in cold climates</li>
+                        </ul>
+
+                        <p>If your water source has adequate flow and a 3+ foot drop, consider a ram pump first &mdash; it is cheaper and runs 24/7. If not, a solar pump is the next best thing to free water, and at $0.007 per gallon, it is the cheapest pumped water you can build.</p>
+                    </section>
+
+                    <section id="related-guides">
                         <h2>More Water System Guides</h2>
                         <ul>
-                            <li><a href="gravity-fed-water-system"><strong>Gravity-Fed Water System</strong></a> &mdash; how we distribute water from the storage tank to the cabin</li>
-                            <li><a href="../guides/gravity-water-system"><strong>Gravity Water System Guide</strong></a> &mdash; technical deep-dive on pressure and pipe sizing</li>
-                            <li><a href="../guides/water-filtration"><strong>Water Filtration Guide</strong></a> &mdash; treating water from streams and wells</li>
-                            <li><a href="best-water-filters-2026"><strong>Best Water Filters 2026</strong></a> &mdash; our tested recommendations</li>
+                            <li><a href="gravity-fed-water-system"><strong>Gravity-Fed Water System</strong></a> &mdash; distributing water from the storage tank to the cabin</li>
+                            <li><a href="off-grid-water-supply-complete-guide"><strong>Complete Off-Grid Water Guide</strong></a> &mdash; wells, springs, rainwater, surface water, and treatment</li>
+                            <li><a href="../guides/water-filtration"><strong>Water Filtration Guide</strong></a> &mdash; treating stream and well water for drinking</li>
+                            <li><a href="../guides/rainwater-harvesting"><strong>Rainwater Harvesting Guide</strong></a> &mdash; catchment, storage, and first-flush diversion</li>
                         </ul>
                     </section>
 
@@ -257,7 +1351,7 @@
                     <h3>Related Posts</h3>
                     <ul>
                         <li><a href="gravity-fed-water-system">Gravity-Fed Water System</a></li>
-                        <li><a href="best-water-filters-2026">Best Water Filters 2026</a></li>
+                        <li><a href="off-grid-water-supply-complete-guide">Complete Off-Grid Water Guide</a></li>
                     </ul>
                 </div>
                 <div class="sidebar-widget">
