@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://theoffgridworkshop.com/</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,19 +12,19 @@
   <!-- Topic hub pages -->
   <url>
     <loc>https://theoffgridworkshop.com/pages/solar</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/pages/water</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/pages/food</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -32,7 +32,7 @@
   <!-- Reviews index -->
   <url>
     <loc>https://theoffgridworkshop.com/reviews/</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -40,31 +40,31 @@
   <!-- Solar & Power reviews -->
   <url>
     <loc>https://theoffgridworkshop.com/reviews/renogy-200w-solar-kit</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/reviews/eco-worthy-400w</loc>
-    <lastmod>2026-03-03</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/reviews/jackery-1000-pro</loc>
-    <lastmod>2026-02-27</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/reviews/bluetti-ac200p</loc>
-    <lastmod>2026-02-27</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/reviews/victron-energy-kit</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -72,13 +72,13 @@
   <!-- Water reviews -->
   <url>
     <loc>https://theoffgridworkshop.com/reviews/berkey-water-filter</loc>
-    <lastmod>2026-03-03</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/reviews/lifestraw-mission</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -86,19 +86,19 @@
   <!-- Food preservation reviews -->
   <url>
     <loc>https://theoffgridworkshop.com/reviews/excalibur-dehydrator</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/reviews/harvest-right-freeze-dryer</loc>
-    <lastmod>2026-02-24</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/reviews/all-american-pressure-canner</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -106,13 +106,13 @@
   <!-- Tools & gear reviews -->
   <url>
     <loc>https://theoffgridworkshop.com/reviews/fiskars-x27-splitting-axe</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/reviews/lodge-cast-iron-skillet</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -120,7 +120,7 @@
   <!-- Guides index -->
   <url>
     <loc>https://theoffgridworkshop.com/guides/</loc>
-    <lastmod>2026-03-03</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -128,7 +128,7 @@
   <!-- Getting started -->
   <url>
     <loc>https://theoffgridworkshop.com/guides/getting-started-off-grid</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -136,19 +136,19 @@
   <!-- Solar & power guides -->
   <url>
     <loc>https://theoffgridworkshop.com/guides/solar-sizing</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/guides/power-audit</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/guides/lifepo4-battery-guide</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -156,19 +156,19 @@
   <!-- Water guides -->
   <url>
     <loc>https://theoffgridworkshop.com/guides/rainwater-harvesting</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/guides/gravity-water-system</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/guides/water-filtration</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -176,19 +176,19 @@
   <!-- Food guides -->
   <url>
     <loc>https://theoffgridworkshop.com/guides/food-preservation</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/guides/best-off-grid-crops</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/guides/backyard-chickens</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -196,13 +196,13 @@
   <!-- Building & shelter guides -->
   <url>
     <loc>https://theoffgridworkshop.com/guides/tiny-cabin-guide</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/guides/earthbag-construction</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -210,7 +210,7 @@
   <!-- Blog index -->
   <url>
     <loc>https://theoffgridworkshop.com/blog/</loc>
-    <lastmod>2026-03-03</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -218,73 +218,73 @@
   <!-- Blog posts -->
   <url>
     <loc>https://theoffgridworkshop.com/blog/diy-rain-gauge-weather-tracking</loc>
-    <lastmod>2026-03-03</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/blog/lifepo4-vs-agm-batteries-off-grid</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/blog/off-grid-food-storage-no-refrigeration</loc>
-    <lastmod>2026-03-02</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/blog/best-wood-stoves-off-grid-2026</loc>
-    <lastmod>2026-02-27</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/blog/best-solar-panels-2026</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/blog/harvest-right-freeze-dryer-review</loc>
-    <lastmod>2026-02-26</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/blog/excalibur-3926t-dehydrator-review</loc>
-    <lastmod>2026-02-26</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/blog/compost-toilet-guide</loc>
-    <lastmod>2026-02-12</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/blog/cob-oven-guide</loc>
-    <lastmod>2026-02-05</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/blog/building-a-diy-greenhouse-on-a-budget</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/blog/root-cellar-guide</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/blog/gravity-fed-water-system</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -292,31 +292,31 @@
   <!-- Static pages -->
   <url>
     <loc>https://theoffgridworkshop.com/pages/about</loc>
-    <lastmod>2026-03-03</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/pages/how-we-test</loc>
-    <lastmod>2026-03-03</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/pages/contact</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/pages/disclaimer</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/pages/privacy</loc>
-    <lastmod>2026-02-01</lastmod>
+    <lastmod>2026-07-03</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.4</priority>
   </url>
