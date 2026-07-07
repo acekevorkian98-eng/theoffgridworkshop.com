@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "slug": "winter-composting-system",
+      "title": "Winter Composting: How We Keep Our Compost Active Through Freezing Temperatures",
+      "category": "Food & Farming",
+      "date": "2026-07-07",
+      "description": "We kept a compost pile active through zone 6b winters with core temps of 128°F at -2°F ambient. Here are four cold-weather bin designs, C:N ratio adjustments for freezing conditions, moisture management protocols, and three years of winter production data.",
+      "difficulty": "intermediate"
+    },
+    {
       "slug": "gardening-cold-weather",
       "title": "Gardening in Cold Weather: Our Year-Round Growing Strategy",
       "category": "Food & Farming",
