@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "slug": "passive-cooling-off-grid-cabins",
+      "title": "Passive Cooling for Off-Grid Cabins: 8 Strategies We've Tested",
+      "category": "Building",
+      "date": "2026-07-08",
+      "description": "We tested 8 passive cooling strategies over four summers at our off-grid homestead. Attic radiant barriers, night-purge ventilation, thermal mass, earth tubes, and more — with temperature data and real costs.",
+      "difficulty": "intermediate"
+    },
+    {
       "slug": "winter-composting-system",
       "title": "Winter Composting: How We Keep Our Compost Active Through Freezing Temperatures",
       "category": "Food & Farming",
