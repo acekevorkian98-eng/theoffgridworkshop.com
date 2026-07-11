@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "slug": "firewood-processing-guide",
+      "title": "Firewood Processing: Complete Guide to Sourcing, Splitting, Stacking & Seasoning",
+      "category": "Building",
+      "date": "2026-07-09",
+      "description": "Three years of firewood production data from our off-grid homestead. BTU rankings for 12 species, four sourcing methods compared, splitting tool showdown (X27 vs maul vs hydraulic), four stacking methods with moisture data, and a full annual processing calendar.",
+      "difficulty": "intermediate"
+    },
+    {
       "slug": "passive-cooling-off-grid-cabins",
       "title": "Passive Cooling for Off-Grid Cabins: 8 Strategies We've Tested",
       "category": "Building",
