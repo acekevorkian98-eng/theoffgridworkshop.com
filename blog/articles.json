@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "slug": "smoking-curing-meat-guide",
+      "title": "Smoking & Curing Meat: The Complete Off-Grid Preservation Guide",
+      "category": "Food & Farming",
+      "date": "2026-07-15",
+      "description": "Cold smoking, hot smoking, dry curing, and smokehouse builds — every method with USDA safety data, temperature tables, cure ratios, three budget-tier smokehouse designs, and step-by-step recipes for bacon, smoked salmon, and jerky.",
+      "difficulty": "intermediate"
+    },
+    {
       "slug": "firewood-processing-guide",
       "title": "Firewood Processing: Complete Guide to Sourcing, Splitting, Stacking & Seasoning",
       "category": "Building",
