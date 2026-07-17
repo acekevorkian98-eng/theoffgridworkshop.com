@@ -217,6 +217,12 @@
 
   <!-- Blog posts -->
   <url>
+    <loc>https://theoffgridworkshop.com/blog/off-grid-lighting-complete-guide</loc>
+    <lastmod>2026-07-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://theoffgridworkshop.com/blog/firewood-processing-guide</loc>
     <lastmod>2026-07-09</lastmod>
     <changefreq>monthly</changefreq>

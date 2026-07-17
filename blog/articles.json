@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "slug": "off-grid-lighting-complete-guide",
+      "title": "Off-Grid Lighting: Every System We've Tested, From Candles to Solar LEDs",
+      "category": "Energy & Homesteading",
+      "date": "2026-07-17",
+      "description": "We tested 6 lighting categories across 18 months at our off-grid homestead. Solar LEDs, kerosene lanterns, candles, 12V puck lights, and complete home kits — with lumens-per-watt data, runtime charts, and 5-year cost analysis.",
+      "difficulty": "intermediate"
+    },
+    {
       "slug": "smoking-curing-meat-guide",
       "title": "Smoking & Curing Meat: The Complete Off-Grid Preservation Guide",
       "category": "Food & Farming",
