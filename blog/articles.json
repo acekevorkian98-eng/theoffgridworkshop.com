@@ -1,11 +1,19 @@
 {
   "articles": [
     {
+      "slug": "compost-toilet-guide",
+      "title": "Compost Toilet Guide: Complete DIY Builds, Pathogen Science, and 18-Month Real-World Data",
+      "category": "Building & Homesteading",
+      "date": "2026-07-19",
+      "description": "We used a compost toilet daily for 18 months. Here is the pathogen die-off science, 5 system designs with cost breakdowns, carbon-to-nitrogen math, ventilation engineering, 6 cover material tests, and the complete monthly operations log.",
+      "difficulty": "intermediate"
+    },
+    {
       "slug": "off-grid-lighting-complete-guide",
       "title": "Off-Grid Lighting: Every System We've Tested, From Candles to Solar LEDs",
       "category": "Energy & Homesteading",
       "date": "2026-07-17",
-      "description": "We tested 6 lighting categories across 18 months at our off-grid homestead. Solar LEDs, kerosene lanterns, candles, 12V puck lights, and complete home kits — with lumens-per-watt data, runtime charts, and 5-year cost analysis.",
+      "description": "We tested 6 lighting categories across 18 months at our off-grid homestead. Solar LEDs, kerosene lanterns, candles, 12V puck lights, and complete home kits \u2014 with lumens-per-watt data, runtime charts, and 5-year cost analysis.",
       "difficulty": "intermediate"
     },
     {
@@ -13,7 +21,7 @@
       "title": "Smoking & Curing Meat: The Complete Off-Grid Preservation Guide",
       "category": "Food & Farming",
       "date": "2026-07-15",
-      "description": "Cold smoking, hot smoking, dry curing, and smokehouse builds — every method with USDA safety data, temperature tables, cure ratios, three budget-tier smokehouse designs, and step-by-step recipes for bacon, smoked salmon, and jerky.",
+      "description": "Cold smoking, hot smoking, dry curing, and smokehouse builds \u2014 every method with USDA safety data, temperature tables, cure ratios, three budget-tier smokehouse designs, and step-by-step recipes for bacon, smoked salmon, and jerky.",
       "difficulty": "intermediate"
     },
     {
@@ -29,7 +37,7 @@
       "title": "Passive Cooling for Off-Grid Cabins: 8 Strategies We've Tested",
       "category": "Building",
       "date": "2026-07-08",
-      "description": "We tested 8 passive cooling strategies over four summers at our off-grid homestead. Attic radiant barriers, night-purge ventilation, thermal mass, earth tubes, and more — with temperature data and real costs.",
+      "description": "We tested 8 passive cooling strategies over four summers at our off-grid homestead. Attic radiant barriers, night-purge ventilation, thermal mass, earth tubes, and more \u2014 with temperature data and real costs.",
       "difficulty": "intermediate"
     },
     {
@@ -37,7 +45,7 @@
       "title": "Winter Composting: How We Keep Our Compost Active Through Freezing Temperatures",
       "category": "Food & Farming",
       "date": "2026-07-07",
-      "description": "We kept a compost pile active through zone 6b winters with core temps of 128°F at -2°F ambient. Here are four cold-weather bin designs, C:N ratio adjustments for freezing conditions, moisture management protocols, and three years of winter production data.",
+      "description": "We kept a compost pile active through zone 6b winters with core temps of 128\u00b0F at -2\u00b0F ambient. Here are four cold-weather bin designs, C:N ratio adjustments for freezing conditions, moisture management protocols, and three years of winter production data.",
       "difficulty": "intermediate"
     },
     {
@@ -85,7 +93,7 @@
       "title": "Cold Frames: Extend Your Growing Season by Weeks",
       "category": "Food & Farming",
       "date": "2026-04-14",
-      "description": "We harvested lettuce from our cold frames on March 15 this year — six weeks before the last frost. We picked kale through December 28. Here is how cold frames work, three build designs, and the temperature data.",
+      "description": "We harvested lettuce from our cold frames on March 15 this year \u2014 six weeks before the last frost. We picked kale through December 28. Here is how cold frames work, three build designs, and the temperature data.",
       "difficulty": "intermediate"
     },
     {
@@ -101,7 +109,7 @@
       "title": "Building a Simple Root Cellar: Modern Budget Construction",
       "category": "Food & Farming",
       "date": "2026-04-14",
-      "description": "An 8x10 concrete block root cellar built into a north-facing slope, $1,211 all in, holding 400 pounds of produce at 33–42°F through winter. Complete materials list, ventilation system, and 12 months of temperature data.",
+      "description": "An 8x10 concrete block root cellar built into a north-facing slope, $1,211 all in, holding 400 pounds of produce at 33\u201342\u00b0F through winter. Complete materials list, ventilation system, and 12 months of temperature data.",
       "difficulty": "intermediate"
     },
     {
@@ -109,7 +117,7 @@
       "title": "Best Water Filters for Off-Grid Living in 2026",
       "category": "Water",
       "date": "2026-04-14",
-      "description": "We tested eight water filters over 18 months. From $20 bucket filters to $1,200 whole-house systems — these are the ones that actually work in off-grid conditions.",
+      "description": "We tested eight water filters over 18 months. From $20 bucket filters to $1,200 whole-house systems \u2014 these are the ones that actually work in off-grid conditions.",
       "difficulty": "intermediate"
     },
     {
@@ -117,7 +125,7 @@
       "title": "Best Wood Stoves for Off-Grid Living in 2026",
       "category": "Building",
       "date": "2026-04-14",
-      "description": "We tested eight wood stoves over four winters. From rocket mass heaters to catalytic converters — these are the ones that actually heat a cabin efficiently.",
+      "description": "We tested eight wood stoves over four winters. From rocket mass heaters to catalytic converters \u2014 these are the ones that actually heat a cabin efficiently.",
       "difficulty": "intermediate"
     },
     {
@@ -125,7 +133,7 @@
       "title": "Best Solar Generators for Off-Grid Living in 2026",
       "category": "Solar",
       "date": "2026-04-17",
-      "description": "We tested five solar generators over six months. From portable units to whole-home systems — these are the ones that actually perform in real off-grid conditions.",
+      "description": "We tested five solar generators over six months. From portable units to whole-home systems \u2014 these are the ones that actually perform in real off-grid conditions.",
       "difficulty": "intermediate"
     },
     {
@@ -213,7 +221,7 @@
       "title": "Rainwater Harvesting: Complete System Guide",
       "category": "Water",
       "date": "2026-02-01",
-      "description": "From gutters to cisterns — how we harvest and store rainwater. Sizing calculations, filtration options, and 12 months of collection data.",
+      "description": "From gutters to cisterns \u2014 how we harvest and store rainwater. Sizing calculations, filtration options, and 12 months of collection data.",
       "difficulty": "intermediate"
     },
     {
@@ -221,7 +229,7 @@
       "title": "Solar System Sizing: The Math",
       "category": "Solar",
       "date": "2026-02-01",
-      "description": "How to calculate exactly what solar system you need. Daily usage, panel output, battery capacity, and inverter sizing – with actual examples from our 2.4kW system.",
+      "description": "How to calculate exactly what solar system you need. Daily usage, panel output, battery capacity, and inverter sizing \u2013 with actual examples from our 2.4kW system.",
       "difficulty": "intermediate"
     },
     {
@@ -229,7 +237,7 @@
       "title": "Building a Tiny Cabin: Complete Guide",
       "category": "Building",
       "date": "2026-02-01",
-      "description": "Our 200sqft cabin build. Foundation, framing, insulation, and utilities – with costs, timelines, and lessons learned from building it ourselves.",
+      "description": "Our 200sqft cabin build. Foundation, framing, insulation, and utilities \u2013 with costs, timelines, and lessons learned from building it ourselves.",
       "difficulty": "advanced"
     },
     {
@@ -237,7 +245,7 @@
       "title": "How to Conduct a Power Audit",
       "category": "Solar",
       "date": "2026-02-01",
-      "description": "How to determine exactly how much power you use – and what you need to generate. A step-by-step process with worksheets.",
+      "description": "How to determine exactly how much power you use \u2013 and what you need to generate. A step-by-step process with worksheets.",
       "difficulty": "beginner"
     },
     {
