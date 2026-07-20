@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "slug": "off-grid-water-storage-guide",
+      "title": "Off-Grid Water Storage: Complete Guide to Tank Selection, Sizing, and Maintenance",
+      "category": "Water",
+      "date": "2026-07-20",
+      "description": "We tested 5 tank materials across 3 years at our off-grid homestead. Polyethylene, steel, concrete, IBC totes, and ferrocement \u2014 with sizing math, foundation specs, winterization data, maintenance schedules, and real cost breakdowns for every option.",
+      "difficulty": "intermediate"
+    },
+    {
       "slug": "compost-toilet-guide",
       "title": "Compost Toilet Guide: Complete DIY Builds, Pathogen Science, and 18-Month Real-World Data",
       "category": "Building & Homesteading",
