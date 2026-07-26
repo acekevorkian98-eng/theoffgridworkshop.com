@@ -36,6 +36,7 @@ function autoApplyReveals() {
         '.funnel-step',
         '.review-card',
         '.guide-card',
+        '.product-card',
         '.faq-item',
         '.info-box',
         '.disclaimer-section',
@@ -56,6 +57,7 @@ function autoApplyReveals() {
             if (el.classList.contains('method-card') ||
                 el.classList.contains('funnel-step') ||
                 el.classList.contains('guide-card') ||
+                el.classList.contains('product-card') ||
                 el.classList.contains('faq-item')) {
                 el.classList.add('reveal');
                 const delay = (index % 5) + 1;
@@ -657,6 +659,33 @@ function initAffiliateTracking() {
 }
 
 // ============================================
+// SHOP FILTERS
+// ============================================
+function initShopFilters() {
+    const filterBtns = document.querySelectorAll('.shop-filter-btn');
+    const productCards = document.querySelectorAll('.product-card');
+    if (!filterBtns.length || !productCards.length) return;
+
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            const filter = this.getAttribute('data-filter');
+
+            productCards.forEach(card => {
+                const category = card.getAttribute('data-category');
+                if (filter === 'all' || category === filter) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+}
+
+// ============================================
 // INITIALIZE EVERYTHING
 // ============================================
 document.addEventListener('DOMContentLoaded', function() {
@@ -673,6 +702,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initReadingProgress();
     initNativeShare();
     initCategoryFilter();
+    initShopFilters();
 
     autoApplyReveals();
     initScrollReveal();
