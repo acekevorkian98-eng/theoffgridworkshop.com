@@ -12,61 +12,116 @@
 }
 
 :root {
-    /* Brand palette — forest green */
-    --primary: #2d6a4f;
-    --primary-dark: #1b4332;
-    --primary-light: #52b788;
-    --primary-bg: #d8f3dc;
+    /* ----------------------------------------
+       Raw ramps — the source of truth.
+       Retune here; the semantic vars below
+       point at these and everything follows.
+       ---------------------------------------- */
+    --color-bg: #f5ead8;
+    --color-surface: #ebddc5;
+    --color-ink: #201e1d;
 
-    /* Amber accent — the signature color */
-    --gold: #e07b39;
-    --gold-light: #f0a56b;
-    --gold-bg: #fef6f0;
+    --color-neutral-100: #f9f4ed;
+    --color-neutral-200: #eee7db;
+    --color-neutral-300: #dcd3c4;
+    --color-neutral-400: #c0b6a5;
+    --color-neutral-500: #a19786;
+    --color-neutral-600: #82796a;
+    --color-neutral-700: #645c50;
+    --color-neutral-800: #474238;
+    --color-neutral-850: #3a362e;
+    --color-neutral-900: #2e2b25;
+
+    --color-accent-100: #fff2eb;
+    --color-accent-200: #ffe1d0;
+    --color-accent-300: #ffc6a5;
+    --color-accent-400: #f6a06b;
+    --color-accent-500: #d67f48;
+    --color-accent-600: #b2622d;
+    --color-accent-700: #8c491a;
+    --color-accent-800: #643312;
+    --color-accent-900: #402310;
+
+    --color-accent2-100: #f0fae1;
+    --color-accent2-200: #e1eecc;
+    --color-accent2-300: #ccdbb2;
+    --color-accent2-400: #aebf92;
+    --color-accent2-500: #8fa073;
+    --color-accent2-600: #728157;
+    --color-accent2-700: #56633f;
+    --color-accent2-800: #3d472b;
+    --color-accent2-900: #272e1b;
+
+    /* Type */
+    --font-display: 'Caprasimo', Georgia, 'Times New Roman', serif;
+    --font-body: 'Figtree', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+    /* ----------------------------------------
+       Semantic roles
+       ---------------------------------------- */
+
+    /* Structural brand — olive. Step 700 because this is both a
+       link colour and a background under white text. */
+    --primary: var(--color-accent2-700);
+    --primary-dark: var(--color-accent2-800);
+    --primary-light: var(--color-accent2-400);
+    --primary-bg: var(--color-accent2-200);
+
+    /* Signature accent — terracotta. Step 700: the raw #c67139 is
+       3.03:1 on the page background and fails AA as text. */
+    --gold: var(--color-accent-700);
+    --gold-light: var(--color-accent-300);
+    --gold-bg: var(--color-accent-100);
+    /* Bright decorative terracotta, for fills/borders/glows only */
+    --gold-bright: #c67139;
+    --accent: var(--gold);
 
     /* Neutral tones — warm earth */
-    --text: #1a2214;
-    --text-secondary: #3d4f38;
-    --text-muted: #7a8c72;
-    --bg: #faf8f4;
-    --bg-pure: #ffffff;
-    --bg-subtle: #f4f1eb;
-    --bg-alt: #ece9e0;
-    --border: #ddd9ce;
-    --border-light: #eae7dd;
-    --card-bg: #ffffff;
+    --text: var(--color-ink);
+    --text-secondary: var(--color-neutral-800);
+    --text-muted: var(--color-neutral-700);
+    --bg: var(--color-bg);
+    --bg-pure: var(--color-neutral-100);
+    --bg-subtle: var(--color-neutral-200);
+    --bg-alt: var(--color-surface);
+    --border: var(--color-neutral-300);
+    --border-light: var(--color-neutral-200);
+    --card-bg: var(--color-neutral-100);
 
-    /* Dark palette */
-    --dark: #0f1f0d;
-    --dark-card: #162014;
-    --dark-border: #243320;
-    --dark-text: #d6e8d0;
-    --dark-muted: #7a9470;
+    /* Dark chrome — header, footer, panels. Dark in both themes. */
+    --dark: var(--color-neutral-900);
+    --dark-card: var(--color-neutral-850);
+    --dark-border: var(--color-neutral-800);
+    --dark-text: var(--color-neutral-200);
+    --dark-muted: var(--color-neutral-400);
 
-    /* Status colors */
+    /* Status colors — hues kept deliberately. These carry meaning in
+       guide and review content and have no analogue in the palette. */
     --success: #12b886;
-    --success-bg: #e6fcf5;
-    --success-border: #96f2d7;
+    --success-bg: #e8f8f1;
+    --success-border: #a8e3cd;
     --warning: #f59f00;
-    --warning-bg: #fff9db;
-    --warning-border: #ffe066;
+    --warning-bg: #fbf3dd;
+    --warning-border: #f0d99a;
     --danger: #f03e3e;
-    --danger-bg: #fff5f5;
-    --danger-border: #ffc9c9;
+    --danger-bg: #fbeae2;
+    --danger-border: #f3c3b6;
 
     /* Layout */
     --max-width: 1200px;
     --radius-sm: 8px;
-    --radius-md: 12px;
-    --radius-lg: 18px;
+    --radius-md: 16px;
+    --radius-lg: 28px;
     --radius-xl: 28px;
+    --radius-pill: 999px;
 
-    /* Shadows */
-    --shadow-sm: 0 1px 3px rgba(26, 34, 20, 0.04), 0 1px 2px rgba(26, 34, 20, 0.03);
-    --shadow-md: 0 4px 12px rgba(26, 34, 20, 0.07), 0 2px 4px rgba(26, 34, 20, 0.04);
-    --shadow-lg: 0 12px 28px rgba(26, 34, 20, 0.09), 0 4px 8px rgba(26, 34, 20, 0.05);
-    --shadow-xl: 0 24px 48px rgba(26, 34, 20, 0.12), 0 8px 16px rgba(26, 34, 20, 0.06);
-    --shadow-glow: 0 0 20px rgba(45, 106, 79, 0.15);
-    --shadow-amber: 0 4px 20px rgba(224, 123, 57, 0.25);
+    /* Shadows — warm ink, not green-black */
+    --shadow-sm: 0 1px 3px rgba(46, 43, 37, 0.06), 0 1px 2px rgba(46, 43, 37, 0.04);
+    --shadow-md: 0 3px 10px rgba(46, 43, 37, 0.10), 0 2px 4px rgba(46, 43, 37, 0.05);
+    --shadow-lg: 0 12px 32px rgba(46, 43, 37, 0.13), 0 4px 8px rgba(46, 43, 37, 0.06);
+    --shadow-xl: 0 20px 48px rgba(46, 43, 37, 0.17), 0 8px 16px rgba(46, 43, 37, 0.08);
+    --shadow-glow: 0 0 20px rgba(143, 160, 115, 0.20);
+    --shadow-amber: 0 4px 20px rgba(178, 98, 45, 0.28);
 
     /* Transitions */
     --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -79,19 +134,28 @@
    DARK MODE OVERRIDES
    ============================================ */
 [data-theme="dark"] {
-    --text: #d6e8d0;
-    --text-secondary: #a0b898;
-    --text-muted: #60776a;
-    --bg: #0f1f0d;
-    --bg-pure: #162014;
-    --bg-subtle: #12241a;
-    --bg-alt: #1a2e1e;
-    --border: #243320;
-    --border-light: #1e2b1a;
-    --card-bg: #162014;
+    --text: var(--color-neutral-200);
+    --text-secondary: var(--color-neutral-300);
+    --text-muted: var(--color-neutral-400);
+    --bg: var(--color-ink);
+    --bg-pure: var(--color-neutral-900);
+    --bg-subtle: #2a2721;
+    --bg-alt: var(--color-neutral-850);
+    --border: var(--color-neutral-800);
+    --border-light: var(--color-neutral-850);
+    --card-bg: var(--color-neutral-900);
 
-    --primary-bg: rgba(45, 106, 79, 0.12);
-    --gold-bg: rgba(224, 123, 57, 0.1);
+    /* Accent ramps invert on dark: hover goes lighter, not darker.
+       Without this, body links are #56633f on ink and unreadable. */
+    --primary: var(--color-accent2-400);
+    --primary-dark: var(--color-accent2-300);
+    --primary-light: var(--color-accent2-300);
+    --primary-bg: rgba(174, 191, 146, 0.14);
+
+    --gold: var(--color-accent-300);
+    --gold-light: var(--color-accent-200);
+    --gold-bg: rgba(214, 127, 72, 0.12);
+    --gold-bright: var(--color-accent-400);
 
     --success-bg: rgba(18, 184, 134, 0.1);
     --success-border: rgba(18, 184, 134, 0.25);
@@ -100,17 +164,28 @@
     --danger-bg: rgba(240, 62, 62, 0.1);
     --danger-border: rgba(240, 62, 62, 0.25);
 
-    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.15);
-    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.2);
-    --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(0, 0, 0, 0.2);
-    --shadow-xl: 0 24px 48px rgba(0, 0, 0, 0.35), 0 8px 16px rgba(0, 0, 0, 0.25);
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25), 0 1px 2px rgba(0, 0, 0, 0.18);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.32), 0 2px 4px rgba(0, 0, 0, 0.22);
+    --shadow-lg: 0 12px 28px rgba(0, 0, 0, 0.4), 0 4px 8px rgba(0, 0, 0, 0.25);
+    --shadow-xl: 0 24px 48px rgba(0, 0, 0, 0.45), 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+/* --dark now equals --card-bg in dark mode, so table headers would
+   lose all separation from the body. Nudge them up one step. */
+[data-theme="dark"] th { background: var(--bg-alt); }
+
+/* The inline Amazon CTAs declare color:white against --primary.
+   In dark mode --primary is light sage, so the label must go dark. */
+[data-theme="dark"] a.affiliate-link[style] { color: var(--color-ink) !important; }
+
+/* Olive in both themes. This box is a positioning statement, not a
+   caution, and amber now collides with the terracotta accent. */
 [data-theme="dark"] .disclaimer-section {
-    background: linear-gradient(135deg, rgba(245, 159, 0, 0.08) 0%, rgba(245, 159, 0, 0.04) 100%);
-    border-color: var(--warning-border);
+    background: linear-gradient(135deg, rgba(174, 191, 146, 0.10) 0%, rgba(174, 191, 146, 0.05) 100%);
+    border-color: rgba(174, 191, 146, 0.28);
 }
-[data-theme="dark"] .disclaimer-section h3 { color: var(--warning); }
+[data-theme="dark"] .disclaimer-section h3 { color: var(--color-accent2-300); }
+[data-theme="dark"] .disclaimer-section::before { background: var(--color-accent2-400); }
 [data-theme="dark"] .disclaimer-section p,
 [data-theme="dark"] .disclaimer-section li { color: var(--text-secondary); }
 
@@ -159,7 +234,7 @@
 .theme-toggle {
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-pill);
     padding: 0.4rem 0.5rem;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.7);
@@ -195,10 +270,24 @@ html {
 }
 
 body {
-    font-family: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: var(--font-body);
     line-height: 1.7;
     color: var(--text);
     background: var(--bg);
+}
+
+/* The display face has one weight. If any rule asks it for bold, render
+   at 400 rather than letting the browser smear a synthetic bold. */
+h1, h2, .site-logo, .hero h1, .stat-value, .score-number,
+.shop-hero-title, .product-price-value, .step-number,
+.disclaimer-section h3, .shop-notify-section h3 {
+    font-synthesis: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /* ============================================
@@ -264,7 +353,7 @@ body {
    HEADER
    ============================================ */
 .site-header {
-    background: rgba(15, 31, 13, 0.93);
+    background: rgba(46, 43, 37, 0.93);
     backdrop-filter: blur(20px) saturate(1.4);
     -webkit-backdrop-filter: blur(20px) saturate(1.4);
     border-bottom: 1px solid rgba(255, 255, 255, 0.06);
@@ -287,9 +376,9 @@ body {
 }
 
 .site-logo {
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-display);
     font-size: 1.25rem;
-    font-weight: 800;
+    font-weight: 400;
     color: #ffffff;
     text-decoration: none;
     letter-spacing: -0.03em;
@@ -329,7 +418,7 @@ body {
     text-decoration: none;
     font-size: 0.875rem;
     font-weight: 500;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-pill);
     transition: all var(--transition-fast);
     position: relative;
 }
@@ -340,7 +429,7 @@ body {
 }
 
 .main-nav a.active {
-    background: rgba(45, 106, 79, 0.2);
+    background: rgba(143, 160, 115, 0.22);
     color: var(--primary-light);
 }
 
@@ -361,7 +450,7 @@ body {
     display: none;
     background: transparent;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-pill);
     padding: 0.5rem 0.75rem;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.8);
@@ -384,7 +473,7 @@ body {
    HERO SECTION
    ============================================ */
 .hero {
-    background: linear-gradient(135deg, #0f1f0d 0%, #162014 40%, #1b2e14 100%);
+    background: linear-gradient(135deg, var(--dark) 0%, var(--dark-card) 45%, #454033 100%);
     padding: 5rem 2.5rem;
     text-align: center;
     border-radius: var(--radius-xl);
@@ -398,50 +487,135 @@ body {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background:
-        radial-gradient(ellipse 60% 50% at 20% 30%, rgba(45, 106, 79, 0.18) 0%, transparent 70%),
-        radial-gradient(ellipse 50% 60% at 80% 70%, rgba(224, 123, 57, 0.1) 0%, transparent 70%),
-        radial-gradient(circle at 50% 0%, rgba(82, 183, 136, 0.07) 0%, transparent 50%);
+        radial-gradient(ellipse 60% 50% at 20% 30%, rgba(143, 160, 115, 0.16) 0%, transparent 70%),
+        radial-gradient(ellipse 50% 60% at 80% 70%, rgba(214, 127, 72, 0.14) 0%, transparent 70%),
+        radial-gradient(circle at 50% 0%, rgba(255, 198, 165, 0.06) 0%, transparent 50%);
     pointer-events: none;
-}
-
-.hero::after {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background-image:
-        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-    background-size: 60px 60px;
-    pointer-events: none;
-    mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 70%);
-    -webkit-mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 20%, transparent 70%);
 }
 
 .hero > * { position: relative; z-index: 1; }
 
-.hero h1 {
-    font-family: 'Syne', sans-serif;
-    font-size: 2.75rem;
-    font-weight: 800;
-    letter-spacing: -0.04em;
-    line-height: 1.15;
+.hero:not(.hero-photo) h1 {
+    font-family: var(--font-display);
+    font-size: 2.25rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    line-height: 1.12;
     margin-bottom: 1.25rem;
-    background: linear-gradient(135deg, #ffffff 0%, rgba(255, 255, 255, 0.72) 100%);
+    background: linear-gradient(135deg, #ffffff 0%, var(--color-neutral-300) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 @media (min-width: 768px) {
-    .hero h1 { font-size: 3.5rem; }
+    .hero:not(.hero-photo) h1 { font-size: 3rem; }
 }
 
 .hero p {
     max-width: 640px;
     margin: 0 auto;
     font-size: 1.1rem;
-    color: rgba(255, 255, 255, 0.55);
+    color: var(--color-neutral-300);
     line-height: 1.75;
+}
+
+/* ============================================
+   PHOTOGRAPHIC HERO
+   Opt in per page: <section class="hero hero-photo">
+   Kept as a modifier because the plain .hero is also used by
+   pages/solar, pages/water and pages/food, which have no image.
+   ============================================ */
+.hero.hero-photo {
+    padding: 0;
+    text-align: left;
+    background: var(--dark);
+    min-height: 22rem;
+    display: flex;
+    align-items: flex-end;
+    isolation: isolate;
+}
+
+.hero-photo .hero-media {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 55%;
+    border-radius: inherit;
+}
+
+/* Bottom-up scrim. The text sits in the >=0.78 alpha band so it stays
+   above 7:1 even where the photograph is at its brightest. */
+.hero-photo::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+    background:
+        linear-gradient(to top,
+            rgba(32, 30, 29, 0.92) 0%,
+            rgba(32, 30, 29, 0.78) 32%,
+            rgba(32, 30, 29, 0.42) 60%,
+            rgba(32, 30, 29, 0.10) 100%),
+        linear-gradient(105deg, rgba(32, 30, 29, 0.45) 0%, transparent 62%);
+}
+
+.hero-photo::after { content: none; }
+
+.hero-photo .hero-inner {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 44rem;
+    padding: 3rem 1.75rem 2.5rem;
+}
+
+.hero-photo h1 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: 2.25rem;
+    letter-spacing: -0.01em;
+    line-height: 1.08;
+    margin-bottom: 1rem;
+    /* The plain .hero clips its h1 to a gradient. Over a photograph that
+       renders the text invisible, so both properties must be undone. */
+    background: none;
+    -webkit-text-fill-color: currentColor;
+    color: #ffffff;
+    text-shadow: 0 2px 14px rgba(32, 30, 29, 0.55);
+    text-wrap: balance;
+}
+
+.hero-photo p {
+    margin: 0;
+    max-width: 34rem;
+    color: var(--color-neutral-200);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    text-shadow: 0 1px 8px rgba(32, 30, 29, 0.5);
+}
+
+.hero-photo .hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+    justify-content: flex-start;
+}
+
+@media (min-width: 768px) {
+    .hero.hero-photo { min-height: 30rem; }
+    .hero-photo .hero-inner { padding: 4rem 3rem 3rem; }
+    .hero-photo h1 { font-size: 3.25rem; }
+}
+
+@media (min-width: 1024px) {
+    .hero.hero-photo { min-height: 34rem; }
+    .hero-photo h1 { font-size: 3.75rem; }
 }
 
 .hero-badge {
@@ -470,40 +644,41 @@ body {
     z-index: 0;
 }
 
-.hero-particle {
-    position: absolute;
-    font-size: 1.5rem;
-    opacity: 0.05;
-    animation: floatParticle 8s ease-in-out infinite;
-}
-
-.hero-particle:nth-child(1) { top: 15%; left: 8%; animation-delay: 0s; font-size: 2rem; }
-.hero-particle:nth-child(2) { top: 25%; right: 12%; animation-delay: 1.5s; }
-.hero-particle:nth-child(3) { bottom: 20%; left: 15%; animation-delay: 3s; font-size: 1.75rem; }
-.hero-particle:nth-child(4) { top: 60%; right: 8%; animation-delay: 4.5s; }
-.hero-particle:nth-child(5) { top: 40%; left: 5%; animation-delay: 2s; font-size: 1.25rem; }
-.hero-particle:nth-child(6) { bottom: 30%; right: 20%; animation-delay: 0.5s; }
-
-@keyframes floatParticle {
-    0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.05; }
-    50% { transform: translateY(-20px) rotate(10deg); opacity: 0.12; }
-}
+/* initHeroParticles() in main.js injects .hero-particles into every .hero,
+   so the container above stays as a harmless empty layer. The floating
+   emoji themselves are retired: they read as clip-art against the warm
+   palette and as noise over a photograph. */
+.hero-particle { display: none; }
 
 /* ============================================
    TYPOGRAPHY
    ============================================ */
 h1, h2, h3, h4 {
-    font-family: 'Syne', sans-serif;
-    line-height: 1.25;
     margin-bottom: 1rem;
     color: var(--text);
-    letter-spacing: -0.03em;
 }
 
-h1 { font-size: 2.5rem; font-weight: 800; }
+/* The display face carries h1 and h2 only. It ships a single weight, and
+   at h3/h4 sizes it costs more in readability than it gains in character
+   across 50-plus pages of long-form reference content. */
+h1, h2 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    line-height: 1.12;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+}
+
+h3, h4 {
+    font-family: var(--font-body);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    overflow-wrap: break-word;
+}
+
+h1 { font-size: 2.25rem; }
 h2 {
-    font-size: 1.75rem;
-    font-weight: 700;
+    font-size: 1.625rem;
     margin-top: 3rem;
     padding-bottom: 0.875rem;
     border-bottom: 2px solid var(--border-light);
@@ -551,10 +726,10 @@ strong {
     justify-content: center;
     gap: 0.5rem;
     padding: 0.8125rem 1.75rem;
-    font-family: 'Outfit', sans-serif;
+    font-family: var(--font-body);
     font-size: 0.9375rem;
     font-weight: 600;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-pill);
     border: none;
     cursor: pointer;
     transition: all var(--transition-base);
@@ -563,14 +738,14 @@ strong {
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, var(--gold) 0%, #c96520 100%);
+    background: linear-gradient(135deg, var(--gold) 0%, var(--color-accent-900) 100%);
     color: #ffffff;
     box-shadow: var(--shadow-amber);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(224, 123, 57, 0.45);
+    box-shadow: 0 8px 30px rgba(178, 98, 45, 0.45);
     color: #ffffff;
 }
 
@@ -674,6 +849,72 @@ section:not(.hero) .btn-secondary:hover {
     display: block;
 }
 
+/* --------------------------------------------
+   Photo topic cards
+   Opt in per card: <article class="method-card method-card--media">
+   Scoped as a modifier because .method-grid and .method-card are also
+   used by Latest Reviews, Essential Guides and the topic pages.
+   -------------------------------------------- */
+.method-card--media {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* The 3px hover bar gets clipped into the corner curve once a photo
+   reaches the card's top edge. The image zoom replaces it. */
+.method-card--media::before { display: none; }
+
+.method-card-media {
+    position: relative;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    background: var(--bg-alt);
+}
+
+.method-card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* initCardTilt() 3D-transforms .method-card on mousemove; without
+       this, Chrome shows anti-alias seams on the rounded corners. */
+    backface-visibility: hidden;
+    transition: transform var(--transition-slow);
+}
+
+.method-card--media:hover .method-card-media img { transform: scale(1.05); }
+
+.method-card--media .method-card-icon {
+    position: absolute;
+    top: 0.875rem;
+    left: 0.875rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    margin: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    /* Deliberately not var(--bg-pure): that goes dark in dark mode, and
+       this badge sits over a photograph in both themes. */
+    background: var(--color-neutral-100);
+    box-shadow: var(--shadow-md);
+    font-size: 1.375rem;
+    line-height: 1;
+}
+
+.method-card--media .method-card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1.5rem 1.75rem 1.75rem;
+}
+
+.method-card--media .method-card-body a {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
 /* ============================================
    INFO BOXES
    ============================================ */
@@ -691,7 +932,8 @@ section:not(.hero) .btn-secondary:hover {
     position: absolute;
     top: 0; left: 0; bottom: 0;
     width: 4px;
-    border-radius: var(--radius-md) 0 0 var(--radius-md);
+    /* A 4px bar cannot carry the md radius without pinching. */
+    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
 }
 
 .info-box.warning { background: var(--warning-bg); border-color: var(--warning-border); }
@@ -704,7 +946,7 @@ section:not(.hero) .btn-secondary:hover {
 .info-box.neutral::before { background: var(--primary); }
 
 .info-box-title {
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-body);
     font-weight: 700;
     margin-bottom: 0.5rem;
     color: var(--text);
@@ -741,7 +983,7 @@ section:not(.hero) .btn-secondary:hover {
 }
 
 .latest-badge {
-    background: linear-gradient(135deg, var(--gold), var(--gold-light));
+    background: linear-gradient(135deg, var(--gold-light), var(--color-accent-200));
     color: var(--dark);
     padding: 0.3rem 0.875rem;
     border-radius: 9999px;
@@ -750,7 +992,7 @@ section:not(.hero) .btn-secondary:hover {
     text-transform: uppercase;
     letter-spacing: 0.08em;
     white-space: nowrap;
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-body);
 }
 
 .latest-content {
@@ -770,7 +1012,7 @@ section:not(.hero) .btn-secondary:hover {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     color: white;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-pill);
     text-decoration: none;
     font-weight: 600;
     white-space: nowrap;
@@ -795,7 +1037,7 @@ section:not(.hero) .btn-secondary:hover {
 .stats-showcase { margin: 2.5rem 0; }
 
 .stats-card {
-    background: linear-gradient(135deg, var(--dark) 0%, #122010 100%);
+    background: linear-gradient(135deg, var(--dark) 0%, var(--color-neutral-850) 100%);
     border: 1px solid var(--dark-border);
     border-radius: var(--radius-xl);
     padding: 2.5rem;
@@ -810,7 +1052,9 @@ section:not(.hero) .btn-secondary:hover {
     position: absolute;
     top: 0; left: 0; right: 0;
     height: 3px;
-    background: linear-gradient(90deg, var(--primary-light), var(--gold), var(--gold-light));
+    /* Single-hue accent. The old sage-to-terracotta-to-peach run read as
+       an accidental rainbow hairline rather than a deliberate edge. */
+    background: linear-gradient(90deg, var(--color-accent-600), var(--gold-light));
 }
 
 .stats-card::after {
@@ -818,7 +1062,7 @@ section:not(.hero) .btn-secondary:hover {
     position: absolute;
     top: -50%; right: -20%;
     width: 300px; height: 300px;
-    background: radial-gradient(circle, rgba(45, 106, 79, 0.08) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(143, 160, 115, 0.10) 0%, transparent 70%);
     pointer-events: none;
 }
 
@@ -832,13 +1076,15 @@ section:not(.hero) .btn-secondary:hover {
 }
 
 .live-badge {
-    background: linear-gradient(135deg, var(--gold), #c96520);
+    /* Bright chip on a dark panel. The accent ramp darkened, so a dark
+       label on it measured 2.07:1; this reads 9.3:1 and still pops. */
+    background: linear-gradient(135deg, var(--gold-light), var(--color-accent-200));
     color: var(--dark);
     padding: 0.375rem 1rem;
     border-radius: 9999px;
     font-size: 0.75rem;
     font-weight: 700;
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-body);
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
@@ -864,9 +1110,9 @@ section:not(.hero) .btn-secondary:hover {
 }
 
 .stat-value {
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-display);
     font-size: 2rem;
-    font-weight: 800;
+    font-weight: 400;
     background: linear-gradient(135deg, var(--gold-light), var(--gold));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -892,13 +1138,13 @@ section:not(.hero) .btn-secondary:hover {
 }
 
 .stats-card .btn-primary {
-    background: linear-gradient(135deg, var(--gold), #c96520);
+    background: linear-gradient(135deg, var(--gold), var(--color-accent-900));
     color: #fff;
-    box-shadow: 0 4px 20px rgba(224, 123, 57, 0.3);
+    box-shadow: 0 4px 20px rgba(178, 98, 45, 0.3);
 }
 
 .stats-card .btn-primary:hover {
-    box-shadow: 0 8px 30px rgba(224, 123, 57, 0.45);
+    box-shadow: 0 8px 30px rgba(178, 98, 45, 0.45);
     color: #fff;
 }
 
@@ -906,8 +1152,8 @@ section:not(.hero) .btn-secondary:hover {
    DISCLAIMER SECTION
    ============================================ */
 .disclaimer-section {
-    background: linear-gradient(135deg, var(--warning-bg) 0%, #fef3c7 100%);
-    border: 1px solid var(--warning-border);
+    background: linear-gradient(135deg, var(--color-accent2-100) 0%, var(--color-accent2-200) 100%);
+    border: 1px solid var(--color-accent2-300);
     padding: 2rem;
     border-radius: var(--radius-lg);
     margin: 2.5rem 0;
@@ -920,12 +1166,12 @@ section:not(.hero) .btn-secondary:hover {
     position: absolute;
     top: 0; left: 0; bottom: 0;
     width: 4px;
-    background: var(--warning);
+    background: var(--color-accent2-600);
 }
 
 .disclaimer-section h3 {
-    font-family: 'Syne', sans-serif;
-    color: #92400e;
+    font-family: var(--font-display);
+    color: var(--color-accent2-800);
     margin-top: 0;
     font-size: 1.125rem;
     display: flex;
@@ -934,9 +1180,9 @@ section:not(.hero) .btn-secondary:hover {
 }
 
 .disclaimer-section h3::before { content: '\26A0'; font-size: 1.25rem; }
-.disclaimer-section p { font-size: 0.9375rem; color: #78350f; }
+.disclaimer-section p { font-size: 0.9375rem; color: var(--color-accent2-800); }
 .disclaimer-section ul { margin: 1rem 0 0 1.25rem; }
-.disclaimer-section li { color: #78350f; margin-bottom: 0.375rem; }
+.disclaimer-section li { color: var(--color-accent2-800); margin-bottom: 0.375rem; }
 
 /* ============================================
    START PATH FUNNEL
@@ -984,11 +1230,11 @@ section:not(.hero) .btn-secondary:hover {
     background: linear-gradient(135deg, var(--dark) 0%, var(--dark-card) 100%);
     color: var(--gold-light);
     border-radius: 50%;
-    font-family: 'Syne', sans-serif;
-    font-weight: 800;
+    font-family: var(--font-display);
+    font-weight: 400;
     font-size: 1.125rem;
     margin-bottom: 1.25rem;
-    box-shadow: 0 4px 14px rgba(15, 31, 13, 0.2);
+    box-shadow: 0 4px 14px rgba(46, 43, 37, 0.22);
 }
 
 .funnel-step h3 { margin: 0 0 0.5rem; font-size: 1rem; color: var(--text); }
@@ -1029,10 +1275,10 @@ section:not(.hero) .btn-secondary:hover {
     justify-content: center;
     gap: 0.5rem;
     padding: 1rem 2.25rem;
-    background: linear-gradient(135deg, var(--gold) 0%, #c96520 100%);
+    background: linear-gradient(135deg, var(--gold) 0%, var(--color-accent-900) 100%);
     color: #fff;
     text-decoration: none;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-pill);
     font-weight: 700;
     font-size: 0.9375rem;
     box-shadow: var(--shadow-amber);
@@ -1042,7 +1288,7 @@ section:not(.hero) .btn-secondary:hover {
 .link-block a.referral-link:hover,
 .link-block a:not(.text-small a):hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(224, 123, 57, 0.45);
+    box-shadow: 0 8px 30px rgba(178, 98, 45, 0.45);
     color: #fff;
 }
 
@@ -1105,7 +1351,9 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin: 1.75rem 0;
-    border-radius: var(--radius-lg);
+    /* Pinned to md deliberately: with border-collapse plus overflow:hidden,
+       the larger lg radius clips the corner header cells. */
+    border-radius: var(--radius-md);
     overflow: hidden;
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--border);
@@ -1115,7 +1363,7 @@ th, td { padding: 1rem 1.125rem; text-align: left; border-bottom: 1px solid var(
 
 th {
     background: var(--dark);
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-body);
     font-weight: 600;
     font-size: 0.8125rem;
     color: var(--dark-text);
@@ -1127,7 +1375,7 @@ td { font-size: 0.9375rem; color: var(--text-secondary); background: var(--card-
 tr:last-child td { border-bottom: none; }
 tr:hover td { background: var(--bg-subtle); }
 .highlight-row td { background: var(--primary-bg); }
-.highlight-row:hover td { background: #c7ead0; }
+.highlight-row:hover td { background: var(--color-accent2-300); }
 
 .comparison-table-wrapper { overflow-x: auto; }
 
@@ -1294,11 +1542,11 @@ tr:hover td { background: var(--bg-subtle); }
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-body);
 }
 
 .rating-badge.recommended { background: var(--success-bg); color: #087f5b; border: 1px solid var(--success-border); }
-.rating-badge.decent { background: var(--primary-bg); color: var(--primary-dark); border: 1px solid rgba(45, 106, 79, 0.3); }
+.rating-badge.decent { background: var(--primary-bg); color: var(--primary-dark); border: 1px solid rgba(86, 99, 63, 0.35); }
 .rating-badge.caution { background: var(--warning-bg); color: #92400e; border: 1px solid var(--warning-border); }
 .rating-badge.avoid { background: var(--danger-bg); color: #c92a2a; border: 1px solid var(--danger-border); }
 
@@ -1342,7 +1590,7 @@ tr:hover td { background: var(--bg-subtle); }
     letter-spacing: 0.06em;
     font-weight: 700;
     margin-bottom: 1rem;
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-body);
 }
 
 .guide-card h3 { margin: 0 0 0.5rem; font-size: 1.125rem; }
@@ -1377,7 +1625,7 @@ tr:hover td { background: var(--bg-subtle); }
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-body);
 }
 
 .difficulty-badge.beginner { background: var(--success-bg); color: #087f5b; }
@@ -1426,7 +1674,7 @@ tr:hover td { background: var(--bg-subtle); }
     text-transform: uppercase;
     letter-spacing: 0.06em;
     font-weight: 700;
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-body);
 }
 
 .quick-fact-value { font-weight: 600; font-size: 0.9375rem; color: var(--text); }
@@ -1434,9 +1682,9 @@ tr:hover td { background: var(--bg-subtle); }
 .score-display { display: flex; align-items: baseline; gap: 0.25rem; }
 
 .score-number {
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-display);
     font-size: 3rem;
-    font-weight: 800;
+    font-weight: 400;
     background: linear-gradient(135deg, var(--gold), var(--gold-light));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1501,7 +1749,7 @@ tr:hover td { background: var(--bg-subtle); }
 }
 
 .faq-item:hover { border-color: var(--gold); }
-.faq-item.active { border-color: var(--gold); box-shadow: 0 4px 20px rgba(224, 123, 57, 0.1); }
+.faq-item.active { border-color: var(--gold); box-shadow: 0 4px 20px rgba(178, 98, 45, 0.12); }
 
 .faq-question {
     display: flex;
@@ -1509,7 +1757,7 @@ tr:hover td { background: var(--bg-subtle); }
     align-items: center;
     padding: 1.25rem 1.75rem;
     cursor: pointer;
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-body);
     font-weight: 600;
     color: var(--text);
     font-size: 1rem;
@@ -1587,11 +1835,11 @@ tr:hover td { background: var(--bg-subtle); }
     min-width: 240px;
     padding: 0.875rem 1.25rem;
     border: 1px solid var(--dark-border);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-pill);
     background: rgba(255, 255, 255, 0.06);
     color: var(--dark-text);
     font-size: 0.9375rem;
-    font-family: 'Outfit', sans-serif;
+    font-family: var(--font-body);
     transition: all var(--transition-fast);
 }
 
@@ -1603,15 +1851,15 @@ tr:hover td { background: var(--bg-subtle); }
     background: linear-gradient(135deg, var(--primary), var(--primary-dark));
     color: white;
     border: none;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-pill);
     font-size: 0.9375rem;
     font-weight: 600;
     cursor: pointer;
     transition: all var(--transition-base);
-    font-family: 'Outfit', sans-serif;
+    font-family: var(--font-body);
 }
 
-.newsletter-form button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(45, 106, 79, 0.35); }
+.newsletter-form button:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(86, 99, 63, 0.35); }
 
 .newsletter-message { margin-top: 0.75rem; font-size: 0.875rem; }
 .newsletter-message.success { color: var(--success); }
@@ -1634,7 +1882,7 @@ tr:hover td { background: var(--bg-subtle); }
 }
 
 .share-section span {
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-body);
     font-weight: 700;
     color: var(--text);
     font-size: 0.9375rem;
@@ -1647,7 +1895,7 @@ tr:hover td { background: var(--bg-subtle); }
     align-items: center;
     justify-content: center;
     padding: 0.625rem 1.125rem;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-pill);
     font-size: 0.8125rem;
     font-weight: 600;
     cursor: pointer;
@@ -1730,13 +1978,13 @@ tr:hover td { background: var(--bg-subtle); }
 .engagement-btn {
     padding: 0.5rem 1.25rem;
     border: 1px solid var(--border);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-pill);
     background: var(--bg-pure);
     color: var(--text-secondary);
     font-size: 0.875rem;
     cursor: pointer;
     transition: all var(--transition-fast);
-    font-family: 'Outfit', sans-serif;
+    font-family: var(--font-body);
 }
 
 .engagement-btn:hover { border-color: var(--gold); color: var(--gold); }
@@ -1762,7 +2010,7 @@ tr:hover td { background: var(--bg-subtle); }
     color: var(--text-secondary);
     text-decoration: none;
     transition: all var(--transition-fast);
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-body);
 }
 
 .category-tags a:hover,
@@ -1773,17 +2021,14 @@ tr:hover td { background: var(--bg-subtle); }
 }
 
 /* ============================================
-   HERO PARTICLES
-   ============================================ */
-.hero-particles { position: absolute; top: 0; left: 0; right: 0; bottom: 0; pointer-events: none; overflow: hidden; }
-
-/* ============================================
    RESPONSIVE
    ============================================ */
 @media (max-width: 640px) {
     h1 { font-size: 1.875rem; }
     h2 { font-size: 1.5rem; }
-    .hero { padding: 3rem 1.5rem; }
+    /* Must exclude .hero-photo: it manages its own padding via
+       .hero-inner, and this rule would otherwise win on order. */
+    .hero:not(.hero-photo) { padding: 3rem 1.5rem; }
     .start-funnel { padding: 2rem 1.5rem; }
     .newsletter-section { padding: 2rem 1.5rem; }
     .link-block { padding: 2rem 1.5rem; }
@@ -1795,7 +2040,7 @@ tr:hover td { background: var(--bg-subtle); }
    SHOP & PRODUCTS SECTION
    ============================================ */
 .shop-hero {
-    background: linear-gradient(135deg, #0f1f0d 0%, #162014 50%, #1b2e14 100%);
+    background: linear-gradient(135deg, var(--dark) 0%, var(--dark-card) 50%, #454033 100%);
     padding: 3.5rem 2rem;
     text-align: center;
     border-radius: var(--radius-xl);
@@ -1806,9 +2051,9 @@ tr:hover td { background: var(--bg-subtle); }
 }
 
 .shop-hero-title {
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-display);
     font-size: 2.5rem;
-    font-weight: 800;
+    font-weight: 400;
     color: #ffffff;
     letter-spacing: -0.03em;
     margin-bottom: 0.75rem;
@@ -1825,8 +2070,8 @@ tr:hover td { background: var(--bg-subtle); }
     display: inline-flex;
     align-items: center;
     gap: 0.75rem;
-    background: rgba(224, 123, 57, 0.15);
-    border: 1px solid rgba(224, 123, 57, 0.4);
+    background: rgba(214, 127, 72, 0.15);
+    border: 1px solid rgba(214, 127, 72, 0.4);
     padding: 0.6rem 1.25rem;
     border-radius: 100px;
     font-size: 0.875rem;
@@ -1870,13 +2115,13 @@ tr:hover td { background: var(--bg-subtle); }
     padding: 0.5rem 1.125rem;
     background: var(--bg-pure);
     border: 1px solid var(--border);
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-pill);
     font-size: 0.875rem;
     font-weight: 500;
     color: var(--text-secondary);
     cursor: pointer;
     transition: all var(--transition-fast);
-    font-family: 'Outfit', sans-serif;
+    font-family: var(--font-body);
 }
 
 .shop-filter-btn:hover,
@@ -1913,7 +2158,7 @@ tr:hover td { background: var(--bg-subtle); }
 .product-card-preview {
     position: relative;
     height: 190px;
-    background: linear-gradient(135deg, #1b2e14 0%, #0f1f0d 100%);
+    background: linear-gradient(135deg, #454033 0%, var(--dark) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1930,16 +2175,16 @@ tr:hover td { background: var(--bg-subtle); }
 
 .product-card:hover .product-card-preview svg {
     transform: scale(1.08);
-    color: rgba(224, 123, 57, 0.7);
+    color: rgba(214, 127, 72, 0.75);
 }
 
 .product-status-badge {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: rgba(15, 31, 13, 0.85);
+    background: rgba(46, 43, 37, 0.85);
     backdrop-filter: blur(8px);
-    border: 1px solid rgba(224, 123, 57, 0.5);
+    border: 1px solid rgba(214, 127, 72, 0.5);
     color: var(--gold-light);
     font-size: 0.75rem;
     font-weight: 700;
@@ -1953,7 +2198,7 @@ tr:hover td { background: var(--bg-subtle); }
     position: absolute;
     bottom: 1rem;
     left: 1rem;
-    background: rgba(45, 106, 79, 0.85);
+    background: rgba(86, 99, 63, 0.9);
     backdrop-filter: blur(8px);
     color: #ffffff;
     font-size: 0.75rem;
@@ -1970,7 +2215,7 @@ tr:hover td { background: var(--bg-subtle); }
 }
 
 .product-title {
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-body);
     font-size: 1.2rem;
     font-weight: 700;
     color: var(--text);
@@ -2023,9 +2268,9 @@ tr:hover td { background: var(--bg-subtle); }
 }
 
 .product-price-value {
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-display);
     font-size: 1.25rem;
-    font-weight: 800;
+    font-weight: 400;
     color: var(--text);
 }
 
@@ -2038,7 +2283,7 @@ tr:hover td { background: var(--bg-subtle); }
     padding: 0.5rem 1rem;
     font-size: 0.875rem;
     font-weight: 600;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-pill);
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -2062,7 +2307,7 @@ tr:hover td { background: var(--bg-subtle); }
 }
 
 .shop-notify-section h3 {
-    font-family: 'Syne', sans-serif;
+    font-family: var(--font-display);
     font-size: 1.5rem;
     color: var(--text);
     margin-bottom: 0.5rem;
@@ -2076,12 +2321,12 @@ tr:hover td { background: var(--bg-subtle); }
 
 /* Dark mode overrides for shop */
 [data-theme="dark"] .shop-hero {
-    background: linear-gradient(135deg, #091408 0%, #122012 50%, #172816 100%);
+    background: linear-gradient(135deg, #1a1713 0%, #241f1a 50%, #2e2b25 100%);
     border-color: var(--dark-border);
 }
 
 [data-theme="dark"] .product-card-preview {
-    background: linear-gradient(135deg, #101c0f 0%, #081207 100%);
+    background: linear-gradient(135deg, #2e2b25 0%, #1a1713 100%);
 }
 
 [data-theme="dark"] .btn-coming-soon {
@@ -2090,3 +2335,17 @@ tr:hover td { background: var(--bg-subtle); }
     border-color: var(--border);
 }
 
+
+/* ============================================
+   INLINE-STYLE OVERRIDES
+   Header and footer markup is hand-duplicated across every page, and a
+   few elements carry brand colours inline. These rules bring them back
+   under the tokens without editing 40-plus files. A stylesheet
+   !important beats a non-important inline declaration.
+   ============================================ */
+
+/* Affiliate CTAs: inline border-radius: var(--radius-md) -> pill */
+a.affiliate-link[style] { border-radius: var(--radius-pill) !important; }
+
+/* Footer copyright: inline rgba(122, 148, 112, 0.7) sage green */
+.site-footer .text-small { color: var(--dark-muted) !important; }

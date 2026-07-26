@@ -33,7 +33,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <script type="application/ld+json">
@@ -143,13 +143,13 @@
          crossorigin="anonymous"></script>
     <meta property="og:site_name" content="The Off-Grid Workshop">
     <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="https://theoffgridworkshop.com/images/og-image.png">
+    <meta property="og:image" content="https://theoffgridworkshop.com/assets/images/og-image.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="The Off-Grid Workshop - Practical Guides for Off-Grid Living">
     <meta name="twitter:description" content="Practical, no-nonsense guides for off-grid living. Solar power systems, water harvesting, food preservation, DIY building, and honest gear reviews. Built for real homesteaders.">
-    <meta name="twitter:image" content="https://theoffgridworkshop.com/images/og-image.png">
+    <meta name="twitter:image" content="https://theoffgridworkshop.com/assets/images/og-image.png">
     <script type="application/ld+json">
     {
     "@context": "https://schema.org",
@@ -209,13 +209,24 @@
             </div>
         </section>
 
-        <section class="hero">
-            <div class="hero-badge">Built by Homesteaders, for Homesteaders</div>
-            <h1>The Practical Guide to Off-Grid Living</h1>
-            <p>No fluff. No \"grid-connected house with solar panels\" content. Real guides for people who actually want to live off the land — solar systems, water harvesting, food independence, and honest gear reviews.</p>
-            <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="guides/getting-started-off-grid" class="btn btn-primary">Start Here</a>
-                <a href="reviews/" class="btn btn-secondary">Gear Reviews</a>
+        <section class="hero hero-photo">
+            <img class="hero-media"
+                 src="assets/images/hero/homestead-1280.webp"
+                 srcset="assets/images/hero/homestead-640.webp 640w,
+                         assets/images/hero/homestead-960.webp 960w,
+                         assets/images/hero/homestead-1280.webp 1280w,
+                         assets/images/hero/homestead-1536.webp 1536w"
+                 sizes="(max-width: 1240px) 100vw, 1200px"
+                 width="1536" height="1024" alt="" aria-hidden="true"
+                 fetchpriority="high" decoding="async">
+            <div class="hero-inner">
+                <div class="hero-badge">Built by Homesteaders, for Homesteaders</div>
+                <h1>The Practical Guide to Off-Grid Living</h1>
+                <p>No fluff. No "grid-connected house with solar panels" content. Real guides for people who actually want to live off the land: solar systems, water harvesting, food independence, and honest gear reviews.</p>
+                <div class="hero-actions">
+                    <a href="guides/getting-started-off-grid" class="btn btn-primary">Start Here</a>
+                    <a href="reviews/" class="btn btn-secondary">Gear Reviews</a>
+                </div>
             </div>
         </section>
 
@@ -292,39 +303,89 @@
             <h2>Topics We Cover</h2>
 
             <div class="method-grid">
-                <article class="method-card">
-                    <span class="method-card-icon">&#9728;&#65039;</span>
-                    <h3>Solar Power Systems</h3>
-                    <p>From a simple 100W van setup to full whole-home off-grid systems. Panel selection, battery banks, charge controllers, and inverters explained.</p>
-                    <a href="pages/solar">Explore Solar &rarr;</a>
+                <article class="method-card method-card--media">
+                    <div class="method-card-media">
+                        <img src="assets/images/topics/solar-power-systems-800.webp"
+                             srcset="assets/images/topics/solar-power-systems-400.webp 400w,
+                                     assets/images/topics/solar-power-systems-800.webp 800w"
+                             sizes="(max-width: 700px) 100vw, 380px"
+                             width="800" height="600" loading="lazy" decoding="async"
+                             alt="Roof-mounted solar array and a small wind turbine on an off-grid cabin">
+                        <span class="method-card-icon" aria-hidden="true">&#9728;&#65039;</span>
+                    </div>
+                    <div class="method-card-body">
+                        <h3>Solar Power Systems</h3>
+                        <p>From a simple 100W van setup to full whole-home off-grid systems. Panel selection, battery banks, charge controllers, and inverters explained.</p>
+                        <a href="pages/solar">Explore Solar</a>
+                    </div>
                 </article>
 
-                <article class="method-card">
-                    <span class="method-card-icon">&#128167;</span>
-                    <h3>Water Systems</h3>
-                    <p>Rainwater catchment, gravity-fed distribution, well drilling basics, and filtration that reliably produces safe drinking water.</p>
-                    <a href="pages/water">Explore Water &rarr;</a>
+                <article class="method-card method-card--media">
+                    <div class="method-card-media">
+                        <img src="assets/images/topics/water-systems-800.webp"
+                             srcset="assets/images/topics/water-systems-400.webp 400w,
+                                     assets/images/topics/water-systems-800.webp 800w"
+                             sizes="(max-width: 700px) 100vw, 380px"
+                             width="800" height="600" loading="lazy" decoding="async"
+                             alt="Galvanised rainwater tank feeding a filter housing beside collection barrels">
+                        <span class="method-card-icon" aria-hidden="true">&#128167;</span>
+                    </div>
+                    <div class="method-card-body">
+                        <h3>Water Systems</h3>
+                        <p>Rainwater catchment, gravity-fed distribution, well drilling basics, and filtration that reliably produces safe drinking water.</p>
+                        <a href="pages/water">Explore Water</a>
+                    </div>
                 </article>
 
-                <article class="method-card">
-                    <span class="method-card-icon">&#127807;</span>
-                    <h3>Food & Farming</h3>
-                    <p>High-yield vegetable gardens, food preservation (canning, fermenting, dehydrating), chickens, foraging, and root cellars.</p>
-                    <a href="pages/food">Explore Food &rarr;</a>
+                <article class="method-card method-card--media">
+                    <div class="method-card-media">
+                        <img src="assets/images/topics/food-and-farming-800.webp"
+                             srcset="assets/images/topics/food-and-farming-400.webp 400w,
+                                     assets/images/topics/food-and-farming-800.webp 800w"
+                             sizes="(max-width: 700px) 100vw, 380px"
+                             width="800" height="600" loading="lazy" decoding="async"
+                             alt="Planting notes, seed packets and vegetable seedlings in biodegradable pots">
+                        <span class="method-card-icon" aria-hidden="true">&#127807;</span>
+                    </div>
+                    <div class="method-card-body">
+                        <h3>Food &amp; Farming</h3>
+                        <p>High-yield vegetable gardens, food preservation (canning, fermenting, dehydrating), chickens, foraging, and root cellars.</p>
+                        <a href="pages/food">Explore Food</a>
+                    </div>
                 </article>
 
-                <article class="method-card">
-                    <span class="method-card-icon">&#127968;</span>
-                    <h3>Building & Shelter</h3>
-                    <p>Tiny cabins, earthbag homes, cob construction, and simple DIY structures you can build yourself with minimal experience.</p>
-                    <a href="guides/index.html#building">Explore Building &rarr;</a>
+                <article class="method-card method-card--media">
+                    <div class="method-card-media">
+                        <img src="assets/images/topics/building-and-shelter-800.webp"
+                             srcset="assets/images/topics/building-and-shelter-400.webp 400w,
+                                     assets/images/topics/building-and-shelter-800.webp 800w"
+                             sizes="(max-width: 700px) 100vw, 380px"
+                             width="800" height="600" loading="lazy" decoding="async"
+                             alt="Wiring an inverter and battery bank inside a self-built timber power shed">
+                        <span class="method-card-icon" aria-hidden="true">&#127968;</span>
+                    </div>
+                    <div class="method-card-body">
+                        <h3>Building &amp; Shelter</h3>
+                        <p>Tiny cabins, earthbag homes, cob construction, and simple DIY structures you can build yourself with minimal experience.</p>
+                        <a href="guides/index.html#building">Explore Building</a>
+                    </div>
                 </article>
 
-                <article class="method-card">
-                    <span class="method-card-icon">&#129524;</span>
-                    <h3>Tools & Gear</h3>
-                    <p>Honest reviews of the tools, gadgets, and equipment that actually make off-grid life easier — and the ones that don&rsquo;t.</p>
-                    <a href="reviews/">Browse Reviews &rarr;</a>
+                <article class="method-card method-card--media">
+                    <div class="method-card-media">
+                        <img src="assets/images/topics/tools-and-gear-800.webp"
+                             srcset="assets/images/topics/tools-and-gear-400.webp 400w,
+                                     assets/images/topics/tools-and-gear-800.webp 800w"
+                             sizes="(max-width: 700px) 100vw, 380px"
+                             width="800" height="600" loading="lazy" decoding="async"
+                             alt="Hand tools, work gloves, boots and rope laid out on a workshop bench">
+                        <span class="method-card-icon" aria-hidden="true">&#129524;</span>
+                    </div>
+                    <div class="method-card-body">
+                        <h3>Tools &amp; Gear</h3>
+                        <p>Honest reviews of the tools, gadgets, and equipment that actually make off-grid life easier, and the ones that don&rsquo;t.</p>
+                        <a href="reviews/">Browse Reviews</a>
+                    </div>
                 </article>
             </div>
         </section>
@@ -401,28 +462,28 @@
                     <h3>Renogy 200W Solar Kit</h3>
                     <p>The most popular entry-level off-grid solar kit. Solid panels, decent charge controller, good value for beginners building their first system.</p>
                     <p><strong>Rating:</strong> Highly Recommended</p>
-                    <a href="reviews/renogy-200w-solar-kit">Read Review &rarr;</a>
+                    <a href="reviews/renogy-200w-solar-kit">Read Review</a>
                 </article>
 
                 <article class="method-card">
                     <h3>Berkey Water Filter</h3>
                     <p>The gold standard of gravity water filters. Removes 99.9% of contaminants without electricity. Expensive but worth every cent for off-grid use.</p>
                     <p><strong>Rating:</strong> Recommended</p>
-                    <a href="reviews/berkey-water-filter">Read Review &rarr;</a>
+                    <a href="reviews/berkey-water-filter">Read Review</a>
                 </article>
 
                 <article class="method-card">
                     <h3>Jackery Explorer 1000 Pro</h3>
                     <p>A well-built portable power station. Great for camping and short-term off-grid use. Not ideal as a permanent home backup due to limited cycle life.</p>
                     <p><strong>Rating:</strong> Good for Use Case</p>
-                    <a href="reviews/jackery-1000-pro">Read Review &rarr;</a>
+                    <a href="reviews/jackery-1000-pro">Read Review</a>
                 </article>
 
                 <article class="method-card">
                     <h3>Excalibur 9-Tray Dehydrator</h3>
                     <p>The best food dehydrator for serious homesteaders. High capacity, consistent temperature, and built to last decades. A once-in-a-lifetime buy.</p>
                     <p><strong>Rating:</strong> Recommended</p>
-                    <a href="reviews/excalibur-dehydrator">Read Review &rarr;</a>
+                    <a href="reviews/excalibur-dehydrator">Read Review</a>
                 </article>
             </div>
 
