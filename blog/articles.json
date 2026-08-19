@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "slug": "off-grid-maintenance-calendar",
+      "title": "The Off-Grid Maintenance Calendar: What to Check Every Month",
+      "category": "Systems & Maintenance",
+      "date": "2026-08-19",
+      "description": "A practical 12-month maintenance calendar for off-grid solar, batteries, water systems, generators, wood heat, gardens and emergency supplies.",
+      "difficulty": "beginner"
+    },
+    {
       "slug": "off-grid-water-storage-guide",
       "title": "Off-Grid Water Storage: Complete Guide to Tank Selection, Sizing, and Maintenance",
       "category": "Water",
