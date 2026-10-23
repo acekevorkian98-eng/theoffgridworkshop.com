@@ -7,24 +7,29 @@
 // SCROLL REVEAL
 // ============================================
 function initScrollReveal() {
-    const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+    const revealEls = Array.from(document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale'))
+        .filter(el => el.dataset.revealReady !== 'true' && !el.classList.contains('revealed'));
     if (!revealEls.length) return;
 
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        revealEls.forEach(el => el.classList.add('revealed'));
-        return;
-    }
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('revealed');
-                observer.unobserve(entry.target);
-            }
+    let observer;
+    try {
+        if (typeof window.matchMedia !== 'function' || window.matchMedia('(prefers-reduced-motion: reduce)').matches
+            || typeof IntersectionObserver !== 'function') return;
+        observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0, rootMargin: '0px 0px -40px 0px' });
+        revealEls.forEach(el => {
+            observer.observe(el);
+            el.dataset.revealReady = 'true';
         });
-    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-
-    revealEls.forEach(el => observer.observe(el));
+    } catch {
+        if (observer) observer.disconnect();
+    }
 }
 
 // ============================================

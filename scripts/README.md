@@ -56,3 +56,11 @@ rendered directory and makes no extra data request. Search and category
 controls are revealed after initialization; all cards remain readable when
 scripts are unavailable. New titles and summaries enter search on the next
 archive rebuild. Back and Forward restore the query and topic.
+
+# Reveal effects
+
+Reveal classes are visible by default. Intersection observation starts a finite
+animation; it must not be required to expose content. Keep focus/target, reduced
+motion and print overrides when changing these styles. Missing or failing
+observation skips decoration. A zero intersection threshold allows tall content
+to animate when any portion enters view.
