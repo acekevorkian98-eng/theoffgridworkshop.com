@@ -191,26 +191,6 @@ function highlightCurrentPage() {
 }
 
 // ============================================
-// SMOOTH SCROLL
-// ============================================
-function initSmoothScroll() {
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        if (anchor.classList.contains('skip-link')) return;
-        anchor.addEventListener('click', function(event) {
-            const fragment = this.getAttribute('href').slice(1);
-            if (!fragment) return;
-            let identity;
-            try { identity = decodeURIComponent(fragment); } catch { return; }
-            const target = document.getElementById(identity);
-            if (!target) return;
-            event.preventDefault();
-            const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-            target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
-        });
-    });
-}
-
-// ============================================
 // SOCIAL SHARING
 // ============================================
 function pageShareUrl() {
@@ -677,7 +657,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initDarkMode();
     highlightCurrentPage();
     initAffiliateTracking();
-    initSmoothScroll();
     generateTOC();
     initLastUpdated();
     initMobileNav();

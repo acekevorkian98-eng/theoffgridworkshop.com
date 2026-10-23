@@ -42,6 +42,8 @@ with heading changes.
 Keep the skip link as the first body element on new public pages, targeting
 `<main id="main-content" tabindex="-1">`. Use native `details` and `summary`
 elements for FAQ disclosures; the answer must remain readable without scripts.
+Fragment links use native browser navigation; the stylesheet handles smooth
+scrolling, reduced-motion preferences and heading offsets for the sticky header.
 Shop filter buttons expose their selected state with `aria-pressed`, and the
 status element reports how many items remain visible.
 
