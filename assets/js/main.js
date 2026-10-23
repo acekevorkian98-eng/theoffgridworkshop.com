@@ -251,38 +251,92 @@ function initFaqAccordion() {
 // ============================================
 // SOCIAL SHARING
 // ============================================
+function pageShareUrl() {
+    const current = new URL(window.location.href);
+    const link = document.querySelector('link[rel="canonical"]');
+    if (link && link.getAttribute('href')) {
+        try {
+            const canonical = new URL(link.getAttribute('href'), current.href);
+            if (canonical.protocol === 'https:' || canonical.protocol === 'http:') {
+                canonical.hash = current.hash;
+                return canonical.href;
+            }
+        } catch {}
+    }
+    return current.href;
+}
+
+function showShareStatus(section, message) {
+    if (!section) return;
+    let status = section.querySelector('.share-status');
+    if (!status) {
+        status = document.createElement('p');
+        status.className = 'share-status';
+        status.setAttribute('role', 'status');
+        section.appendChild(status);
+    }
+    status.textContent = message;
+}
+
 function shareOnTwitter() {
-    const text = encodeURIComponent('Check out The Off-Grid Workshop — practical guides for off-grid living!');
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank', 'width=550,height=420');
+    const text = encodeURIComponent(document.title);
+    const url = encodeURIComponent(pageShareUrl());
+    window.open(`https://twitter.com/intent/tweet?text=${text}&url=${url}`, '_blank', 'width=550,height=420,noopener,noreferrer');
 }
 
 function shareOnFacebook() {
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'width=550,height=420');
+    const url = encodeURIComponent(pageShareUrl());
+    window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'width=550,height=420,noopener,noreferrer');
 }
 
 function shareOnReddit() {
     const title = encodeURIComponent(document.title);
-    const url = encodeURIComponent(window.location.href);
-    window.open(`https://reddit.com/submit?url=${url}&title=${title}`, '_blank', 'width=550,height=420');
+    const url = encodeURIComponent(pageShareUrl());
+    window.open(`https://reddit.com/submit?url=${url}&title=${title}`, '_blank', 'width=550,height=420,noopener,noreferrer');
 }
 
-function copyToClipboard() {
-    navigator.clipboard.writeText(window.location.href).then(() => {
-        const btn = document.querySelector('.share-copy');
-        if (btn) {
-            const originalText = btn.textContent;
-            btn.textContent = 'Copied!';
-            setTimeout(() => { btn.textContent = originalText; }, 2000);
+async function copyToClipboard(button) {
+    const target = button || document.querySelector('.share-copy');
+    const section = target ? target.closest('.share-section') : document.querySelector('.share-section');
+    const url = pageShareUrl();
+    if (target && target.disabled) return;
+    const label = target ? target.dataset.copyLabel || target.textContent : '';
+    if (target) {
+        target.dataset.copyLabel = label;
+        clearTimeout(target.copyTimer);
+        target.disabled = true;
+        target.textContent = 'Copying...';
+    }
+    try {
+        if (!navigator.clipboard || typeof navigator.clipboard.writeText !== 'function') throw new Error('Clipboard unavailable');
+        await navigator.clipboard.writeText(url);
+        const manual = section && section.querySelector('.share-link-input');
+        if (manual) manual.remove();
+        if (target) {
+            target.textContent = 'Copied!';
+            target.copyTimer = setTimeout(() => { target.textContent = label; }, 2000);
         }
-    }).catch(() => {
-        const btn = document.querySelector('.share-copy');
-        if (btn) {
-            btn.textContent = 'Copy failed';
-            setTimeout(() => { btn.textContent = 'Copy Link'; }, 2000);
+        showShareStatus(section, 'Page link copied.');
+    } catch {
+        if (target) target.textContent = label;
+        if (section) {
+            let input = section.querySelector('.share-link-input');
+            if (!input) {
+                input = document.createElement('input');
+                input.type = 'text';
+                input.readOnly = true;
+                input.className = 'share-link-input';
+                input.setAttribute('aria-label', 'Page link to copy manually');
+                section.appendChild(input);
+            }
+            input.value = url;
+            input.focus();
+            input.select();
         }
-    });
+        showShareStatus(section, 'Automatic copying is unavailable. Copy the selected link.');
+    } finally {
+        if (target) target.disabled = false;
+    }
 }
 
 // ============================================
@@ -393,25 +447,24 @@ function initReadingProgress() {
 // NATIVE MOBILE SHARE
 // ============================================
 function initNativeShare() {
-    if (!navigator.share) return;
-
-    var shareSections = document.querySelectorAll('.share-section');
-    shareSections.forEach(function(section) {
-        var buttonsContainer = section.querySelector('.share-buttons');
-        if (!buttonsContainer) return;
-
-        var platformBtns = buttonsContainer.querySelectorAll('.share-twitter, .share-reddit, .share-facebook');
-        platformBtns.forEach(function(btn) { btn.remove(); });
-
-        var nativeBtn = document.createElement('button');
-        nativeBtn.className = 'share-btn share-btn-native';
-        nativeBtn.textContent = 'Share';
-        nativeBtn.addEventListener('click', function() {
-            navigator.share({ title: document.title, url: window.location.href }).catch(function() {});
+    if (typeof navigator.share !== 'function') return;
+    document.querySelectorAll('.share-section').forEach(section => {
+        const buttons = section.querySelector('.share-buttons');
+        if (!buttons || buttons.querySelector('.share-btn-native')) return;
+        buttons.querySelectorAll('.share-twitter, .share-reddit, .share-facebook').forEach(button => button.remove());
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'share-btn share-btn-native';
+        button.textContent = 'Share';
+        button.addEventListener('click', async () => {
+            showShareStatus(section, '');
+            try {
+                await navigator.share({ title: document.title, url: pageShareUrl() });
+            } catch (error) {
+                if (!error || error.name !== 'AbortError') showShareStatus(section, 'Sharing was not completed. You can copy the page link instead.');
+            }
         });
-
-        var copyBtn = buttonsContainer.querySelector('.share-copy');
-        buttonsContainer.insertBefore(nativeBtn, copyBtn);
+        buttons.insertBefore(button, buttons.querySelector('.share-copy'));
     });
 }
 

@@ -1917,8 +1917,8 @@ tr:hover td { background: var(--bg-subtle); }
 .share-reddit:hover { background: #e03d00; color: white; }
 .share-copy { background: var(--bg-subtle); color: var(--text); border: 1px solid var(--border); }
 .share-copy:hover { background: var(--bg-alt); color: var(--text); }
-.share-btn-native { background: var(--primary); color: white; }
-.share-btn-native:hover { background: var(--primary-dark); color: white; }
+.share-btn-native { background: var(--color-accent2-800); color: white; }
+.share-btn-native:hover { background: var(--color-accent2-900); color: white; }
 
 /* ============================================
    TABLE OF CONTENTS
@@ -2378,5 +2378,29 @@ a.affiliate-link[style] { border-radius: var(--radius-pill) !important; }
 .nav-toggle:focus-visible,
 .theme-toggle:focus-visible {
     outline: 2px solid var(--dark-text);
+    outline-offset: 3px;
+}
+
+.share-status { margin-top: .75rem; color: var(--text-secondary); }
+.share-status:empty { display: none; }
+.share-link-input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: .75rem;
+    padding: .75rem;
+    border: 1px solid var(--text-secondary);
+    border-radius: var(--radius-sm);
+    color: var(--text);
+    background: var(--bg);
+    font: inherit;
+}
+.share-link-input:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
+.share-btn:focus-visible {
+    outline: 2px solid var(--primary);
     outline-offset: 3px;
 }
