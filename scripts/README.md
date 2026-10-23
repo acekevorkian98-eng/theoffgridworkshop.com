@@ -1,3 +1,31 @@
+# Local integrity checks
+
+From the checkout root, run these read-only checks before handing off changes:
+
+```sh
+python3 scripts/build-blog.py --check
+python3 scripts/build-contents.py --check
+python3 scripts/check-site-metadata.py
+python3 scripts/check-site-links.py
+```
+
+The link checker needs Python 3.9 or newer and uses only the standard library.
+It checks public HTML routes, local HTML fragments, duplicate IDs, referenced
+assets, responsive-image candidates and literal CSS `url()`/`@import` targets.
+Local stylesheet imports are followed once, including cycles. Root-relative,
+relative and same-site absolute URLs are resolved within the checkout; external
+URLs are skipped. Dot directories and underscore-prefixed templates/directories
+are excluded. It does not execute JavaScript, validate general HTML/CSS syntax,
+fetch external services or assess article claims.
+
+Use `--json` for machine-readable output or `--root /path/to/checkout` to inspect
+another copy. Any reported problem returns exit code 1; an empty checkout also
+fails. The checker creates no files. Run its fixture tests with:
+
+```sh
+python3 scripts/tests/test_site_links.py
+```
+
 # Blog directory
 
 `blog/articles.json` is the article registry. After updating it, run:
