@@ -421,15 +421,35 @@ function initCategoryFilter() {
     const buttons = controls.querySelectorAll('button[data-category]');
     const cards = directory.querySelectorAll('.guide-card[data-category]');
     const count = document.querySelector('.post-count');
+    const search = document.getElementById('article-search');
+    const input = document.getElementById('article-query');
+    const clear = document.getElementById('article-search-clear');
+    const empty = document.getElementById('article-search-empty');
     const aliases = { 'food-and-farming': 'food', 'energy-and-homesteading': 'solar', 'building-and-homesteading': 'building', 'systems-and-maintenance': 'systems' };
     const categories = new Set(Array.from(buttons, button => button.dataset.category));
 
-    function applyCategory(category) {
-        category = aliases[category] || category;
-        if (!categories.has(category)) category = 'all';
+    function normalize(value) {
+        return value.normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+    }
+
+    const searchable = new Map(Array.from(cards, card => [card, normalize(
+        Array.from(card.querySelectorAll('h3, p, .guide-card-category'), node => node.textContent).join(' ')
+    )]));
+
+    function selectedCategory() {
+        const fragment = window.location.hash.slice(1);
+        const category = aliases[fragment] || fragment;
+        return categories.has(category) ? category : 'all';
+    }
+
+    function applyFilters() {
+        const category = selectedCategory();
+        const query = new URL(window.location.href).searchParams.get('q') || '';
+        const words = normalize(query).trim().split(/\s+/).filter(Boolean);
         let visible = 0;
         cards.forEach(card => {
-            card.hidden = category !== 'all' && card.dataset.category !== category;
+            const matchesTopic = category === 'all' || card.dataset.category === category;
+            card.hidden = !matchesTopic || !words.every(word => searchable.get(card).includes(word));
             if (!card.hidden) visible++;
         });
         buttons.forEach(button => {
@@ -437,20 +457,47 @@ function initCategoryFilter() {
             button.classList.toggle('active', selected);
             button.setAttribute('aria-pressed', String(selected));
         });
+        if (input) input.value = query;
+        if (clear) clear.disabled = !query;
+        if (empty) empty.hidden = visible !== 0;
         if (count) count.textContent = visible + ' article' + (visible === 1 ? '' : 's');
+    }
+
+    function changeFilters(category, query) {
+        const url = new URL(window.location.href);
+        url.hash = category === 'all' ? '' : category;
+        query = query.trim().replace(/\s+/g, ' ');
+        if (query) url.searchParams.set('q', query);
+        else url.searchParams.delete('q');
+        if (url.href !== window.location.href) history.pushState(null, '', url.href);
+        applyFilters();
     }
 
     buttons.forEach(button => {
         button.addEventListener('click', () => {
-            const category = button.dataset.category;
-            const url = new URL(window.location.href);
-            url.hash = category === 'all' ? '' : category;
-            if (url.href !== window.location.href) history.pushState(null, '', url.href);
-            applyCategory(category);
+            const query = input ? input.value : new URL(window.location.href).searchParams.get('q') || '';
+            changeFilters(button.dataset.category, query);
         });
     });
-    window.addEventListener('hashchange', () => applyCategory(window.location.hash.slice(1)));
-    applyCategory(window.location.hash.slice(1));
+    if (search && input) {
+        search.addEventListener('submit', event => {
+            event.preventDefault();
+            changeFilters(selectedCategory(), input.value);
+        });
+        if (clear) {
+            input.addEventListener('input', () => {
+                clear.disabled = !input.value && !new URL(window.location.href).searchParams.get('q');
+            });
+            clear.addEventListener('click', () => {
+                changeFilters(selectedCategory(), '');
+                input.focus();
+            });
+        }
+        search.hidden = false;
+    }
+    window.addEventListener('hashchange', applyFilters);
+    window.addEventListener('popstate', applyFilters);
+    applyFilters();
     controls.hidden = false;
     directory.dataset.filterReady = 'true';
 }

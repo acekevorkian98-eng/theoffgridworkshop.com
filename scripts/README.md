@@ -44,3 +44,13 @@ Keep the skip link as the first body element on new public pages, targeting
 elements for FAQ disclosures; the answer must remain readable without scripts.
 Shop filter buttons expose their selected state with `aria-pressed`, and the
 status element reports how many items remain visible.
+
+# Archive search
+
+The archive combines a `q` query with the topic fragment, for example
+`/blog/?q=solar+battery#solar`. Search matches all words, ignoring case and
+accents, across each card's title, summary and displayed topic. It uses the
+rendered directory and makes no extra data request. Search and category
+controls are revealed after initialization; all cards remain readable when
+scripts are unavailable. New titles and summaries enter search on the next
+archive rebuild. Back and Forward restore the query and topic.

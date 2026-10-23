@@ -101,6 +101,16 @@
             <p class="post-count" role="status" aria-live="polite">43 articles</p>
         </section>
 
+        <form id="article-search" class="article-search" role="search" aria-label="Search articles" action="/blog/" method="get" hidden>
+            <label for="article-query">Search articles and guides</label>
+            <p id="article-search-help" class="text-small">Search titles, summaries and topics. All search words must match.</p>
+            <div class="article-search-controls">
+                <input type="search" id="article-query" name="q" maxlength="200" aria-describedby="article-search-help" autocomplete="off">
+                <button type="submit" class="btn btn-primary">Search</button>
+                <button type="button" id="article-search-clear" class="btn btn-secondary">Clear search</button>
+            </div>
+        </form>
+
         <div class="category-tags" role="group" aria-label="Filter articles by topic" hidden>
             <button type="button" data-category="all" aria-pressed="true">All</button>
             <button type="button" data-category="solar" aria-pressed="false">Solar</button>
@@ -115,6 +125,8 @@
             <h2>Find Your Next Project</h2>
             <p>Start with the <a href="../guides/">guides section</a> for a structured introduction, or browse the articles below for more detailed topics. The archive includes both blog articles and related reference guides.</p>
         </section>
+
+        <p id="article-search-empty" class="info-box neutral" hidden>No articles match these filters. Try fewer search words or choose another topic.</p>
 
         <div class="guide-list" id="article-directory">
             <article class="guide-card" data-category="solar">

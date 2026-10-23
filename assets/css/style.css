@@ -2425,3 +2425,21 @@ a.affiliate-link[style] { border-radius: var(--radius-pill) !important; }
 .faq-question:focus-visible { outline: 3px solid var(--primary); outline-offset: -4px; }
 .shop-filter-btn:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
 .product-card[hidden] { display: none; }
+
+.article-search { margin: 1.5rem 0; }
+.article-search label { display: block; font-weight: 600; margin-bottom: 0.5rem; }
+.article-search-controls { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.article-search input {
+    flex: 1 1 16rem;
+    min-width: 0;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    background: var(--bg-pure);
+    color: var(--text);
+    font: inherit;
+}
+.article-search input:focus-visible,
+.article-search button:focus-visible { outline: 3px solid var(--primary); outline-offset: 3px; }
+.article-search button:disabled { opacity: 0.55; cursor: default; }
+#article-search-empty[hidden] { display: none; }
