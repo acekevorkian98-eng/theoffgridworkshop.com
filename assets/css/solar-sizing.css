@@ -1,0 +1,79 @@
+.solar-calculator {
+    padding: clamp(1rem, 3vw, 2rem);
+    border: 2px solid var(--primary);
+    border-radius: var(--radius-md, 12px);
+    margin-block: 2rem;
+    scroll-margin-top: 6rem;
+}
+.solar-calculator fieldset {
+    border: 0;
+    padding: 0;
+    margin: 1.5rem 0;
+    min-width: 0;
+}
+.solar-calculator legend {
+    font-weight: 700;
+    margin-bottom: .75rem;
+}
+.solar-fields, .solar-summary {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+.solar-field label, .solar-field small {
+    display: block;
+}
+.solar-field label {
+    font-weight: 600;
+    margin-bottom: .35rem;
+}
+.solar-field input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .75rem;
+    border: 1px solid var(--text-secondary);
+    border-radius: 6px;
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+}
+.solar-field small {
+    margin-top: .35rem;
+    line-height: 1.5;
+}
+.solar-calculator :focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 4px;
+}
+.solar-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .75rem;
+}
+.solar-actions button {
+    cursor: pointer;
+    font: inherit;
+}
+.solar-results {
+    margin-top: 1.5rem;
+    border-top: 1px solid var(--text-secondary);
+    padding-top: 1rem;
+}
+.solar-summary > div {
+    border-left: 3px solid var(--primary);
+    padding-left: .75rem;
+}
+.solar-summary dt {
+    font-weight: 700;
+}
+.solar-summary dd {
+    margin: .25rem 0;
+    overflow-wrap: anywhere;
+}
+.solar-error {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+@media (max-width: 600px) {
+    .solar-fields, .solar-summary { grid-template-columns: 1fr; }
+}

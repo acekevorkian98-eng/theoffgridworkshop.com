@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Size Your Off-Grid Solar System | The Off-Grid Workshop</title>
-    <meta name="description" content="A step-by-step method for sizing an off-grid solar system: calculate daily Wh, peak sun hours, panel array size, battery bank, and inverter. Includes worked example.">
+    <meta name="description" content="A step-by-step method for sizing an off-grid solar system: calculate daily Wh, peak sun hours, panel array size, battery bank, and inverter. Includes a calculator and worked examples.">
     <meta name="author" content="Jake Mercer, Off-Grid Homesteader">
     <link rel="canonical" href="https://theoffgridworkshop.com/guides/solar-sizing">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -24,6 +24,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;500;600;700&display=swap">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/solar-sizing.css">
     <script type="application/ld+json">
     {
     "@context": "https://schema.org",
@@ -41,55 +42,55 @@
     },
     "url": "https://theoffgridworkshop.com/guides/solar-sizing",
     "datePublished": "2026-01-01",
-    "dateModified": "2026-02-01"
+    "dateModified": "2026-10-23"
 }
     </script>
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How do I size my off-grid solar panel array?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Divide your adjusted daily Wh consumption by your location's peak sun hours, then add 15-25% for safety margin. Example: 1,800 Wh ÷ 5 PSH = 360W minimum, round to 400-600W recommended."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How much battery storage do I need for off-grid solar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Size for 1.5-3 days of autonomy. For LiFePO4 at 85% DoD: Daily Wh × Days ÷ 0.85 = Required battery capacity. Two days autonomy is a practical starting point for most setups."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What are peak sun hours?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Peak sun hours (PSH) is the daily average solar energy your location receives expressed as equivalent full-power hours. Southwest US gets 5.5-7 PSH, Southeast 4.5-5.5 PSH, Pacific Northwest/Northeast 3.5-4.5 PSH. Always size to your worst-month PSH."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What size inverter do I need?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Size your inverter to 1.25-1.5× your peak simultaneous AC load. Must handle startup surge from motor-driven appliances (refrigerators, pumps) which can draw 2-7× running watts."
-          }
-        }
-      ]
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How do I size my off-grid solar panel array?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Divide daily appliance Wh by design-month peak sun hours and the solar-to-load efficiency, then apply your chosen array reserve. At 1,500Wh/day, 3 peak sun hours, 25% losses and 20% reserve, the target is 800W."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much battery storage do I need for off-grid solar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nominal battery Wh equals daily appliance Wh times days without solar, divided by usable discharge fraction and battery-to-load efficiency. At 1,500Wh/day, two days, 80% discharge and 90% efficiency, the result is about 4,167Wh."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are peak sun hours?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Peak sun hours express daily solar energy as equivalent hours at 1,000W per square metre. Use monthly local data for the intended panel orientation and lowest-sun operating month."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What size inverter do I need?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Calculate simultaneous AC running load and startup load separately. The calculator adds 25% continuous headroom, but the inverter must also meet the actual startup peak and its required duration."
+      }
     }
+  ]
+}
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9986267429592601"
          crossorigin="anonymous"></script>
     <meta property="og:site_name" content="The Off-Grid Workshop">
     <meta property="og:locale" content="en_US">
     <meta property="og:title" content="How to Size Your Off-Grid Solar System | The Off-Grid Workshop">
-    <meta property="og:description" content="A step-by-step method for sizing an off-grid solar system: calculate daily Wh, peak sun hours, panel array size, battery bank, and inverter. Includes worked example.">
+    <meta property="og:description" content="A step-by-step method for sizing an off-grid solar system: calculate daily Wh, peak sun hours, panel array size, battery bank, and inverter. Includes a calculator and worked examples.">
     <meta property="og:image" content="https://theoffgridworkshop.com/android-chrome-512x512.png">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
@@ -97,16 +98,16 @@
     <meta property="og:url" content="https://theoffgridworkshop.com/guides/solar-sizing/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="How to Size Your Off-Grid Solar System | The Off-Grid Workshop">
-    <meta name="twitter:description" content="A step-by-step method for sizing an off-grid solar system: calculate daily Wh, peak sun hours, panel array size, battery bank, and inverter. Includes worked example.">
+    <meta name="twitter:description" content="A step-by-step method for sizing an off-grid solar system: calculate daily Wh, peak sun hours, panel array size, battery bank, and inverter. Includes a calculator and worked examples.">
     <meta name="twitter:image" content="https://theoffgridworkshop.com/android-chrome-512x512.png">
     <script type="application/ld+json">
     {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "How to Size Your Off-Grid Solar System | The Off-Grid Workshop",
-    "description": "A step-by-step method for sizing an off-grid solar system: calculate daily Wh, peak sun hours, panel array size, battery bank, and inverter. Includes worked example.",
+    "description": "A step-by-step method for sizing an off-grid solar system: calculate daily Wh, peak sun hours, panel array size, battery bank, and inverter. Includes a calculator and worked examples.",
     "url": "https://theoffgridworkshop.com/guides/solar-sizing/",
-    "dateModified": "2026-07-03"
+    "dateModified": "2026-10-23"
 }
     </script>
     <script type="application/ld+json">
@@ -173,10 +174,10 @@
 
             <article class="article">
                 <header class="article-header">
-                    <span class="last-updated">Updated February 2026</span>
+                    <span class="last-updated">Sizing method reviewed October 2026</span>
                     <h1>How to Size Your Off-Grid Solar System</h1>
-                    <p class="article-meta">Difficulty: Intermediate &middot; Reading time: ~8 min</p>
-                    <p class="author-byline">By <a href="/pages/about">Jake Mercer</a> &middot; Off-Grid Homesteader &amp; Former Engineer</p>
+                    <p class="article-meta">Difficulty: Intermediate | Reading time: ~8 min</p>
+                    <p class="author-byline">By <a href="/pages/about">Jake Mercer</a> | Off-Grid Homesteader &amp; Former Engineer</p>
                 </header>
 
                 <div class="article-content">
@@ -188,8 +189,8 @@
 
                     <section>
                         <h2>Why Getting the Size Right Matters</h2>
-                        <p>Undersizing your solar system means you run out of power by evening. Oversizing means you spent thousands of dollars on panels and batteries you&rsquo;ll never use. The sweet spot is a system sized to meet your actual load with a reasonable safety margin — and that requires math, not guesswork.</p>
-                        <p>The good news: the math is straightforward. You need four numbers: your daily energy consumption in watt-hours, your location&rsquo;s peak sun hours, a panel array size, and a battery bank capacity. This guide walks you through each step.</p>
+                        <p>Undersizing your solar system means you run out of power by evening. Oversizing means you spent thousands of dollars on panels and batteries you&rsquo;ll never use. The sweet spot is a system sized to meet your actual load with a reasonable safety margin. and that requires math, not guesswork.</p>
+                        <p>The good news: the math is straightforward. You need four numbers: your daily energy consumption in watt-hours, your location&rsquo;s peak sun hours, a panel array size, and a battery bank capacity. Use the <a href="#calculator">solar sizing calculator</a>, then follow the worked steps below.</p>
 
                         <div class="info-box neutral">
                             <p class="info-box-title">Before You Begin</p>
@@ -197,134 +198,149 @@
                         </div>
                     </section>
 
-                    <section>
-                        <h2>Step 1: Establish Your Daily Wh Consumption</h2>
-                        <p>Your power audit gives you a total daily watt-hour (Wh) figure. For the worked example throughout this guide, we&rsquo;ll use <strong>1,500 Wh/day</strong> — a reasonable load for a small off-grid cabin running LED lighting, a 12V refrigerator, phone and laptop charging, a water pump, and a few small appliances.</p>
-                        <p>Add a 20% efficiency buffer to account for real-world losses (wiring resistance, charge controller efficiency, inverter conversion losses, temperature derating of panels). This is not optional padding &mdash; it reflects genuine system losses.</p>
-                        <p><strong>Adjusted daily consumption:</strong> 1,500 Wh &times; 1.20 = <strong>1,800 Wh/day</strong></p>
+                    <section class="solar-calculator" id="calculator" aria-labelledby="calculator-title">
+                        <h2 id="calculator-title">Off-Grid Solar Sizing Calculator</h2>
+                        <p>Estimate panel capacity, nominal battery storage and inverter requirements from your own load audit. The starting values are an illustrative example, not measurements from a particular home.</p>
+                        <noscript><p>The calculator needs JavaScript. The formulas and worked examples below can be used without it.</p></noscript>
+                        <form id="solar-calculator">
+                            <fieldset><legend>Energy and solar resource</legend><div class="solar-fields">
+                                <div class="solar-field">
+                                    <label for="solar-dailyWh">Daily energy at the appliances (Wh/day)</label>
+                                    <input id="solar-dailyWh" name="dailyWh" type="number" min="1" max="1000000" step="1" value="1500" required aria-describedby="hint-dailyWh">
+                                    <small id="hint-dailyWh">Include inverter standby use in your energy budget.</small>
+                                </div>
+                                <div class="solar-field">
+                                    <label for="solar-sunHours">Design-month peak sun hours</label>
+                                    <input id="solar-sunHours" name="sunHours" type="number" min="0.1" max="24" step="0.1" value="3" required aria-describedby="hint-sunHours">
+                                    <small id="hint-sunHours">Use local solar data for your panel tilt and worst operating month.</small>
+                                </div>
+                                <div class="solar-field">
+                                    <label for="solar-losses">Total solar-to-load losses (%)</label>
+                                    <input id="solar-losses" name="losses" type="number" min="0" max="90" step="0.1" value="25" required aria-describedby="hint-losses">
+                                    <small id="hint-losses">One combined allowance for panel, wiring, charging, battery and conversion losses.</small>
+                                </div>
+                                <div class="solar-field">
+                                    <label for="solar-margin">Extra array reserve (%)</label>
+                                    <input id="solar-margin" name="margin" type="number" min="0" max="100" step="0.1" value="20" required aria-describedby="hint-margin">
+                                    <small id="hint-margin">Added after losses. This is planning headroom, not guaranteed cloudy-day recovery.</small>
+                                </div>
+                                <div class="solar-field">
+                                    <label for="solar-panelWatts">Rating of one panel (W)</label>
+                                    <input id="solar-panelWatts" name="panelWatts" type="number" min="1" max="2000" step="1" value="400" required aria-describedby="hint-panelWatts">
+                                    <small id="hint-panelWatts">Panel count is rounded up. Electrical string compatibility still needs checking.</small>
+                                </div>
+                            </div></fieldset>
+                            <fieldset><legend>Battery storage</legend><div class="solar-fields">
+                                <div class="solar-field">
+                                    <label for="solar-days">Days without solar input</label>
+                                    <input id="solar-days" name="days" type="number" min="0.1" max="30" step="0.1" value="2" required aria-describedby="hint-days">
+                                    <small id="hint-days">The storage period you want to cover before backup power or load reduction.</small>
+                                </div>
+                                <div class="solar-field">
+                                    <label for="solar-depth">Usable depth of discharge (%)</label>
+                                    <input id="solar-depth" name="depth" type="number" min="1" max="100" step="0.1" value="80" required aria-describedby="hint-depth">
+                                    <small id="hint-depth">Use the permitted operating window from your battery manufacturer.</small>
+                                </div>
+                                <div class="solar-field">
+                                    <label for="solar-delivery">Battery-to-load efficiency (%)</label>
+                                    <input id="solar-delivery" name="delivery" type="number" min="1" max="100" step="0.1" value="90" required aria-describedby="hint-delivery">
+                                    <small id="hint-delivery">Battery discharge, wiring and inverter/converter losses; separate from the solar calculation.</small>
+                                </div>
+                                <div class="solar-field">
+                                    <label for="solar-voltage">Battery bank nominal voltage (V)</label>
+                                    <input id="solar-voltage" name="voltage" type="number" min="1" max="1000" step="0.1" value="25.6" required aria-describedby="hint-voltage">
+                                    <small id="hint-voltage">Use the data sheet value: for example 12.8, 25.6 or 51.2 V for many LiFePO4 banks.</small>
+                                </div>
+                            </div></fieldset>
+                            <fieldset><legend>AC inverter loads</legend><div class="solar-fields">
+                                <div class="solar-field">
+                                    <label for="solar-peakWatts">Simultaneous AC running load (W)</label>
+                                    <input id="solar-peakWatts" name="peakWatts" type="number" min="0" max="1000000" step="1" value="1000" required aria-describedby="hint-peakWatts">
+                                    <small id="hint-peakWatts">Add appliances that can run together. Enter 0 for a DC-only system.</small>
+                                </div>
+                                <div class="solar-field">
+                                    <label for="solar-surgeWatts">Total AC load during startup (W)</label>
+                                    <input id="solar-surgeWatts" name="surgeWatts" type="number" min="0" max="1000000" step="1" value="2500" required aria-describedby="hint-surgeWatts">
+                                    <small id="hint-surgeWatts">Include starting equipment plus other running loads; check the required surge duration.</small>
+                                </div>
+                            </div></fieldset>
+                            <div class="solar-actions"><button type="submit" class="btn btn-primary">Calculate system size</button><button type="reset" class="btn btn-secondary">Reset example</button></div>
+                        </form>
+                        <p id="solar-error" class="solar-error" role="alert" tabindex="-1" hidden></p>
+                        <div id="solar-results" class="solar-results" aria-labelledby="solar-result-title" tabindex="-1" hidden>
+                            <h3 id="solar-result-title">Your planning estimate</h3>
+                            <dl class="solar-summary">
+                                <div><dt>Solar array</dt><dd id="solar-array"></dd><dd id="solar-panels"></dd></div>
+                                <div><dt>Battery bank</dt><dd id="solar-battery"></dd><dd id="solar-ah"></dd></div>
+                                <div><dt>Inverter</dt><dd id="solar-inverter"></dd><dd id="solar-surge"></dd></div>
+                            </dl>
+                            <p id="solar-assumptions"></p>
+                            <p>The array estimate covers average daily energy with your chosen reserve. It does not model weather sequences or the time needed to recharge an empty bank while supplying loads. Check charge-controller limits, battery current ratings, temperature, ageing, surge duration and backup charging before selecting equipment.</p>
+                        </div>
                     </section>
 
                     <section>
-                        <h2>Step 2: Find Your Peak Sun Hours</h2>
-                        <p>Peak sun hours (PSH) are not the same as hours of daylight. A peak sun hour is one hour of sunlight at an irradiance of 1,000 W/m&sup2;. In practice, this is the daily average solar energy your location receives expressed as equivalent full-power hours.</p>
-                        <p>Typical values across the US:</p>
-                        <ul>
-                            <li><strong>Southwest (AZ, NV, NM):</strong> 5.5&ndash;7 PSH</li>
-                            <li><strong>Southeast / Mid-Atlantic:</strong> 4.5&ndash;5.5 PSH</li>
-                            <li><strong>Pacific Northwest / Northeast:</strong> 3.5&ndash;4.5 PSH</li>
-                            <li><strong>Northern Midwest / Mountain (winter):</strong> 3.0&ndash;4.0 PSH</li>
-                        </ul>
-                        <p>Always size to your <em>worst-month</em> PSH, not the annual average. If you live in a location that gets 6 PSH in July but only 3.5 PSH in December, size to 3.5 PSH. Otherwise you&rsquo;ll be short on power for months every year.</p>
-                        <p>For our example, we&rsquo;ll use <strong>5 PSH</strong> (a common mid-latitude figure).</p>
+                        <h2>Step 1: Establish Your Daily Energy Use</h2>
+                        <p>Start with the <a href="power-audit">power audit</a>: watts multiplied by hours of operation gives watt-hours (Wh). Add the daily energy for all your appliances, including standby consumption. A 100W appliance running for three hours uses 300Wh; this does not tell you its startup power.</p>
+                        <p>This guide uses a hypothetical <strong>1,500Wh/day</strong> load. The calculator starts with a <strong>25% combined solar-to-load loss allowance</strong>. Replace it with a loss budget for your equipment. A 25% loss means dividing the load by 0.75, not multiplying by 1.25. Do not add the same inverter or battery losses a second time to this combined allowance.</p>
                     </section>
-
-                    <div class="ad-placeholder banner"><!-- Ad --></div>
-
                     <section>
-                        <h2>Step 3: Calculate Your Panel Array Size</h2>
-                        <p>The formula is simple:</p>
-                        <p><strong>Panel array (W) = Adjusted daily Wh &divide; Peak sun hours</strong></p>
-                        <p>Using our example: 1,800 Wh &divide; 5 PSH = <strong>360W minimum</strong></p>
-                        <p>This is your mathematical minimum. In practice, add another 15&ndash;25% safety margin to account for panel degradation over time, partial shading, and non-ideal panel orientation. A practical recommendation is to round up to the next common array size.</p>
-
+                        <h2>Step 2: Find Your Design-Month Peak Sun Hours</h2>
+                        <p>Peak sun hours express daily solar energy as equivalent hours at 1,000W/m&sup2;. They are not daylight hours. Use location-specific monthly data for the planned panel orientation, and design for the lowest-sun month when the system must operate.</p>
+                        <p>The example uses <strong>3 peak sun hours</strong> as an input assumption, not a regional guarantee. Monthly averages do not predict a particular cloudy spell. Seasonal loads, shading and backup charging also affect a workable design.</p>
+                    </section>
+                    <section>
+                        <h2>Step 3: Calculate the Solar Array</h2>
+                        <p><strong>Array target (W) = Daily Wh &divide; [Peak sun hours &times; (1 &minus; loss fraction)] &times; (1 + reserve fraction)</strong></p>
+                        <p>For this example: 1,500 &divide; (3 &times; 0.75) &times; 1.20 = <strong>800W</strong>. Two 400W panels meet that arithmetic target. The 20% reserve is a planning choice, separate from the loss allowance.</p>
+                        <p>Round up to whole panels, then check the controller&rsquo;s input voltage, current and power limits. Meeting the daily energy target does not guarantee rapid recovery after several cloudy days. Additional array capacity, reduced loads or backup generation may be needed.</p>
+                    </section>
+                    <section>
+                        <h2>Step 4: Size the Battery Bank</h2>
+                        <p><strong>Nominal bank capacity (Wh) = Daily Wh &times; Days without solar &divide; (Usable discharge fraction &times; Battery-to-load efficiency)</strong></p>
+                        <p>The battery calculation starts from appliance energy again, so it includes delivery losses from the battery to the loads. It does not use the combined solar loss allowance from the array calculation.</p>
+                        <p>With two days of storage, 80% usable discharge and 90% delivery efficiency: 1,500 &times; 2 &divide; (0.80 &times; 0.90) = <strong>4,167Wh nominal</strong>. Choose a bank with at least this rated energy, then allow for temperature, ageing and the manufacturer&rsquo;s operating limits.</p>
+                        <p><strong>Bank Ah = Nominal Wh &divide; Nominal bank voltage.</strong> At 25.6V the example needs at least 163Ah. At 51.2V the same energy needs at least 82Ah. Use the battery data sheet&rsquo;s nominal voltage rather than its charging voltage.</p>
                         <div class="info-box neutral">
-                            <p class="info-box-title">Worked Example</p>
-                            <ul>
-                                <li>Daily load: 1,500 Wh</li>
-                                <li>Efficiency buffer (20%): &times; 1.20 = 1,800 Wh adjusted</li>
-                                <li>Peak sun hours: 5 PSH</li>
-                                <li>Minimum array: 1,800 &divide; 5 = <strong>360W</strong></li>
-                                <li>Recommended with safety margin: <strong>400&ndash;600W</strong></li>
-                                <li>Practical choice: <strong>2&times; 200W panels or 3&times; 200W panels</strong></li>
-                            </ul>
-                        </div>
-
-                        <p>The 400&ndash;600W recommended range gives you headroom to add a load later, covers a run of cloudy days better, and keeps your batteries more consistently topped up, which extends battery life.</p>
-                    </section>
-
-                    <section>
-                        <h2>Step 4: Size Your Battery Bank</h2>
-                        <p>Your battery bank stores energy for nighttime use and cloudy days. Most off-grid designers size for 1.5&ndash;3 days of autonomy — meaning the system can run your load without any solar input for that many days. Two days is a practical starting point for most setups.</p>
-                        <p><strong>Required bank capacity (Wh) = Daily Wh &times; Days of autonomy &divide; Depth of discharge (DoD)</strong></p>
-                        <p>DoD depends on battery chemistry:</p>
-                        <ul>
-                            <li><strong>LiFePO4:</strong> 80&ndash;90% DoD usable</li>
-                            <li><strong>Flooded Lead-Acid (FLA):</strong> 50% DoD (to protect cycle life)</li>
-                            <li><strong>AGM:</strong> 50&ndash;60% DoD</li>
-                        </ul>
-                        <p>For our 1,500 Wh/day example with 2 days autonomy and LiFePO4 batteries at 85% DoD:</p>
-                        <p>1,500 &times; 2 &divide; 0.85 = <strong>~3,530 Wh of battery capacity needed</strong></p>
-                        <p>A 100Ah 48V LiFePO4 battery holds 4,800 Wh — one bank comfortably covers this load. With lead-acid at 50% DoD you&rsquo;d need 6,000 Wh nominal capacity (3 &times; 100Ah 12V batteries in series, or equivalent).</p>
-
-                        <div class="info-box tip">
-                            <p class="info-box-title">Tip: Match Battery Voltage to Your Inverter</p>
-                            <p>Small systems (under ~2,000W continuous) often run 12V or 24V. Larger systems benefit from 48V because higher voltage means lower current, which reduces wire size and heat. Most quality inverter-chargers are available in 12V, 24V, and 48V configurations.</p>
+                            <p class="info-box-title">Series and Parallel Do Not Create Extra Energy</p>
+                            <p>Three 12V, 100Ah batteries contain 3 &times; 12 &times; 100 = <strong>3,600Wh nominal</strong>. In series they form a 36V, 100Ah bank; in parallel they form a 12V, 300Ah bank. Neither arrangement provides 6,000Wh. Connections must follow the battery manufacturer&rsquo;s instructions and match the inverter.</p>
                         </div>
                     </section>
-
                     <section>
-                        <h2>Step 5: Choose Your Inverter Size</h2>
-                        <p>Your inverter must handle your peak simultaneous AC load, not just your daily average. Add up the wattage of every AC appliance that might run at the same time. Don&rsquo;t forget startup surge &mdash; motor-driven loads (pumps, refrigerators, power tools) can draw 2&ndash;7&times; their running watts at startup for a fraction of a second. Your inverter must handle this surge without shutting down.</p>
-                        <p>As a rule of thumb: size your inverter to 1.25&ndash;1.5&times; your continuous AC peak load. If your peak simultaneous load is 1,000W running, choose a 1,500W or 2,000W inverter.</p>
-                        <p>For the worked example above (1,500 Wh/day, mostly 12V loads with moderate AC use), a <strong>1,500&ndash;2,000W pure sine wave inverter</strong> is appropriate.</p>
+                        <h2>Step 5: Check Continuous and Startup Power Separately</h2>
+                        <p>Daily Wh cannot determine inverter watts. Add the AC loads that can run simultaneously, and check the total load while a motor or compressor starts. The calculator uses <strong>25% continuous headroom</strong> as a planning assumption.</p>
+                        <p>A 1,000W simultaneous running load gives a 1,250W continuous target. If the total startup load is 2,500W, the inverter must also support that peak for the equipment&rsquo;s required startup duration. Check watts, VA/power factor, ambient-temperature derating and battery/BMS current limits against the actual equipment specifications.</p>
                     </section>
-
                     <section>
-                        <h2>System Size Reference Table</h2>
-                        <p>Here is a quick reference for three common off-grid build scales:</p>
-
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>System Scale</th>
-                                    <th>Daily Load</th>
-                                    <th>Panel Array</th>
-                                    <th>Battery Bank</th>
-                                    <th>Inverter</th>
-                                    <th>Typical Use Case</th>
-                                </tr>
-                            </thead>
+                        <h2>Worked Energy Examples</h2>
+                        <p>All rows use 3 peak sun hours, 25% total solar losses, 20% array reserve, 400W panels, two days of storage, 80% usable discharge and 90% battery-to-load efficiency. These are calculated examples, not recommended packages.</p>
+                        <div class="comparison-table-wrapper"><table>
+                            <thead><tr><th>Daily appliance energy</th><th>Whole-panel array</th><th>Minimum nominal storage</th><th>Example bank voltage</th><th>Minimum bank Ah</th></tr></thead>
                             <tbody>
-                                <tr>
-                                    <td><strong>Small</strong></td>
-                                    <td>300&ndash;800 Wh</td>
-                                    <td>200&ndash;400W</td>
-                                    <td>100&ndash;200Ah @ 12V</td>
-                                    <td>500&ndash;1,000W</td>
-                                    <td>Van, tiny cabin, shed</td>
-                                </tr>
-                                <tr class="highlight-row">
-                                    <td><strong>Medium</strong></td>
-                                    <td>800&ndash;2,500 Wh</td>
-                                    <td>400&ndash;1,200W</td>
-                                    <td>200&ndash;400Ah @ 24V</td>
-                                    <td>1,500&ndash;3,000W</td>
-                                    <td>Small cabin, couple off-grid</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Large</strong></td>
-                                    <td>2,500&ndash;6,000+ Wh</td>
-                                    <td>2,000&ndash;6,000W</td>
-                                    <td>400&ndash;800Ah @ 48V</td>
-                                    <td>3,000&ndash;6,000W</td>
-                                    <td>Family home, small farm</td>
-                                </tr>
+                                <tr><td>500Wh</td><td>1 &times; 400W</td><td>1.39kWh</td><td>12.8V</td><td>109Ah</td></tr>
+                                <tr><td>1,500Wh</td><td>2 &times; 400W</td><td>4.17kWh</td><td>25.6V</td><td>163Ah</td></tr>
+                                <tr><td>5,000Wh</td><td>7 &times; 400W</td><td>13.89kWh</td><td>51.2V</td><td>272Ah</td></tr>
                             </tbody>
-                        </table>
-
-                        <div class="info-box warning">
-                            <p class="info-box-title">Don&rsquo;t Skip the Power Audit</p>
-                            <p>These reference figures are guidelines only. Your actual system size must be driven by your real daily watt-hour number. Using a reference table as a substitute for a proper audit is one of the most common causes of an undersized &mdash; and deeply frustrating &mdash; off-grid solar system.</p>
-                        </div>
+                        </table></div>
+                        <p>Inverter requirements must be calculated from each household&rsquo;s simultaneous loads and startup requirements separately.</p>
+                    </section>
+                    <section>
+                        <h2>Sources and Method</h2>
+                        <p>The calculator is a preliminary energy-balance tool. Its example efficiencies and margins are editable assumptions, not universal equipment ratings.</p>
+                        <ul>
+                            <li><a href="https://www.mppsolar.com/v3/system-sizing/">MPP Solar: system sizing guide</a>, energy demand, solar resource and combined system efficiency.</li>
+                            <li><a href="https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/battery-bank-wiring.html">Victron Wiring Unlimited: battery bank wiring</a>, series and parallel capacity.</li>
+                            <li><a href="https://verasol.org/wp-content/uploads/2022/06/Design-Guidelines_Component-based-Off-GridSolarEnergySystems_241010.pdf">VeraSol: component-based off-grid system design guidelines</a>, battery sizing and conversion efficiency.</li>
+                        </ul>
                     </section>
 
                     <section>
                         <h2>Where to Go Next</h2>
                         <p>With your system sized, the next decisions are battery chemistry and specific equipment. These guides will help:</p>
                         <ol>
-                            <li><a href="power-audit"><strong>How to Do a Power Audit</strong></a> &mdash; Get your daily Wh number right</li>
-                            <li><a href="lifepo4-battery-guide"><strong>LiFePO4 vs Lead-Acid</strong></a> &mdash; Choose the right battery for your budget</li>
-                            <li><a href="../reviews/"><strong>Solar Gear Reviews</strong></a> &mdash; Specific equipment recommendations</li>
+                            <li><a href="power-audit"><strong>How to Do a Power Audit</strong></a> , Get your daily Wh number right</li>
+                            <li><a href="lifepo4-battery-guide"><strong>LiFePO4 vs Lead-Acid</strong></a> , Choose the right battery for your budget</li>
+                            <li><a href="../reviews/"><strong>Solar Gear Reviews</strong></a> , Specific equipment recommendations</li>
                         </ol>
                     </section>
 
@@ -408,5 +424,6 @@
     </footer>
 
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/solar-sizing.js"></script>
 </body>
 </html>
