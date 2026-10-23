@@ -13,8 +13,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to Do a Power Audit Before Buying Solar | The Off-Grid Workshop</title>
-    <meta name="description" content="Before you buy a single solar panel, do a power audit. List every appliance, find its wattage, multiply by hours per day, and get your true daily Wh total.">
-    <meta name="author" content="Jake Mercer, Off-Grid Homesteader">
+    <meta name="description" content="Audit daily energy in Wh and record running and startup loads separately. Includes a worked example, measurement notes and a reusable audit table.">
+    <meta name="author" content="The Off-Grid Workshop">
     <link rel="canonical" href="https://theoffgridworkshop.com/guides/power-audit">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,74 +22,74 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&amp;family=Figtree:wght@400;500;600;700&amp;display=swap">
     <link rel="stylesheet" href="../assets/css/style.css">
     <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "How to Do a Power Audit Before Buying Solar",
-    "author": {
-        "@type": "Person",
-        "name": "Jake Mercer",
-        "url": "https://theoffgridworkshop.com/pages/about"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "The Off-Grid Workshop",
-        "url": "https://theoffgridworkshop.com"
-    },
-    "url": "https://theoffgridworkshop.com/guides/power-audit",
-    "datePublished": "2026-01-01",
-    "dateModified": "2026-02-01"
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "How to Do a Power Audit Before Buying Solar",
+  "author": {
+    "@type": "Organization",
+    "name": "The Off-Grid Workshop",
+    "url": "https://theoffgridworkshop.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Off-Grid Workshop",
+    "url": "https://theoffgridworkshop.com"
+  },
+  "url": "https://theoffgridworkshop.com/guides/power-audit",
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-10-23"
 }
     </script>
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "How do I do a power audit for off-grid solar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "List every electrical device, find its wattage (label or manual), estimate daily hours of use, then calculate Wh/day = Watts × Hours. Sum all devices for your daily Wh total. Use a Kill-A-Watt meter ($15-$30) for accurate readings, especially for appliances that cycle on/off like refrigerators."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is a realistic daily Wh consumption for off-grid?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Under 500 Wh/day: very efficient small cabin ($800-$1,500 system). 500-1,500 Wh/day: typical small cabin ($2,000-$6,000). 1,500-3,000 Wh/day: small family ($5,000-$15,000). Over 3,000 Wh/day: full-home load ($15,000-$40,000+)."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Which appliances should I avoid off-grid?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Electric water heaters, electric ranges/ovens, and central air conditioning are the 'big three' to avoid. A single electric water heater can use more energy per day than all other cabin loads combined. Use propane cooking, wood-fired or propane water heating, and passive cooling instead."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "What is startup surge?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Motor-driven appliances (refrigerators, pumps, fans) draw significantly more power at startup than while running. A refrigerator running at 150W may surge to 600-900W for a fraction of a second. Your inverter must handle this surge without shutting down."
-          }
-        }
-      ]
+      "@type": "Question",
+      "name": "How do I calculate daily energy use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a steady load, multiply input watts by hours per day and quantity. For a measured interval, multiply recorded kWh by 1,000 and by 24 divided by observation hours. Sum the daily results without double-counting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does daily Wh tell me what inverter to buy?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Record simultaneous AC running loads and startup requirements separately, including applicable watts, VA and startup duration."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is volts multiplied by amps always watts?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For single-phase AC, RMS volts multiplied by RMS amps gives VA. Real watts also depend on power factor. Use appropriate input-power data for energy estimates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use a typical appliance table instead of measuring?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Use generic estimates only as identified placeholders. Replace them with data for the actual equipment and operating conditions before committing to a system design."
+      }
     }
+  ]
+}
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9986267429592601"
          crossorigin="anonymous"></script>
     <meta property="og:site_name" content="The Off-Grid Workshop">
     <meta property="og:locale" content="en_US">
     <meta property="og:title" content="How to Do a Power Audit Before Buying Solar | The Off-Grid Workshop">
-    <meta property="og:description" content="Before you buy a single solar panel, do a power audit. List every appliance, find its wattage, multiply by hours per day, and get your true daily Wh total.">
+    <meta property="og:description" content="Audit daily energy in Wh and record running and startup loads separately. Includes a worked example, measurement notes and a reusable audit table.">
     <meta property="og:image" content="https://theoffgridworkshop.com/android-chrome-512x512.png">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
@@ -97,16 +97,16 @@
     <meta property="og:url" content="https://theoffgridworkshop.com/guides/power-audit/">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="How to Do a Power Audit Before Buying Solar | The Off-Grid Workshop">
-    <meta name="twitter:description" content="Before you buy a single solar panel, do a power audit. List every appliance, find its wattage, multiply by hours per day, and get your true daily Wh total.">
+    <meta name="twitter:description" content="Audit daily energy in Wh and record running and startup loads separately. Includes a worked example, measurement notes and a reusable audit table.">
     <meta name="twitter:image" content="https://theoffgridworkshop.com/android-chrome-512x512.png">
     <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "How to Do a Power Audit Before Buying Solar | The Off-Grid Workshop",
-    "description": "Before you buy a single solar panel, do a power audit. List every appliance, find its wattage, multiply by hours per day, and get your true daily Wh total.",
-    "url": "https://theoffgridworkshop.com/guides/power-audit/",
-    "dateModified": "2026-07-03"
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "How to Do a Power Audit Before Buying Solar | The Off-Grid Workshop",
+  "description": "Audit daily energy in Wh and record running and startup loads separately. Includes a worked example, measurement notes and a reusable audit table.",
+  "url": "https://theoffgridworkshop.com/guides/power-audit/",
+  "dateModified": "2026-10-23"
 }
     </script>
     <script type="application/ld+json">
@@ -173,10 +173,10 @@
 
             <article class="article">
                 <header class="article-header">
-                    <span class="last-updated">Updated February 2026</span>
+                    <span class="last-updated">Audit method reviewed October 2026</span>
                     <h1>How to Do a Power Audit Before Buying Solar</h1>
-                    <p class="article-meta">Difficulty: Beginner &middot; Reading time: ~7 min</p>
-                    <p class="author-byline">By <a href="/pages/about">Jake Mercer</a> &middot; Off-Grid Homesteader &amp; Former Engineer</p>
+                    <p class="article-meta">Difficulty: Beginner | Reading time: ~6 min</p>
+                    <p class="author-byline">By <a href="/pages/about">The Off-Grid Workshop</a></p>
                 </header>
 
                 <div class="article-content">
@@ -187,186 +187,70 @@
                     </div>
 
                     <section>
-                        <h2>Why a Power Audit Comes First</h2>
-                        <p>Buying solar before knowing your load is one of the single most common and expensive mistakes in off-grid setups. Without a power audit, you&rsquo;re guessing &mdash; and the consequences of guessing wrong in either direction are painful. Undersize and you&rsquo;ll be rationing power within weeks. Oversize and you&rsquo;ve spent thousands of dollars on capacity you&rsquo;ll never use.</p>
-                        <p>A power audit takes about an hour with a pen and paper (or a spreadsheet). It gives you the single most important number in off-grid solar design: your <strong>daily watt-hour (Wh) consumption</strong>. Everything downstream &mdash; panel array size, battery bank, inverter &mdash; is calculated from that one figure.</p>
+                        <h2>Keep Energy and Power Separate</h2>
+<p>A power audit should produce a daily energy budget and a separate record of running and startup power. Daily energy helps size generation and storage. Simultaneous AC loads and startup requirements help select an inverter.</p>
+<p><strong>Watts (W)</strong> describe power at an instant. <strong>Watt-hours (Wh)</strong> describe energy over time; 1,000Wh equals 1kWh. An illustrative 400W load used for 15 minutes consumes 400 &times; 0.25 = 100Wh. A different 100W load used for one hour also consumes 100Wh, but the two loads impose different power requirements.</p>
                     </section>
 
                     <section>
-                        <h2>Step 1: List Every Electrical Load</h2>
-                        <p>Go through your home or cabin &mdash; physically room by room &mdash; and write down every device that uses electricity. Include things you might overlook:</p>
-                        <ul>
-                            <li>All lighting (count each bulb separately)</li>
-                            <li>Refrigerator and freezer</li>
-                            <li>Phone and laptop chargers</li>
-                            <li>Water pump</li>
-                            <li>Fans and ventilation</li>
-                            <li>Router and networking equipment</li>
-                            <li>Power tools (even if used occasionally)</li>
-                            <li>Entertainment (TV, radio, speakers)</li>
-                            <li>Small kitchen appliances (blender, coffee maker, etc.)</li>
-                        </ul>
-                        <p>Do not leave anything off the list. You can deprioritize high-draw items later, but you need to see the full picture first.</p>
+                        <h2>List the Loads and Their Operating Conditions</h2>
+<p>Include lights, refrigeration, communications, pumps, fans, chargers, tools and occasional high-power appliances. Record quantities, whether each load is AC or DC, and whether it must operate during a shortage.</p>
+<p>Make separate lists for seasonal or unusually busy days. A winter heating load, summer fan or occasional workshop session can disappear in an annual average. Keep an evidence column so measured values, manufacturer ratings and estimates remain distinguishable.</p>
                     </section>
 
                     <section>
-                        <h2>Step 2: Find the Wattage of Each Device</h2>
-                        <p>The wattage of any device is either printed on a label (look on the back or bottom of the unit) or available in the product manual. You can also look it up by model number online. Common label formats include &ldquo;120V 60Hz 1.5A&rdquo; &mdash; in that case, multiply volts &times; amps (120 &times; 1.5 = 180W).</p>
-                        <p>For the most accurate reading, use a <strong>plug-in power meter</strong> (also called a Kill-A-Watt meter). These cost $15&ndash;$30 and give you real-time wattage readings for any appliance you plug in. They&rsquo;re especially useful for refrigerators, which cycle on and off &mdash; running them for 24 hours gives you an actual average consumption figure that beats any label estimate.</p>
-
-                        <div class="info-box neutral">
-                            <p class="info-box-title">Continuous Watts vs. Startup Surge Watts</p>
-                            <p>Every motor-driven appliance (refrigerators, pumps, fans, power tools) draws significantly more power at startup than while running. This is called the <strong>startup surge</strong> or inrush current. A refrigerator that runs at 150W may surge to 600&ndash;900W for a fraction of a second each time the compressor kicks on.</p>
-                            <p>For the purposes of calculating daily Wh consumption, use the <em>running</em> (continuous) wattage. But when sizing your inverter, you must account for surge &mdash; your inverter needs a surge rating high enough to handle the momentary spike without shutting down. Most quality inverters specify both a continuous and a surge (peak) wattage rating.</p>
-                        </div>
-                    </section>
-
-                    <div class="ad-placeholder banner"><!-- Ad --></div>
-
-                    <section>
-                        <h2>Step 3: Estimate Daily Hours of Use</h2>
-                        <p>For each device, honestly estimate how many hours per day it runs. Be realistic rather than optimistic. If your lights are on for 4 hours in the evening, write 4 hours &mdash; not 2. If your refrigerator runs roughly half the time (typical for most units), write 12 hours or use a Kill-A-Watt reading.</p>
-                        <p>Some devices are easy: a laptop running 6 hours a day at 45W is straightforward. Others are trickier. A water pump might only run for a few minutes per day total, but when it runs it draws 500W &mdash; that still contributes to your daily Wh total.</p>
+                        <h2>Measure Energy Where You Can</h2>
+<p><a href="https://www.pubs.ext.vt.edu/2901/2901-9014/2901-9014.html">Virginia Cooperative Extension explains the watts-times-hours method</a> for estimating energy use. For a steady load, multiply its input watts by its daily operating hours, including quantity when needed.</p>
+<p>For cycling equipment, a suitable energy meter can capture energy over an observation period rather than assuming the device runs at its rated power for a fixed share of the day. Use equipment within its stated ratings and follow its instructions. Ask a qualified person about loads that cannot be safely measured with an appropriate plug-in meter.</p>
+<p><strong>Daily Wh = Recorded kWh &times; 1,000 &times; 24 &divide; Observation hours.</strong> For an illustrative refrigerator reading of 0.8kWh over 48 hours, the average is 400Wh/day. Record conditions and repeat when they change; one interval does not establish every season&rsquo;s demand.</p>
+<p>Record inverter standby consumption separately for the system design. Note where each measurement was taken so you do not count the same energy or conversion loss twice.</p>
                     </section>
 
                     <section>
-                        <h2>Step 4: Calculate Wh/Day for Each Device</h2>
-                        <p>The formula could not be simpler:</p>
-                        <p><strong>Wh/day = Watts &times; Hours per day</strong></p>
-                        <p>Calculate this for every device on your list, then sum the column. That total is your daily watt-hour consumption.</p>
+                        <h2>Do Not Confuse AC Volts-Amps with Watts</h2>
+<p>For a single-phase AC load, RMS volts multiplied by RMS amps gives apparent power in volt-amperes (VA). Real input power in watts also depends on power factor. <a href="https://www.yokogawa.com/library/resources/media-publications/how-to-measure-electrical-power/">Yokogawa describes the relationship as W = V &times; A &times; power factor</a>.</p>
+<p>A label reading 120V and 1.5A therefore gives 180VA, not necessarily 180W. With an illustrative power factor of 0.8, the real power would be 144W. Use measured input watts or appropriate manufacturer data when estimating energy. Do not substitute a motor&rsquo;s mechanical horsepower rating for its electrical input.</p>
                     </section>
 
                     <section>
-                        <h2>Common Appliance Wattage Reference</h2>
-
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>Appliance</th>
-                                    <th>Typical Running Watts</th>
-                                    <th>Startup Surge</th>
-                                    <th>Typical Wh/Day</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>LED bulb (per bulb)</td>
-                                    <td>7&ndash;12W</td>
-                                    <td>None</td>
-                                    <td>30&ndash;50 Wh (4 hrs)</td>
-                                </tr>
-                                <tr>
-                                    <td>12V energy-efficient fridge</td>
-                                    <td>40&ndash;60W</td>
-                                    <td>100&ndash;150W</td>
-                                    <td>300&ndash;600 Wh</td>
-                                </tr>
-                                <tr>
-                                    <td>Standard 120V refrigerator</td>
-                                    <td>100&ndash;200W</td>
-                                    <td>400&ndash;900W</td>
-                                    <td>800&ndash;1,500 Wh</td>
-                                </tr>
-                                <tr>
-                                    <td>Laptop computer</td>
-                                    <td>30&ndash;60W</td>
-                                    <td>None significant</td>
-                                    <td>150&ndash;360 Wh (6 hrs)</td>
-                                </tr>
-                                <tr>
-                                    <td>Smartphone charging</td>
-                                    <td>5&ndash;20W</td>
-                                    <td>None</td>
-                                    <td>15&ndash;40 Wh</td>
-                                </tr>
-                                <tr>
-                                    <td>Router / networking</td>
-                                    <td>5&ndash;20W</td>
-                                    <td>None</td>
-                                    <td>120&ndash;480 Wh (24 hrs)</td>
-                                </tr>
-                                <tr>
-                                    <td>Box fan</td>
-                                    <td>25&ndash;75W</td>
-                                    <td>50&ndash;100W</td>
-                                    <td>200&ndash;600 Wh (8 hrs)</td>
-                                </tr>
-                                <tr>
-                                    <td>Water pump (1/2 HP)</td>
-                                    <td>375W</td>
-                                    <td>750&ndash;1,500W</td>
-                                    <td>50&ndash;150 Wh (short cycles)</td>
-                                </tr>
-                                <tr>
-                                    <td>32&rdquo; LED TV</td>
-                                    <td>30&ndash;55W</td>
-                                    <td>None significant</td>
-                                    <td>120&ndash;220 Wh (4 hrs)</td>
-                                </tr>
-                                <tr>
-                                    <td>Coffee maker</td>
-                                    <td>800&ndash;1,200W</td>
-                                    <td>None significant</td>
-                                    <td>100&ndash;200 Wh (brew cycle)</td>
-                                </tr>
-                                <tr>
-                                    <td>Blender</td>
-                                    <td>300&ndash;600W</td>
-                                    <td>600&ndash;1,000W</td>
-                                    <td>10&ndash;30 Wh (short use)</td>
-                                </tr>
-                                <tr>
-                                    <td>Electric toaster</td>
-                                    <td>800&ndash;1,500W</td>
-                                    <td>None</td>
-                                    <td>25&ndash;50 Wh (short use)</td>
-                                </tr>
-                                <tr class="highlight-row">
-                                    <td><strong>Electric water heater</strong></td>
-                                    <td><strong>3,000&ndash;5,500W</strong></td>
-                                    <td>None</td>
-                                    <td><strong>3,000&ndash;8,000 Wh</strong></td>
-                                </tr>
-                                <tr class="highlight-row">
-                                    <td><strong>Electric range / oven</strong></td>
-                                    <td><strong>1,000&ndash;5,000W</strong></td>
-                                    <td>None</td>
-                                    <td><strong>1,000&ndash;3,000 Wh</strong></td>
-                                </tr>
-                                <tr class="highlight-row">
-                                    <td><strong>Central air conditioning</strong></td>
-                                    <td><strong>2,000&ndash;5,000W</strong></td>
-                                    <td>4,000&ndash;10,000W</td>
-                                    <td><strong>10,000&ndash;40,000 Wh</strong></td>
-                                </tr>
-                            </tbody>
-                        </table>
-
-                        <div class="info-box warning">
-                            <p class="info-box-title">The Big Three to Avoid Off-Grid</p>
-                            <p>Electric water heaters, electric ranges, and central air conditioning are the three appliances that make off-grid solar prohibitively expensive. A single electric water heater can consume more energy in a day than all of a cabin&rsquo;s other loads combined. Most successful off-grid homes replace these with propane cooking, wood-fired or propane water heating, and passive cooling design or a small propane/mini-split AC unit.</p>
-                        </div>
+                        <h2>Worked Daily-Energy Example</h2>
+<p>The following values are arithmetic examples. They are not measured results from a particular home or typical ratings for these appliances.</p>
+<div class="comparison-table-wrapper"><table><thead><tr><th>Load</th><th>Illustrative evidence or assumption</th><th>Calculation</th><th>Daily energy</th></tr></thead><tbody>
+<tr><td>Four lights</td><td>8W each, 5 hours/day</td><td>4 &times; 8 &times; 5</td><td>160Wh</td></tr>
+<tr><td>Laptop</td><td>45W, 4 hours/day</td><td>45 &times; 4</td><td>180Wh</td></tr>
+<tr><td>Router</td><td>10W, 24 hours/day</td><td>10 &times; 24</td><td>240Wh</td></tr>
+<tr><td>Refrigerator</td><td>0.8kWh over 48 hours</td><td>0.8 &times; 1,000 &times; 24 &divide; 48</td><td>400Wh</td></tr>
+<tr><td>Pump</td><td>250W input, 12 minutes/day</td><td>250 &times; 12 &divide; 60</td><td>50Wh</td></tr>
+<tr><th scope="row" colspan="3">Example appliance-energy total</th><td><strong>1,030Wh/day</strong></td></tr>
+</tbody></table></div>
+<p>This total does not determine an inverter rating and does not yet include system overhead or design reserves. Review those separately during sizing. Replace every example input with evidence for your equipment.</p>
                     </section>
 
                     <section>
-                        <h2>Step 5: Total It Up and Interpret the Result</h2>
-                        <p>Add up all your daily Wh figures. This is your baseline daily load. Common ranges:</p>
-                        <ul>
-                            <li><strong>Under 500 Wh/day:</strong> Very efficient small cabin or van. A modest solar system ($800&ndash;$1,500) handles this easily.</li>
-                            <li><strong>500&ndash;1,500 Wh/day:</strong> Typical small off-grid cabin. A well-designed system in the $2,000&ndash;$6,000 range works well.</li>
-                            <li><strong>1,500&ndash;3,000 Wh/day:</strong> Small family or homestead. Expect to invest $5,000&ndash;$15,000 for a robust system.</li>
-                            <li><strong>Over 3,000 Wh/day:</strong> Full-home load. Make sure you&rsquo;ve eliminated every unnecessary high-draw appliance before sizing. A system in this range costs $15,000&ndash;$40,000+.</li>
-                        </ul>
-                        <p>If your total surprises you on the high side, look for opportunities to reduce load before buying hardware. Switching from a standard 120V fridge to an energy-efficient 12V unit alone can save 500&ndash;1,000 Wh/day. Replacing incandescent or CFL bulbs with LEDs cuts lighting load by 75%.</p>
+                        <h2>Build Your Own Audit Record</h2>
+<p>Copy this table into your notes and add one row per load. For measured kWh, include the observation period; for a watts-times-hours estimate, include quantity and operating hours.</p>
+<div class="comparison-table-wrapper"><table><thead><tr><th>Load and quantity</th><th>AC or DC</th><th>Measurement or estimate</th><th>Wh/day</th><th>Evidence and conditions</th></tr></thead><tbody><tr><td>Your load</td><td>Supply type</td><td>kWh over hours, or W &times; hours/day</td><td>Your result</td><td>Meter, manual or estimate; date and conditions</td></tr></tbody></table></div>
+<p>Keep a second record for simultaneous AC running loads and each relevant startup event. Include the other loads that may remain on while a motor starts.</p>
                     </section>
 
                     <section>
-                        <h2>Where to Go Next</h2>
-                        <p>Once you have your daily Wh number, you&rsquo;re ready to size your system:</p>
-                        <ol>
-                            <li><a href="solar-sizing"><strong>How to Size Your Solar System</strong></a> &mdash; Use your Wh number to calculate panels, batteries, and inverter</li>
-                            <li><a href="lifepo4-battery-guide"><strong>LiFePO4 vs Lead-Acid</strong></a> &mdash; Choose the right battery chemistry for your budget</li>
-                        </ol>
+                        <h2>Record Startup Power and Duration Separately</h2>
+<p><a href="https://www.victronenergy.com/media/pg/The_Wiring_Unlimited_book/en/ac-wiring.html">Victron&rsquo;s Wiring Unlimited explains AC system current, VA and watts</a>. Check the inverter&rsquo;s applicable continuous W/VA limits and the equipment&rsquo;s starting requirements. A daily Wh total cannot establish those limits.</p>
+<p>For example, a refrigerator&rsquo;s measured 400Wh/day does not tell you its compressor&rsquo;s running watts or startup current. Obtain the relevant specifications or suitable measurements. For a startup event, check the required duration as well as the peak, together with battery/BMS and wiring limits.</p>
+                    </section>
+
+                    <section>
+                        <h2>Frequently Asked Questions</h2>
+<h3>How do I calculate daily energy use?</h3><p>For a steady load, multiply input watts by hours per day and quantity. For a measured interval, multiply recorded kWh by 1,000 and by 24 divided by observation hours. Sum the daily results without double-counting.</p>
+<h3>Does daily Wh tell me what inverter to buy?</h3><p>No. Record simultaneous AC running loads and startup requirements separately, including applicable watts, VA and startup duration.</p>
+<h3>Is volts multiplied by amps always watts?</h3><p>For single-phase AC, RMS volts multiplied by RMS amps gives VA. Real watts also depend on power factor. Use appropriate input-power data for energy estimates.</p>
+<h3>Should I use a typical appliance table instead of measuring?</h3><p>Use generic estimates only as identified placeholders. Replace them with data for the actual equipment and operating conditions before committing to a system design.</p>
+                    </section>
+
+                    <section>
+                        <h2>Take the Audit into System Sizing</h2>
+<p>Keep the appliance-energy total, operating conditions and overhead notes together. Use the <a href="solar-sizing#calculator">solar sizing calculator</a> to explore array and nominal-storage requirements, then review the calculation&rsquo;s combined loss allowance and storage assumptions. Enter simultaneous AC running load and startup load in their separate fields.</p>
+<p>The calculator is a preliminary estimate. Use the audit record to discuss seasonal demand, standby use, conversion losses, backup charging and equipment ratings with the system designer. Daily Wh alone does not establish the project&rsquo;s installed cost.</p><p>Sources checked October 23, 2026. The worked figures are illustrative calculations, not equipment recommendations or personal test results.</p>
                     </section>
 
                     <div class="engagement-prompt">
