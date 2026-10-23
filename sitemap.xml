@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://theoffgridworkshop.com/</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -18,7 +18,7 @@
   </url>
   <url>
     <loc>https://theoffgridworkshop.com/pages/water</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -126,7 +126,7 @@
   <!-- Guides index -->
   <url>
     <loc>https://theoffgridworkshop.com/guides/</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -162,7 +162,7 @@
   <!-- Water guides -->
   <url>
     <loc>https://theoffgridworkshop.com/guides/rainwater-harvesting</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -216,7 +216,7 @@
   <!-- Blog index -->
   <url>
     <loc>https://theoffgridworkshop.com/blog/</loc>
-    <lastmod>2026-07-03</lastmod>
+    <lastmod>2026-10-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
