@@ -1560,7 +1560,7 @@ tr:hover td { background: var(--bg-subtle); }
    ============================================ */
 .guide-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
     gap: 1.5rem;
     margin: 1.75rem 0;
 }
@@ -2000,7 +2000,8 @@ tr:hover td { background: var(--bg-subtle); }
     margin: 1.5rem 0;
 }
 
-.category-tags a {
+.category-tags a,
+.category-tags button {
     padding: 0.4rem 1rem;
     background: var(--bg-alt);
     border: 1px solid var(--border);
@@ -2014,9 +2015,11 @@ tr:hover td { background: var(--bg-subtle); }
 }
 
 .category-tags a:hover,
-.category-tags a.active {
-    background: var(--primary);
-    border-color: var(--primary);
+.category-tags a.active,
+.category-tags button:hover,
+.category-tags button.active {
+    background: var(--color-accent2-800);
+    border-color: var(--color-accent2-800);
     color: white;
 }
 
@@ -2349,3 +2352,20 @@ a.affiliate-link[style] { border-radius: var(--radius-pill) !important; }
 
 /* Footer copyright: inline rgba(122, 148, 112, 0.7) sage green */
 .site-footer .text-small { color: var(--dark-muted) !important; }
+
+.category-tags[hidden],
+.guide-card[hidden] { display: none; }
+.category-tags button { cursor: pointer; }
+.category-tags button:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
+}
+
+.newsletter-section .newsletter-status a {
+    color: var(--dark-text);
+    text-decoration: underline;
+}
+.newsletter-status a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+}

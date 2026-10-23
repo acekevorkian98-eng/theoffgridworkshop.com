@@ -179,12 +179,16 @@ function highlightCurrentPage() {
 // ============================================
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth' });
-            }
+        anchor.addEventListener('click', function(event) {
+            const fragment = this.getAttribute('href').slice(1);
+            if (!fragment) return;
+            let identity;
+            try { identity = decodeURIComponent(fragment); } catch { return; }
+            const target = document.getElementById(identity);
+            if (!target) return;
+            event.preventDefault();
+            const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
         });
     });
 }
@@ -399,131 +403,44 @@ function initNativeShare() {
 // BLOG CATEGORY FILTERING
 // ============================================
 function initCategoryFilter() {
-    var categoryLinks = document.querySelectorAll('.category-tags a[data-category]');
-    var postCount = document.querySelector('.post-count');
-    
-    console.log('initCategoryFilter:', categoryLinks.length, 'links,', postCount ? 'postCount found' : 'no postCount');
-    
-    // Only load from JSON if we have category links AND a post count (blog index page)
-    if (categoryLinks.length && postCount) {
-        loadArticlesFromJSON();
-    } else {
-        console.log('Skipping - not blog index page');
-    }
-}
+    const directory = document.getElementById('article-directory');
+    const controls = document.querySelector('.category-tags');
+    if (!directory || !controls || directory.dataset.filterReady === 'true') return;
+    const buttons = controls.querySelectorAll('button[data-category]');
+    const cards = directory.querySelectorAll('.guide-card[data-category]');
+    const count = document.querySelector('.post-count');
+    const aliases = { 'food-and-farming': 'food', 'energy-and-homesteading': 'solar', 'building-and-homesteading': 'building', 'systems-and-maintenance': 'systems' };
+    const categories = new Set(Array.from(buttons, button => button.dataset.category));
 
-function loadArticlesFromJSON() {
-    var guideList = document.querySelector('.guide-list');
-    if (!guideList) return;
-    if (guideList.dataset.loaded === 'true') return;
-    
-    fetch('articles.json')
-        .then(function(response) { 
-            console.log('Fetch response:', response.status);
-            return response.json(); 
-        })
-        .then(function(data) {
-            var container = document.querySelector('.guide-list');
-            if (!container) return;
-            
-            data.articles.forEach(function(article) {
-                var card = document.createElement('article');
-                card.className = 'guide-card';
-                card.setAttribute('data-category', article.category.toLowerCase().replace(/&/g, 'and').replace(/\s+/g, '-'));
-                
-                var categoryLabel = article.category;
-                if (categoryLabel === 'Food & Farming') categoryLabel = 'Food & Farming';
-                if (categoryLabel === 'Skills & Tools') categoryLabel = 'Skills & Tools';
-                
-                var date = new Date(article.date);
-                var dateStr = date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
-                if (date.getFullYear() === 2026) {
-                    dateStr = date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-                }
-                
-                card.innerHTML = 
-                    '<span class="guide-card-category">' + categoryLabel + '</span>' +
-                    '<time class="guide-card-date" datetime="' + article.date + '">' + dateStr + '</time>' +
-                    '<h3><a href="' + article.slug + '">' + article.title + '</a></h3>' +
-                    '<p>' + article.description + '</p>' +
-                    '<div class="guide-card-footer">' +
-                    '<span class="difficulty-badge ' + article.difficulty + '">' + 
-                    (article.difficulty.charAt(0).toUpperCase() + article.difficulty.slice(1)) + 
-                    '</span>' +
-                    '<a href="' + article.slug + '">Read Article →</a>' +
-                    '</div>';
-                
-                container.appendChild(card);
-            });
-            
-            guideList.dataset.loaded = 'true';
-            
-            var postCount = document.querySelector('.post-count');
-            if (postCount) {
-                var allCards = document.querySelectorAll('.guide-card').length;
-                postCount.textContent = allCards + ' article' + (allCards !== 1 ? 's' : '');
-            }
-            
-            // Now set up category filtering after cards are loaded
-            setupCategoryFilter();
-        })
-        .catch(function(err) {
-            console.log('Error loading articles:', err);
+    function applyCategory(category) {
+        category = aliases[category] || category;
+        if (!categories.has(category)) category = 'all';
+        let visible = 0;
+        cards.forEach(card => {
+            card.hidden = category !== 'all' && card.dataset.category !== category;
+            if (!card.hidden) visible++;
         });
-}
+        buttons.forEach(button => {
+            const selected = button.dataset.category === category;
+            button.classList.toggle('active', selected);
+            button.setAttribute('aria-pressed', String(selected));
+        });
+        if (count) count.textContent = visible + ' article' + (visible === 1 ? '' : 's');
+    }
 
-function setupCategoryFilter() {
-    var categoryLinks = document.querySelectorAll('.category-tags a[data-category]');
-    if (!categoryLinks.length) return;
-
-    var cards = document.querySelectorAll('.guide-card[data-category]');
-    if (!cards.length) return;
-
-    var postCount = document.querySelector('.post-count');
-
-    categoryLinks.forEach(function(link) {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            var category = this.getAttribute('data-category');
-
-            categoryLinks.forEach(function(l) { l.classList.remove('active'); });
-            this.classList.add('active');
-
-            var visibleCount = 0;
-            cards.forEach(function(card) {
-                if (category === 'all' || card.getAttribute('data-category') === category) {
-                    card.style.display = '';
-                    visibleCount++;
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-
-            if (postCount) {
-                if (category === 'all') {
-                    postCount.textContent = cards.length + ' article' + (cards.length !== 1 ? 's' : '');
-                } else {
-                    postCount.textContent = visibleCount + ' article' + (visibleCount !== 1 ? 's' : '');
-                }
-            }
-
-            if (category === 'all') {
-                history.replaceState(null, '', window.location.pathname);
-            } else {
-                history.replaceState(null, '', '#' + category.toLowerCase().replace(/\s+/g, '-'));
-            }
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.dataset.category;
+            const url = new URL(window.location.href);
+            url.hash = category === 'all' ? '' : category;
+            if (url.href !== window.location.href) history.pushState(null, '', url.href);
+            applyCategory(category);
         });
     });
-
-    var hash = window.location.hash.slice(1);
-    if (hash) {
-        var matchingLink = null;
-        categoryLinks.forEach(function(link) {
-            var cat = link.getAttribute('data-category');
-            if (cat && cat.toLowerCase().replace(/\s+/g, '-') === hash) matchingLink = link;
-        });
-        if (matchingLink) matchingLink.click();
-    }
+    window.addEventListener('hashchange', () => applyCategory(window.location.hash.slice(1)));
+    applyCategory(window.location.hash.slice(1));
+    controls.hidden = false;
+    directory.dataset.filterReady = 'true';
 }
 
 // ============================================
@@ -535,53 +452,6 @@ function initLastUpdated() {
         const date = new Date(document.lastModified);
         const options = { year: 'numeric', month: 'long', day: 'numeric' };
         lastUpdatedEl.textContent = 'Last updated: ' + date.toLocaleDateString('en-US', options);
-    }
-}
-
-// ============================================
-// NEWSLETTER FORM
-// ============================================
-function handleNewsletterSubmit(e) {
-    e.preventDefault();
-    const form = e.target;
-    const button = form.querySelector('button');
-    const message = form.nextElementSibling;
-    const formData = new FormData(form);
-
-    button.disabled = true;
-    button.textContent = 'Subscribing...';
-
-    fetch(form.action, { method: 'POST', body: formData })
-    .then(response => {
-        if (response.ok || response.redirected) {
-            if (message) {
-                message.textContent = 'Thanks for subscribing! Check your email to confirm.';
-                message.className = 'newsletter-message success';
-            }
-            form.reset();
-        } else {
-            if (message) {
-                message.textContent = 'Something went wrong. Please try again.';
-                message.className = 'newsletter-message error';
-            }
-        }
-    })
-    .catch(() => {
-        if (message) {
-            message.textContent = 'Something went wrong. Please try again.';
-            message.className = 'newsletter-message error';
-        }
-    })
-    .finally(() => {
-        button.disabled = false;
-        button.textContent = 'Subscribe';
-    });
-}
-
-function initNewsletter() {
-    const newsletterForm = document.querySelector('.newsletter-form');
-    if (newsletterForm) {
-        newsletterForm.addEventListener('submit', handleNewsletterSubmit);
     }
 }
 
@@ -696,7 +566,6 @@ document.addEventListener('DOMContentLoaded', function() {
     initFaqAccordion();
     generateTOC();
     initLastUpdated();
-    initNewsletter();
     initMobileNav();
 
     initReadingProgress();

@@ -20,8 +20,8 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&amp;family=Figtree:wght@400;500;600;700&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20261023">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9986267429592601"
          crossorigin="anonymous"></script>
     <meta property="og:site_name" content="The Off-Grid Workshop">
@@ -95,39 +95,463 @@
         <section style="padding: 3rem 0 1.5rem;">
             <h1>Off-Grid Blog</h1>
             <p>Practical articles, project walkthroughs, and seasonal guides for off-grid living.</p>
-            <p class="author-byline">By <a href="/pages/about">Jake Mercer</a> &middot; Off-Grid Homesteader &amp; Former Engineer</p>
-            <p>From 12-month freeze dryer tests to a $400 gravity water system build log to wood stove comparisons run across four winters &mdash; this is documentation of what actually works on a working homestead, not a summary of what manufacturers claim.</p>
-            <p class="post-count">Loading...</p>
+            <p class="author-byline">By <a href="/pages/about">The Off-Grid Workshop</a></p>
+            <p>Browse equipment discussions, project ideas and system-planning guides. Check each article&rsquo;s sources, assumptions and limitations before applying it to your own site.</p>
+            <p class="post-count" role="status" aria-live="polite">43 articles</p>
         </section>
 
-        <div class="category-tags">
-            <a href="#" data-category="all" class="active">All</a>
-            <a href="#" data-category="solar">Solar</a>
-            <a href="#" data-category="water">Water</a>
-            <a href="#" data-category="food">Food</a>
-            <a href="#" data-category="building">Building</a>
-            <a href="#" data-category="tools">Tools &amp; Gear</a>
+        <div class="category-tags" role="group" aria-label="Filter articles by topic" hidden>
+            <button type="button" data-category="all" aria-pressed="true">All</button>
+            <button type="button" data-category="solar" aria-pressed="false">Solar</button>
+            <button type="button" data-category="water" aria-pressed="false">Water</button>
+            <button type="button" data-category="food" aria-pressed="false">Food</button>
+            <button type="button" data-category="building" aria-pressed="false">Building</button>
+            <button type="button" data-category="tools" aria-pressed="false">Tools &amp; Gear</button>
+            <button type="button" data-category="systems" aria-pressed="false">Systems &amp; Maintenance</button>
         </div>
 
         <section style="margin: 2rem 0 1.5rem;">
-            <h2>What You&rsquo;ll Find Here</h2>
-            <p>Articles fall into two categories: <strong>extended equipment reviews</strong> based on months or years of actual use, and <strong>DIY project walkthroughs</strong> with real materials lists, build costs, and lessons from doing it wrong the first time. The distinction from the <a href="../guides/">guides section</a> is depth and context &mdash; blog posts document the full story, including what failed and what we&rsquo;d change.</p>
-            <p>All equipment reviews here are based on gear purchased and used on this homestead &mdash; no manufacturer samples, no sponsored content, no affiliate-first writing. When a number appears in a review (panel output percentage, filter flow rate, freeze dryer batch cost), there&rsquo;s a measurement behind it. The <a href="../pages/how-we-test">testing methodology page</a> explains how those measurements are taken.</p>
-            <p>New articles are published when there&rsquo;s something genuinely worth documenting &mdash; not on a fixed publishing schedule. Subscribe below to get notified when something new goes up.</p>
+            <h2>Find Your Next Project</h2>
+            <p>Start with the <a href="../guides/">guides section</a> for a structured introduction, or browse the articles below for more detailed topics. The archive includes both blog articles and related reference guides.</p>
         </section>
 
-        <div class="guide-list" data-loaded="false">
+        <div class="guide-list" id="article-directory">
+            <article class="guide-card" data-category="solar">
+                <span class="guide-card-category">Solar</span>
+                <time class="guide-card-date" datetime="2026-09-18">September 18, 2026</time>
+                <h3><a href="off-grid-lifepo4-battery-guide">Off-Grid Battery Bank Sizing &amp; LiFePO4 Cold Weather Protection: Complete Engineering Guide</a></h3>
+                <p>Complete engineering guide to sizing off-grid LiFePO4 battery banks, low-temperature charge protection, thermal enclosure design, and 3-year winter test data.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="off-grid-lifepo4-battery-guide">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="water">
+                <span class="guide-card-category">Water</span>
+                <time class="guide-card-date" datetime="2026-09-07">September 7, 2026</time>
+                <h3><a href="best-water-filters-2026">Best Water Filters for Off-Grid Living (2026): Contaminant Science, Testing Data, and System Design</a></h3>
+                <p>The definitive off-grid water filtration guide: contaminant science, 12-system testing on creek/well/rainwater, flow rate degradation curves, TDS analysis, multi-stage system design, annual cost comparison, and maintenance schedules.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="best-water-filters-2026">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="systems">
+                <span class="guide-card-category">Systems &amp; Maintenance</span>
+                <time class="guide-card-date" datetime="2026-08-19">August 19, 2026</time>
+                <h3><a href="off-grid-maintenance-calendar">The Off-Grid Maintenance Calendar: What to Check Every Month</a></h3>
+                <p>A practical 12-month maintenance calendar for off-grid solar, batteries, water systems, generators, wood heat, gardens and emergency supplies.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge beginner">Beginner</span>
+                    <a href="off-grid-maintenance-calendar">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="water">
+                <span class="guide-card-category">Water</span>
+                <time class="guide-card-date" datetime="2026-07-20">July 20, 2026</time>
+                <h3><a href="off-grid-water-storage-guide">Off-Grid Water Storage: Complete Guide to Tank Selection, Sizing, and Maintenance</a></h3>
+                <p>We tested 5 tank materials across 3 years at our off-grid homestead. Polyethylene, steel, concrete, IBC totes, and ferrocement: with sizing math, foundation specs, winterization data, maintenance schedules, and real cost breakdowns for every option.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="off-grid-water-storage-guide">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="building">
+                <span class="guide-card-category">Building</span>
+                <time class="guide-card-date" datetime="2026-07-19">July 19, 2026</time>
+                <h3><a href="compost-toilet-guide">Compost Toilet Guide: Complete DIY Builds, Pathogen Science, and 18-Month Real-World Data</a></h3>
+                <p>We used a compost toilet daily for 18 months. Here is the pathogen die-off science, 5 system designs with cost breakdowns, carbon-to-nitrogen math, ventilation engineering, 6 cover material tests, and the complete monthly operations log.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="compost-toilet-guide">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="solar">
+                <span class="guide-card-category">Solar</span>
+                <time class="guide-card-date" datetime="2026-07-17">July 17, 2026</time>
+                <h3><a href="off-grid-lighting-complete-guide">Off-Grid Lighting: Every System We&#x27;ve Tested, From Candles to Solar LEDs</a></h3>
+                <p>We tested 6 lighting categories across 18 months at our off-grid homestead. Solar LEDs, kerosene lanterns, candles, 12V puck lights, and complete home kits: with lumens-per-watt data, runtime charts, and 5-year cost analysis.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="off-grid-lighting-complete-guide">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="food">
+                <span class="guide-card-category">Food &amp; Farming</span>
+                <time class="guide-card-date" datetime="2026-07-15">July 15, 2026</time>
+                <h3><a href="smoking-curing-meat-guide">Smoking &amp; Curing Meat: The Complete Off-Grid Preservation Guide</a></h3>
+                <p>Cold smoking, hot smoking, dry curing, and smokehouse builds: every method with USDA safety data, temperature tables, cure ratios, three budget-tier smokehouse designs, and step-by-step recipes for bacon, smoked salmon, and jerky.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="smoking-curing-meat-guide">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="building">
+                <span class="guide-card-category">Building</span>
+                <time class="guide-card-date" datetime="2026-07-09">July 9, 2026</time>
+                <h3><a href="firewood-processing-guide">Firewood Processing: Complete Guide to Sourcing, Splitting, Stacking &amp; Seasoning</a></h3>
+                <p>Three years of firewood production data from our off-grid homestead. BTU rankings for 12 species, four sourcing methods compared, splitting tool showdown (X27 vs maul vs hydraulic), four stacking methods with moisture data, and a full annual processing calendar.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="firewood-processing-guide">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="building">
+                <span class="guide-card-category">Building</span>
+                <time class="guide-card-date" datetime="2026-07-08">July 8, 2026</time>
+                <h3><a href="passive-cooling-off-grid-cabins">Passive Cooling for Off-Grid Cabins: 8 Strategies We&#x27;ve Tested</a></h3>
+                <p>We tested 8 passive cooling strategies over four summers at our off-grid homestead. Attic radiant barriers, night-purge ventilation, thermal mass, earth tubes, and more: with temperature data and real costs.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="passive-cooling-off-grid-cabins">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="food">
+                <span class="guide-card-category">Food &amp; Farming</span>
+                <time class="guide-card-date" datetime="2026-07-07">July 7, 2026</time>
+                <h3><a href="winter-composting-system">Winter Composting: How We Keep Our Compost Active Through Freezing Temperatures</a></h3>
+                <p>We kept a compost pile active through zone 6b winters with core temps of 128°F at -2°F ambient. Here are four cold-weather bin designs, C:N ratio adjustments for freezing conditions, moisture management protocols, and three years of winter production data.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="winter-composting-system">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="water">
+                <span class="guide-card-category">Water</span>
+                <time class="guide-card-date" datetime="2026-05-05">May 5, 2026</time>
+                <h3><a href="off-grid-water-supply-complete-guide">Off-Grid Water: Source, Storage, Pressure and Treatment</a></h3>
+                <p>Water-supply planning across source selection, storage, distribution and treatment.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="off-grid-water-supply-complete-guide">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="solar">
+                <span class="guide-card-category">Solar</span>
+                <time class="guide-card-date" datetime="2026-05-05">May 5, 2026</time>
+                <h3><a href="off-grid-refrigeration-every-option">Off-Grid Refrigeration Options and Power Planning</a></h3>
+                <p>Refrigeration approaches and the energy, installation and operating considerations to assess.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="off-grid-refrigeration-every-option">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="water">
+                <span class="guide-card-category">Water</span>
+                <time class="guide-card-date" datetime="2026-05-05">May 5, 2026</time>
+                <h3><a href="off-grid-greywater-systems-guide">Off-Grid Greywater Systems: Planning and Management</a></h3>
+                <p>Greywater sources, routing options, soil and planting considerations, and questions about local requirements.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="off-grid-greywater-systems-guide">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="tools">
+                <span class="guide-card-category">Tools &amp; Gear</span>
+                <time class="guide-card-date" datetime="2026-04-18">April 18, 2026</time>
+                <h3><a href="good-websites-weather-information">The Best Websites for Weather Information</a></h3>
+                <p>We tested 12 weather websites over 18 months. These are the ones we actually use for planning off-grid operations, storm tracking, and long-term forecasting.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge beginner">Beginner</span>
+                    <a href="good-websites-weather-information">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="food">
+                <span class="guide-card-category">Food &amp; Farming</span>
+                <time class="guide-card-date" datetime="2026-04-18">April 18, 2026</time>
+                <h3><a href="gardening-cold-weather">Gardening in Cold Weather: Our Year-Round Growing Strategy</a></h3>
+                <p>We grow food 10 months of the year in zone 6b. Here is our cold-weather gardening system, the crops that work, and the temperature data from three years of trial and error.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="gardening-cold-weather">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="food">
+                <span class="guide-card-category">Food &amp; Farming</span>
+                <time class="guide-card-date" datetime="2026-04-18">April 18, 2026</time>
+                <h3><a href="composting-earthworms">Composting with Earthworms: The Vermicomposting System That Works</a></h3>
+                <p>We process 5 pounds of kitchen scraps per week into rich compost using earthworms. Here is our working worm bin setup and the lessons from three years.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="composting-earthworms">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="solar">
+                <span class="guide-card-category">Solar</span>
+                <time class="guide-card-date" datetime="2026-04-18">April 18, 2026</time>
+                <h3><a href="cleaning-solar-panels-once-year">Cleaning Solar Panels Once a Year</a></h3>
+                <p>We clean our solar panels once per year. Here is the system that works, the tools, the technique, and the data on power loss from dirty panels.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge beginner">Beginner</span>
+                    <a href="cleaning-solar-panels-once-year">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="food">
+                <span class="guide-card-category">Food &amp; Farming</span>
+                <time class="guide-card-date" datetime="2026-04-18">April 18, 2026</time>
+                <h3><a href="best-aromatic-flowers-to-plant">The Best Aromatic Flowers to Plant</a></h3>
+                <p>We planted 15 varieties of aromatic flowers over three years. These are the ones that actually produced scent, survived our winters, and fit an off-grid lifestyle.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge beginner">Beginner</span>
+                    <a href="best-aromatic-flowers-to-plant">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="solar">
+                <span class="guide-card-category">Solar</span>
+                <time class="guide-card-date" datetime="2026-04-17">April 17, 2026</time>
+                <h3><a href="best-solar-generators-off-grid-2026">Best Solar Generators for Off-Grid Living in 2026</a></h3>
+                <p>We tested five solar generators over six months. From portable units to whole-home systems: these are the ones that actually perform in real off-grid conditions.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="best-solar-generators-off-grid-2026">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="food">
+                <span class="guide-card-category">Food &amp; Farming</span>
+                <time class="guide-card-date" datetime="2026-04-14">April 14, 2026</time>
+                <h3><a href="simple-root-cellar">Building a Simple Root Cellar: Modern Budget Construction</a></h3>
+                <p>An 8x10 concrete block root cellar built into a north-facing slope, $1,211 all in, holding 400 pounds of produce at 33-42°F through winter. Complete materials list, ventilation system, and 12 months of temperature data.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="simple-root-cellar">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="water">
+                <span class="guide-card-category">Water</span>
+                <time class="guide-card-date" datetime="2026-04-14">April 14, 2026</time>
+                <h3><a href="diy-solar-water-pump">DIY Solar Water Pumping: Stream to Tank Without Electricity</a></h3>
+                <p>300 gallons per day pumped from our stream to a 1,000-gallon storage tank using a Shurflo 9300 diaphragm pump and a 160W solar panel. Full component list ($754 total), sizing math, and two years of operating data.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="diy-solar-water-pump">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="food">
+                <span class="guide-card-category">Food &amp; Farming</span>
+                <time class="guide-card-date" datetime="2026-04-14">April 14, 2026</time>
+                <h3><a href="cold-frames-growing-season">Cold Frames: Extend Your Growing Season by Weeks</a></h3>
+                <p>We harvested lettuce from our cold frames on March 15 this year: six weeks before the last frost. We picked kale through December 28. Here is how cold frames work, three build designs, and the temperature data.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="cold-frames-growing-season">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="building">
+                <span class="guide-card-category">Building</span>
+                <time class="guide-card-date" datetime="2026-04-14">April 14, 2026</time>
+                <h3><a href="best-wood-stoves-off-grid-living-2026">Best Wood Stoves for Off-Grid Living in 2026</a></h3>
+                <p>We tested eight wood stoves over four winters. From rocket mass heaters to catalytic converters: these are the ones that actually heat a cabin efficiently.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="best-wood-stoves-off-grid-living-2026">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="water">
+                <span class="guide-card-category">Water</span>
+                <time class="guide-card-date" datetime="2026-04-14">April 14, 2026</time>
+                <h3><a href="best-water-filters-off-grid-living-2026">Best Water Filters for Off-Grid Living in 2026</a></h3>
+                <p>We tested eight water filters over 18 months. From $20 bucket filters to $1,200 whole-house systems: these are the ones that actually work in off-grid conditions.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="best-water-filters-off-grid-living-2026">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="food">
+                <span class="guide-card-category">Food &amp; Farming</span>
+                <time class="guide-card-date" datetime="2026-03-23">March 23, 2026</time>
+                <h3><a href="how-to-dehydrate-vegetables-store-glass-jars">Dehydrating Vegetables for Storage in Glass Jars</a></h3>
+                <p>Preparation, drying, conditioning and storage considerations for home-dehydrated vegetables.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="how-to-dehydrate-vegetables-store-glass-jars">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="tools">
+                <span class="guide-card-category">Tools &amp; Gear</span>
+                <time class="guide-card-date" datetime="2026-03-03">March 3, 2026</time>
+                <h3><a href="diy-rain-gauge-weather-tracking">DIY Rain Gauges and Garden Weather Tracking</a></h3>
+                <p>Rain measurement, weather records and garden-planning uses for a home weather log.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge beginner">Beginner</span>
+                    <a href="diy-rain-gauge-weather-tracking">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="building">
+                <span class="guide-card-category">Building</span>
+                <time class="guide-card-date" datetime="2026-02-27">February 27, 2026</time>
+                <h3><a href="best-wood-stoves-off-grid-2026">Wood Stoves for Off-Grid Cabins</a></h3>
+                <p>Wood-stove selection, heating needs and installation considerations for an off-grid cabin.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="best-wood-stoves-off-grid-2026">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="food">
+                <span class="guide-card-category">Food &amp; Farming</span>
+                <time class="guide-card-date" datetime="2026-02-26">February 26, 2026</time>
+                <h3><a href="harvest-right-freeze-dryer-review">Harvest Right Medium Freeze Dryer: Off-Grid Planning</a></h3>
+                <p>Batch workflow, power use, food storage and ownership costs to consider for an off-grid freeze dryer.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="harvest-right-freeze-dryer-review">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="food">
+                <span class="guide-card-category">Food &amp; Farming</span>
+                <time class="guide-card-date" datetime="2026-02-26">February 26, 2026</time>
+                <h3><a href="excalibur-3926t-dehydrator-review">Excalibur 3926T Dehydrator: Power and Use</a></h3>
+                <p>An overview of the 3926T dehydrator, drying workflow, power demand and maintenance considerations.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="excalibur-3926t-dehydrator-review">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="water">
+                <span class="guide-card-category">Water</span>
+                <time class="guide-card-date" datetime="2026-02-01">February 1, 2026</time>
+                <h3><a href="../guides/water-filtration">Water Filtration Guide for Off-Grid</a></h3>
+                <p>Choose off-grid water treatment from source testing, model-specific contaminant claims, maintenance needs and a safe backup supply.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="../guides/water-filtration">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="building">
+                <span class="guide-card-category">Building</span>
+                <time class="guide-card-date" datetime="2026-02-01">February 1, 2026</time>
+                <h3><a href="../guides/tiny-cabin-guide">Building a Tiny Cabin: Complete Guide</a></h3>
+                <p>Our 200sqft cabin build. Foundation, framing, insulation, and utilities - with costs, timelines, and lessons learned from building it ourselves.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge advanced">Advanced</span>
+                    <a href="../guides/tiny-cabin-guide">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="solar">
+                <span class="guide-card-category">Solar</span>
+                <time class="guide-card-date" datetime="2026-02-01">February 1, 2026</time>
+                <h3><a href="../guides/solar-sizing">Solar System Sizing: The Math</a></h3>
+                <p>Calculate solar array size, nominal battery energy and inverter loads with explicit assumptions and worked examples.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="../guides/solar-sizing">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="food">
+                <span class="guide-card-category">Food &amp; Farming</span>
+                <time class="guide-card-date" datetime="2026-02-01">February 1, 2026</time>
+                <h3><a href="root-cellar-guide">Building a Root Cellar: Complete DIY Guide</a></h3>
+                <p>Five root cellar designs from $200 to $2,000. Site selection, temperature and humidity targets, ventilation, and what to store and when. The original no-electricity food storage system.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="root-cellar-guide">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="water">
+                <span class="guide-card-category">Water</span>
+                <time class="guide-card-date" datetime="2026-02-01">February 1, 2026</time>
+                <h3><a href="../guides/rainwater-harvesting">Rainwater Harvesting: Complete System Guide</a></h3>
+                <p>From gutters to cisterns: how we harvest and store rainwater. Sizing calculations, filtration options, and 12 months of collection data.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="../guides/rainwater-harvesting">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="solar">
+                <span class="guide-card-category">Solar</span>
+                <time class="guide-card-date" datetime="2026-02-01">February 1, 2026</time>
+                <h3><a href="../guides/power-audit">How to Conduct a Power Audit</a></h3>
+                <p>How to determine exactly how much power you use - and what you need to generate. A step-by-step process with worksheets.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge beginner">Beginner</span>
+                    <a href="../guides/power-audit">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="food">
+                <span class="guide-card-category">Food &amp; Farming</span>
+                <time class="guide-card-date" datetime="2026-02-01">February 1, 2026</time>
+                <h3><a href="off-grid-food-storage-no-refrigeration">Off-Grid Food Storage Without Refrigeration</a></h3>
+                <p>Canning, dehydrating, root cellaring, and fermenting. How we store a year&#x27;s worth of food without electricity, including costs per quart and shelf life data.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="off-grid-food-storage-no-refrigeration">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="food">
+                <span class="guide-card-category">Food &amp; Farming</span>
+                <time class="guide-card-date" datetime="2026-02-01">February 1, 2026</time>
+                <h3><a href="making-biochar-property">Making Biochar on Your Property</a></h3>
+                <p>Three years of making biochar from our own wood waste. A $28 TLUD drum build, three production methods compared, charging protocols, and application rates that move the needle in garden beds.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="making-biochar-property">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="solar">
+                <span class="guide-card-category">Solar</span>
+                <time class="guide-card-date" datetime="2026-02-01">February 1, 2026</time>
+                <h3><a href="lifepo4-vs-agm-batteries-off-grid">LiFePO4 vs AGM Batteries for Off-Grid</a></h3>
+                <p>We compared LiFePO4 and AGM batteries over 18 months. Cycle life, efficiency, depth of discharge, and real-world costs per kilowatt-hour.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="lifepo4-vs-agm-batteries-off-grid">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="water">
+                <span class="guide-card-category">Water</span>
+                <time class="guide-card-date" datetime="2026-02-01">February 1, 2026</time>
+                <h3><a href="gravity-fed-water-system">How We Built Our Gravity-Fed Water System for $400</a></h3>
+                <p>No pump, no electricity, no pressure tank. A 500-gallon hilltop tank feeds water to the cabin by gravity alone. Full build log with materials list, costs, and what we&#x27;d do differently.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="gravity-fed-water-system">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="building">
+                <span class="guide-card-category">Building</span>
+                <time class="guide-card-date" datetime="2026-02-01">February 1, 2026</time>
+                <h3><a href="diy-outdoor-shower">Building a DIY Outdoor Shower</a></h3>
+                <p>A simple outdoor shower for rinsing off after work or play. Solar-powered with a 5-gallon bag, drain field, and privacy. $85 in materials, 2 hours to build.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge beginner">Beginner</span>
+                    <a href="diy-outdoor-shower">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="building">
+                <span class="guide-card-category">Building</span>
+                <time class="guide-card-date" datetime="2026-02-01">February 1, 2026</time>
+                <h3><a href="cob-oven-guide">Building a Cob Oven: Complete Guide</a></h3>
+                <p>A wood-fired cob oven for baking and cooking. Materials list, build process, and thermal mass data from five years of use.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="cob-oven-guide">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="building">
+                <span class="guide-card-category">Building</span>
+                <time class="guide-card-date" datetime="2026-02-01">February 1, 2026</time>
+                <h3><a href="building-a-diy-greenhouse-on-a-budget">Building a DIY Greenhouse on a Budget</a></h3>
+                <p>Four greenhouse designs from $200 to $600 using common materials. Siting, passive heating, ventilation, and which design works best in cold climates.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="building-a-diy-greenhouse-on-a-budget">Read Article &rarr;</a>
+                </div>
+            </article>
+            <article class="guide-card" data-category="solar">
+                <span class="guide-card-category">Solar</span>
+                <time class="guide-card-date" datetime="2026-02-01">February 1, 2026</time>
+                <h3><a href="best-solar-panels-2026">Best Solar Panels for Off-Grid Living in 2026</a></h3>
+                <p>Five panels tested in real-world conditions: Renogy, ECO-WORTHY, Newpowa, Rich Solar, and SunPower. Ranked by real output, cost per watt, and build quality.</p>
+                <div class="guide-card-footer">
+                    <span class="difficulty-badge intermediate">Intermediate</span>
+                    <a href="best-solar-panels-2026">Read Article &rarr;</a>
+                </div>
+            </article>
         </div>
 
         <section class="newsletter-section" style="margin-top: 4rem;">
-            <h2>Get New Guides in Your Inbox</h2>
-            <p>New articles, seasonal guides, and gear reviews. No spam, unsubscribe anytime.</p>
-            <form class="newsletter-form" action="https://buttondown.com/api/emails/embed-subscribe/theoffgridworkshop" method="POST">
-                <input type="email" name="email" placeholder="Your email address" required>
-                <button type="submit">Subscribe</button>
-            </form>
-            <p class="newsletter-message"></p>
-            <p class="newsletter-privacy">We respect your privacy.</p>
+            <h2>Newsletter</h2>
+            <p>Read the articles and reference guides in the archive above.</p>
+            <p class="newsletter-status">Newsletter signup is currently unavailable. <a href="/blog/">Browse the latest articles and guides</a>.</p>
         </section>
 
     </main>
@@ -159,6 +583,6 @@
         </div>
     </footer>
 
-    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/main.js?v=20261023"></script>
 </body>
 </html>

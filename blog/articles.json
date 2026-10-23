@@ -261,7 +261,7 @@
       "title": "Solar System Sizing: The Math",
       "category": "Solar",
       "date": "2026-02-01",
-      "description": "How to calculate exactly what solar system you need. Daily usage, panel output, battery capacity, and inverter sizing – with actual examples from our 2.4kW system.",
+      "description": "Calculate solar array size, nominal battery energy and inverter loads with explicit assumptions and worked examples.",
       "difficulty": "intermediate"
     },
     {
@@ -285,7 +285,71 @@
       "title": "Water Filtration Guide for Off-Grid",
       "category": "Water",
       "date": "2026-02-01",
-      "description": "What you need to filter, what each filter removes, and how to build a complete system for under $500.",
+      "description": "Choose off-grid water treatment from source testing, model-specific contaminant claims, maintenance needs and a safe backup supply.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "best-wood-stoves-off-grid-2026",
+      "title": "Wood Stoves for Off-Grid Cabins",
+      "category": "Building",
+      "date": "2026-02-27",
+      "description": "Wood-stove selection, heating needs and installation considerations for an off-grid cabin.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "diy-rain-gauge-weather-tracking",
+      "title": "DIY Rain Gauges and Garden Weather Tracking",
+      "category": "tools",
+      "date": "2026-03-03",
+      "description": "Rain measurement, weather records and garden-planning uses for a home weather log.",
+      "difficulty": "beginner"
+    },
+    {
+      "slug": "excalibur-3926t-dehydrator-review",
+      "title": "Excalibur 3926T Dehydrator: Power and Use",
+      "category": "Food & Farming",
+      "date": "2026-02-26",
+      "description": "An overview of the 3926T dehydrator, drying workflow, power demand and maintenance considerations.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "harvest-right-freeze-dryer-review",
+      "title": "Harvest Right Medium Freeze Dryer: Off-Grid Planning",
+      "category": "Food & Farming",
+      "date": "2026-02-26",
+      "description": "Batch workflow, power use, food storage and ownership costs to consider for an off-grid freeze dryer.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "how-to-dehydrate-vegetables-store-glass-jars",
+      "title": "Dehydrating Vegetables for Storage in Glass Jars",
+      "category": "Food & Farming",
+      "date": "2026-03-23",
+      "description": "Preparation, drying, conditioning and storage considerations for home-dehydrated vegetables.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "off-grid-greywater-systems-guide",
+      "title": "Off-Grid Greywater Systems: Planning and Management",
+      "category": "Water",
+      "date": "2026-05-05",
+      "description": "Greywater sources, routing options, soil and planting considerations, and questions about local requirements.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "off-grid-refrigeration-every-option",
+      "title": "Off-Grid Refrigeration Options and Power Planning",
+      "category": "Solar",
+      "date": "2026-05-05",
+      "description": "Refrigeration approaches and the energy, installation and operating considerations to assess.",
+      "difficulty": "intermediate"
+    },
+    {
+      "slug": "off-grid-water-supply-complete-guide",
+      "title": "Off-Grid Water: Source, Storage, Pressure and Treatment",
+      "category": "Water",
+      "date": "2026-05-05",
+      "description": "Water-supply planning across source selection, storage, distribution and treatment.",
       "difficulty": "intermediate"
     }
   ]
