@@ -114,19 +114,35 @@ function initSmartHeader() {
 function initMobileNav() {
     const toggle = document.querySelector('.nav-toggle');
     const nav = document.querySelector('.main-nav');
-    if (!toggle || !nav) return;
+    if (!toggle || !nav || toggle.dataset.navReady === 'true') return;
+    if (!nav.id) nav.id = 'site-primary-nav';
+    toggle.type = 'button';
+    toggle.setAttribute('aria-controls', nav.id);
 
-    toggle.addEventListener('click', () => {
-        nav.classList.toggle('open');
-        toggle.setAttribute('aria-expanded', nav.classList.contains('open'));
+    function setOpen(open, restoreFocus = false) {
+        nav.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        if (restoreFocus) toggle.focus();
+    }
+
+    setOpen(nav.classList.contains('open'));
+    toggle.addEventListener('click', () => setOpen(!nav.classList.contains('open')));
+    document.addEventListener('click', event => {
+        if (!toggle.contains(event.target) && !nav.contains(event.target)) setOpen(false);
     });
-
-    // Close on outside click
-    document.addEventListener('click', (e) => {
-        if (!toggle.contains(e.target) && !nav.contains(e.target)) {
-            nav.classList.remove('open');
+    document.addEventListener('focusin', event => {
+        if (!toggle.contains(event.target) && !nav.contains(event.target)) setOpen(false);
+    });
+    nav.addEventListener('click', event => {
+        if (event.target.closest && event.target.closest('a[href]')) setOpen(false);
+    });
+    document.addEventListener('keydown', event => {
+        if (event.key === 'Escape' && nav.classList.contains('open')) {
+            event.preventDefault();
+            setOpen(false, true);
         }
     });
+    toggle.dataset.navReady = 'true';
 }
 
 // ============================================
@@ -486,28 +502,33 @@ function initCardTilt() {
 // DARK MODE TOGGLE
 // ============================================
 function initDarkMode() {
-    var stored = localStorage.getItem('ogw-theme');
-    var theme = (stored === 'dark' || stored === 'light') ? stored : 'light';
+    const header = document.querySelector('.header-inner');
+    if (header && header.querySelector('.theme-toggle')) return;
+    let stored;
+    try { stored = localStorage.getItem('ogw-theme'); } catch {}
+    let theme = stored === 'dark' || stored === 'light' ? stored : 'light';
     document.documentElement.setAttribute('data-theme', theme);
+    if (!header) return;
 
-    var headerInner = document.querySelector('.header-inner');
-    if (!headerInner) return;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'theme-toggle';
+    button.setAttribute('aria-label', 'Dark mode');
 
-    var btn = document.createElement('button');
-    btn.className = 'theme-toggle';
-    btn.setAttribute('aria-label', 'Toggle dark mode');
-    btn.setAttribute('title', 'Toggle dark mode');
-    btn.innerHTML = theme === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
+    function updateButton() {
+        button.setAttribute('aria-pressed', String(theme === 'dark'));
+        button.setAttribute('title', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+        button.textContent = theme === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
+    }
 
-    btn.addEventListener('click', function() {
-        var current = document.documentElement.getAttribute('data-theme');
-        var next = current === 'dark' ? 'light' : 'dark';
-        document.documentElement.setAttribute('data-theme', next);
-        localStorage.setItem('ogw-theme', next);
-        btn.innerHTML = next === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
+    button.addEventListener('click', () => {
+        theme = theme === 'dark' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', theme);
+        updateButton();
+        try { localStorage.setItem('ogw-theme', theme); } catch {}
     });
-
-    headerInner.appendChild(btn);
+    updateButton();
+    header.appendChild(button);
 }
 
 // ============================================
