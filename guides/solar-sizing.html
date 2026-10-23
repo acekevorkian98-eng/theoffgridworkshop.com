@@ -184,11 +184,24 @@
 
                     <div class="toc-container">
                         <h3>In This Guide</h3>
-                        <div id="table-of-contents"></div>
+                        <div id="table-of-contents" data-toc-generated="true">
+<ul class="toc-list">
+<li class="toc-item"><a href="#section-1">Why Getting the Size Right Matters</a></li>
+<li class="toc-item"><a href="#calculator-title">Off-Grid Solar Sizing Calculator</a></li>
+<li class="toc-item"><a href="#section-4">Step 1: Establish Your Daily Energy Use</a></li>
+<li class="toc-item"><a href="#section-5">Step 2: Find Your Design-Month Peak Sun Hours</a></li>
+<li class="toc-item"><a href="#section-6">Step 3: Calculate the Solar Array</a></li>
+<li class="toc-item"><a href="#section-7">Step 4: Size the Battery Bank</a></li>
+<li class="toc-item"><a href="#section-8">Step 5: Check Continuous and Startup Power Separately</a></li>
+<li class="toc-item"><a href="#section-9">Worked Energy Examples</a></li>
+<li class="toc-item"><a href="#section-10">Sources and Method</a></li>
+<li class="toc-item"><a href="#section-11">Where to Go Next</a></li>
+</ul>
+</div>
                     </div>
 
                     <section>
-                        <h2>Why Getting the Size Right Matters</h2>
+                        <h2 id="section-1">Why Getting the Size Right Matters</h2>
                         <p>Undersizing your solar system means you run out of power by evening. Oversizing means you spent thousands of dollars on panels and batteries you&rsquo;ll never use. The sweet spot is a system sized to meet your actual load with a reasonable safety margin. and that requires math, not guesswork.</p>
                         <p>The good news: the math is straightforward. You need four numbers: your daily energy consumption in watt-hours, your location&rsquo;s peak sun hours, a panel array size, and a battery bank capacity. Use the <a href="#calculator">solar sizing calculator</a>, then follow the worked steps below.</p>
 
@@ -280,23 +293,23 @@
                     </section>
 
                     <section>
-                        <h2>Step 1: Establish Your Daily Energy Use</h2>
+                        <h2 id="section-4">Step 1: Establish Your Daily Energy Use</h2>
                         <p>Start with the <a href="power-audit">power audit</a>: watts multiplied by hours of operation gives watt-hours (Wh). Add the daily energy for all your appliances, including standby consumption. A 100W appliance running for three hours uses 300Wh; this does not tell you its startup power.</p>
                         <p>This guide uses a hypothetical <strong>1,500Wh/day</strong> load. The calculator starts with a <strong>25% combined solar-to-load loss allowance</strong>. Replace it with a loss budget for your equipment. A 25% loss means dividing the load by 0.75, not multiplying by 1.25. Do not add the same inverter or battery losses a second time to this combined allowance.</p>
                     </section>
                     <section>
-                        <h2>Step 2: Find Your Design-Month Peak Sun Hours</h2>
+                        <h2 id="section-5">Step 2: Find Your Design-Month Peak Sun Hours</h2>
                         <p>Peak sun hours express daily solar energy as equivalent hours at 1,000W/m&sup2;. They are not daylight hours. Use location-specific monthly data for the planned panel orientation, and design for the lowest-sun month when the system must operate.</p>
                         <p>The example uses <strong>3 peak sun hours</strong> as an input assumption, not a regional guarantee. Monthly averages do not predict a particular cloudy spell. Seasonal loads, shading and backup charging also affect a workable design.</p>
                     </section>
                     <section>
-                        <h2>Step 3: Calculate the Solar Array</h2>
+                        <h2 id="section-6">Step 3: Calculate the Solar Array</h2>
                         <p><strong>Array target (W) = Daily Wh &divide; [Peak sun hours &times; (1 &minus; loss fraction)] &times; (1 + reserve fraction)</strong></p>
                         <p>For this example: 1,500 &divide; (3 &times; 0.75) &times; 1.20 = <strong>800W</strong>. Two 400W panels meet that arithmetic target. The 20% reserve is a planning choice, separate from the loss allowance.</p>
                         <p>Round up to whole panels, then check the controller&rsquo;s input voltage, current and power limits. Meeting the daily energy target does not guarantee rapid recovery after several cloudy days. Additional array capacity, reduced loads or backup generation may be needed.</p>
                     </section>
                     <section>
-                        <h2>Step 4: Size the Battery Bank</h2>
+                        <h2 id="section-7">Step 4: Size the Battery Bank</h2>
                         <p><strong>Nominal bank capacity (Wh) = Daily Wh &times; Days without solar &divide; (Usable discharge fraction &times; Battery-to-load efficiency)</strong></p>
                         <p>The battery calculation starts from appliance energy again, so it includes delivery losses from the battery to the loads. It does not use the combined solar loss allowance from the array calculation.</p>
                         <p>With two days of storage, 80% usable discharge and 90% delivery efficiency: 1,500 &times; 2 &divide; (0.80 &times; 0.90) = <strong>4,167Wh nominal</strong>. Choose a bank with at least this rated energy, then allow for temperature, ageing and the manufacturer&rsquo;s operating limits.</p>
@@ -307,12 +320,12 @@
                         </div>
                     </section>
                     <section>
-                        <h2>Step 5: Check Continuous and Startup Power Separately</h2>
+                        <h2 id="section-8">Step 5: Check Continuous and Startup Power Separately</h2>
                         <p>Daily Wh cannot determine inverter watts. Add the AC loads that can run simultaneously, and check the total load while a motor or compressor starts. The calculator uses <strong>25% continuous headroom</strong> as a planning assumption.</p>
                         <p>A 1,000W simultaneous running load gives a 1,250W continuous target. If the total startup load is 2,500W, the inverter must also support that peak for the equipment&rsquo;s required startup duration. Check watts, VA/power factor, ambient-temperature derating and battery/BMS current limits against the actual equipment specifications.</p>
                     </section>
                     <section>
-                        <h2>Worked Energy Examples</h2>
+                        <h2 id="section-9">Worked Energy Examples</h2>
                         <p>All rows use 3 peak sun hours, 25% total solar losses, 20% array reserve, 400W panels, two days of storage, 80% usable discharge and 90% battery-to-load efficiency. These are calculated examples, not recommended packages.</p>
                         <div class="comparison-table-wrapper"><table>
                             <thead><tr><th>Daily appliance energy</th><th>Whole-panel array</th><th>Minimum nominal storage</th><th>Example bank voltage</th><th>Minimum bank Ah</th></tr></thead>
@@ -325,7 +338,7 @@
                         <p>Inverter requirements must be calculated from each household&rsquo;s simultaneous loads and startup requirements separately.</p>
                     </section>
                     <section>
-                        <h2>Sources and Method</h2>
+                        <h2 id="section-10">Sources and Method</h2>
                         <p>The calculator is a preliminary energy-balance tool. Its example efficiencies and margins are editable assumptions, not universal equipment ratings.</p>
                         <ul>
                             <li><a href="https://www.mppsolar.com/v3/system-sizing/">MPP Solar: system sizing guide</a>, energy demand, solar resource and combined system efficiency.</li>
@@ -335,7 +348,7 @@
                     </section>
 
                     <section>
-                        <h2>Where to Go Next</h2>
+                        <h2 id="section-11">Where to Go Next</h2>
                         <p>Use this estimate to compare battery chemistry and equipment, then check the complete design against your loads and site conditions. These guides will help:</p>
                         <ol>
                             <li><a href="power-audit"><strong>How to Do a Power Audit</strong></a> , Get your daily Wh number right</li>
@@ -370,7 +383,18 @@
 
                 <div class="sidebar-widget">
                     <h3>In This Article</h3>
-                    <ul></ul>
+                    <ul data-toc-generated="true">
+<li><a href="#section-1">Why Getting the Size Right Matters</a></li>
+<li><a href="#calculator-title">Off-Grid Solar Sizing Calculator</a></li>
+<li><a href="#section-4">Step 1: Establish Your Daily Energy Use</a></li>
+<li><a href="#section-5">Step 2: Find Your Design-Month Peak Sun Hours</a></li>
+<li><a href="#section-6">Step 3: Calculate the Solar Array</a></li>
+<li><a href="#section-7">Step 4: Size the Battery Bank</a></li>
+<li><a href="#section-8">Step 5: Check Continuous and Startup Power Separately</a></li>
+<li><a href="#section-9">Worked Energy Examples</a></li>
+<li><a href="#section-10">Sources and Method</a></li>
+<li><a href="#section-11">Where to Go Next</a></li>
+</ul>
                 </div>
 
                 <div class="sidebar-widget">

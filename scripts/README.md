@@ -26,3 +26,13 @@ It checks canonicals, Open Graph URLs, JSON-LD self-references and complete
 sitemap coverage. Error pages marked `noindex` and underscore-prefixed templates
 are excluded. Existing file routes use extensionless canonical URLs; directory
 indexes use a trailing slash. This command performs local validation only.
+
+# Article contents
+
+Run `python3 scripts/build-contents.py` after changing article headings, then
+`python3 scripts/build-contents.py --check`. Empty contents slots are rendered
+into HTML so their links work without JavaScript. Hand-written lists are kept;
+lists marked `data-toc-generated` are maintained by the builder. Existing IDs
+are preserved, generated IDs avoid collisions, and contents-box headings and
+hidden content are excluded from the generated links. Commit the updated pages
+with heading changes.

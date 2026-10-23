@@ -177,7 +177,44 @@
 
                     <div class="toc-container">
                         <h3>In This Article</h3>
-                        <div id="table-of-contents"></div>
+                        <div id="table-of-contents" data-toc-generated="true">
+<ul class="toc-list">
+<li class="toc-item"><a href="#section-1">Why Every Off-Grid Homestead Needs a Solar Generator</a></li>
+<li class="toc-item"><a href="#section-2">Battery Chemistry: Why LiFePO4 Is the Only Choice</a></li>
+<li class="toc-item toc-sub"><a href="#section-3">LiFePO4 vs. NMC: The Math Is Overwhelming</a></li>
+<li class="toc-item"><a href="#section-4">Inverter Efficiency: The Hidden Loss You Never See</a></li>
+<li class="toc-item toc-sub"><a href="#section-5">DC-to-AC Inverter Efficiency Measurements</a></li>
+<li class="toc-item toc-sub"><a href="#section-6">Inverter Waveform Quality (THD)</a></li>
+<li class="toc-item"><a href="#section-7">Test Methodology: 10 Months, 8 Units, 48 kWh</a></li>
+<li class="toc-item toc-sub"><a href="#section-8">Testing Protocol</a></li>
+<li class="toc-item toc-sub"><a href="#section-9">Units Tested</a></li>
+<li class="toc-item"><a href="#section-10">Solar MPPT Charge Testing: Real Input Curves</a></li>
+<li class="toc-item toc-sub"><a href="#section-11">MPPT Controller Efficiency by Unit</a></li>
+<li class="toc-item"><a href="#section-12">Real Load Profiling: What These Units Actually Run</a></li>
+<li class="toc-item toc-sub"><a href="#section-13">Appliance Power Draw Measurements</a></li>
+<li class="toc-item toc-sub"><a href="#section-14">Runtime by Load Profile: 2,000Wh-Class Units</a></li>
+<li class="toc-item"><a href="#section-15">Our Top 7 Solar Generators, Ranked</a></li>
+<li class="toc-item toc-sub"><a href="#section-16">1. EcoFlow Delta Pro — Best Overall for Serious Off-Grid</a></li>
+<li class="toc-item toc-sub"><a href="#section-17">2. Jackery Explorer 2000 Pro — Best Value 2,000Wh-Class</a></li>
+<li class="toc-item toc-sub"><a href="#section-18">3. EcoFlow Delta 2 Max — Best MPPT Efficiency &amp; Expandable</a></li>
+<li class="toc-item toc-sub"><a href="#section-19">4. Anker SOLIX F2000 — Best Capacity in Its Class</a></li>
+<li class="toc-item toc-sub"><a href="#section-20">5. Bluetti AC200P — Best Solar Input Capacity</a></li>
+<li class="toc-item toc-sub"><a href="#section-21">6. Jackery Explorer 1000 — Best Portable Mid-Size</a></li>
+<li class="toc-item toc-sub"><a href="#section-22">7. Anker SOLIX C800 — Best Budget Entry Point</a></li>
+<li class="toc-item"><a href="#section-23">Full Comparison: All 8 Units</a></li>
+<li class="toc-item"><a href="#section-24">System Design: Sizing Your Solar Generator + Panels</a></li>
+<li class="toc-item toc-sub"><a href="#section-25">Step 1: Calculate Your Daily Energy Needs</a></li>
+<li class="toc-item toc-sub"><a href="#section-26">Step 2: Size Your Battery for Autonomy</a></li>
+<li class="toc-item toc-sub"><a href="#section-27">Step 3: Size Your Solar Array for Daily Replenishment</a></li>
+<li class="toc-item toc-sub"><a href="#section-28">Recommended System Configurations</a></li>
+<li class="toc-item"><a href="#section-29">Maintenance &amp; Longevity: Keeping Your Unit Running</a></li>
+<li class="toc-item toc-sub"><a href="#section-30">Storage Guidelines</a></li>
+<li class="toc-item toc-sub"><a href="#section-31">In-Use Maintenance</a></li>
+<li class="toc-item toc-sub"><a href="#section-32">Expected Cycle Life by Usage Pattern</a></li>
+<li class="toc-item"><a href="#section-33">Bottom Line</a></li>
+<li class="toc-item"><a href="#section-34">Related Reading</a></li>
+</ul>
+</div>
                     </div>
 
                     <div class="info-box neutral">
@@ -186,17 +223,17 @@
                     </div>
 
                     <section id="why-solar-generators">
-                        <h2>Why Every Off-Grid Homestead Needs a Solar Generator</h2>
+                        <h2 id="section-1">Why Every Off-Grid Homestead Needs a Solar Generator</h2>
                         <p>We didn't buy our first solar generator because we wanted a gadget. We bought it because during a 9-day stretch of overcast skies in November 2024, our main battery bank dropped to 22% state-of-charge, the refrigerator started cycling erratically, and we were manually rationing power — no microwave, no power tools, phone charging limited to 30 minutes per person. That's when we realized: a portable solar generator isn't a luxury. It's insurance.</p>
                         <p>Since then, we've used solar generators as our primary backup during 4 separate multi-day cloud events, powered tools during construction when the main system was offline, run a chest freezer during a main system inverter failure, and provided emergency power when a squirrel shorted out our charge controller. Each event reinforced the same lesson: redundancy matters off-grid.</p>
                         <p>This article is the result of <strong>10 months of testing</strong> — <strong>8 different solar generators</strong>, <strong>600+ charge cycles</strong>, <strong>48 kWh of total energy processed</strong>, with a Kill-A-Watt meter, a USB-C power meter, a DC clamp meter, and a thermal camera tracking every watt-hour. We measured what the manufacturers claim, and more importantly, what actually happens when you use these units in real off-grid conditions.</p>
                     </section>
 
                     <section id="battery-chemistry">
-                        <h2>Battery Chemistry: Why LiFePO4 Is the Only Choice</h2>
+                        <h2 id="section-2">Battery Chemistry: Why LiFePO4 Is the Only Choice</h2>
                         <p>The single most important specification on any solar generator isn't capacity, isn't wattage, isn't solar input — it's the battery chemistry. And in 2026, there's only one answer: LiFePO4 (lithium iron phosphate).</p>
 
-                        <h3>LiFePO4 vs. NMC: The Math Is Overwhelming</h3>
+                        <h3 id="section-3">LiFePO4 vs. NMC: The Math Is Overwhelming</h3>
                         <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
@@ -253,10 +290,10 @@
                     </section>
 
                     <section id="inverter-science">
-                        <h2>Inverter Efficiency: The Hidden Loss You Never See</h2>
+                        <h2 id="section-4">Inverter Efficiency: The Hidden Loss You Never See</h2>
                         <p>Every solar generator has a rated capacity — 2,000 Wh, 1,024 Wh, whatever. But you never get all of that. The DC-to-AC inverter conversion eats a percentage, and the amount varies significantly between units. We measured this on every unit using a calibrated Kill-A-Watt meter on the AC output side and the manufacturer's stated capacity.</p>
 
-                        <h3>DC-to-AC Inverter Efficiency Measurements</h3>
+                        <h3 id="section-5">DC-to-AC Inverter Efficiency Measurements</h3>
                         <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
@@ -329,7 +366,7 @@
 
                         <p>The EcoFlow Delta Pro at 96% efficiency is the best — on a 3,600 Wh unit, that's 144 Wh lost to heat. The Goal Zero and Anker C800 at 92% lose proportionally more. This matters: a 4% difference on a 2,000 Wh unit is 80 Wh — enough to run a CPAP machine for 1.3 extra hours, or an LED light for 8 extra hours.</p>
 
-                        <h3>Inverter Waveform Quality (THD)</h3>
+                        <h3 id="section-6">Inverter Waveform Quality (THD)</h3>
                         <p>All units in our test produce pure sine wave output — the only acceptable waveform for sensitive electronics. Modified sine wave inverters (found on cheap $100 generators) produce total harmonic distortion (THD) above 30%, which can damage laptop chargers, medical devices, and variable-speed motors. Every unit below tested below 3% THD, which is excellent:</p>
                         <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
@@ -370,10 +407,10 @@
                     </section>
 
                     <section id="test-methodology">
-                        <h2>Test Methodology: 10 Months, 8 Units, 48 kWh</h2>
+                        <h2 id="section-7">Test Methodology: 10 Months, 8 Units, 48 kWh</h2>
                         <p>Here's exactly how we tested, so you can judge whether our results apply to your situation.</p>
 
-                        <h3>Testing Protocol</h3>
+                        <h3 id="section-8">Testing Protocol</h3>
                         <ul>
                             <li><strong>Usable capacity</strong> — fully charged from wall AC, then discharged through a calibrated resistive load at 300W constant draw until the unit's BMS shut off output. Measured actual Wh delivered with a Kill-A-Watt meter.</li>
                             <li><strong>Solar charge curves</strong> — connected 400W of rigid panels (2× 200W Renogy in series) and logged input wattage every 15 minutes from sunrise to sunset over 12 days. Calculated average MPPT efficiency.</li>
@@ -384,7 +421,7 @@
                             <li><strong>Noise measurement</strong> — decibel meter at 1 meter distance during charging under load (fan active) and idle.</li>
                         </ul>
 
-                        <h3>Units Tested</h3>
+                        <h3 id="section-9">Units Tested</h3>
                         <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
@@ -457,10 +494,10 @@
                     </section>
 
                     <section id="solar-charge-testing">
-                        <h2>Solar MPPT Charge Testing: Real Input Curves</h2>
+                        <h2 id="section-10">Solar MPPT Charge Testing: Real Input Curves</h2>
                         <p>Manufacturer solar charge specs are measured under perfect STC conditions (1,000 W/m² irradiance, 25°C cell temperature). Real off-grid conditions are never perfect. Here's what we measured over 12 days of solar charging with 400W of panels (2× Renogy 200W rigid panels in series, south-facing at 35° tilt, zone 6b).</p>
 
-                        <h3>MPPT Controller Efficiency by Unit</h3>
+                        <h3 id="section-11">MPPT Controller Efficiency by Unit</h3>
                         <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
@@ -541,10 +578,10 @@
                     </section>
 
                     <section id="load-profiling">
-                        <h2>Real Load Profiling: What These Units Actually Run</h2>
+                        <h2 id="section-12">Real Load Profiling: What These Units Actually Run</h2>
                         <p>Specs tell you rated wattage. Real-world use tells you what happens when you plug in your actual appliances. We ran 15 common off-grid loads through each unit and recorded actual power draw, surge behavior, and runtime.</p>
 
-                        <h3>Appliance Power Draw Measurements</h3>
+                        <h3 id="section-13">Appliance Power Draw Measurements</h3>
                         <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
@@ -615,7 +652,7 @@
                             </tbody>
                         </table></div>
 
-                        <h3>Runtime by Load Profile: 2,000Wh-Class Units</h3>
+                        <h3 id="section-14">Runtime by Load Profile: 2,000Wh-Class Units</h3>
                         <p>Here's what you actually get from a 2,000Wh-class unit (Jackery 2000 Pro, EcoFlow Delta 2 Max, Bluetti AC200P) running real off-grid loads:</p>
                         <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
@@ -669,10 +706,10 @@
                     </section>
 
                     <section id="the-seven-best">
-                        <h2>Our Top 7 Solar Generators, Ranked</h2>
+                        <h2 id="section-15">Our Top 7 Solar Generators, Ranked</h2>
                         <p>After 10 months, 600+ cycles, and 48 kWh of real-world testing, here are the units we recommend — ranked by overall performance, value, and suitability for off-grid homesteads.</p>
 
-                        <h3>1. EcoFlow Delta Pro — Best Overall for Serious Off-Grid</h3>
+                        <h3 id="section-16">1. EcoFlow Delta Pro — Best Overall for Serious Off-Grid</h3>
                         <p>The EcoFlow Delta Pro is the unit we'd buy for our own property if money were no object. 3,600 Wh of LiFePO4 capacity, 3,600W continuous output (7,200W surge), 96% inverter efficiency (the best in our test), and the ability to expand to 25,000 Wh with additional batteries. We tested this as our primary backup during a 6-day cloud event, and it never dropped below 40% state-of-charge — even running our refrigerator, water pump, lights, and laptop simultaneously.</p>
                         <p><strong>Specs:</strong> 3,600 Wh LiFePO4, 3,600W AC output (7,200W surge), 1,600W solar MPPT input, 2,400W AC wall input. Weight: 99 lbs. Cycle life: 3,500+ to 80%. Outputs: 5× AC, 4× USB-A, 2× USB-C (100W PD), 1× USB-C (60W), 2× DC5521, 1× car outlet.</p>
                         <p><strong>Real performance:</strong> Delivered 3,456 Wh usable (96.0% inverter efficiency). With 400W of panels, averaged 336W MPPT input — 84% efficiency. Full solar charge in 12.5 hours (with 800W+ panels: ~5.5 hours). AC wall charge from 0-100% in 2.8 hours at 2,400W input.</p>
@@ -682,7 +719,7 @@
                         <p><strong>Cost per usable Wh:</strong> $1.04/Wh (initial), $0.003/Wh over 3,500-cycle lifetime.</p>
                         <p><a href="https://www.amazon.com/s?k=ecoflow+delta+pro+portable+power+station&tag=acekevorkian-20" rel="noopener nofollow" target="_blank">Check price on Amazon</a></p>
 
-                        <h3>2. Jackery Explorer 2000 Pro — Best Value 2,000Wh-Class</h3>
+                        <h3 id="section-17">2. Jackery Explorer 2000 Pro — Best Value 2,000Wh-Class</h3>
                         <p>The Jackery 2000 Pro is the sweet spot for most off-grid homesteads: 2,160 Wh capacity, fast dual-MPPT solar charging, proven reliability, and a price point that's accessible without being cheap. We used this as our primary backup for 8 months and it performed flawlessly through 92 charge cycles, 4 cloud events, and a construction project that drew heavy tool loads.</p>
                         <p><strong>Specs:</strong> 2,160 Wh LiFePO4, 3,000W AC output (6,000W surge), 400W solar MPPT input (dual-channel), 1,400W AC wall input. Weight: 43 lbs. Cycle life: 3,000+ to 80%. Outputs: 4× AC, 4× USB-A, 2× USB-C PD (100W), 1× car outlet.</p>
                         <p><strong>Real performance:</strong> Delivered 2,030 Wh usable (94.0% inverter efficiency). Solar MPPT at 312W avg from 400W panels (78% efficiency). Full solar charge in 8.0 hours. AC wall charge in 2.0 hours at 1,400W input. Ran a refrigerator compressor startup (1,200W surge) without any voltage sag.</p>
@@ -692,7 +729,7 @@
                         <p><strong>Cost per usable Wh:</strong> $0.88/Wh (initial), $0.003/Wh over 3,000-cycle lifetime.</p>
                         <p><a href="https://www.amazon.com/s?k=jackery+explorer+2000+pro&tag=acekevorkian-20" rel="noopener nofollow" target="_blank">Check price on Amazon</a></p>
 
-                        <h3>3. EcoFlow Delta 2 Max — Best MPPT Efficiency &amp; Expandable</h3>
+                        <h3 id="section-18">3. EcoFlow Delta 2 Max — Best MPPT Efficiency &amp; Expandable</h3>
                         <p>The EcoFlow Delta 2 Max is the unit with the best solar charge efficiency in the 2,000Wh class. Its MPPT controller extracted 82% of available panel power — significantly better than the Jackery 2000 Pro's 78%. If your off-grid site has limited sun hours or you're panel-limited, this efficiency advantage translates to meaningful extra charge time.</p>
                         <p><strong>Specs:</strong> 2,048 Wh LiFePO4, 2,400W AC output (5,050W surge), 500W solar MPPT input (dual-channel), 2,200W AC wall input (X-Stream). Weight: 52 lbs. Cycle life: 3,000+ to 80%. Expandable with additional batteries up to 6,144 Wh. Outputs: 6× AC, 4× USB-A, 2× USB-C (100W PD).</p>
                         <p><strong>Real performance:</strong> Delivered 1,946 Wh usable (95.0% inverter efficiency). Solar MPPT at 328W avg from 400W panels (82% efficiency). Full solar charge in 7.5 hours. AC wall charge in 1.4 hours at 2,200W input — the fastest full recharge of any 2,000Wh-class unit we tested.</p>
@@ -702,7 +739,7 @@
                         <p><strong>Cost per usable Wh:</strong> $0.73/Wh (initial), $0.002/Wh over 3,000-cycle lifetime.</p>
                         <p><a href="https://www.amazon.com/s?k=ecoflow+delta+2+max&tag=acekevorkian-20" rel="noopener nofollow" target="_blank">Check price on Amazon</a></p>
 
-                        <h3>4. Anker SOLIX F2000 — Best Capacity in Its Class</h3>
+                        <h3 id="section-19">4. Anker SOLIX F2000 — Best Capacity in Its Class</h3>
                         <p>The Anker SOLIX F2000 is a sleeper pick: 4,096 Wh of capacity — the largest single-unit capacity we tested — with solid build quality and competitive pricing. At 94% inverter efficiency, it's in the top tier for conversion. We tested this primarily as a construction-site power source (running angle grinders, circular saws, and battery chargers) and as extended-duration backup.</p>
                         <p><strong>Specs:</strong> 4,096 Wh LiFePO4, 3,000W AC output (6,000W surge), 600W solar MPPT input, 1,200W AC wall input. Weight: 66 lbs. Cycle life: 3,000+ to 80%. Outputs: 6× AC, 2× USB-A, 2× USB-C (140W PD), 2× car outlets, 1× DC5521.</p>
                         <p><strong>Real performance:</strong> Delivered 3,850 Wh usable (94.0% inverter efficiency). Solar MPPT at 336W avg from 400W panels (84% efficiency). Full solar charge in 13 hours (with 600W panels: ~7.5 hours). AC wall charge in 3.5 hours at 1,200W input. Ran an angle grinder (900W running, 2,200W surge) without issue.</p>
@@ -712,7 +749,7 @@
                         <p><strong>Cost per usable Wh:</strong> $0.42/Wh (initial), $0.001/Wh over 3,000-cycle lifetime.</p>
                         <p><a href="https://www.amazon.com/s?k=anker+solix+f2000+power+station&tag=acekevorkian-20" rel="noopener nofollow" target="_blank">Check price on Amazon</a></p>
 
-                        <h3>5. Bluetti AC200P — Best Solar Input Capacity</h3>
+                        <h3 id="section-20">5. Bluetti AC200P — Best Solar Input Capacity</h3>
                         <p>The Bluetti AC200P is the solar charging champion — 700W MPPT input capacity, the highest in the 2,000Wh class. If you have access to abundant solar panels, this unit charges faster than any competitor. We tested it with 700W of panels (3× 233W in series) and achieved a full charge in 4.2 hours of good sun.</p>
                         <p><strong>Specs:</strong> 2,048 Wh LiFePO4, 2,200W AC output (4,800W surge), 700W solar MPPT input (dual-channel), 1,200W AC wall input. Weight: 60 lbs. Cycle life: 3,500+ to 80%. Outputs: 6× AC, 4× USB-A, 2× USB-C (60W PD), 1× wireless charging pad, 2× DC5521, 1× car outlet.</p>
                         <p><strong>Real performance:</strong> Delivered 1,925 Wh usable (94.0% inverter efficiency). Solar MPPT at 344W avg from 400W panels (86% efficiency — best in class). Full solar charge in 6.5 hours (with 400W panels), 4.2 hours (with 700W panels). AC wall charge in 3.0 hours at 1,200W input.</p>
@@ -722,7 +759,7 @@
                         <p><strong>Cost per usable Wh:</strong> $0.73/Wh (initial), $0.002/Wh over 3,500-cycle lifetime.</p>
                         <p><a href="https://www.amazon.com/s?k=bluetti+ac200p+power+station&tag=acekevorkian-20" rel="noopener nofollow" target="_blank">Check price on Amazon</a></p>
 
-                        <h3>6. Jackery Explorer 1000 — Best Portable Mid-Size</h3>
+                        <h3 id="section-21">6. Jackery Explorer 1000 — Best Portable Mid-Size</h3>
                         <p>At 23 lbs, the Jackery Explorer 1000 is genuinely portable — you can carry it with one hand, fit it in a car trunk, and move it between cabin locations. 1,002 Wh of LiFePO4 capacity is enough for essentials (lights, phones, laptop, small fan) for 1-2 days. We used this as our secondary/backup generator and for tool charging on remote work sites.</p>
                         <p><strong>Specs:</strong> 1,002 Wh LiFePO4, 2,000W AC output (4,000W surge), 200W solar MPPT input, 1,000W AC wall input. Weight: 23 lbs. Cycle life: 3,000+ to 80%. Outputs: 3× AC, 2× USB-A, 2× USB-C PD (100W), 1× car outlet.</p>
                         <p><strong>Real performance:</strong> Delivered 932 Wh usable (93.0% inverter efficiency). Solar MPPT at 164W avg from 200W panels (82% efficiency). Full solar charge in 6.5 hours. AC wall charge in 1.2 hours at 1,000W input. Ran a 500W angle grinder for 45 minutes before reaching 20% state-of-charge.</p>
@@ -732,7 +769,7 @@
                         <p><strong>Cost per usable Wh:</strong> $0.80/Wh (initial), $0.003/Wh over 3,000-cycle lifetime.</p>
                         <p><a href="https://www.amazon.com/s?k=jackery+explorer+1000+v2&tag=acekevorkian-20" rel="noopener nofollow" target="_blank">Check price on Amazon</a></p>
 
-                        <h3>7. Anker SOLIX C800 — Best Budget Entry Point</h3>
+                        <h3 id="section-22">7. Anker SOLIX C800 — Best Budget Entry Point</h3>
                         <p>The Anker SOLIX C800 is the most affordable LiFePO4 unit we tested with meaningful capacity for off-grid use. 768 Wh won't run a refrigerator for long, but it handles lights, phones, laptops, and a CPAP machine for a night or two. At $449 with a 5-year warranty, it's the best entry point for off-gridders on a tight budget.</p>
                         <p><strong>Specs:</strong> 768 Wh LiFePO4, 1,200W AC output (2,400W surge), 100W solar MPPT input, 240W AC wall input. Weight: 22 lbs. Cycle life: 3,000+ to 80%. Outputs: 3× AC, 2× USB-A, 2× USB-C (60W PD), 1× car outlet.</p>
                         <p><strong>Real performance:</strong> Delivered 707 Wh usable (92.0% inverter efficiency). Solar MPPT at 82W avg from 100W panels (82% efficiency). Full solar charge in 9.5 hours. AC wall charge in 1.3 hours at 240W input. Ran LED lights (100W) for 7 hours before reaching 10% state-of-charge.</p>
@@ -744,7 +781,7 @@
                     </section>
 
                     <section id="comparison-table">
-                        <h2>Full Comparison: All 8 Units</h2>
+                        <h2 id="section-23">Full Comparison: All 8 Units</h2>
                         <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
@@ -845,10 +882,10 @@
                     </section>
 
                     <section id="system-design">
-                        <h2>System Design: Sizing Your Solar Generator + Panels</h2>
+                        <h2 id="section-24">System Design: Sizing Your Solar Generator + Panels</h2>
                         <p>Buying a solar generator without adequate solar panels is like buying a fuel tank without a gas station — you'll eventually run empty. Here's how to size your system correctly.</p>
 
-                        <h3>Step 1: Calculate Your Daily Energy Needs</h3>
+                        <h3 id="section-25">Step 1: Calculate Your Daily Energy Needs</h3>
                         <p>List every device you'll run, its wattage, and hours of use per day:</p>
                         <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
@@ -911,19 +948,19 @@
                             </tbody>
                         </table></div>
 
-                        <h3>Step 2: Size Your Battery for Autonomy</h3>
+                        <h3 id="section-26">Step 2: Size Your Battery for Autonomy</h3>
                         <p>Rule of thumb: battery capacity = daily Wh × days of autonomy ÷ inverter efficiency ÷ depth-of-discharge limit.</p>
                         <p>For a basic cabin (1,965 Wh/day) wanting 3 days of autonomy, with 94% inverter efficiency and 90% DoD (LiFePO4):</p>
                         <p><strong>Required capacity:</strong> 1,965 × 3 ÷ 0.94 ÷ 0.90 = <strong>6,975 Wh</strong></p>
                         <p>No single unit provides 6,975 Wh — you'd need two Jackery 2000 Pro units (4,320 Wh combined) plus solar, or one EcoFlow Delta Pro (3,600 Wh) plus one expansion battery (3,600 Wh) for 7,200 Wh total. Or accept 2 days of autonomy and use a single Jackery 2000 Pro (2,160 Wh) with solar input replenishing daily.</p>
 
-                        <h3>Step 3: Size Your Solar Array for Daily Replenishment</h3>
+                        <h3 id="section-27">Step 3: Size Your Solar Array for Daily Replenishment</h3>
                         <p>Solar array wattage = daily Wh ÷ peak sun hours ÷ system efficiency.</p>
                         <p>For 1,965 Wh/day in zone 6b (4.5 peak sun hours average, 80% system efficiency):</p>
                         <p><strong>Required solar:</strong> 1,965 ÷ 4.5 ÷ 0.80 = <strong>546W</strong></p>
                         <p>That means three 200W panels (600W total) or two 300W panels (600W total). In summer (6+ PSH), 400W of panels is sufficient. In winter (2-3 PSH), you'd need 800-1,000W of panels to achieve daily replenishment.</p>
 
-                        <h3>Recommended System Configurations</h3>
+                        <h3 id="section-28">Recommended System Configurations</h3>
                         <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
@@ -968,17 +1005,17 @@
                     </section>
 
                     <section id="maintenance">
-                        <h2>Maintenance &amp; Longevity: Keeping Your Unit Running</h2>
+                        <h2 id="section-29">Maintenance &amp; Longevity: Keeping Your Unit Running</h2>
                         <p>Solar generators are low-maintenance, but "low-maintenance" doesn't mean "no maintenance." Here's what we do to keep our units healthy:</p>
 
-                        <h3>Storage Guidelines</h3>
+                        <h3 id="section-30">Storage Guidelines</h3>
                         <ul>
                             <li><strong>Store at 50-60% state-of-charge</strong> — LiFePO4 is stable but long-term storage at 100% or 0% accelerates calendar aging. If storing for months, check every 3 months and top up to 50% if it's dropped below 30%.</li>
                             <li><strong>Storage temperature:</strong> 15-25°C (59-77°F) is ideal. Below 0°C: don't charge (LiFePO4 charging below freezing causes lithium plating). Above 40°C: accelerated calendar aging. Our units live in an insulated cabinet that stays between 45-75°F year-round.</li>
                             <li><strong>Exercise cycles:</strong> Even in storage, cycle each unit through one full charge/discharge every 3 months. This keeps the BMS calibrated and prevents cell imbalance.</li>
                         </ul>
 
-                        <h3>In-Use Maintenance</h3>
+                        <h3 id="section-31">In-Use Maintenance</h3>
                         <ul>
                             <li><strong>Keep MPPT ports covered</strong> when not in use — dust and moisture are the enemies of electrical connections.</li>
                             <li><strong>Check firmware updates</strong> quarterly — all three major brands (Jackery, EcoFlow, Bluetti) push BMS and inverter firmware updates that improve efficiency and safety.</li>
@@ -986,7 +1023,7 @@
                             <li><strong>Monitor capacity degradation</strong> — if a 2,000Wh unit is delivering under 1,600Wh (80%), it's reached end-of-life for its primary role. Repurpose it as a secondary/emergency unit.</li>
                         </ul>
 
-                        <h3>Expected Cycle Life by Usage Pattern</h3>
+                        <h3 id="section-32">Expected Cycle Life by Usage Pattern</h3>
                         <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
@@ -1027,7 +1064,7 @@
                     </section>
 
                     <section id="bottom-line">
-                        <h2>Bottom Line</h2>
+                        <h2 id="section-33">Bottom Line</h2>
                         <p>After 10 months of testing, here's our recommendation framework:</p>
 
                         <p><strong>For most off-grid homesteads</strong> — the <strong>Jackery Explorer 2000 Pro</strong> at $1,899 is the default pick. 2,160 Wh capacity, 3,000W AC output, 43 lbs (manageable), proven reliability, and enough power for a basic cabin (fridge + lights + phones) for 3+ days. Pair with 400-600W of solar panels and you'll handle any cloud event.</p>
@@ -1044,7 +1081,7 @@
                     </section>
 
                     <section id="related">
-                        <h2>Related Reading</h2>
+                        <h2 id="section-34">Related Reading</h2>
                         <ul>
                             <li><a href="diy-solar-water-pump">DIY Solar Water Pump</a> — Moving water without grid power</li>
                             <li><a href="best-solar-panels-2026">Best Solar Panels for Off-Grid 2026</a> — Panel comparison and sizing</li>

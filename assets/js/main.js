@@ -343,59 +343,40 @@ async function copyToClipboard(button) {
 // TABLE OF CONTENTS GENERATOR
 // ============================================
 function generateTOC() {
-    const tocContainer = document.getElementById('table-of-contents');
-    if (tocContainer) {
-        const article = document.querySelector('.article-content') || document.querySelector('main');
-        if (!article) return;
-
-        const headings = article.querySelectorAll('h2, h3');
-        if (headings.length < 3) { tocContainer.style.display = 'none'; return; }
-
-        const tocList = document.createElement('ul');
-        tocList.className = 'toc-list';
-
-        headings.forEach((heading, index) => {
-            if (!heading.id) heading.id = 'section-' + index;
-            const li = document.createElement('li');
-            li.className = heading.tagName === 'H3' ? 'toc-item toc-sub' : 'toc-item';
-            const link = document.createElement('a');
-            link.href = '#' + heading.id;
-            link.textContent = heading.textContent;
-            li.appendChild(link);
-            tocList.appendChild(li);
-        });
-
-        tocContainer.appendChild(tocList);
-        return;
-    }
-
-    // Sidebar "In This Article" auto-populate
-    const sidebarWidgets = document.querySelectorAll('.sidebar-widget');
-    let tocWidget = null;
-    sidebarWidgets.forEach(function(widget) {
-        const h3 = widget.querySelector('h3');
-        if (h3 && h3.textContent.trim() === 'In This Article') tocWidget = widget;
+    const targets = [];
+    const inline = document.getElementById('table-of-contents');
+    if (inline && !inline.querySelector('a')) targets.push({ container: inline, inline: true });
+    document.querySelectorAll('.sidebar-widget').forEach(widget => {
+        const title = widget.querySelector('h3');
+        const list = widget.querySelector('ul');
+        if (title && ['In This Article', 'In This Review'].includes(title.textContent.trim()) && list && !list.querySelector('a')) targets.push({ container: list, inline: false });
     });
-    if (!tocWidget) return;
-
-    const tocUl = tocWidget.querySelector('ul');
-    if (!tocUl || tocUl.querySelectorAll('li').length > 0) return;
-
+    if (!targets.length) return;
     const article = document.querySelector('.article-content');
     if (!article) return;
-
-    const headings = article.querySelectorAll('h2, h3');
-    if (headings.length < 2) { tocWidget.style.display = 'none'; return; }
-
-    headings.forEach(function(heading, index) {
-        if (!heading.id) heading.id = 'section-' + index;
-        var li = document.createElement('li');
-        if (heading.tagName === 'H3') li.style.paddingLeft = '1rem';
-        var link = document.createElement('a');
-        link.href = '#' + heading.id;
-        link.textContent = heading.textContent;
-        li.appendChild(link);
-        tocUl.appendChild(li);
+    const headings = Array.from(article.querySelectorAll('h2, h3')).map((heading, index) => ({ heading, index })).filter(({ heading }) => !heading.closest('.toc-container, #table-of-contents, [hidden], [aria-hidden="true"]'));
+    if (headings.length < 2) return;
+    headings.forEach(({ heading, index }) => {
+        if (heading.id) return;
+        let identity = 'section-' + index;
+        let suffix = 2;
+        while (document.getElementById(identity)) identity = 'section-' + index + '-' + suffix++;
+        heading.id = identity;
+    });
+    targets.forEach(target => {
+        const list = target.inline ? document.createElement('ul') : target.container;
+        if (target.inline) list.className = 'toc-list';
+        headings.forEach(({ heading }) => {
+            const item = document.createElement('li');
+            if (target.inline) item.className = heading.tagName === 'H3' ? 'toc-item toc-sub' : 'toc-item';
+            else if (heading.tagName === 'H3') item.style.paddingLeft = '1rem';
+            const link = document.createElement('a');
+            link.setAttribute('href', '#' + encodeURIComponent(heading.id));
+            link.textContent = heading.textContent.trim();
+            item.appendChild(link);
+            list.appendChild(item);
+        });
+        if (target.inline) target.container.appendChild(list);
     });
 }
 
