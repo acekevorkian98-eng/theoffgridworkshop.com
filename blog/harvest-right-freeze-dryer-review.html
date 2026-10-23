@@ -194,7 +194,7 @@
                     <section>
                         <h2 id="quick-specs">Quick Specs</h2>
 
-                        <table>
+                        <div class="comparison-table-wrapper"><table>
                             <thead>
                                 <tr><th>Specification</th><th>Value</th></tr>
                             </thead>
@@ -213,14 +213,14 @@
                                 <tr><td>Retail price (2026)</td><td>~$3,195</td></tr>
                                 <tr><td>Warranty</td><td>1 year standard (2 year with premium pump)</td></tr>
                             </tbody>
-                        </table>
+                        </table></div>
                     </section>
 
                     <section>
                         <h2 id="model-comparison">Model Comparison: Small vs. Medium vs. Large</h2>
                         <p>Harvest Right offers three consumer models. Choosing the right one depends on your household size, production volume, and power capacity:</p>
 
-                        <table>
+                        <div class="comparison-table-wrapper"><table>
                             <thead>
                                 <tr><th>Feature</th><th>Small</th><th>Medium (ours)</th><th>Large</th></tr>
                             </thead>
@@ -235,7 +235,7 @@
                                 <tr><td>Weight</td><td>42 lbs</td><td>61 lbs</td><td>92 lbs</td></tr>
                                 <tr class="highlight-row"><td>Best for</td><td>1-2 people, occasional use</td><td>Family of 2-4, regular use</td><td>Large families, preppers, small business</td></tr>
                             </tbody>
-                        </table>
+                        </table></div>
                         <p>For off-grid use, the Small model is the most practical because it draws less power per batch (1.5-1.8 kWh vs. 2.1-2.4 kWh for the Medium). If your solar system is marginal, the Small model is the safer choice. However, the Medium is significantly more productive — you process 30-40% more food per batch, which means fewer total batches and less cumulative wear on the vacuum pump. We chose the Medium because our 2.4 kW solar array has enough surplus in summer to handle the extra load.</p>
                     </section>
 
@@ -252,7 +252,7 @@
                         <h2 id="power-consumption">Power Consumption Data: 143 Batches Logged</h2>
                         <p>The rated 980W is a peak draw during the initial freezing phase and vacuum pump startup. In practice, the machine cycles — the compressor and vacuum pump do not run continuously. Our energy monitor data across all 134 completed batches:</p>
 
-                        <table>
+                        <div class="comparison-table-wrapper"><table>
                             <thead>
                                 <tr><th>Phase</th><th>Avg Draw</th><th>Duration</th><th>% of Total Energy</th><th>Notes</th></tr>
                             </thead>
@@ -262,11 +262,11 @@
                                 <tr class="highlight-row"><td>Final drying</td><td>280-360W</td><td>4-10 hrs</td><td>15-20%</td><td>Reduced compressor cycling</td></tr>
                                 <tr><td><strong>Batch average (all phases)</strong></td><td><strong>590W</strong></td><td><strong>24-40 hrs</strong></td><td><strong>100%</strong></td><td><strong>2.1-2.4 kWh total</strong></td></tr>
                             </tbody>
-                        </table>
+                        </table></div>
                         <p>2.1-2.4 kWh per batch is the number that determines whether your off-grid system can support this machine. At $0.12/kWh grid equivalent, that is $0.25-0.29 per batch in energy cost. On solar, the marginal energy cost is near zero (panel depreciation over 25-year lifespan: approximately $0.05 per kWh).</p>
 
                         <h3>Seasonal Power Performance</h3>
-                        <table>
+                        <div class="comparison-table-wrapper"><table>
                             <thead>
                                 <tr><th>Season</th><th>Batches Attempted</th><th>Batches Completed</th><th>Aborts</th><th>Avg Batch Time</th><th>Avg kWh</th></tr>
                             </thead>
@@ -276,7 +276,7 @@
                                 <tr class="highlight-row"><td>Summer (Jun-Aug)</td><td>48</td><td>46</td><td>2</td><td>32 hrs</td><td>2.4 kWh</td></tr>
                                 <tr><td>Autumn (Sep-Nov)</td><td>31</td><td>30</td><td>1</td><td>29 hrs</td><td>2.2 kWh</td></tr>
                             </tbody>
-                        </table>
+                        </table></div>
                         <p>Summer batches take longer (32 hrs average vs. 28 hrs in spring) because the compressor works harder to reject heat in warm ambient temperatures. The condenser temperature rises, reducing the efficiency of the sublimation process. We mitigate this by running the freeze dryer in the coolest room of the house (our root cellar, which stays at 45-50°F even in summer) and by running batches at night when ambient temperatures drop.</p>
                         <p>The 9 aborted batches were all caused by prolonged cloud cover during the batch — the solar array could not recharge the battery fast enough to keep up with the 590W average draw, and the battery hit the low-voltage cutoff. This is a real constraint: on a marginal solar system, cloud cover during a 30-hour batch can kill the cycle and waste the food (partially freeze-dried food does not store well and must be consumed immediately).</p>
                     </section>
@@ -287,7 +287,7 @@
                         <h2 id="batch-output">Batch Output: Every Food Type We Processed</h2>
                         <p>The "7-10 lbs per batch" specification in the manual is accurate for fresh high-moisture foods (tomatoes, fruit, cooked meat). Dense, low-moisture foods (crackers, cooked rice, granola) can load 10-14 lbs fresh weight per batch because they contain less water to remove.</p>
 
-                        <table>
+                        <div class="comparison-table-wrapper"><table>
                             <thead>
                                 <tr><th>Food</th><th>Fresh Weight</th><th>Dried Weight</th><th>Water Removed</th><th>Batch Time</th><th>kWh Used</th></tr>
                             </thead>
@@ -304,7 +304,7 @@
                                 <tr><td>Zucchini (sliced)</td><td>8.5 lbs</td><td>0.7 lbs</td><td>92%</td><td>40 hrs</td><td>2.4 kWh</td></tr>
                                 <tr class="highlight-row"><td>Mango (sliced)</td><td>8.0 lbs</td><td>1.2 lbs</td><td>85%</td><td>40 hrs</td><td>2.4 kWh</td></tr>
                             </tbody>
-                        </table>
+                        </table></div>
                         <p>Key patterns from 143 batches:</p>
                         <ul>
                             <li><strong>Proteins dry faster than produce:</strong> Cooked chicken and ground beef finish in 24-28 hours. Vegetables and fruits take 28-40 hours because their cellular structure holds water more tightly.</li>
@@ -318,7 +318,7 @@
                         <h2 id="rehydration-testing">Rehydration Testing: How Well Does It Come Back?</h2>
                         <p>The ultimate test of freeze drying is rehydration: how close does the reconstituted food come to its original texture, flavor, and appearance? We tested every food type by soaking in room-temperature water for the time specified and comparing to fresh equivalents.</p>
 
-                        <table>
+                        <div class="comparison-table-wrapper"><table>
                             <thead>
                                 <tr><th>Food</th><th>Rehydration Time</th><th>Texture Score (1-10)</th><th>Flavor Score (1-10)</th><th>Notes</th></tr>
                             </thead>
@@ -332,7 +332,7 @@
                                 <tr><td>Ground beef</td><td>8 min</td><td>8</td><td>9</td><td>Excellent for tacos, spaghetti. Texture slightly more crumbly.</td></tr>
                                 <tr class="highlight-row"><td>Whole milk</td><td>Instant</td><td>9</td><td>9</td><td>Powder reconstitutes well. Slightly less creamy than fresh.</td></tr>
                             </tbody>
-                        </table>
+                        </table></div>
                         <p>The scoring was subjective but consistent: we compared each rehydrated food side-by-side with an equivalent fresh food, rated texture and flavor on a 1-10 scale (10 = indistinguishable from fresh), and had both of us taste blind. Strawberries scored highest across the board — the cellular preservation from sublimation is nearly perfect for this fruit. Tomatoes scored lower because their cell walls are more delicate and collapse during the freeze-dry cycle, producing a softer texture on rehydration.</p>
                     </section>
 
@@ -341,7 +341,7 @@
                         <p>The vacuum pump is the most maintenance-intensive component of the freeze dryer. It is a rotary vane pump that creates the low-pressure environment necessary for sublimation. The pump oil serves two purposes: it seals the vanes against the pump housing and it captures moisture that is pulled from the food during drying.</p>
 
                         <h3>Pump Oil Maintenance</h3>
-                        <table>
+                        <div class="comparison-table-wrapper"><table>
                             <thead>
                                 <tr><th>Metric</th><th>Value</th></tr>
                             </thead>
@@ -353,11 +353,11 @@
                                 <tr><td>Annual oil cost (at 120 batches)</td><td>$120-150</td></tr>
                                 <tr><td>Cost per batch (oil)</td><td>$0.40-0.50</td></tr>
                             </tbody>
-                        </table>
+                        </table></div>
                         <p>The pump oil turns milky when contaminated with moisture — this is normal and means the pump is doing its job (capturing water vapor from the food). Change the oil promptly when it reaches a milky-white appearance. Running with milky oil reduces pump efficiency and increases batch times by 10-15%. In extreme cases (oil not changed for 40+ batches), the pump can fail entirely, requiring a $200-300 replacement.</p>
 
                         <h3>Premier Pump vs. Standard Pump</h3>
-                        <table>
+                        <div class="comparison-table-wrapper"><table>
                             <thead>
                                 <tr><th>Feature</th><th>Standard Pump</th><th>Premier Pump (+$500)</th></tr>
                             </thead>
@@ -368,7 +368,7 @@
                                 <tr><td>Built-in oil mist filter</td><td>No</td><td>Yes</td></tr>
                                 <tr class="highlight-row"><td>Recommendation</td><td>OK if placed in garage/workshop</td><td>Better for indoor placement near living areas</td></tr>
                             </tbody>
-                        </table>
+                        </table></div>
                         <p>Our unit has the standard Premier pump (not to be confused with the "Premier Pump" upgrade — Harvest Right's naming is confusing). The standard pump is loud enough that we cannot run it overnight in the same room as our bedroom. We keep the unit in a utility room with the door closed, and the noise is acceptable. If you plan to run the freeze dryer indoors near sleeping areas, the quieter pump upgrade is worth the $500.</p>
                     </section>
 
@@ -379,7 +379,7 @@
                         <p>Freeze-dried food is only as good as its packaging. Without proper sealing, it will reabsorb moisture from the air within hours. Here is our packaging system:</p>
 
                         <h3>Packaging Materials</h3>
-                        <table>
+                        <div class="comparison-table-wrapper"><table>
                             <thead>
                                 <tr><th>Item</th><th>Cost</th><th>Lifespan</th><th>Notes</th></tr>
                             </thead>
@@ -389,7 +389,7 @@
                                 <tr><td>3000cc oxygen absorbers</td><td>$0.50-0.75 each</td><td>Single use</td><td>For 5-gallon buckets (large-scale storage).</td></tr>
                                 <tr><td>Impulse sealer</td><td>$25-40</td><td>Years</td><td>Essential for sealing mylar bags. A household iron works in a pinch but produces inconsistent seals.</td></tr>
                             </tbody>
-                        </table>
+                        </table></div>
                         <p>Cost per batch for packaging: approximately $0.80-1.20 (4-6 mylar bags + oxygen absorbers). This is a meaningful ongoing cost that should be factored into the per-batch economics.</p>
 
                         <h3>Packaging Procedure</h3>
@@ -409,7 +409,7 @@
                         <p>The honest answer: the Harvest Right is workable off-grid but requires serious system sizing. Here is what we learned from 18 months of real-world operation:</p>
 
                         <h3>Minimum Viable Off-Grid Setup</h3>
-                        <table>
+                        <div class="comparison-table-wrapper"><table>
                             <thead>
                                 <tr><th>Component</th><th>Minimum</th><th>Recommended</th><th>Why</th></tr>
                             </thead>
@@ -420,7 +420,7 @@
                                 <tr><td>Charge controller</td><td>60A MPPT</td><td>80A MPPT</td><td>To handle the full solar array output</td></tr>
                                 <tr><td>Dedicated circuit</td><td>15A</td><td>20A</td><td>On the inverter output. Nothing else on this circuit during batch runs.</td></tr>
                             </tbody>
-                        </table>
+                        </table></div>
 
                         <h3>What We Learned the Hard Way</h3>
                         <ul>
@@ -435,7 +435,7 @@
                         <h2 id="cost-analysis">Cost Per Pound Analysis: 18-Month Financial Picture</h2>
                         <p>The machine costs approximately $3,195 new. At our pace of 2-3 batches per week, amortized over 10 years:</p>
 
-                        <table>
+                        <div class="comparison-table-wrapper"><table>
                             <thead>
                                 <tr><th>Cost Component</th><th>Per Batch</th><th>Annual (120 batches)</th><th>10-Year Total</th></tr>
                             </thead>
@@ -447,7 +447,7 @@
                                 <tr><td>Vacuum pump oil</td><td>$0.40</td><td>$48</td><td>$480</td></tr>
                                 <tr class="highlight-row"><td><strong>Total per batch</strong></td><td><strong>$4.11 (solar)</strong></td><td><strong>$493</strong></td><td><strong>$4,935</strong></td></tr>
                             </tbody>
-                        </table>
+                        </table></div>
                         <p>At 2 lbs of dried output per batch average, that is <strong>$2.06 per pound of freeze-dried food</strong> (solar energy, before food cost). Commercial freeze-dried food runs $15-35/lb. The economics are clear for anyone processing garden-grown or bulk-purchased produce at scale.</p>
                         <p>If you factor in the food cost (garden-grown produce at approximately $0.50/lb fresh, which becomes $5.00/lb dried after 90% water removal), the total cost is approximately $7.06/lb — still well below the $15-35/lb commercial price. If you purchase food in bulk (Costco, Sam's Club), the food cost drops to approximately $2.00/lb fresh ($20/lb dried equivalent), making the total cost approximately $22.06/lb — competitive with mid-range commercial freeze-dried food.</p>
                     </section>
@@ -495,7 +495,7 @@
 
                     <section>
                         <h2 id="troubleshooting">Troubleshooting: Common Issues and Fixes</h2>
-                        <table>
+                        <div class="comparison-table-wrapper"><table>
                             <thead>
                                 <tr><th>Issue</th><th>Cause</th><th>Fix</th><th>Prevention</th></tr>
                             </thead>
@@ -507,7 +507,7 @@
                                 <tr class="highlight-row"><td>Batch aborted (battery low)</td><td>Insufficient solar recharging, cloudy weather</td><td>Partially dried food must be consumed immediately or re-frozen and re-run. Do not store partially dried food.</td><td>Check weather forecast before starting. Run in seasons with reliable sun.</td></tr>
                                 <tr><td>Loud noise from pump</td><td>Normal pump operation, or worn vanes</td><td>If noise is new and significantly louder, pump vanes may be worn. Contact Harvest Right support.</td><td>Change oil on schedule. Old, degraded oil accelerates vane wear.</td></tr>
                             </tbody>
-                        </table>
+                        </table></div>
                     </section>
 
                     <section>
@@ -550,7 +550,7 @@
                         <h2 id="vs-dehydrator">Freeze Dryer vs. Dehydrator</h2>
                         <p>This comparison comes up constantly. Here is the direct comparison based on our experience with both machines:</p>
 
-                        <table>
+                        <div class="comparison-table-wrapper"><table>
                             <thead>
                                 <tr><th>Feature</th><th>Harvest Right Freeze Dryer</th><th>Excalibur Dehydrator</th></tr>
                             </thead>
@@ -564,7 +564,7 @@
                                 <tr><td>Handles meat/dairy</td><td>Excellent</td><td>Poor (jerky only)</td></tr>
                                 <tr class="highlight-row"><td>Best use case</td><td>Long-term emergency storage</td><td>Daily-use dried goods</td></tr>
                             </tbody>
-                        </table>
+                        </table></div>
                         <p>They are not competitors — they are complements with different use cases. Most serious off-grid homesteads run both. If you can only choose one: buy a dehydrator first (low cost, immediate utility), add a freeze dryer once your power system can support it.</p>
                     </section>
 

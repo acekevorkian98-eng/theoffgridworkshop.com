@@ -345,7 +345,7 @@ img {
 
 @media (min-width: 768px) {
     .main-content {
-        grid-template-columns: 1fr 320px;
+        grid-template-columns: minmax(0, 1fr) 320px;
     }
 }
 
@@ -1377,7 +1377,12 @@ tr:hover td { background: var(--bg-subtle); }
 .highlight-row td { background: var(--primary-bg); }
 .highlight-row:hover td { background: var(--color-accent2-300); }
 
-.comparison-table-wrapper { overflow-x: auto; }
+.main-content > * { min-width: 0; }
+.comparison-table-wrapper { max-width: 100%; overflow-x: auto; }
+.comparison-table-wrapper:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
 
 /* ============================================
    AD PLACEHOLDERS

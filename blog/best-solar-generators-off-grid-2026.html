@@ -197,7 +197,7 @@
                         <p>The single most important specification on any solar generator isn't capacity, isn't wattage, isn't solar input — it's the battery chemistry. And in 2026, there's only one answer: LiFePO4 (lithium iron phosphate).</p>
 
                         <h3>LiFePO4 vs. NMC: The Math Is Overwhelming</h3>
-                        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
                                     <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Property</th>
@@ -242,7 +242,7 @@
                                     <td style="border: 1px solid #ddd; padding: 10px; text-align: center;">$0.015-0.025/Wh</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table></div>
 
                         <p>LiFePO4 batteries last 4-8x longer than NMC batteries, can be discharged to 0% without damage, operate safely at higher temperatures (critical in summer cabins), and cost less per lifetime watt-hour despite a higher upfront price. The only trade-off is weight — LiFePO4 is ~30% heavier per Wh of capacity. For a stationary off-grid installation, that weight doesn't matter.</p>
 
@@ -257,7 +257,7 @@
                         <p>Every solar generator has a rated capacity — 2,000 Wh, 1,024 Wh, whatever. But you never get all of that. The DC-to-AC inverter conversion eats a percentage, and the amount varies significantly between units. We measured this on every unit using a calibrated Kill-A-Watt meter on the AC output side and the manufacturer's stated capacity.</p>
 
                         <h3>DC-to-AC Inverter Efficiency Measurements</h3>
-                        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
                                     <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Unit</th>
@@ -325,13 +325,13 @@
                                     <td style="border: 1px solid #ddd; padding: 10px; text-align: center;">61</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table></div>
 
                         <p>The EcoFlow Delta Pro at 96% efficiency is the best — on a 3,600 Wh unit, that's 144 Wh lost to heat. The Goal Zero and Anker C800 at 92% lose proportionally more. This matters: a 4% difference on a 2,000 Wh unit is 80 Wh — enough to run a CPAP machine for 1.3 extra hours, or an LED light for 8 extra hours.</p>
 
                         <h3>Inverter Waveform Quality (THD)</h3>
                         <p>All units in our test produce pure sine wave output — the only acceptable waveform for sensitive electronics. Modified sine wave inverters (found on cheap $100 generators) produce total harmonic distortion (THD) above 30%, which can damage laptop chargers, medical devices, and variable-speed motors. Every unit below tested below 3% THD, which is excellent:</p>
-                        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
                                     <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Unit</th>
@@ -366,7 +366,7 @@
                                     <td style="border: 1px solid #ddd; padding: 10px; text-align: center;">Yes</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table></div>
                     </section>
 
                     <section id="test-methodology">
@@ -385,7 +385,7 @@
                         </ul>
 
                         <h3>Units Tested</h3>
-                        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
                                     <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">#</th>
@@ -453,7 +453,7 @@
                                     <td style="border: 1px solid #ddd; padding: 10px; text-align: center;">3.4</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table></div>
                     </section>
 
                     <section id="solar-charge-testing">
@@ -461,7 +461,7 @@
                         <p>Manufacturer solar charge specs are measured under perfect STC conditions (1,000 W/m² irradiance, 25°C cell temperature). Real off-grid conditions are never perfect. Here's what we measured over 12 days of solar charging with 400W of panels (2× Renogy 200W rigid panels in series, south-facing at 35° tilt, zone 6b).</p>
 
                         <h3>MPPT Controller Efficiency by Unit</h3>
-                        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
                                     <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Unit</th>
@@ -529,7 +529,7 @@
                                     <td style="border: 1px solid #ddd; padding: 10px; text-align: center;">9.5 hrs</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table></div>
                         <p style="font-size: 0.9em; color: #666;"><em>*Units with MPPT input capacity exceeding 400W couldn't fully utilize our 400W panel array. With matched solar input (700W for Bluetti, 600W for Anker F2000), charge times would be significantly shorter.</em></p>
 
                         <p>Key findings:</p>
@@ -545,7 +545,7 @@
                         <p>Specs tell you rated wattage. Real-world use tells you what happens when you plug in your actual appliances. We ran 15 common off-grid loads through each unit and recorded actual power draw, surge behavior, and runtime.</p>
 
                         <h3>Appliance Power Draw Measurements</h3>
-                        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
                                     <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Appliance</th>
@@ -613,11 +613,11 @@
                                     <td style="border: 1px solid #ddd; padding: 10px; text-align: center;">Variable</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table></div>
 
                         <h3>Runtime by Load Profile: 2,000Wh-Class Units</h3>
                         <p>Here's what you actually get from a 2,000Wh-class unit (Jackery 2000 Pro, EcoFlow Delta 2 Max, Bluetti AC200P) running real off-grid loads:</p>
-                        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
                                     <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Load Scenario</th>
@@ -664,7 +664,7 @@
                                     <td style="border: 1px solid #ddd; padding: 10px; text-align: center;">3.4 nights</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table></div>
                         <p>Key insight: for a basic off-grid cabin (fridge + lights + phones), a 2,000Wh unit gives you 3-3.5 days of autonomy without solar input. With 400W of solar producing ~1.6 kWh/day in decent sun, the system becomes self-sustaining — you'll recharge faster than you consume.</p>
                     </section>
 
@@ -745,7 +745,7 @@
 
                     <section id="comparison-table">
                         <h2>Full Comparison: All 8 Units</h2>
-                        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
                                     <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Unit</th>
@@ -840,7 +840,7 @@
                                     <td style="border: 1px solid #ddd; padding: 10px; text-align: center;">$0.58</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table></div>
                         <p style="font-size: 0.9em; color: #666;"><em>*Price per rated watt-hour. Actual cost per usable Wh is higher due to inverter losses (typically 4-8%).</em></p>
                     </section>
 
@@ -850,7 +850,7 @@
 
                         <h3>Step 1: Calculate Your Daily Energy Needs</h3>
                         <p>List every device you'll run, its wattage, and hours of use per day:</p>
-                        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
                                     <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Device</th>
@@ -909,7 +909,7 @@
                                     <td style="border: 1px solid #ddd; padding: 10px; text-align: center;"><strong>2,525 Wh</strong></td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table></div>
 
                         <h3>Step 2: Size Your Battery for Autonomy</h3>
                         <p>Rule of thumb: battery capacity = daily Wh × days of autonomy ÷ inverter efficiency ÷ depth-of-discharge limit.</p>
@@ -924,7 +924,7 @@
                         <p>That means three 200W panels (600W total) or two 300W panels (600W total). In summer (6+ PSH), 400W of panels is sufficient. In winter (2-3 PSH), you'd need 800-1,000W of panels to achieve daily replenishment.</p>
 
                         <h3>Recommended System Configurations</h3>
-                        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
                                     <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Scenario</th>
@@ -964,7 +964,7 @@
                                     <td style="border: 1px solid #ddd; padding: 10px; text-align: center;">7+ days</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table></div>
                     </section>
 
                     <section id="maintenance">
@@ -987,7 +987,7 @@
                         </ul>
 
                         <h3>Expected Cycle Life by Usage Pattern</h3>
-                        <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+                        <div class="comparison-table-wrapper"><table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
                             <thead>
                                 <tr style="background-color: #f5f5f5;">
                                     <th style="border: 1px solid #ddd; padding: 10px; text-align: left;">Usage Pattern</th>
@@ -1022,7 +1022,7 @@
                                     <td style="border: 1px solid #ddd; padding: 10px; text-align: center;">Year 4-5</td>
                                 </tr>
                             </tbody>
-                        </table>
+                        </table></div>
                         <p>For full-time off-grid use with daily cycling, expect 8-10 years before the unit reaches 80% capacity. At that point, it's still functional — just with reduced capacity. Most off-gridders will replace the unit for convenience, not because it's failed.</p>
                     </section>
 

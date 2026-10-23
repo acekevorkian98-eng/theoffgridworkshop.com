@@ -459,6 +459,52 @@ function initCategoryFilter() {
     directory.dataset.filterReady = 'true';
 }
 
+function initScrollableTables() {
+    const wrappers = Array.from(document.querySelectorAll('.comparison-table-wrapper')).filter(wrapper => wrapper.dataset.scrollReady !== 'true');
+    if (!wrappers.length) return;
+    const records = wrappers.map(wrapper => {
+        wrapper.dataset.scrollReady = 'true';
+        const table = wrapper.querySelector('table');
+        const heading = table && table.closest('section') && table.closest('section').querySelector('h2, h3');
+        const caption = table && table.caption ? table.caption.textContent.trim() : '';
+        const label = caption || (heading ? heading.textContent.trim() : '') || 'Data table';
+        return {
+            wrapper, table, label,
+            managed: !wrapper.hasAttribute('tabindex') && !wrapper.hasAttribute('role'),
+            originalLabel: wrapper.getAttribute('aria-label')
+        };
+    });
+
+    function update() {
+        records.forEach(({ wrapper, label, managed, originalLabel }) => {
+            if (!managed) return;
+            const overflows = wrapper.clientWidth > 0 && wrapper.scrollWidth > wrapper.clientWidth + 1;
+            if (overflows) {
+                wrapper.setAttribute('tabindex', '0');
+                wrapper.setAttribute('role', 'region');
+                if (!originalLabel) wrapper.setAttribute('aria-label', 'Scrollable table: ' + label);
+            } else {
+                wrapper.removeAttribute('tabindex');
+                wrapper.removeAttribute('role');
+                if (!originalLabel) wrapper.removeAttribute('aria-label');
+            }
+        });
+    }
+
+    update();
+    if (typeof ResizeObserver !== 'undefined') {
+        const observer = new ResizeObserver(update);
+        records.forEach(({ wrapper, table }) => {
+            observer.observe(wrapper);
+            if (table) observer.observe(table);
+        });
+    } else {
+        window.addEventListener('resize', update);
+        window.addEventListener('load', update, { once: true });
+    }
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(update);
+}
+
 // ============================================
 // LAST UPDATED DISPLAY
 // ============================================
@@ -593,6 +639,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initNativeShare();
     initCategoryFilter();
     initShopFilters();
+    initScrollableTables();
 
     autoApplyReveals();
     initScrollReveal();
