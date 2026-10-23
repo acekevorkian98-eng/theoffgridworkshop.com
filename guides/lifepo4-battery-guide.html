@@ -13,8 +13,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiFePO4 vs Lead-Acid: Which Battery for Off-Grid Solar? | The Off-Grid Workshop</title>
-    <meta name="description" content="LiFePO4 vs flooded lead-acid for off-grid solar storage: compare upfront cost, usable capacity, cycle life, weight, maintenance, and 10-year total cost of ownership.">
-    <meta name="author" content="Jake Mercer, Off-Grid Homesteader">
+    <meta name="description" content="Compare battery models using usable energy, charging limits, cold-weather protection, cycle-rating conditions and explicit cost assumptions. Includes worked examples.">
+    <meta name="author" content="The Off-Grid Workshop">
     <link rel="canonical" href="https://theoffgridworkshop.com/guides/lifepo4-battery-guide">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -22,74 +22,74 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Figtree:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caprasimo&amp;family=Figtree:wght@400;500;600;700&amp;display=swap">
     <link rel="stylesheet" href="../assets/css/style.css">
     <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "LiFePO4 vs Lead-Acid: Which Battery for Off-Grid Solar?",
-    "author": {
-        "@type": "Person",
-        "name": "Jake Mercer",
-        "url": "https://theoffgridworkshop.com/pages/about"
-    },
-    "publisher": {
-        "@type": "Organization",
-        "name": "The Off-Grid Workshop",
-        "url": "https://theoffgridworkshop.com"
-    },
-    "url": "https://theoffgridworkshop.com/guides/lifepo4-battery-guide",
-    "datePublished": "2026-01-01",
-    "dateModified": "2026-02-01"
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "LiFePO4 vs Lead-Acid: Which Battery for Off-Grid Solar?",
+  "author": {
+    "@type": "Organization",
+    "name": "The Off-Grid Workshop",
+    "url": "https://theoffgridworkshop.com/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "The Off-Grid Workshop",
+    "url": "https://theoffgridworkshop.com"
+  },
+  "url": "https://theoffgridworkshop.com/guides/lifepo4-battery-guide",
+  "datePublished": "2026-01-01",
+  "dateModified": "2026-10-23"
 }
     </script>
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
     {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Is LiFePO4 better than lead-acid for off-grid solar?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Yes, for permanent full-time off-grid installations. LiFePO4 has 80-90% usable depth of discharge versus 50% for lead-acid, lasts 8-15 years versus 1-3 years, and requires zero maintenance. Despite higher upfront cost, the 10-year total cost of ownership is lower."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "How long do LiFePO4 batteries last?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "LiFePO4 batteries last 3,000-5,000+ cycles at 80% depth of discharge, which translates to 8-15 years of daily cycling in an off-grid solar system. Quality brands may reach 6,000+ cycles."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Can LiFePO4 batteries be charged in cold weather?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "LiFePO4 cannot be safely charged below 32°F (0°C) without risk of lithium plating, which causes permanent damage. Most quality batteries have low-temperature charge cutoff protection built into the BMS. Insulate the battery enclosure in very cold climates."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "When should I still choose lead-acid batteries?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Choose lead-acid for temporary systems, seasonal use only (a few months per year with low cycle count), or when budget is severely constrained and you need a bridge system while saving for LiFePO4."
-          }
-        }
-      ]
+      "@type": "Question",
+      "name": "Is LiFePO4 always cheaper over ten years?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Compare actual banks meeting the same requirements, with current quotes and explicit lifetime, replacement, maintenance and installation assumptions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does a cycle rating guarantee a number of years?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Read the rating’s discharge depth, conditions and remaining-capacity threshold, and assess the warranty separately. Site operation can differ from the test."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can every LiFePO4 battery charge above 0 degrees Celsius?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No universal threshold applies. Follow the exact battery’s charging-temperature range and protection instructions. The cited Victron Lithium Smart family specifies +5 to +50 degrees Celsius for charging."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a PWM controller charge lithium batteries?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Some PWM models support lithium charging. Verify the particular controller profile, battery requirements, temperature protection and PV limits; PWM or MPPT alone does not establish compatibility."
+      }
     }
+  ]
+}
     </script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9986267429592601"
          crossorigin="anonymous"></script>
     <meta property="og:site_name" content="The Off-Grid Workshop">
     <meta property="og:locale" content="en_US">
     <meta property="og:title" content="LiFePO4 vs Lead-Acid: Which Battery for Off-Grid Solar? | The Off-Grid Workshop">
-    <meta property="og:description" content="LiFePO4 vs flooded lead-acid for off-grid solar storage: compare upfront cost, usable capacity, cycle life, weight, maintenance, and 10-year total cost of ownership.">
+    <meta property="og:description" content="Compare battery models using usable energy, charging limits, cold-weather protection, cycle-rating conditions and explicit cost assumptions. Includes worked examples.">
     <meta property="og:image" content="https://theoffgridworkshop.com/android-chrome-512x512.png">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
@@ -97,42 +97,42 @@
     <meta property="og:url" content="https://theoffgridworkshop.com/guides/lifepo4-battery-guide">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="LiFePO4 vs Lead-Acid: Which Battery for Off-Grid Solar? | The Off-Grid Workshop">
-    <meta name="twitter:description" content="LiFePO4 vs flooded lead-acid for off-grid solar storage: compare upfront cost, usable capacity, cycle life, weight, maintenance, and 10-year total cost of ownership.">
+    <meta name="twitter:description" content="Compare battery models using usable energy, charging limits, cold-weather protection, cycle-rating conditions and explicit cost assumptions. Includes worked examples.">
     <meta name="twitter:image" content="https://theoffgridworkshop.com/android-chrome-512x512.png">
     <script type="application/ld+json">
-    {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "LiFePO4 vs Lead-Acid: Which Battery for Off-Grid Solar? | The Off-Grid Workshop",
-    "description": "LiFePO4 vs flooded lead-acid for off-grid solar storage: compare upfront cost, usable capacity, cycle life, weight, maintenance, and 10-year total cost of ownership.",
-    "url": "https://theoffgridworkshop.com/guides/lifepo4-battery-guide",
-    "dateModified": "2026-07-03"
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "LiFePO4 vs Lead-Acid: Which Battery for Off-Grid Solar? | The Off-Grid Workshop",
+  "description": "Compare battery models using usable energy, charging limits, cold-weather protection, cycle-rating conditions and explicit cost assumptions. Includes worked examples.",
+  "url": "https://theoffgridworkshop.com/guides/lifepo4-battery-guide",
+  "dateModified": "2026-10-23"
 }
     </script>
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
     {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-        {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://theoffgridworkshop.com/"
-        },
-        {
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Guides",
-            "item": "https://theoffgridworkshop.com/guides/"
-        },
-        {
-            "@type": "ListItem",
-            "position": 3,
-            "name": "LiFePO4 vs Lead-Acid: Which Battery for Off-Grid Solar?",
-            "item": "https://theoffgridworkshop.com/guides/lifepo4-battery-guide"
-        }
-    ]
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://theoffgridworkshop.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Guides",
+      "item": "https://theoffgridworkshop.com/guides/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "LiFePO4 vs Lead-Acid: Which Battery for Off-Grid Solar?",
+      "item": "https://theoffgridworkshop.com/guides/lifepo4-battery-guide"
+    }
+  ]
 }
     </script>
 </head>
@@ -174,10 +174,10 @@
 
             <article class="article">
                 <header class="article-header">
-                    <span class="last-updated">Updated February 2026</span>
+                    <span class="last-updated">Updated October 23, 2026</span>
                     <h1>LiFePO4 vs Lead-Acid: Which Battery for Off-Grid Solar?</h1>
-                    <p class="article-meta">Difficulty: Intermediate &middot; Reading time: ~8 min</p>
-                    <p class="author-byline">By <a href="/pages/about">Jake Mercer</a> &middot; Off-Grid Homesteader &amp; Former Engineer</p>
+                    <p class="article-meta">Difficulty: Intermediate &middot; Reading time: ~7 min</p>
+                    <p class="author-byline">By The Off-Grid Workshop editorial team</p>
                 </header>
 
                 <div class="article-content">
@@ -186,180 +186,95 @@
                         <h3>In This Guide</h3>
                         <div id="table-of-contents" data-toc-generated="true">
 <ul class="toc-list">
-<li class="toc-item"><a href="#section-1">The Battery Decision That Shapes Your Whole System</a></li>
-<li class="toc-item"><a href="#section-2">Understanding Usable Capacity: The Most Important Number</a></li>
-<li class="toc-item"><a href="#section-3">Cycle Life: Where LiFePO4 Dominates</a></li>
-<li class="toc-item"><a href="#section-4">Side-by-Side Comparison</a></li>
-<li class="toc-item"><a href="#section-5">The Maintenance Factor</a></li>
-<li class="toc-item"><a href="#section-6">When Lead-Acid Still Makes Sense</a></li>
-<li class="toc-item"><a href="#section-7">The Verdict</a></li>
+<li class="toc-item"><a href="#section-1">Compare Actual Batteries, Not Chemistry Labels Alone</a></li>
+<li class="toc-item"><a href="#section-2">Calculate Usable Energy in Watt-Hours</a></li>
+<li class="toc-item"><a href="#section-3">Read Cycle Ratings with Their Conditions</a></li>
+<li class="toc-item"><a href="#section-4">Match Chargers, Loads and Protection</a></li>
+<li class="toc-item"><a href="#section-5">Check Battery Temperature Before Charging</a></li>
+<li class="toc-item"><a href="#section-6">Plan Maintenance and Storage</a></li>
+<li class="toc-item"><a href="#section-7">Compare Costs with Explicit Scenarios</a></li>
+<li class="toc-item"><a href="#battery-faq">Common Comparison Questions</a></li>
 <li class="toc-item"><a href="#section-8">Where to Go Next</a></li>
 </ul>
 </div>
                     </div>
 
                     <section>
-                        <h2 id="section-1">The Battery Decision That Shapes Your Whole System</h2>
-                        <p>Your battery bank is the heart of an off-grid solar system. It stores the energy your panels generate during the day and releases it when the sun is down. The chemistry you choose determines how much of that stored energy you can actually use, how long the bank will last, how much maintenance it demands, and &mdash; ultimately &mdash; what the whole system costs you over a decade.</p>
-                        <p>For most of the history of off-grid solar, flooded lead-acid (FLA) batteries were the default. They&rsquo;re cheap upfront and time-tested. But lithium iron phosphate (LiFePO4) has matured rapidly and prices have fallen enough that it now makes compelling economic sense for most permanent off-grid installations. This guide breaks down both technologies honestly so you can make the right call for your situation.</p>
+                        <h2 id="section-1">Compare Actual Batteries, Not Chemistry Labels Alone</h2>
+                        <p>Choose a battery bank around the energy and power your system needs, the installation environment, compatible charging equipment and the maintenance you can provide. LiFePO4, flooded lead-acid, AGM and gel products do not share one set of operating limits.</p>
+                        <p>Collect the exact model datasheet, installation manual and warranty before comparing prices. Record nominal voltage, rated capacity and test conditions, permitted discharge, charge/discharge current, temperature limits, protection requirements and approved bank configurations.</p>
                     </section>
 
                     <section>
-                        <h2 id="section-2">Understanding Usable Capacity: The Most Important Number</h2>
-                        <p>Battery capacity is rated in amp-hours (Ah) or watt-hours (Wh), but the rated number is not what you can actually use. Every battery chemistry has a <strong>depth of discharge (DoD)</strong> limit &mdash; how deeply you can drain the battery before causing accelerated degradation or damage.</p>
-                        <ul>
-                            <li><strong>LiFePO4:</strong> 80&ndash;90% DoD usable (most manufacturers rate at 80%)</li>
-                            <li><strong>Flooded Lead-Acid (FLA):</strong> 50% DoD recommended (to protect cycle life)</li>
-                            <li><strong>AGM Lead-Acid:</strong> 50&ndash;60% DoD</li>
-                            <li><strong>Gel Lead-Acid:</strong> 50&ndash;60% DoD</li>
-                        </ul>
-                        <p>This means a 100Ah LiFePO4 battery delivers roughly <strong>80&ndash;90Ah of usable capacity</strong>, while a 100Ah FLA battery delivers only <strong>50Ah</strong> before you risk harming it. To get equivalent usable storage from lead-acid, you need to buy nearly twice as much rated capacity. This fundamentally changes the upfront cost comparison.</p>
-
-                        <div class="info-box neutral">
-                            <p class="info-box-title">The Equivalent Bank Example</p>
-                            <p>To store and reliably use 2,400 Wh of energy at 24V:</p>
-                            <ul>
-                                <li><strong>LiFePO4 at 80% DoD:</strong> Need 3,000 Wh nominal &rarr; ~2 &times; 100Ah 24V batteries</li>
-                                <li><strong>FLA at 50% DoD:</strong> Need 4,800 Wh nominal &rarr; ~4 &times; 100Ah 12V batteries (2S2P) or equivalent</li>
-                            </ul>
-                        </div>
-                    </section>
-
-                    <section>
-                        <h2 id="section-3">Cycle Life: Where LiFePO4 Dominates</h2>
-                        <p>Cycle life is the number of charge/discharge cycles a battery can complete before its capacity degrades to 80% of original. This is the most important metric for long-term cost of ownership.</p>
-                        <ul>
-                            <li><strong>LiFePO4:</strong> 3,000&ndash;5,000+ cycles at 80% DoD (higher-end brands achieve 6,000+)</li>
-                            <li><strong>Flooded Lead-Acid:</strong> 300&ndash;500 cycles at 50% DoD (quality deep-cycle FLA may reach 700&ndash;800 with careful management)</li>
-                            <li><strong>AGM:</strong> 400&ndash;600 cycles at 50% DoD</li>
-                        </ul>
-                        <p>In daily cycling (typical off-grid solar use), a LiFePO4 bank lasts <strong>8&ndash;15 years</strong>. A FLA bank lasts <strong>1&ndash;3 years</strong> under the same conditions, sometimes less if maintenance is inconsistent or if it gets deeply discharged during cloudy stretches.</p>
-                    </section>
-
-                    <div class="ad-placeholder banner"><!-- Ad --></div>
-
-                    <section>
-                        <h2 id="section-4">Side-by-Side Comparison</h2>
-
+                        <h2 id="section-2">Calculate Usable Energy in Watt-Hours</h2>
+                        <p><strong>Approximate nominal energy (Wh) = nominal battery voltage (V) &times; rated capacity (Ah).</strong> Amp-hours alone do not describe energy. Use nominal voltage rather than the charger&rsquo;s absorption setting.</p>
+                        <p><strong>Illustrative load-side energy = nominal Wh &times; selected discharge fraction &times; battery-to-load efficiency.</strong> The following examples demonstrate the arithmetic, not product performance or recommended operating limits:</p>
                         <div class="comparison-table-wrapper"><table>
-                            <thead>
-                                <tr>
-                                    <th>Factor</th>
-                                    <th>LiFePO4</th>
-                                    <th>Flooded Lead-Acid</th>
-                                    <th>AGM Lead-Acid</th>
-                                </tr>
-                            </thead>
+                            <caption>Illustrative assumptions, before additional temperature, ageing or reserve allowances</caption>
+                            <thead><tr><th scope="col">Example Bank</th><th scope="col">Nominal Energy</th><th scope="col">Assumed Discharge / Delivery Efficiency</th><th scope="col">Estimated Energy at Loads</th></tr></thead>
                             <tbody>
-                                <tr>
-                                    <td><strong>Upfront cost (per kWh nominal)</strong></td>
-                                    <td>$300&ndash;$600</td>
-                                    <td>$100&ndash;$200</td>
-                                    <td>$150&ndash;$300</td>
-                                </tr>
-                                <tr class="highlight-row">
-                                    <td><strong>Usable DoD</strong></td>
-                                    <td>80&ndash;90%</td>
-                                    <td>50%</td>
-                                    <td>50&ndash;60%</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Effective cost (per kWh usable)</strong></td>
-                                    <td>$375&ndash;$750</td>
-                                    <td>$200&ndash;$400</td>
-                                    <td>$250&ndash;$500</td>
-                                </tr>
-                                <tr class="highlight-row">
-                                    <td><strong>Cycle life</strong></td>
-                                    <td>3,000&ndash;5,000+</td>
-                                    <td>300&ndash;700</td>
-                                    <td>400&ndash;600</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Lifespan (daily cycling)</strong></td>
-                                    <td>8&ndash;15 years</td>
-                                    <td>1&ndash;3 years</td>
-                                    <td>2&ndash;4 years</td>
-                                </tr>
-                                <tr class="highlight-row">
-                                    <td><strong>Weight (per kWh)</strong></td>
-                                    <td>~10&ndash;15 lbs</td>
-                                    <td>~60&ndash;80 lbs</td>
-                                    <td>~50&ndash;70 lbs</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Maintenance required</strong></td>
-                                    <td>None (BMS managed)</td>
-                                    <td>Monthly (water, equalization)</td>
-                                    <td>Minimal</td>
-                                </tr>
-                                <tr class="highlight-row">
-                                    <td><strong>Gassing / venting required</strong></td>
-                                    <td>No</td>
-                                    <td>Yes (hydrogen gas)</td>
-                                    <td>Minimal</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Cold weather performance</strong></td>
-                                    <td>Good (down to ~32&deg;F charging); fair at lower temps</td>
-                                    <td>Degrades below 32&deg;F</td>
-                                    <td>Degrades below 32&deg;F</td>
-                                </tr>
-                                <tr class="highlight-row">
-                                    <td><strong>BMS required</strong></td>
-                                    <td>Yes (usually integrated)</td>
-                                    <td>No</td>
-                                    <td>No</td>
-                                </tr>
-                                <tr>
-                                    <td><strong>10-year cost (2,400 Wh usable bank)</strong></td>
-                                    <td><strong>~$900&ndash;$1,800</strong> (1 replacement cycle)</td>
-                                    <td><strong>~$1,200&ndash;$3,000</strong> (3&ndash;6 replacement cycles)</td>
-                                    <td><strong>~$1,400&ndash;$3,500</strong> (3&ndash;5 cycles)</td>
-                                </tr>
+                                <tr><td>25.6 V, 100 Ah</td><td>2,560 Wh</td><td>80% / 90%</td><td>1,843.2 Wh</td></tr>
+                                <tr><td>24 V, 200 Ah</td><td>4,800 Wh</td><td>50% / 85%</td><td>2,040 Wh</td></tr>
                             </tbody>
                         </table></div>
-
-                        <p><em>10-year cost estimates include initial purchase and projected replacements to maintain the same usable capacity. Prices based on 2025&ndash;2026 market rates and are indicative.</em></p>
+                        <p>These banks are not equivalent in delivered energy. For a 2,400 Wh load-side target using the first example&rsquo;s assumptions, the nominal-energy requirement is 2,400 &divide; (0.80 &times; 0.90) = <strong>about 3,333 Wh</strong>, before further design allowances. Check current and startup-power requirements separately.</p>
+                        <p>For accounting, two 12.8 V, 100 Ah batteries contain approximately 2,560 Wh in total. An approved series configuration would be 25.6 V at 100 Ah; an approved parallel configuration would be 12.8 V at 200 Ah. Neither arrangement creates extra energy. This does not establish that a particular battery permits either connection; follow its bank-configuration limits.</p>
                     </section>
 
                     <section>
-                        <h2 id="section-5">The Maintenance Factor</h2>
-                        <p>Flooded lead-acid batteries require regular maintenance that is genuinely burdensome in an off-grid context. They must be checked monthly for electrolyte water levels and topped up with distilled water. They require periodic equalization charges (a controlled overcharge to prevent sulfation and balance cells). They off-gas hydrogen during charging, requiring a vented battery enclosure away from sparks and flames.</p>
-                        <p>None of this is impossible &mdash; people have managed FLA banks successfully for decades. But it is real, ongoing work that adds complexity to an already complex system. A LiFePO4 battery with an integrated Battery Management System (BMS) is essentially maintenance-free. The BMS handles cell balancing, over/under voltage protection, temperature protection, and short-circuit protection automatically.</p>
-
-                        <div class="info-box warning">
-                            <p class="info-box-title">LiFePO4 Cold Weather Caution</p>
-                            <p>LiFePO4 batteries cannot be safely charged below freezing (32&deg;F / 0&deg;C) without risk of lithium plating, which causes permanent damage. Most quality LiFePO4 batteries have low-temperature charge cutoff protection built into the BMS, but this means your system generates power from your panels and cannot store it on very cold mornings until the battery warms up. In very cold climates, insulating your battery enclosure is important.</p>
-                        </div>
+                        <h2 id="section-3">Read Cycle Ratings with Their Conditions</h2>
+                        <p>A cycle count needs a stated discharge depth, test conditions and remaining-capacity threshold. It is not a guaranteed calendar lifetime. For example, <a href="https://www.victronenergy.com/media/pg/Lithium_Battery_Smart/en/technical-data.html">Victron&rsquo;s Lithium Smart data</a> lists 2,500 cycles at 80% depth of discharge and 5,000 at 50%, with capacity at least 80% of nominal. Those figures describe that product family, not every LiFePO4 battery.</p>
+                        <p>Compare like-for-like conditions and inspect the warranty separately. Do not convert a laboratory cycle count directly into promised years on your site. Temperature, operating pattern and charging affect service life; Trojan likewise describes life expectancy as dependent on the application.</p>
                     </section>
 
                     <section>
-                        <h2 id="section-6">When Lead-Acid Still Makes Sense</h2>
-                        <p>LiFePO4 is not the right choice for every situation. Lead-acid may be the better pick if:</p>
-                        <ul>
-                            <li><strong>Budget is severely constrained</strong> and you need a temporary system while saving for a permanent build. FLA can bridge the gap.</li>
-                            <li><strong>The application is temporary</strong> (a seasonal cabin used a few months per year that will not be cycled daily). Low cycle count means FLA&rsquo;s short cycle life is less of a disadvantage.</li>
-                            <li><strong>You have free or near-free FLA batteries</strong> from a reliable source (golf cart replacements, UPS replacements). Free is a hard price to beat for a starter system.</li>
-                        </ul>
-                        <p>For any <em>permanent, full-time</em> off-grid installation, the 10-year math overwhelmingly favors LiFePO4 despite the higher upfront cost.</p>
+                        <h2 id="section-4">Match Chargers, Loads and Protection</h2>
+                        <p>Use charge voltage, current limits and control behavior specified for the exact battery. Confirm every charging source, including solar, mains, generator and alternator equipment. A chemistry preset or the words &ldquo;lithium compatible&rdquo; are not a substitute for checking the actual profile and protection interface.</p>
+                        <p>PWM versus MPPT is not itself a lithium-compatibility rule. Renogy lists lithium among the supported battery types for its <a href="https://www.renogy.com/pages/wanderer-li-30a-pwm-charge-controller-faq">Wanderer Li 30A PWM controller</a>. That is evidence against a blanket ban on PWM, not a recommendation that this controller fits every battery or PV array.</p>
+                        <p>A BMS does not replace correctly designed cables, fuses, isolation or compatible system controls. Some batteries require a separate BMS. Victron&rsquo;s <a href="https://www.victronenergy.com/media/pg/Lithium_Battery_Smart/en/installation.html">installation instructions</a> cover its BMS connections, cable/fuse ratings and permitted configurations. Use the instructions for your own equipment and have the installation checked against applicable requirements.</p>
                     </section>
 
                     <section>
-                        <h2 id="section-7">The Verdict</h2>
-                        <div class="info-box neutral">
-                            <p class="info-box-title">Bottom Line</p>
-                            <p><strong>For permanent off-grid installations, LiFePO4 wins on total cost of ownership</strong> despite higher upfront pricing. You buy it once, maintain it almost never, and it outlasts 3&ndash;6 lead-acid bank replacements. The weight savings are a substantial bonus for any mobile or space-constrained application.</p>
-                            <p>For temporary, seasonal, or extreme-budget situations, quality deep-cycle FLA (specifically 6V golf cart batteries in series, which offer the best cycle life per dollar in the lead-acid category) remains a viable stopgap.</p>
-                        </div>
+                        <h2 id="section-5">Check Battery Temperature Before Charging</h2>
+                        <p>Use the battery manufacturer&rsquo;s charging-temperature range, sensing method and charge-inhibit instructions. A generic &ldquo;above freezing is safe&rdquo; rule is inadequate. The Lithium Smart family cited above specifies charging from <strong>+5&deg;C to +50&deg;C</strong>, while its discharge range is different. Those are product-specific limits, not settings for another battery.</p>
+                        <p>Check that low-temperature protection is actually present and that every charging source responds to it. Do not assume the word BMS guarantees all protections or overrides the manual. For a heated battery, verify heater operation, energy demand and the conditions under which cell charging can resume.</p>
+                        <p>Insulation slows heat transfer; it does not generate heat or prove that cells are warm enough to charge. Include any required enclosure heating in the power audit. Lead-acid also needs its own temperature-related charging and storage provisions; it is not an unrestricted cold-weather substitute.</p>
+                    </section>
+
+                    <section>
+                        <h2 id="section-6">Plan Maintenance and Storage</h2>
+                        <p>Flooded lead-acid requires electrolyte and charging care. Sealed AGM/gel and LiFePO4 avoid routine electrolyte topping-up, but they still need inspection, compatible settings and appropriate storage. &ldquo;No watering&rdquo; does not mean the complete battery system needs no attention.</p>
+                        <p><a href="https://www.trojanbattery.com/resources/battery-maintenance">Trojan&rsquo;s maintenance guidance</a> distinguishes flooded and VRLA products, describes ventilation during charging, and provides different charging instructions. Do not transfer a flooded-battery equalization routine to another battery type. Follow the exact model instructions rather than copying a generic voltage or maintenance interval.</p>
+                        <p>Record inspection and storage requirements, protective-device behavior and who can service the system. For a model-specific example, consult <a href="https://www.victronenergy.com/media/pg/Lithium_Battery_Smart/en/operation.html">Victron&rsquo;s operation and care instructions</a>. In a used bank, verify condition and compatibility rather than assuming a low purchase price means useful remaining capacity.</p>
+                    </section>
+
+                    <section>
+                        <h2 id="section-7">Compare Costs with Explicit Scenarios</h2>
+                        <p>No chemistry wins every ten-year cost comparison. Use current quotes for banks that meet the same load-side energy, power and environmental requirements. Include compatible chargers/BMS, enclosure and support, heating or ventilation, installation, maintenance and end-of-life handling.</p>
+                        <p>Calculate more than one replacement scenario instead of assuming a fixed number of replacements. State which lifetimes and prices are assumptions, which come from a warranty, and which have operating evidence. A warranty period is not proof that a bank will deliver its original capacity throughout that period.</p>
+                        <p>Choose after checking the complete system, not solely the purchase price per nominal Ah. The <a href="solar-sizing#calculator">solar sizing calculator</a> can help expose energy assumptions; it does not approve a battery model or installation.</p>
+                    </section>
+
+                    <section>
+                        <h2 id="battery-faq">Common Comparison Questions</h2>
+                        <dl>
+                            <dt><strong>Is LiFePO4 always cheaper over ten years?</strong></dt>
+                            <dd><p>No. Compare actual banks meeting the same requirements, with current quotes and explicit lifetime, replacement, maintenance and installation assumptions.</p></dd>
+                            <dt><strong>Does a cycle rating guarantee a number of years?</strong></dt>
+                            <dd><p>No. Read the rating&rsquo;s discharge depth, conditions and remaining-capacity threshold, and assess the warranty separately. Site operation can differ from the test.</p></dd>
+                            <dt><strong>Can every LiFePO4 battery charge above 0 degrees Celsius?</strong></dt>
+                            <dd><p>No universal threshold applies. Follow the exact battery&rsquo;s charging-temperature range and protection instructions. The cited Victron Lithium Smart family specifies +5 to +50 degrees Celsius for charging.</p></dd>
+                            <dt><strong>Can a PWM controller charge lithium batteries?</strong></dt>
+                            <dd><p>Some PWM models support lithium charging. Verify the particular controller profile, battery requirements, temperature protection and PV limits; PWM or MPPT alone does not establish compatibility.</p></dd>
+                        </dl>
                     </section>
 
                     <section>
                         <h2 id="section-8">Where to Go Next</h2>
                         <ol>
-                            <li><a href="solar-sizing"><strong>How to Size Your Solar System</strong></a> &mdash; Calculate how much battery capacity you actually need</li>
-                            <li><a href="power-audit"><strong>How to Do a Power Audit</strong></a> &mdash; The essential first step before any system purchase</li>
-                            <li><a href="../reviews/"><strong>Solar &amp; Battery Reviews</strong></a> &mdash; Specific equipment recommendations</li>
+                            <li><a href="power-audit">Power Audit</a>: separate daily energy from simultaneous and startup loads.</li>
+                            <li><a href="solar-sizing">Solar System Sizing</a>: record design losses, autonomy and usable battery energy.</li>
+                            <li><a href="../pages/solar">Solar Systems Overview</a>: place the battery in the wider system plan.</li>
                         </ol>
                     </section>
 
@@ -390,13 +305,14 @@
                 <div class="sidebar-widget">
                     <h3>In This Article</h3>
                     <ul data-toc-generated="true">
-<li><a href="#section-1">The Battery Decision That Shapes Your Whole System</a></li>
-<li><a href="#section-2">Understanding Usable Capacity: The Most Important Number</a></li>
-<li><a href="#section-3">Cycle Life: Where LiFePO4 Dominates</a></li>
-<li><a href="#section-4">Side-by-Side Comparison</a></li>
-<li><a href="#section-5">The Maintenance Factor</a></li>
-<li><a href="#section-6">When Lead-Acid Still Makes Sense</a></li>
-<li><a href="#section-7">The Verdict</a></li>
+<li><a href="#section-1">Compare Actual Batteries, Not Chemistry Labels Alone</a></li>
+<li><a href="#section-2">Calculate Usable Energy in Watt-Hours</a></li>
+<li><a href="#section-3">Read Cycle Ratings with Their Conditions</a></li>
+<li><a href="#section-4">Match Chargers, Loads and Protection</a></li>
+<li><a href="#section-5">Check Battery Temperature Before Charging</a></li>
+<li><a href="#section-6">Plan Maintenance and Storage</a></li>
+<li><a href="#section-7">Compare Costs with Explicit Scenarios</a></li>
+<li><a href="#battery-faq">Common Comparison Questions</a></li>
 <li><a href="#section-8">Where to Go Next</a></li>
 </ul>
                 </div>
