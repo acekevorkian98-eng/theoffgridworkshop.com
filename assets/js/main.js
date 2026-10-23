@@ -195,6 +195,7 @@ function highlightCurrentPage() {
 // ============================================
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        if (anchor.classList.contains('skip-link')) return;
         anchor.addEventListener('click', function(event) {
             const fragment = this.getAttribute('href').slice(1);
             if (!fragment) return;
@@ -206,45 +207,6 @@ function initSmoothScroll() {
             const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
             target.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth' });
         });
-    });
-}
-
-// ============================================
-// FAQ ACCORDION
-// ============================================
-function initFaqAccordion() {
-    const faqItems = document.querySelectorAll('.faq-item');
-
-    faqItems.forEach(item => {
-        const question = item.querySelector('.faq-question');
-        const answer = item.querySelector('.faq-answer');
-
-        if (question && answer) {
-            question.setAttribute('role', 'button');
-            question.setAttribute('tabindex', '0');
-            question.setAttribute('aria-expanded', 'false');
-
-            function toggleFaq() {
-                faqItems.forEach(otherItem => {
-                    if (otherItem !== item) {
-                        otherItem.classList.remove('active');
-                        const otherQ = otherItem.querySelector('.faq-question');
-                        if (otherQ) otherQ.setAttribute('aria-expanded', 'false');
-                    }
-                });
-
-                item.classList.toggle('active');
-                question.setAttribute('aria-expanded', item.classList.contains('active'));
-            }
-
-            question.addEventListener('click', toggleFaq);
-            question.addEventListener('keydown', function(e) {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    toggleFaq();
-                }
-            });
-        }
     });
 }
 
@@ -633,27 +595,32 @@ function initAffiliateTracking() {
 // SHOP FILTERS
 // ============================================
 function initShopFilters() {
-    const filterBtns = document.querySelectorAll('.shop-filter-btn');
-    const productCards = document.querySelectorAll('.product-card');
-    if (!filterBtns.length || !productCards.length) return;
+    const filterBtns = Array.from(document.querySelectorAll('.shop-filter-btn'));
+    const productCards = Array.from(document.querySelectorAll('.product-card'));
+    const status = document.getElementById('shop-filter-status');
+    if (!filterBtns.length || !productCards.length || filterBtns[0].dataset.filterReady === 'true') return;
 
-    filterBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            filterBtns.forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
-
-            const filter = this.getAttribute('data-filter');
-
-            productCards.forEach(card => {
-                const category = card.getAttribute('data-category');
-                if (filter === 'all' || category === filter) {
-                    card.style.display = 'flex';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
+    function applyFilter(selected) {
+        const filter = selected.getAttribute('data-filter');
+        let count = 0;
+        filterBtns.forEach(button => {
+            const active = button === selected;
+            button.classList.toggle('active', active);
+            button.setAttribute('aria-pressed', String(active));
         });
+        productCards.forEach(card => {
+            card.hidden = filter !== 'all' && card.getAttribute('data-category') !== filter;
+            if (!card.hidden) count++;
+        });
+        if (status) status.textContent = count + (count === 1 ? ' item shown.' : ' items shown.');
+    }
+
+    filterBtns.forEach(button => {
+        button.type = 'button';
+        button.addEventListener('click', () => applyFilter(button));
+        button.dataset.filterReady = 'true';
     });
+    applyFilter(filterBtns.find(button => button.classList.contains('active')) || filterBtns[0]);
 }
 
 // ============================================
@@ -664,7 +631,6 @@ document.addEventListener('DOMContentLoaded', function() {
     highlightCurrentPage();
     initAffiliateTracking();
     initSmoothScroll();
-    initFaqAccordion();
     generateTOC();
     initLastUpdated();
     initMobileNav();

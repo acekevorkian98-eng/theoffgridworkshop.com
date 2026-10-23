@@ -68,6 +68,7 @@
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9986267429592601" crossorigin="anonymous"></script>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
     <header class="site-header">
         <div class="container">
@@ -90,7 +91,7 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="main-content" tabindex="-1" class="container">
         <nav class="breadcrumbs" aria-label="Breadcrumb">
             <a href="../">Home</a>
             <span class="separator">/</span>
@@ -108,15 +109,17 @@
 
         <div class="shop-filter-bar">
             <div class="shop-filter-buttons">
-                <button class="shop-filter-btn active" data-filter="all">All Items (10)</button>
-                <button class="shop-filter-btn" data-filter="solar">Solar Power</button>
-                <button class="shop-filter-btn" data-filter="water">Water Systems</button>
-                <button class="shop-filter-btn" data-filter="building">Building & Shelter</button>
-                <button class="shop-filter-btn" data-filter="food">Food & Homestead</button>
-                <button class="shop-filter-btn" data-filter="heating">Heating & Energy</button>
-                <button class="shop-filter-btn" data-filter="reference">Reference Guides</button>
+                <button type="button" aria-pressed="true" class="shop-filter-btn active" data-filter="all">All Items (10)</button>
+                <button type="button" aria-pressed="false" class="shop-filter-btn" data-filter="solar">Solar Power</button>
+                <button type="button" aria-pressed="false" class="shop-filter-btn" data-filter="water">Water Systems</button>
+                <button type="button" aria-pressed="false" class="shop-filter-btn" data-filter="building">Building & Shelter</button>
+                <button type="button" aria-pressed="false" class="shop-filter-btn" data-filter="food">Food & Homestead</button>
+                <button type="button" aria-pressed="false" class="shop-filter-btn" data-filter="heating">Heating & Energy</button>
+                <button type="button" aria-pressed="false" class="shop-filter-btn" data-filter="reference">Reference Guides</button>
             </div>
         </div>
+
+        <p id="shop-filter-status" role="status" aria-live="polite" aria-atomic="true">10 items shown.</p>
 
         <div class="shop-grid">
 

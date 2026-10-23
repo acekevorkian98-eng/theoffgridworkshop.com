@@ -36,3 +36,11 @@ lists marked `data-toc-generated` are maintained by the builder. Existing IDs
 are preserved, generated IDs avoid collisions, and contents-box headings and
 hidden content are excluded from the generated links. Commit the updated pages
 with heading changes.
+
+# Keyboard navigation
+
+Keep the skip link as the first body element on new public pages, targeting
+`<main id="main-content" tabindex="-1">`. Use native `details` and `summary`
+elements for FAQ disclosures; the answer must remain readable without scripts.
+Shop filter buttons expose their selected state with `aria-pressed`, and the
+status element reports how many items remain visible.

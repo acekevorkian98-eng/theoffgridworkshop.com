@@ -71,6 +71,7 @@
     </script>
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
         <div class="container">
             <div class="header-inner">
@@ -92,7 +93,7 @@
         </div>
     </header>
 
-    <main class="container">
+    <main id="main-content" tabindex="-1" class="container">
         <section class="hero">
             <div class="hero-badge">Water Systems</div>
             <h1>Off-Grid Water: Collect, Store &amp; Filter</h1>
@@ -189,30 +190,30 @@
         <section class="faq-section">
             <h2>Water FAQ</h2>
             <div class="faq-list">
-                <div class="faq-item">
-                    <div class="faq-question">How much water storage do I actually need?</div>
+                <details class="faq-item">
+                    <summary class="faq-question">How much water storage do I actually need?</summary>
                     <div class="faq-answer">
                         <p>Multiply measured daily demand by the period without dependable replenishment, then add your chosen reserves and allow for unusable tank volume. For example, 40 gallons per day over 60 days requires 2,400 usable gallons before reserves. Add irrigation and livestock demand if those uses must continue.</p>
                     </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Is rainwater safe to drink after filtering?</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">Is rainwater safe to drink after filtering?</summary>
                     <div class="faq-answer">
                         <p>Collected rainwater is not automatically drinkable. Ask about testing and treatment for the intended use; a first-flush diverter does not establish safety. See <a href="https://www.cdc.gov/drinking-water/about/collecting-rainwater-and-your-health-an-overview.html">CDC rainwater guidance</a> and our <a href="../guides/water-filtration">treatment selection guide</a>.</p>
                     </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Do I need a pump for an off-grid water system?</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">Do I need a pump for an off-grid water system?</summary>
                     <div class="faq-answer">
                         <p>Not necessarily. If you can position your storage tank uphill from your home (even 10&ndash;15 feet of elevation), gravity provides 4&ndash;7 PSI &mdash; adequate for a sink, outdoor shower, and garden drip irrigation without any pump or electricity. For a full indoor shower pressure (typically 30+ PSI), you need either much more elevation (70+ feet) or a pump. A 12V DC pump running on your solar system is the most efficient option when gravity pressure isn&rsquo;t sufficient.</p>
                     </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">Is rainwater harvesting legal where I am?</div>
+                </details>
+                <details class="faq-item">
+                    <summary class="faq-question">Is rainwater harvesting legal where I am?</summary>
                     <div class="faq-answer">
                         <p>In most US states, yes &mdash; and the trend has been toward legalization everywhere. A handful of states (historically Colorado and Utah) had restrictions, but most have since relaxed them. Some states require permits for large systems (&gt;5,000 gallons). Check your specific state&rsquo;s current statutes before building. Our <a href="../guides/rainwater-harvesting">rainwater harvesting guide</a> has a state-by-state legality overview.</p>
                     </div>
-                </div>
+                </details>
             </div>
         </section>
     </main>
