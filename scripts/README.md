@@ -92,3 +92,11 @@ animation; it must not be required to expose content. Keep focus/target, reduced
 motion and print overrides when changing these styles. Missing or failing
 observation skips decoration. A zero intersection threshold allows tall content
 to animate when any portion enters view.
+
+# Mobile navigation fallback
+
+On narrow screens, navigation links are expanded and the header scrolls normally
+until menu handlers are attached. Initialization then marks the navigation,
+toggle and header with `data-nav-ready="true"` to enable the collapsible sticky
+menu. Do not pre-set these markers in HTML: script failure must leave the links
+reachable. Desktop navigation keeps its regular expanded layout.

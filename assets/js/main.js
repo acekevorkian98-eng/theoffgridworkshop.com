@@ -147,7 +147,10 @@ function initMobileNav() {
             setOpen(false, true);
         }
     });
+    nav.dataset.navReady = 'true';
     toggle.dataset.navReady = 'true';
+    const header = document.querySelector('.site-header');
+    if (header) header.dataset.navReady = 'true';
 }
 
 // ============================================
