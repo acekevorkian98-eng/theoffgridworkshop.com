@@ -18,3 +18,11 @@ drafts outside the public blog directory.
 Add new category mappings in `build-blog.py` and matching filter buttons in the
 blog index when introducing a new topic. Dates are publication metadata; a
 rebuild does not update them.
+
+# Page URL metadata
+
+Run `python3 scripts/check-site-metadata.py` after adding pages or changing URLs.
+It checks canonicals, Open Graph URLs, JSON-LD self-references and complete
+sitemap coverage. Error pages marked `noindex` and underscore-prefixed templates
+are excluded. Existing file routes use extensionless canonical URLs; directory
+indexes use a trailing slash. This command performs local validation only.
