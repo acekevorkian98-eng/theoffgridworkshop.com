@@ -5,7 +5,7 @@
       "title": "Off-Grid Battery Bank Sizing & LiFePO4 Cold Weather Protection: Complete Engineering Guide",
       "category": "Solar",
       "date": "2026-09-18",
-      "description": "Complete engineering guide to sizing off-grid LiFePO4 battery banks, low-temperature charge protection, thermal enclosure design, and 3-year winter test data.",
+      "description": "Solar battery sizing, cold-weather charging constraints, thermal protection and battery-management settings.",
       "difficulty": "intermediate"
     },
     {
@@ -13,7 +13,7 @@
       "title": "Best Water Filters for Off-Grid Living (2026): Contaminant Science, Testing Data, and System Design",
       "category": "Water",
       "date": "2026-09-07",
-      "description": "The definitive off-grid water filtration guide — contaminant science, 12-system testing on creek/well/rainwater, flow rate degradation curves, TDS analysis, multi-stage system design, annual cost comparison, and maintenance schedules.",
+      "description": "Water contaminants, treatment technologies and system-planning considerations for creek, well and rainwater supplies.",
       "difficulty": "intermediate"
     },
     {
@@ -29,7 +29,7 @@
       "title": "Off-Grid Water Storage: Complete Guide to Tank Selection, Sizing, and Maintenance",
       "category": "Water",
       "date": "2026-07-20",
-      "description": "We tested 5 tank materials across 3 years at our off-grid homestead. Polyethylene, steel, concrete, IBC totes, and ferrocement — with sizing math, foundation specs, winterization data, maintenance schedules, and real cost breakdowns for every option.",
+      "description": "Water-storage materials, demand estimates, tank placement, foundations and maintenance considerations.",
       "difficulty": "intermediate"
     },
     {
@@ -37,7 +37,7 @@
       "title": "Compost Toilet Guide: Complete DIY Builds, Pathogen Science, and 18-Month Real-World Data",
       "category": "Building & Homesteading",
       "date": "2026-07-19",
-      "description": "We used a compost toilet daily for 18 months. Here is the pathogen die-off science, 5 system designs with cost breakdowns, carbon-to-nitrogen math, ventilation engineering, 6 cover material tests, and the complete monthly operations log.",
+      "description": "Compost-toilet designs, cover materials, ventilation, waste handling and maintenance considerations.",
       "difficulty": "intermediate"
     },
     {
@@ -45,7 +45,7 @@
       "title": "Off-Grid Lighting: Every System We've Tested, From Candles to Solar LEDs",
       "category": "Energy & Homesteading",
       "date": "2026-07-17",
-      "description": "We tested 6 lighting categories across 18 months at our off-grid homestead. Solar LEDs, kerosene lanterns, candles, 12V puck lights, and complete home kits — with lumens-per-watt data, runtime charts, and 5-year cost analysis.",
+      "description": "Lighting options from candles and fuel lanterns to solar LEDs and permanent 12V systems, with load-planning considerations.",
       "difficulty": "intermediate"
     },
     {
@@ -53,7 +53,7 @@
       "title": "Smoking & Curing Meat: The Complete Off-Grid Preservation Guide",
       "category": "Food & Farming",
       "date": "2026-07-15",
-      "description": "Cold smoking, hot smoking, dry curing, and smokehouse builds — every method with USDA safety data, temperature tables, cure ratios, three budget-tier smokehouse designs, and step-by-step recipes for bacon, smoked salmon, and jerky.",
+      "description": "An overview of smoking and curing methods, smokehouse designs, equipment and temperature-control topics.",
       "difficulty": "intermediate"
     },
     {
@@ -61,7 +61,7 @@
       "title": "Firewood Processing: Complete Guide to Sourcing, Splitting, Stacking & Seasoning",
       "category": "Building",
       "date": "2026-07-09",
-      "description": "Three years of firewood production data from our off-grid homestead. BTU rankings for 12 species, four sourcing methods compared, splitting tool showdown (X27 vs maul vs hydraulic), four stacking methods with moisture data, and a full annual processing calendar.",
+      "description": "Firewood sourcing, splitting equipment, stacking layouts, seasoning and a seasonal processing calendar.",
       "difficulty": "intermediate"
     },
     {
@@ -69,7 +69,7 @@
       "title": "Passive Cooling for Off-Grid Cabins: 8 Strategies We've Tested",
       "category": "Building",
       "date": "2026-07-08",
-      "description": "We tested 8 passive cooling strategies over four summers at our off-grid homestead. Attic radiant barriers, night-purge ventilation, thermal mass, earth tubes, and more — with temperature data and real costs.",
+      "description": "Cabin shading, roof treatments, ventilation, thermal mass and other passive-cooling approaches.",
       "difficulty": "intermediate"
     },
     {
@@ -77,7 +77,7 @@
       "title": "Winter Composting: How We Keep Our Compost Active Through Freezing Temperatures",
       "category": "Food & Farming",
       "date": "2026-07-07",
-      "description": "We kept a compost pile active through zone 6b winters with core temps of 128°F at -2°F ambient. Here are four cold-weather bin designs, C:N ratio adjustments for freezing conditions, moisture management protocols, and three years of winter production data.",
+      "description": "Cold-weather composting topics including pile size, bin insulation, feedstock balance and moisture management.",
       "difficulty": "intermediate"
     },
     {
@@ -85,7 +85,7 @@
       "title": "Gardening in Cold Weather: Our Year-Round Growing Strategy",
       "category": "Food & Farming",
       "date": "2026-04-18",
-      "description": "We grow food 10 months of the year in zone 6b. Here is our cold-weather gardening system, the crops that work, and the temperature data from three years of trial and error.",
+      "description": "Soil temperatures, frost protection, crop selection and planting schedules for cold-weather gardening.",
       "difficulty": "intermediate"
     },
     {
@@ -93,7 +93,7 @@
       "title": "The Best Websites for Weather Information",
       "category": "tools",
       "date": "2026-04-18",
-      "description": "We tested 12 weather websites over 18 months. These are the ones we actually use for planning off-grid operations, storm tracking, and long-term forecasting.",
+      "description": "Weather websites, forecast models, local observations and weather-planning tools for off-grid projects.",
       "difficulty": "beginner"
     },
     {
@@ -101,7 +101,7 @@
       "title": "Composting with Earthworms: The Vermicomposting System That Works",
       "category": "Food & Farming",
       "date": "2026-04-18",
-      "description": "We process 5 pounds of kitchen scraps per week into rich compost using earthworms. Here is our working worm bin setup and the lessons from three years.",
+      "description": "Worm species, bin designs, bedding, feeding and maintenance topics for home vermicomposting.",
       "difficulty": "intermediate"
     },
     {
@@ -109,7 +109,7 @@
       "title": "Cleaning Solar Panels Once a Year",
       "category": "Solar",
       "date": "2026-04-18",
-      "description": "We clean our solar panels once per year. Here is the system that works, the tools, the technique, and the data on power loss from dirty panels.",
+      "description": "Solar-panel soiling, cleaning equipment, water quality, access and maintenance considerations.",
       "difficulty": "beginner"
     },
     {
@@ -117,7 +117,7 @@
       "title": "The Best Aromatic Flowers to Plant",
       "category": "Food & Farming",
       "date": "2026-04-18",
-      "description": "We planted 15 varieties of aromatic flowers over three years. These are the ones that actually produced scent, survived our winters, and fit an off-grid lifestyle.",
+      "description": "Aromatic plant varieties, growing conditions, flowering seasons and planting-layout considerations.",
       "difficulty": "beginner"
     },
     {
@@ -125,7 +125,7 @@
       "title": "Cold Frames: Extend Your Growing Season by Weeks",
       "category": "Food & Farming",
       "date": "2026-04-14",
-      "description": "We harvested lettuce from our cold frames on March 15 this year — six weeks before the last frost. We picked kale through December 28. Here is how cold frames work, three build designs, and the temperature data.",
+      "description": "Cold-frame designs, materials, site placement, ventilation and crop selection for extending the growing season.",
       "difficulty": "intermediate"
     },
     {
@@ -133,7 +133,7 @@
       "title": "DIY Solar Water Pumping: Stream to Tank Without Electricity",
       "category": "Water",
       "date": "2026-04-14",
-      "description": "300 gallons per day pumped from our stream to a 1,000-gallon storage tank using a Shurflo 9300 diaphragm pump and a 160W solar panel. Full component list ($754 total), sizing math, and two years of operating data.",
+      "description": "Solar water-pumping components, total dynamic head, array sizing, intake design and water-storage planning.",
       "difficulty": "intermediate"
     },
     {
@@ -141,7 +141,7 @@
       "title": "Building a Simple Root Cellar: Modern Budget Construction",
       "category": "Food & Farming",
       "date": "2026-04-14",
-      "description": "An 8x10 concrete block root cellar built into a north-facing slope, $1,211 all in, holding 400 pounds of produce at 33–42°F through winter. Complete materials list, ventilation system, and 12 months of temperature data.",
+      "description": "Root-cellar site selection, construction options, ventilation, humidity and produce-storage considerations.",
       "difficulty": "intermediate"
     },
     {
@@ -149,7 +149,7 @@
       "title": "Best Water Filters for Off-Grid Living in 2026",
       "category": "Water",
       "date": "2026-04-14",
-      "description": "We tested eight water filters over 18 months. From $20 bucket filters to $1,200 whole-house systems — these are the ones that actually work in off-grid conditions.",
+      "description": "Water-source contaminants, filtration technologies, system configurations and maintenance considerations.",
       "difficulty": "intermediate"
     },
     {
@@ -157,7 +157,7 @@
       "title": "Best Wood Stoves for Off-Grid Living in 2026",
       "category": "Building",
       "date": "2026-04-14",
-      "description": "We tested eight wood stoves over four winters. From rocket mass heaters to catalytic converters — these are the ones that actually heat a cabin efficiently.",
+      "description": "Wood-stove models, cabin heating needs, fuel characteristics and installation considerations.",
       "difficulty": "intermediate"
     },
     {
@@ -165,7 +165,7 @@
       "title": "Best Solar Generators for Off-Grid Living in 2026",
       "category": "Solar",
       "date": "2026-04-17",
-      "description": "We tested five solar generators over six months. From portable units to whole-home systems — these are the ones that actually perform in real off-grid conditions.",
+      "description": "Portable power-station features, energy capacity, inverter loads, solar charging and ownership considerations.",
       "difficulty": "intermediate"
     },
     {
@@ -173,7 +173,7 @@
       "title": "Best Water Filters in 2026",
       "category": "Water",
       "date": "2026-04-17",
-      "description": "We tested seven water filters including Berkey, Lifestraw, and Alexapure. These are the ones that actually remove pathogens and heavy metals.",
+      "description": "Water contaminants, treatment technologies and system-planning considerations for creek, well and rainwater supplies.",
       "difficulty": "beginner"
     },
     {
@@ -181,7 +181,7 @@
       "title": "Best Solar Panels for Off-Grid Living in 2026",
       "category": "Solar",
       "date": "2026-02-01",
-      "description": "Five panels tested in real-world conditions: Renogy, ECO-WORTHY, Newpowa, Rich Solar, and SunPower. Ranked by real output, cost per watt, and build quality.",
+      "description": "Solar-panel technologies, output considerations, mounting, shading and system compatibility.",
       "difficulty": "intermediate"
     },
     {
@@ -189,7 +189,7 @@
       "title": "Building a DIY Greenhouse on a Budget",
       "category": "Building",
       "date": "2026-02-01",
-      "description": "Four greenhouse designs from $200 to $600 using common materials. Siting, passive heating, ventilation, and which design works best in cold climates.",
+      "description": "Greenhouse designs, covering materials, site selection, ventilation, heating and irrigation planning.",
       "difficulty": "intermediate"
     },
     {
@@ -197,7 +197,7 @@
       "title": "Building a Root Cellar: Complete DIY Guide",
       "category": "Food & Farming",
       "date": "2026-02-01",
-      "description": "Five root cellar designs from $200 to $2,000. Site selection, temperature and humidity targets, ventilation, and what to store and when. The original no-electricity food storage system.",
+      "description": "Root-cellar designs, site conditions, ventilation, humidity, crop storage and troubleshooting topics.",
       "difficulty": "intermediate"
     },
     {
@@ -205,7 +205,7 @@
       "title": "How We Built Our Gravity-Fed Water System for $400",
       "category": "Water",
       "date": "2026-02-01",
-      "description": "No pump, no electricity, no pressure tank. A 500-gallon hilltop tank feeds water to the cabin by gravity alone. Full build log with materials list, costs, and what we'd do differently.",
+      "description": "A gravity-fed water-system layout, including elevated storage, pipe sizing, distribution and maintenance topics.",
       "difficulty": "intermediate"
     },
     {
@@ -213,7 +213,7 @@
       "title": "Building a DIY Outdoor Shower",
       "category": "Building",
       "date": "2026-02-01",
-      "description": "A simple outdoor shower for rinsing off after work or play. Solar-powered with a 5-gallon bag, drain field, and privacy. $85 in materials, 2 hours to build.",
+      "description": "Outdoor-shower heating options, storage, water pressure, privacy structures and drainage planning.",
       "difficulty": "beginner"
     },
     {
@@ -221,7 +221,7 @@
       "title": "Making Biochar on Your Property",
       "category": "Food & Farming",
       "date": "2026-02-01",
-      "description": "Three years of making biochar from our own wood waste. A $28 TLUD drum build, three production methods compared, charging protocols, and application rates that move the needle in garden beds.",
+      "description": "Biochar feedstocks, production methods, charging and garden-application considerations.",
       "difficulty": "intermediate"
     },
     {
@@ -229,7 +229,7 @@
       "title": "Off-Grid Food Storage Without Refrigeration",
       "category": "Food & Farming",
       "date": "2026-02-01",
-      "description": "Canning, dehydrating, root cellaring, and fermenting. How we store a year's worth of food without electricity, including costs per quart and shelf life data.",
+      "description": "Food-storage approaches including canning, drying, root cellaring and fermentation, with equipment and energy considerations.",
       "difficulty": "intermediate"
     },
     {
@@ -237,7 +237,7 @@
       "title": "LiFePO4 vs AGM Batteries for Off-Grid",
       "category": "Solar",
       "date": "2026-02-01",
-      "description": "We compared LiFePO4 and AGM batteries over 18 months. Cycle life, efficiency, depth of discharge, and real-world costs per kilowatt-hour.",
+      "description": "Battery chemistry, usable capacity, charging efficiency, temperature constraints and ownership-cost comparisons.",
       "difficulty": "intermediate"
     },
     {
@@ -245,7 +245,7 @@
       "title": "Building a Cob Oven: Complete Guide",
       "category": "Building",
       "date": "2026-02-01",
-      "description": "A wood-fired cob oven for baking and cooking. Materials list, build process, and thermal mass data from five years of use.",
+      "description": "Cob-oven designs, thermal mass, materials, construction stages and weather protection.",
       "difficulty": "intermediate"
     },
     {
@@ -269,7 +269,7 @@
       "title": "Building a Tiny Cabin: Complete Guide",
       "category": "Building",
       "date": "2026-02-01",
-      "description": "Our 200sqft cabin build. Foundation, framing, insulation, and utilities – with costs, timelines, and lessons learned from building it ourselves.",
+      "description": "Tiny-cabin site selection, permissions, foundation options, framing, insulation and utility planning.",
       "difficulty": "advanced"
     },
     {
