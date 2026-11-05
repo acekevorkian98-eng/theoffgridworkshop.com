@@ -1,6 +1,14 @@
 {
   "articles": [
     {
+      "slug": "solar-kit-with-battery-and-inverter",
+      "title": "Solar Panel Kit With Battery and Inverter: Will It Run Your Home?",
+      "category": "Solar",
+      "date": "2026-11-05",
+      "description": "Check a kit's panels, battery, inverter and controller against your own loads, with a worked example.",
+      "difficulty": "beginner"
+    },
+    {
       "slug": "off-grid-lifepo4-battery-guide",
       "title": "Off-Grid Battery Bank Sizing & LiFePO4 Cold Weather Protection: Complete Engineering Guide",
       "category": "Solar",
